@@ -1,0 +1,207 @@
+{
+    "name": "S-1298 - Reabertura dos Eventos Periódicos",
+    "content": [
+        {
+            "index": 1,
+            "esocial_id": 1,
+            "grupo-campo": "eSocial",
+            "grupo-pai": NaN,
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "eSocial",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 2,
+            "esocial_id": 2,
+            "grupo-campo": "evtReabreEvPer",
+            "grupo-pai": "eSocial",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Evento Reabertura dos Eventos Periódicos.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_REABERTURA_VALIDA_PERIODO_APURACAO\nREGRA_VALIDA_EMPREGADOR",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 3,
+            "esocial_id": 3,
+            "grupo-campo": "Id",
+            "grupo-pai": "evtReabreEvPer",
+            "elem": "A",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "36",
+            "dec": "-",
+            "descricao": "Identificação única do evento.\nRegra de validação:\nREGRA_VALIDA_ID_EVENTO",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 4,
+            "esocial_id": 4,
+            "grupo-campo": "ideEvento",
+            "grupo-pai": "evtReabreEvPer",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Informações de identificação do evento.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 5,
+            "esocial_id": 5,
+            "grupo-campo": "indApuracao",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Indicativo de período de apuração.\nValores válidos:\n1 - Mensal\n2 - Anual (13° salário)",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - Mensal",
+                "2": "2 - Anual (13° salário)"
+            }
+        },
+        {
+            "index": 6,
+            "esocial_id": 6,
+            "grupo-campo": "perApur",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "4 ou 7",
+            "dec": "-",
+            "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações, se indApuracao for igual a [1], ou apenas o ano (formato AAAA), se indApuracao for igual a [2].\nValidação: Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": " Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "valores-validos": {}
+        },
+        {
+            "index": 7,
+            "esocial_id": 7,
+            "grupo-campo": "indGuia",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "0-1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Indicativo do tipo de guia.\nValores válidos:\n1 - Documento de Arrecadação do eSocial - DAE",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - Documento de Arrecadação do eSocial - DAE"
+            }
+        },
+        {
+            "index": 8,
+            "esocial_id": 8,
+            "grupo-campo": "tpAmb",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Identificação do ambiente.\nValores válidos:\n1 - Produção\n2 - Produção restrita\n7 - Validação (uso interno)\n8 - Teste (uso interno)\n9 - Desenvolvimento (uso interno)",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - Produção",
+                "2": "2 - Produção restrita",
+                "7": "7 - Validação (uso interno)",
+                "8": "8 - Teste (uso interno)",
+                "9": "9 - Desenvolvimento (uso interno)"
+            }
+        },
+        {
+            "index": 9,
+            "esocial_id": 9,
+            "grupo-campo": "procEmi",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1-2",
+            "dec": "-",
+            "descricao": "Processo de emissão do evento.\nValores válidos:\n1 - Aplicativo do empregador\n2 - Aplicativo governamental - Simplificado Pessoa Física\n3 - Aplicativo governamental - Web Geral\n4 - Aplicativo governamental - Simplificado Pessoa Jurídica\n22 - Aplicativo governamental para dispositivos móveis - Empregador Doméstico",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - Aplicativo do empregador",
+                "2": "2 - Aplicativo governamental - Simplificado Pessoa Física",
+                "3": "3 - Aplicativo governamental - Web Geral",
+                "4": "4 - Aplicativo governamental - Simplificado Pessoa Jurídica",
+                "22": "22 - Aplicativo governamental para dispositivos móveis - Empregador Doméstico"
+            }
+        },
+        {
+            "index": 10,
+            "esocial_id": 10,
+            "grupo-campo": "verProc",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "1-20",
+            "dec": "-",
+            "descricao": "Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 11,
+            "esocial_id": 11,
+            "grupo-campo": "ideEmpregador",
+            "grupo-pai": "evtReabreEvPer",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Informações de identificação do empregador.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 12,
+            "esocial_id": 12,
+            "grupo-campo": "tpInsc",
+            "grupo-pai": "ideEmpregador",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Preencher com o código correspondente ao tipo de inscrição, conforme Tabela 05.\nValores válidos:\n1 - CNPJ\n2 - CPF",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - CNPJ",
+                "2": "2 - CPF"
+            }
+        },
+        {
+            "index": 13,
+            "esocial_id": 13,
+            "grupo-campo": "nrInsc",
+            "grupo-pai": "ideEmpregador",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "8, 11 ou 14",
+            "dec": "-",
+            "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo ideEmpregador/tpInsc e conforme informado em S-1000.",
+            "validacao": "-",
+            "valores-validos": {}
+        }
+    ]
+}

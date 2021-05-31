@@ -1,0 +1,305 @@
+{
+    "name": "S-1299 - Fechamento dos Eventos Periódicos",
+    "content": [
+        {
+            "index": 1,
+            "esocial_id": 1,
+            "grupo-campo": "eSocial",
+            "grupo-pai": NaN,
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "eSocial",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 2,
+            "esocial_id": 2,
+            "grupo-campo": "evtFechaEvPer",
+            "grupo-pai": "eSocial",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Evento Fechamento dos Eventos Periódicos.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_REMUN_ANUAL_DEZEMBRO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_FECHAMENTO_FOPAG",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 3,
+            "esocial_id": 3,
+            "grupo-campo": "Id",
+            "grupo-pai": "evtFechaEvPer",
+            "elem": "A",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "36",
+            "dec": "-",
+            "descricao": "Identificação única do evento.\nRegra de validação:\nREGRA_VALIDA_ID_EVENTO",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 4,
+            "esocial_id": 4,
+            "grupo-campo": "ideEvento",
+            "grupo-pai": "evtFechaEvPer",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Informações de identificação do evento.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 5,
+            "esocial_id": 5,
+            "grupo-campo": "indApuracao",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Indicativo de período de apuração.\nValores válidos:\n1 - Mensal\n2 - Anual (13° salário)",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - Mensal",
+                "2": "2 - Anual (13° salário)"
+            }
+        },
+        {
+            "index": 6,
+            "esocial_id": 6,
+            "grupo-campo": "perApur",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "4 ou 7",
+            "dec": "-",
+            "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações, se indApuracao for igual a [1], ou apenas o ano (formato AAAA), se indApuracao for igual a [2].\nValidação: Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": " Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "valores-validos": {}
+        },
+        {
+            "index": 7,
+            "esocial_id": 7,
+            "grupo-campo": "indGuia",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "0-1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Indicativo do tipo de guia.\nValores válidos:\n1 - Documento de Arrecadação do eSocial - DAE",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - Documento de Arrecadação do eSocial - DAE"
+            }
+        },
+        {
+            "index": 8,
+            "esocial_id": 8,
+            "grupo-campo": "tpAmb",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Identificação do ambiente.\nValores válidos:\n1 - Produção\n2 - Produção restrita\n7 - Validação (uso interno)\n8 - Teste (uso interno)\n9 - Desenvolvimento (uso interno)",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - Produção",
+                "2": "2 - Produção restrita",
+                "7": "7 - Validação (uso interno)",
+                "8": "8 - Teste (uso interno)",
+                "9": "9 - Desenvolvimento (uso interno)"
+            }
+        },
+        {
+            "index": 9,
+            "esocial_id": 9,
+            "grupo-campo": "procEmi",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1-2",
+            "dec": "-",
+            "descricao": "Processo de emissão do evento.\nValores válidos:\n1 - Aplicativo do empregador\n2 - Aplicativo governamental - Simplificado Pessoa Física\n3 - Aplicativo governamental - Web Geral\n4 - Aplicativo governamental - Simplificado Pessoa Jurídica\n22 - Aplicativo governamental para dispositivos móveis - Empregador Doméstico",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - Aplicativo do empregador",
+                "2": "2 - Aplicativo governamental - Simplificado Pessoa Física",
+                "3": "3 - Aplicativo governamental - Web Geral",
+                "4": "4 - Aplicativo governamental - Simplificado Pessoa Jurídica",
+                "22": "22 - Aplicativo governamental para dispositivos móveis - Empregador Doméstico"
+            }
+        },
+        {
+            "index": 10,
+            "esocial_id": 10,
+            "grupo-campo": "verProc",
+            "grupo-pai": "ideEvento",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "1-20",
+            "dec": "-",
+            "descricao": "Versão do processo de emissão do evento. Informar a versão do aplicativo emissor do evento.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 11,
+            "esocial_id": 11,
+            "grupo-campo": "ideEmpregador",
+            "grupo-pai": "evtFechaEvPer",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Informações de identificação do empregador.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 12,
+            "esocial_id": 12,
+            "grupo-campo": "tpInsc",
+            "grupo-pai": "ideEmpregador",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Preencher com o código correspondente ao tipo de inscrição, conforme Tabela 05.\nValores válidos:\n1 - CNPJ\n2 - CPF",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - CNPJ",
+                "2": "2 - CPF"
+            }
+        },
+        {
+            "index": 13,
+            "esocial_id": 13,
+            "grupo-campo": "nrInsc",
+            "grupo-pai": "ideEmpregador",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "8, 11 ou 14",
+            "dec": "-",
+            "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo ideEmpregador/tpInsc e conforme informado em S-1000.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 14,
+            "esocial_id": 14,
+            "grupo-campo": "infoFech",
+            "grupo-pai": "evtFechaEvPer",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Informações do fechamento.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 15,
+            "esocial_id": 15,
+            "grupo-campo": "evtRemun",
+            "grupo-pai": "infoFech",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Possui informações relativas a remuneração de trabalhadores ou provento/pensão de beneficiários no período de apuração?\nValores válidos:\nS - Sim\nN - Não\nValidação: Se for igual a [S], deve existir evento de remuneração (S-1200, S-1202, S-1207, S-2299 ou S-2399) para o período de apuração. Caso contrário, não deve existir evento de remuneração.",
+            "validacao": " Se for igual a [S], deve existir evento de remuneração (S-1200, S-1202, S-1207, S-2299 ou S-2399) para o período de apuração. Caso contrário, não deve existir evento de remuneração.",
+            "valores-validos": {
+                "S": "S - Sim",
+                "N": "N - Não"
+            }
+        },
+        {
+            "index": 16,
+            "esocial_id": 16,
+            "grupo-campo": "evtComProd",
+            "grupo-pai": "infoFech",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Possui informações de comercialização de produção?\nValores válidos:\nS - Sim\nN - Não\nValidação: Se for igual a [S], deve existir o evento S-1260 para o período de apuração. Caso contrário, não deve existir o evento.",
+            "validacao": " Se for igual a [S], deve existir o evento S-1260 para o período de apuração. Caso contrário, não deve existir o evento.",
+            "valores-validos": {
+                "S": "S - Sim",
+                "N": "N - Não"
+            }
+        },
+        {
+            "index": 17,
+            "esocial_id": 17,
+            "grupo-campo": "evtContratAvNP",
+            "grupo-pai": "infoFech",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Contratou, por intermédio de sindicato, serviços de trabalhadores avulsos não portuários?\nValores válidos:\nS - Sim\nN - Não\nValidação: Se for igual a [S], deve existir o evento S-1270 para o período de apuração. Caso contrário, não deve existir o evento.",
+            "validacao": " Se for igual a [S], deve existir o evento S-1270 para o período de apuração. Caso contrário, não deve existir o evento.",
+            "valores-validos": {
+                "S": "S - Sim",
+                "N": "N - Não"
+            }
+        },
+        {
+            "index": 18,
+            "esocial_id": 18,
+            "grupo-campo": "evtInfoComplPer",
+            "grupo-pai": "infoFech",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Possui informações de desoneração de folha de pagamento ou, sendo empresa enquadrada no Simples, possui informações sobre a receita obtida em atividades cuja contribuição previdenciária incidente sobre a folha de pagamento é concomitantemente substituída e não substituída?\nValores válidos:\nS - Sim\nN - Não\nValidação: Se for igual a [S], deve existir o evento S-1280 para o período de apuração. Caso contrário, não deve existir o evento.",
+            "validacao": " Se for igual a [S], deve existir o evento S-1280 para o período de apuração. Caso contrário, não deve existir o evento.",
+            "valores-validos": {
+                "S": "S - Sim",
+                "N": "N - Não"
+            }
+        },
+        {
+            "index": 19,
+            "esocial_id": 19,
+            "grupo-campo": "indExcApur1250",
+            "grupo-pai": "infoFech",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "0-1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Indicativo de exclusão de apuração das aquisições de produção rural (eventos S-1250) do período de apuração.\nValores válidos:\nS - Sim\nValidação: Não informar se perApur >= [2021-05] ou se indApuracao = [2]. Preenchimento obrigatório caso o campo tenha sido informado em fechamento anterior do mesmo período de apuração.",
+            "validacao": " Não informar se perApur >= [2021-05] ou se indApuracao = [2]. Preenchimento obrigatório caso o campo tenha sido informado em fechamento anterior do mesmo período de apuração.",
+            "valores-validos": {
+                "S": "S - Sim"
+            }
+        }
+    ]
+}
