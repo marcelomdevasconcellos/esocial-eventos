@@ -103,6 +103,7 @@ def read_esocial_tabelas(path, url):
         header = 0
         table = pd.read_html(str(tables[n]), header=header)[0]
         table.columns = [slugify(c) or 'esocial_id' for c in table.columns]
+        codigo = table[table['grupo-pai']=='eSocial']['grupo-campo'].tolist()[0]
 
         table['validacao'] = table.apply(lambda x: get_validacao(x['descricao']), axis=1)
         table['valores-validos'] = table.apply(lambda x: get_valores_validos(x['descricao']), axis=1)
@@ -136,6 +137,8 @@ def read_esocial_tabelas(path, url):
         table = new_df[new_df['elem'].notna()]
          
         dictionary = {
+            'code': codigo,
+            'slug': table_name[:6].replace('-', '').lower(), 
             'name': table_name, 
             'content': table.to_dict(orient='records')}
 
