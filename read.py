@@ -97,6 +97,8 @@ def read_esocial_tabelas(path, url):
     table_names = BeautifulSoup(li, "html.parser").find_all("li")
     table_names = [tn.get_text() for tn in table_names]
     tables = soup.find_all("table", {"class":"table is-fullwidth is-bordered completo"})
+
+    complete_html_content = []
     
     for n in range(len(table_names)):
         table_name = table_names[n]
@@ -148,6 +150,8 @@ def read_esocial_tabelas(path, url):
         json_object = json.dumps(dictionary, indent = 4, ensure_ascii=False)
         filename = os.path.join(path, '{}.json'.format(slugify(table_name)))
         save_file(filename, json_object)
+        complete_html_content.append(json_object)
+    save_file('{}.json'.format(path), '[{}]'.format(', '.join(complete_html_content)))
 
 
 if __name__ == "__main__":
