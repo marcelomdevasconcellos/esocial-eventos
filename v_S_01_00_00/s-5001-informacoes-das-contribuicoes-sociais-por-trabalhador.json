@@ -417,17 +417,19 @@
             "ocor": "1",
             "tamanho": "6",
             "dec": "-",
-            "descricao": "Código de Receita - CR da contribuição descontada do trabalhador.\nValores válidos:\n108201 - Contribuição Previdenciária - CP descontada do segurado empregado/avulso\n108202 - CP descontada do segurado empregado rural curto prazo - Lei 11.718/2008\n108203 - CP descontada do segurado empregado doméstico ou segurado especial\n108204 - CP descontada do segurado especial curto prazo - Lei 11.718/2008\n108221 - CP descontada do segurado empregado/avulso 13° salário\n108222 - CP descontada do segurado empregado rural curto prazo 13° salário - Lei 11.718/2008\n108223 - CP descontada do segurado empregado doméstico ou segurado especial 13° salário\n108224 - CP descontada do segurado especial curto prazo 13° salário - Lei 11.718/2008\n109901 - CP descontada do contribuinte individual, alíquota de 11%\n109902 - CP descontada do contribuinte individual, alíquota de 20%\nValidação: Se indApuracao = [2], deve ser igual a [108221, 108222, 108223, 108224].",
-            "validacao": " Se indApuracao = [2], deve ser igual a [108221, 108222, 108223, 108224].",
+            "descricao": "Código de Receita - CR da contribuição descontada do trabalhador.\nValores válidos:\n108201 - Contribuição Previdenciária - CP descontada do segurado empregado/avulso\n108202 - CP descontada do segurado empregado rural curto prazo - Lei 11.718/2008\n108203 - CP descontada do segurado empregado doméstico\n108204 - CP descontada do segurado especial curto prazo - Lei 11.718/2008\n108205 - CP descontada do segurado empregado do segurado especial\n108221 - CP descontada do segurado empregado/avulso 13° salário\n108222 - CP descontada do segurado empregado rural curto prazo 13° salário - Lei 11.718/2008\n108223 - CP descontada do segurado empregado doméstico 13° salário\n108224 - CP descontada do segurado especial curto prazo 13° salário - Lei 11.718/2008\n108225 - CP descontada do segurado empregado do segurado especial 13° salário\n109901 - CP descontada do contribuinte individual, alíquota de 11%\n109902 - CP descontada do contribuinte individual, alíquota de 20%\nValidação: Se indApuracao = [2], deve ser igual a [108221, 108222, 108223, 108224, 108225].",
+            "validacao": " Se indApuracao = [2], deve ser igual a [108221, 108222, 108223, 108224, 108225].",
             "valores-validos": {
                 "108201": "108201 - Contribuição Previdenciária - CP descontada do segurado empregado/avulso",
                 "108202": "108202 - CP descontada do segurado empregado rural curto prazo - Lei 11.718/2008",
-                "108203": "108203 - CP descontada do segurado empregado doméstico ou segurado especial",
+                "108203": "108203 - CP descontada do segurado empregado doméstico",
                 "108204": "108204 - CP descontada do segurado especial curto prazo - Lei 11.718/2008",
+                "108205": "108205 - CP descontada do segurado empregado do segurado especial",
                 "108221": "108221 - CP descontada do segurado empregado/avulso 13° salário",
                 "108222": "108222 - CP descontada do segurado empregado rural curto prazo 13° salário - Lei 11.718/2008",
-                "108223": "108223 - CP descontada do segurado empregado doméstico ou segurado especial 13° salário",
+                "108223": "108223 - CP descontada do segurado empregado doméstico 13° salário",
                 "108224": "108224 - CP descontada do segurado especial curto prazo 13° salário - Lei 11.718/2008",
+                "108225": "108225 - CP descontada do segurado empregado do segurado especial 13° salário",
                 "109901": "109901 - CP descontada do contribuinte individual, alíquota de 11%",
                 "109902": "109902 - CP descontada do contribuinte individual, alíquota de 20%"
             }

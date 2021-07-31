@@ -663,8 +663,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório se (dtAdm ou dtExercicio) >= [2021-05-10].",
-            "validacao": " Preenchimento obrigatório se (dtAdm ou dtExercicio) >= [2021-05-10].",
+            "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório se (dtAdm ou dtExercicio) >= [2021-07-19].",
+            "validacao": " Preenchimento obrigatório se (dtAdm ou dtExercicio) >= [2021-07-19].",
             "valores-validos": {
                 "1": "1 - Prazo indeterminado",
                 "2": "2 - Prazo determinado"
@@ -818,8 +818,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Informar se o trabalhador preenche cota de pessoas com deficiência habilitadas ou de beneficiários reabilitados.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo se tpRegTrab = [1].",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpRegTrab = [1].",
+            "descricao": "Informar se o trabalhador preenche cota de pessoas com deficiência habilitadas ou de beneficiários reabilitados.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo se tpRegTrab = [1]. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\nEsta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
+            "validacao": " Preenchimento obrigatório e exclusivo se tpRegTrab = [1]. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\\ Esta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -1849,7 +1849,7 @@
             "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Estabelecimento (CNPJ, CNO, CAEPF) onde o trabalhador (exceto doméstico e temporário) exercerá suas atividades. Caso o trabalhador exerça suas atividades em instalações de terceiros, este campo deve ser preenchido com o estabelecimento do próprio empregador ao qual o trabalhador esteja vinculado.",
+            "descricao": "Estabelecimento (CNPJ, CNO, CAEPF) onde o trabalhador (exceto doméstico) exercerá suas atividades. Caso o trabalhador exerça suas atividades em instalações de terceiros, este campo deve ser preenchido com o estabelecimento do próprio empregador ao qual o trabalhador esteja vinculado.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -2518,8 +2518,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data de início da cessão/exercício em outro órgão.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público e a natureza jurídica do declarante deve ser Administração Pública (grupo [1]);\nc) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf ou dtAltCPF) e igual ou posterior a [2021-05-10]. Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público e a natureza jurídica do declarante deve ser Administração Pública (grupo [1]);\\ c) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf ou dtAltCPF) e igual ou posterior a [2021-05-10]. Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
+            "descricao": "Data de início da cessão/exercício em outro órgão.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público e a natureza jurídica do declarante deve ser Administração Pública (grupo [1]);\nc) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf ou dtAltCPF) e igual ou posterior a [2021-07-19]. Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
+            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público e a natureza jurídica do declarante deve ser Administração Pública (grupo [1]);\\ c) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf ou dtAltCPF) e igual ou posterior a [2021-07-19]. Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
             "valores-validos": {}
         }
     ]

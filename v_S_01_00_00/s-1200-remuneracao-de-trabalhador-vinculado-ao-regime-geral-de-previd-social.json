@@ -581,8 +581,8 @@
             "ocor": "1",
             "tamanho": "1-2",
             "dec": "-",
-            "descricao": "Dia do mês efetivamente trabalhado pelo empregado com contrato de trabalho intermitente.\nValidação: Deve ser um número entre 1 e 31, de acordo com o calendário anual.",
-            "validacao": " Deve ser um número entre 1 e 31, de acordo com o calendário anual.",
+            "descricao": "Dia do mês efetivamente trabalhado pelo empregado com contrato de trabalho intermitente.\nCaso não tenha havido trabalho no mês, informar 0 (zero).\nValidação: Deve ser um número entre 0 e 31, de acordo com o calendário anual.",
+            "validacao": " Deve ser um número entre 0 e 31, de acordo com o calendário anual.",
             "valores-validos": {}
         },
         {
@@ -711,8 +711,8 @@
             "ocor": "0-1",
             "tamanho": "1-2",
             "dec": "-",
-            "descricao": "Quantidade de dias trabalhados no mês pelo trabalhador avulso no tomador de serviços identificado em ideEstabLot/codLotacao. Cada dia, total ou parcial, em que o trabalhador tenha prestado serviços ao tomador deve ser considerado. Ex.: Se, em um mesmo mês, o trabalhador prestou serviços durante uma hora em um dia e durante mais uma hora em outro dia, deve-se informar a quantidade de 2 dias.\nValidação: Informação obrigatória e exclusiva se ideEstabLot/codLotacao possuir tpLotacao em S-1020 = [08, 09] em perApur e se indApuracao = [1].\nSe informado, deve ser um número entre 1 e 31, de acordo com o calendário anual.",
-            "validacao": " Informação obrigatória e exclusiva se ideEstabLot/codLotacao possuir tpLotacao em S-1020 = [08, 09] em perApur e se indApuracao = [1].\\ Se informado, deve ser um número entre 1 e 31, de acordo com o calendário anual.",
+            "descricao": "Quantidade de dias trabalhados no mês pelo trabalhador avulso no tomador de serviços identificado em ideEstabLot/codLotacao. Cada dia, total ou parcial, em que o trabalhador tenha prestado serviços ao tomador deve ser considerado. Ex.: Se, em um mesmo mês, o trabalhador prestou serviços durante uma hora em um dia e durante mais uma hora em outro dia, deve-se informar a quantidade de 2 dias.\nCaso não tenha havido trabalho no mês, informar 0 (zero).\nValidação: Informação obrigatória e exclusiva se ideEstabLot/codLotacao possuir tpLotacao em S-1020 = [08, 09] em perApur e se indApuracao = [1].\nSe informado, deve ser um número entre 0 e 31, de acordo com o calendário anual.",
+            "validacao": " Informação obrigatória e exclusiva se ideEstabLot/codLotacao possuir tpLotacao em S-1020 = [08, 09] em perApur e se indApuracao = [1].\\ Se informado, deve ser um número entre 0 e 31, de acordo com o calendário anual.",
             "valores-validos": {}
         },
         {
@@ -785,8 +785,8 @@
             "ocor": "1",
             "tamanho": "1-30",
             "dec": "-",
-            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica:\na) cujo codIncCP em S-1010 seja igual a [25, 26, 51] se codCateg pertencer ao grupo \"Contribuinte Individual\" ou \"Bolsista\" da Tabela 01;\nb) cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que perApur >= [2021-05] (se indApuracao = [1]) ou perApur >= [2021] (se indApuracao = [2]).",
-            "validacao": " Não pode ser utilizada rubrica:\\ a) cujo codIncCP em S-1010 seja igual a [25, 26, 51] se codCateg pertencer ao grupo \"Contribuinte Individual\" ou \"Bolsista\" da Tabela 01;\\ b) cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que perApur >= [2021-05] (se indApuracao = [1]) ou perApur >= [2021] (se indApuracao = [2]).",
+            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica:\na) cujo codIncCP em S-1010 seja igual a [25, 26, 51] se codCateg pertencer ao grupo \"Contribuinte Individual\" ou \"Bolsista\" da Tabela 01;\nb) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que perApur >= [2021-07] (se indApuracao = [1]) ou perApur >= [2021] (se indApuracao = [2]).",
+            "validacao": " Não pode ser utilizada rubrica:\\ a) cujo codIncCP em S-1010 seja igual a [25, 26, 51] se codCateg pertencer ao grupo \"Contribuinte Individual\" ou \"Bolsista\" da Tabela 01;\\ b) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que perApur >= [2021-07] (se indApuracao = [1]) ou perApur >= [2021] (se indApuracao = [2]).",
             "valores-validos": {}
         },
         {
@@ -813,8 +813,8 @@
             "ocor": "0-1",
             "tamanho": "1-12",
             "dec": "2",
-            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nPreenchimento obrigatório quando se tratar de rubrica relativa a faltas ou Descanso Semanal Remunerado - DSR sobre faltas (nesse caso, informar a quantidade de dias).\nValidação: Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
-            "validacao": " Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
+            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nValidação: Deve ser maior que 0 (zero).",
+            "validacao": " Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -855,8 +855,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se perApur >= [2021-05] (se indApuracao = [1]) ou se perApur >= [2021] (se indApuracao = [2]).",
-            "validacao": " Informação obrigatória e exclusiva se perApur >= [2021-05] (se indApuracao = [1]) ou se perApur >= [2021] (se indApuracao = [2]).",
+            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se perApur >= [2021-07] (se indApuracao = [1]) ou se perApur >= [2021] (se indApuracao = [2]).",
+            "validacao": " Informação obrigatória e exclusiva se perApur >= [2021-07] (se indApuracao = [1]) ou se perApur >= [2021] (se indApuracao = [2]).",
             "valores-validos": {
                 "0": "0 - Normal (apuração sob a folha de pagamento declarada no eSocial)",
                 "1": "1 - Situação especial de apuração de IR"
@@ -947,8 +947,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo do instrumento ou situação ensejadora da remuneração relativa a períodos de apuração anteriores.\nValores válidos:\nA - Acordo Coletivo de Trabalho\nB - Legislação federal, estadual, municipal ou distrital\nC - Convenção Coletiva de Trabalho\nD - Sentença normativa - Dissídio\nE - Conversão de licença saúde em acidente de trabalho\nF - Outras verbas de natureza salarial ou não salarial devidas após o desligamento\nG - Antecipação de diferenças de acordo, convenção ou dissídio coletivo\nH - Recolhimento mensal de FGTS anterior ao início de obrigatoriedade dos eventos periódicos",
-            "validacao": "-",
+            "descricao": "Tipo do instrumento ou situação ensejadora da remuneração relativa a períodos de apuração anteriores.\nValores válidos:\nA - Acordo Coletivo de Trabalho\nB - Legislação federal, estadual, municipal ou distrital\nC - Convenção Coletiva de Trabalho\nD - Sentença normativa - Dissídio\nE - Conversão de licença saúde em acidente de trabalho\nF - Outras verbas de natureza salarial ou não salarial devidas após o desligamento\nG - Antecipação de diferenças de acordo, convenção ou dissídio coletivo\nH - Recolhimento mensal de FGTS anterior ao início de obrigatoriedade dos eventos periódicos\nValidação: Se classTrib em S-1000 = [04, 22], não pode ser informado [E, H].",
+            "validacao": " Se classTrib em S-1000 = [04, 22], não pode ser informado [E, H].",
             "valores-validos": {
                 "A": "A - Acordo Coletivo de Trabalho",
                 "B": "B - Legislação federal, estadual, municipal ou distrital",
@@ -1149,8 +1149,8 @@
             "ocor": "1",
             "tamanho": "1-30",
             "dec": "-",
-            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica:\na) cujo codIncCP em S-1010 seja igual a [25, 26, 51] se codCateg pertencer ao grupo \"Contribuinte Individual\" ou \"Bolsista\" da Tabela 01;\nb) cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que perApur >= [2021-05] (se indApuracao = [1]) ou perApur >= [2021] (se indApuracao = [2]).",
-            "validacao": " Não pode ser utilizada rubrica:\\ a) cujo codIncCP em S-1010 seja igual a [25, 26, 51] se codCateg pertencer ao grupo \"Contribuinte Individual\" ou \"Bolsista\" da Tabela 01;\\ b) cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que perApur >= [2021-05] (se indApuracao = [1]) ou perApur >= [2021] (se indApuracao = [2]).",
+            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica:\na) cujo codIncCP em S-1010 seja igual a [25, 26, 51] se codCateg pertencer ao grupo \"Contribuinte Individual\" ou \"Bolsista\" da Tabela 01;\nb) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que perApur >= [2021-07] (se indApuracao = [1]) ou perApur >= [2021] (se indApuracao = [2]).",
+            "validacao": " Não pode ser utilizada rubrica:\\ a) cujo codIncCP em S-1010 seja igual a [25, 26, 51] se codCateg pertencer ao grupo \"Contribuinte Individual\" ou \"Bolsista\" da Tabela 01;\\ b) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que perApur >= [2021-07] (se indApuracao = [1]) ou perApur >= [2021] (se indApuracao = [2]).",
             "valores-validos": {}
         },
         {
@@ -1177,8 +1177,8 @@
             "ocor": "0-1",
             "tamanho": "1-12",
             "dec": "2",
-            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nPreenchimento obrigatório quando se tratar de rubrica relativa a faltas ou Descanso Semanal Remunerado - DSR sobre faltas (nesse caso, informar a quantidade de dias).\nValidação: Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
-            "validacao": " Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
+            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nValidação: Deve ser maior que 0 (zero).",
+            "validacao": " Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1219,8 +1219,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se perApur >= [2021-05] (se indApuracao = [1]) ou se perApur >= [2021] (se indApuracao = [2]).",
-            "validacao": " Informação obrigatória e exclusiva se perApur >= [2021-05] (se indApuracao = [1]) ou se perApur >= [2021] (se indApuracao = [2]).",
+            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se perApur >= [2021-07] (se indApuracao = [1]) ou se perApur >= [2021] (se indApuracao = [2]).",
+            "validacao": " Informação obrigatória e exclusiva se perApur >= [2021-07] (se indApuracao = [1]) ou se perApur >= [2021] (se indApuracao = [2]).",
             "valores-validos": {
                 "0": "0 - Normal (apuração sob a folha de pagamento declarada no eSocial)",
                 "1": "1 - Situação especial de apuração de IR"
@@ -1314,8 +1314,8 @@
             "ocor": "0-1",
             "tamanho": "1-2",
             "dec": "-",
-            "descricao": "Informação prestada exclusivamente pelo segurado especial em caso de contratação de contribuinte individual, indicando a quantidade de dias trabalhados pelo mesmo.\nValidação: Preenchimento obrigatório e exclusivo se classTrib em S-1000 = [22], natAtividade = [2] e indApuracao = [1]. Neste caso, preencher com um número entre 1 e 31, de acordo com o calendário anual.",
-            "validacao": " Preenchimento obrigatório e exclusivo se classTrib em S-1000 = [22], natAtividade = [2] e indApuracao = [1]. Neste caso, preencher com um número entre 1 e 31, de acordo com o calendário anual.",
+            "descricao": "Informação prestada exclusivamente pelo segurado especial em caso de contratação de contribuinte individual, indicando a quantidade de dias trabalhados pelo mesmo.\nCaso não tenha havido trabalho no mês, informar 0 (zero).\nValidação: Preenchimento obrigatório e exclusivo se classTrib em S-1000 = [22], natAtividade = [2] e indApuracao = [1]. Neste caso, preencher com um número entre 0 e 31, de acordo com o calendário anual.",
+            "validacao": " Preenchimento obrigatório e exclusivo se classTrib em S-1000 = [22], natAtividade = [2] e indApuracao = [1]. Neste caso, preencher com um número entre 0 e 31, de acordo com o calendário anual.",
             "valores-validos": {}
         }
     ]

@@ -285,8 +285,8 @@
             "ocor": "1",
             "tamanho": "7",
             "dec": "-",
-            "descricao": "Preencher com o código CNAE conforme legislação vigente, referente à atividade econômica preponderante do estabelecimento.\nValidação: Deve ser um número existente na tabela CNAE.",
-            "validacao": " Deve ser um número existente na tabela CNAE.",
+            "descricao": "Preencher com o código CNAE conforme legislação vigente, referente à atividade econômica preponderante do estabelecimento.\nValidação: Deve ser um número existente na tabela CNAE, com 7 (sete) algarismos.",
+            "validacao": " Deve ser um número existente na tabela CNAE, com 7 (sete) algarismos.",
             "valores-validos": {}
         },
         {
@@ -723,8 +723,8 @@
             "ocor": "1",
             "tamanho": "7",
             "dec": "-",
-            "descricao": "Preencher com o código CNAE conforme legislação vigente, referente à atividade econômica preponderante do estabelecimento.\nValidação: Deve ser um número existente na tabela CNAE.",
-            "validacao": " Deve ser um número existente na tabela CNAE.",
+            "descricao": "Preencher com o código CNAE conforme legislação vigente, referente à atividade econômica preponderante do estabelecimento.\nValidação: Deve ser um número existente na tabela CNAE, com 7 (sete) algarismos.",
+            "validacao": " Deve ser um número existente na tabela CNAE, com 7 (sete) algarismos.",
             "valores-validos": {}
         },
         {

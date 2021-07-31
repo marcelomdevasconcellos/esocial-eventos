@@ -662,8 +662,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório quando houver trabalhador com (dtAdm ou dtExercicio ou dtInicio) no Registro de Eventos Trabalhistas - RET >= [2021-05-10].",
-            "validacao": " Preenchimento obrigatório quando houver trabalhador com (dtAdm ou dtExercicio ou dtInicio) no Registro de Eventos Trabalhistas - RET >= [2021-05-10].",
+            "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório quando houver trabalhador com (dtAdm ou dtExercicio ou dtInicio) no Registro de Eventos Trabalhistas - RET >= [2021-07-19].",
+            "validacao": " Preenchimento obrigatório quando houver trabalhador com (dtAdm ou dtExercicio ou dtInicio) no Registro de Eventos Trabalhistas - RET >= [2021-07-19].",
             "valores-validos": {
                 "1": "1 - Prazo indeterminado",
                 "2": "2 - Prazo determinado"
@@ -817,8 +817,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Informar se o trabalhador preenche cota de pessoas com deficiência habilitadas ou de beneficiários reabilitados.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200 com tpRegTrab = [1] e ativo em dtAlteracao.",
-            "validacao": " Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200 com tpRegTrab = [1] e ativo em dtAlteracao.",
+            "descricao": "Informar se o trabalhador preenche cota de pessoas com deficiência habilitadas ou de beneficiários reabilitados.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200 com tpRegTrab = [1] e ativo em dtAlteracao. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\nEsta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
+            "validacao": " Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200 com tpRegTrab = [1] e ativo em dtAlteracao. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\\ Esta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"

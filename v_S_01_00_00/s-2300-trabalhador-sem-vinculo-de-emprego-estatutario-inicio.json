@@ -662,8 +662,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório se dtInicio >= [2021-05-10].",
-            "validacao": " Preenchimento obrigatório se dtInicio >= [2021-05-10].",
+            "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório se dtInicio >= [2021-07-19].",
+            "validacao": " Preenchimento obrigatório se dtInicio >= [2021-07-19].",
             "valores-validos": {
                 "1": "1 - Prazo indeterminado",
                 "2": "2 - Prazo determinado"

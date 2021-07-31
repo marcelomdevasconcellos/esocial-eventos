@@ -285,8 +285,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Preencher com a data de desligamento do vínculo (último dia trabalhado).\nValidação: Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias. No caso de empregado reintegrado, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
-            "validacao": " Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias. No caso de empregado reintegrado, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
+            "descricao": "Preencher com a data de desligamento do vínculo (último dia trabalhado).\nValidação: Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias. No caso de empregado reintegrado e quando não se tratar de retificação do desligamento anterior à reintegração, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
+            "validacao": " Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias. No caso de empregado reintegrado e quando não se tratar de retificação do desligamento anterior à reintegração, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
             "valores-validos": {}
         },
         {
@@ -419,8 +419,8 @@
             "ocor": "1",
             "tamanho": "1-2",
             "dec": "-",
-            "descricao": "Dia do mês efetivamente trabalhado pelo empregado com contrato de trabalho intermitente.\nValidação: Deve ser um número entre 1 e 31, de acordo com o calendário anual.",
-            "validacao": " Deve ser um número entre 1 e 31, de acordo com o calendário anual.",
+            "descricao": "Dia do mês efetivamente trabalhado pelo empregado com contrato de trabalho intermitente.\nCaso não tenha havido trabalho no mês, informar 0 (zero).\nValidação: Deve ser um número entre 0 e 31, de acordo com o calendário anual.",
+            "validacao": " Deve ser um número entre 0 e 31, de acordo com o calendário anual.",
             "valores-validos": {}
         },
         {
@@ -706,8 +706,8 @@
             "ocor": "1",
             "tamanho": "1-30",
             "dec": "-",
-            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que mês/ano de dtDeslig >= [2021-05].",
-            "validacao": " Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que mês/ano de dtDeslig >= [2021-05].",
+            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
+            "validacao": " Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
             "valores-validos": {}
         },
         {
@@ -734,8 +734,8 @@
             "ocor": "0-1",
             "tamanho": "1-12",
             "dec": "2",
-            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nPreenchimento obrigatório quando se tratar de rubrica relativa a faltas ou Descanso Semanal Remunerado - DSR sobre faltas (nesse caso, informar a quantidade de dias).\nValidação: Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
-            "validacao": " Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
+            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nValidação: Deve ser maior que 0 (zero).",
+            "validacao": " Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -776,8 +776,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-05].",
-            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-05].",
+            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
+            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
             "valores-validos": {
                 "0": "0 - Normal (apuração sob a folha de pagamento declarada no eSocial)",
                 "1": "1 - Situação especial de apuração de IR"
@@ -900,8 +900,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo do instrumento ou situação ensejadora da remuneração relativa a períodos de apuração anteriores.\nValores válidos:\nA - Acordo Coletivo de Trabalho\nB - Legislação federal, estadual, municipal ou distrital\nC - Convenção Coletiva de Trabalho\nD - Sentença normativa - Dissídio\nE - Conversão de licença saúde em acidente de trabalho\nG - Antecipação de diferenças de acordo, convenção ou dissídio coletivo\nH - Recolhimento mensal de FGTS anterior ao início de obrigatoriedade dos eventos periódicos",
-            "validacao": "-",
+            "descricao": "Tipo do instrumento ou situação ensejadora da remuneração relativa a períodos de apuração anteriores.\nValores válidos:\nA - Acordo Coletivo de Trabalho\nB - Legislação federal, estadual, municipal ou distrital\nC - Convenção Coletiva de Trabalho\nD - Sentença normativa - Dissídio\nE - Conversão de licença saúde em acidente de trabalho\nG - Antecipação de diferenças de acordo, convenção ou dissídio coletivo\nH - Recolhimento mensal de FGTS anterior ao início de obrigatoriedade dos eventos periódicos\nValidação: Se classTrib em S-1000 = [04, 22], não pode ser informado [E, H].",
+            "validacao": " Se classTrib em S-1000 = [04, 22], não pode ser informado [E, H].",
             "valores-validos": {
                 "A": "A - Acordo Coletivo de Trabalho",
                 "B": "B - Legislação federal, estadual, municipal ou distrital",
@@ -1038,8 +1038,8 @@
             "ocor": "1",
             "tamanho": "1-30",
             "dec": "-",
-            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que mês/ano de dtDeslig >= [2021-05].",
-            "validacao": " Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que mês/ano de dtDeslig >= [2021-05].",
+            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
+            "validacao": " Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
             "valores-validos": {}
         },
         {
@@ -1066,8 +1066,8 @@
             "ocor": "0-1",
             "tamanho": "1-12",
             "dec": "2",
-            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nPreenchimento obrigatório quando se tratar de rubrica relativa a faltas ou Descanso Semanal Remunerado - DSR sobre faltas (nesse caso, informar a quantidade de dias).\nValidação: Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
-            "validacao": " Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
+            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nValidação: Deve ser maior que 0 (zero).",
+            "validacao": " Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1108,8 +1108,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-05].",
-            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-05].",
+            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
+            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
             "valores-validos": {
                 "0": "0 - Normal (apuração sob a folha de pagamento declarada no eSocial)",
                 "1": "1 - Situação especial de apuração de IR"

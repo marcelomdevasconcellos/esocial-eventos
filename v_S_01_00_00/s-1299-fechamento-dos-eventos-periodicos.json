@@ -297,8 +297,24 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indicativo de exclusão de apuração das aquisições de produção rural (eventos S-1250) do período de apuração.\nValores válidos:\nS - Sim\nValidação: Não informar se perApur >= [2021-05] ou se indApuracao = [2]. Preenchimento obrigatório caso o campo tenha sido informado em fechamento anterior do mesmo período de apuração.",
-            "validacao": " Não informar se perApur >= [2021-05] ou se indApuracao = [2]. Preenchimento obrigatório caso o campo tenha sido informado em fechamento anterior do mesmo período de apuração.",
+            "descricao": "Indicativo de exclusão de apuração das aquisições de produção rural (eventos S-1250) do período de apuração.\nValores válidos:\nS - Sim\nValidação: Não informar se perApur >= [2021-07] ou se indApuracao = [2]. Preenchimento obrigatório caso o campo tenha sido informado em fechamento anterior do mesmo período de apuração.",
+            "validacao": " Não informar se perApur >= [2021-07] ou se indApuracao = [2]. Preenchimento obrigatório caso o campo tenha sido informado em fechamento anterior do mesmo período de apuração.",
+            "valores-validos": {
+                "S": "S - Sim"
+            }
+        },
+        {
+            "index": 20,
+            "esocial_id": 20,
+            "grupo-campo": "transDCTFWeb",
+            "grupo-pai": "infoFech",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "0-1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Solicitação de transmissão imediata da DCTFWeb.\nValores válidos:\nS - Sim\nValidação: Preenchimento obrigatório se classTrib em S-1000 = [04] ou indGuia estiver informado.",
+            "validacao": " Preenchimento obrigatório se classTrib em S-1000 = [04] ou indGuia estiver informado.",
             "valores-validos": {
                 "S": "S - Sim"
             }

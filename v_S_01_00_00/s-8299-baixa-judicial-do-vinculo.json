@@ -265,8 +265,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Preencher com a data de desligamento do vínculo (último dia trabalhado).\nValidação: Deve ser uma data igual ou posterior a 20/09/2019 e igual ou anterior à data atual.",
-            "validacao": " Deve ser uma data igual ou posterior a 20/09/2019 e igual ou anterior à data atual.",
+            "descricao": "Preencher com a data de desligamento do vínculo (último dia trabalhado).\nValidação: Deve ser uma data igual ou posterior a 24/09/2019 e igual ou anterior à data atual. No caso de empregado reintegrado e quando não se tratar de retificação do desligamento anterior à reintegração, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
+            "validacao": " Deve ser uma data igual ou posterior a 24/09/2019 e igual ou anterior à data atual. No caso de empregado reintegrado e quando não se tratar de retificação do desligamento anterior à reintegração, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
             "valores-validos": {}
         },
         {

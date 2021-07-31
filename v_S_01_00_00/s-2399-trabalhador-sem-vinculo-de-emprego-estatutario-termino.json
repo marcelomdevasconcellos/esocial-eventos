@@ -526,8 +526,8 @@
             "ocor": "1",
             "tamanho": "1-30",
             "dec": "-",
-            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica:\na) cujo codIncCP em S-1010 seja igual a [25, 26, 51];\nb) cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que mês/ano de dtTerm >= [2021-05].",
-            "validacao": " Não pode ser utilizada rubrica:\\ a) cujo codIncCP em S-1010 seja igual a [25, 26, 51];\\ b) cuja natRubr em S-1010 seja igual a [1801, 9209, 9210, 9220], desde que mês/ano de dtTerm >= [2021-05].",
+            "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica:\na) cujo codIncCP em S-1010 seja igual a [25, 26, 51];\nb) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtTerm >= [2021-07].",
+            "validacao": " Não pode ser utilizada rubrica:\\ a) cujo codIncCP em S-1010 seja igual a [25, 26, 51];\\ b) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtTerm >= [2021-07].",
             "valores-validos": {}
         },
         {
@@ -554,8 +554,8 @@
             "ocor": "0-1",
             "tamanho": "1-12",
             "dec": "2",
-            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nPreenchimento obrigatório quando se tratar de rubrica relativa a faltas ou Descanso Semanal Remunerado - DSR sobre faltas (nesse caso, informar a quantidade de dias).\nValidação: Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
-            "validacao": " Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
+            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nValidação: Deve ser maior que 0 (zero).",
+            "validacao": " Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -596,8 +596,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtTerm >= [2021-05].",
-            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtTerm >= [2021-05].",
+            "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtTerm >= [2021-07].",
+            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtTerm >= [2021-07].",
             "valores-validos": {
                 "0": "0 - Normal (apuração sob a folha de pagamento declarada no eSocial)",
                 "1": "1 - Situação especial de apuração de IR"

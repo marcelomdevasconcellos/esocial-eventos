@@ -303,8 +303,8 @@
             "ocor": "1",
             "tamanho": "1-14",
             "dec": "2",
-            "descricao": "Preencher com o valor total da comercialização.\nValidação: Deve ser maior que 0 (zero).\nSe indComerc for igual a [3, 7], deve corresponder à soma do campo vrComerc dos registros vinculados.",
-            "validacao": " Deve ser maior que 0 (zero).\\ Se indComerc for igual a [3, 7], deve corresponder à soma do campo vrComerc dos registros vinculados.",
+            "descricao": "Preencher com o valor total da comercialização.\nValidação: Deve ser maior que 0 (zero).",
+            "validacao": " Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {

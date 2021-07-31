@@ -537,8 +537,8 @@
             "ocor": "0-1",
             "tamanho": "1-12",
             "dec": "2",
-            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.).\nPreenchimento obrigatório quando se tratar de rubrica relativa a faltas ou Descanso Semanal Remunerado - DSR sobre faltas (nesse caso, informar a quantidade de dias).\nValidação: Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
-            "validacao": " Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
+            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.).\nValidação: Deve ser maior que 0 (zero).",
+            "validacao": " Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -769,8 +769,8 @@
             "ocor": "0-1",
             "tamanho": "1-12",
             "dec": "2",
-            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.).\nPreenchimento obrigatório quando se tratar de rubrica relativa a faltas ou Descanso Semanal Remunerado - DSR sobre faltas (nesse caso, informar a quantidade de dias).\nValidação: Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
-            "validacao": " Deve ser maior que 0 (zero). Informação obrigatória se codRubr tiver natRubr em S-1010 igual a [9207, 9211].",
+            "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.).\nValidação: Deve ser maior que 0 (zero).",
+            "validacao": " Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {

@@ -290,8 +290,8 @@
             "ocor": "0-1",
             "tamanho": "5-13",
             "dec": "-",
-            "descricao": "Informar a lei de anistia, descrevendo seu número e ano de publicação.\nValidação: Preenchimento obrigatório se tpReint = [2].",
-            "validacao": " Preenchimento obrigatório se tpReint = [2].",
+            "descricao": "Informar a lei de anistia, descrevendo seu número e ano de publicação.\nValidação: Preenchimento obrigatório e exclusivo se tpReint = [2].",
+            "validacao": " Preenchimento obrigatório e exclusivo se tpReint = [2].",
             "valores-validos": {}
         },
         {
