@@ -1258,6 +1258,65 @@
                 "3": "3 - Ensejador de aposentadoria especial - FAE20_09% (20 anos de contribuição e alíquota de 9%)",
                 "4": "4 - Ensejador de aposentadoria especial - FAE25_06% (25 anos de contribuição e alíquota de 6%)"
             }
+        },
+        {
+            "index": 88,
+            "esocial_id": "78",
+            "grupo-campo": "infoComplCont",
+            "grupo-pai": "dmDev",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "0-1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Grupo preenchido exclusivamente quando o evento de remuneração se referir a trabalhador cuja categoria não estiver obrigada ao evento de início de TSVE e se não houver evento S-2300 correspondente.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 89,
+            "esocial_id": "79",
+            "grupo-campo": "codCBO",
+            "grupo-pai": "infoComplCont",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "6",
+            "dec": "-",
+            "descricao": "Classificação Brasileira de Ocupações - CBO.\nValidação: Deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": " Deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "valores-validos": {}
+        },
+        {
+            "index": 90,
+            "esocial_id": "80",
+            "grupo-campo": "natAtividade",
+            "grupo-pai": "infoComplCont",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "0-1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Natureza da atividade.\nValores válidos:\n1 - Trabalho urbano\n2 - Trabalho rural\nValidação: O campo deve ser preenchido apenas se atendida uma das condições a seguir apresentadas:\na) classTrib em S-1000 = [06, 07];\nb) classTrib em S-1000 = [21, 22] e existir remuneração para o trabalhador vinculada a um tipo de CAEPF informado em S-1005 como produtor rural ou segurado especial.",
+            "validacao": " O campo deve ser preenchido apenas se atendida uma das condições a seguir apresentadas:\\ a) classTrib em S-1000 = [06, 07];\\ b) classTrib em S-1000 = [21, 22] e existir remuneração para o trabalhador vinculada a um tipo de CAEPF informado em S-1005 como produtor rural ou segurado especial.",
+            "valores-validos": {
+                "1": "1 - Trabalho urbano",
+                "2": "2 - Trabalho rural"
+            }
+        },
+        {
+            "index": 91,
+            "esocial_id": "81",
+            "grupo-campo": "qtdDiasTrab",
+            "grupo-pai": "infoComplCont",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "0-1",
+            "tamanho": "1-2",
+            "dec": "-",
+            "descricao": "Informação prestada exclusivamente pelo segurado especial em caso de contratação de contribuinte individual, indicando a quantidade de dias trabalhados pelo mesmo.\nValidação: Preenchimento obrigatório e exclusivo se classTrib em S-1000 = [22], natAtividade = [2] e indApuracao = [1]. Neste caso, preencher com um número entre 1 e 31, de acordo com o calendário anual.",
+            "validacao": " Preenchimento obrigatório e exclusivo se classTrib em S-1000 = [22], natAtividade = [2] e indApuracao = [1]. Neste caso, preencher com um número entre 1 e 31, de acordo com o calendário anual.",
+            "valores-validos": {}
         }
     ]
 }

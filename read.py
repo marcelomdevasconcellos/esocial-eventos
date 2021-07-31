@@ -82,7 +82,7 @@ def get_child(df, pai, campo, i_max):
     return df.loc[df.index.isin(index_list)]
 
 
-def read_esocial_tabelas(path, url):
+def read_esocial_eventos(path, url):
 
     r = req.get(url)
     r.encoding = r.apparent_encoding
@@ -102,6 +102,7 @@ def read_esocial_tabelas(path, url):
     
     for n in range(len(table_names)):
         table_name = table_names[n]
+        print(table_name)
         header = 0
         table = pd.read_html(str(tables[n]), header=header)[0]
         table.columns = [slugify(c) or 'esocial_id' for c in table.columns]
@@ -113,12 +114,11 @@ def read_esocial_tabelas(path, url):
         table['descricao'] = table.apply(lambda x: get_descricao(x['descricao']), axis=1)
 
         indexes = table.index[table['grupo-campo'].isnull()].tolist()
+
         if indexes:
             indexes_mod = [0] + indexes + [max(indexes)+1]
             dfs_list = [table.iloc[indexes_mod[n]:indexes_mod[n+1]] for n in range(len(indexes_mod)-1)]
-
             new_df = dfs_list[0]
-
             del dfs_list[0]
 
             for n in range(len(dfs_list)):
@@ -126,10 +126,11 @@ def read_esocial_tabelas(path, url):
                 filter = tratando_descricao(df_['descricao'].tolist()[0])
                 pai = filter[0]
                 campo = filter[1]
+                
                 i_max = indexes[n]
                 new_df = new_df.append(get_child(table, pai, campo, i_max))
                 new_df = new_df.append(df_)
-        
+            new_df = new_df.append(table.iloc[i_max:])
         else:
             new_df = table
         
@@ -151,6 +152,7 @@ def read_esocial_tabelas(path, url):
         filename = os.path.join(path, '{}.json'.format(slugify(table_name)))
         save_file(filename, json_object)
         complete_html_content.append(json_object)
+
     save_file('{}.json'.format(path), '[{}]'.format(', '.join(complete_html_content)))
 
 
@@ -160,6 +162,6 @@ if __name__ == "__main__":
          'https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-nt-01-2021-html/index.html/'],
     ]
     for evt in eventos:
-        read_esocial_tabelas(evt[0], evt[1])
+        read_esocial_eventos(evt[0], evt[1])
 
 

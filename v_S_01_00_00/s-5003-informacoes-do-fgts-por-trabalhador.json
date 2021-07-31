@@ -967,6 +967,34 @@
             "descricao": "Informar o número do processo.",
             "validacao": "-",
             "valores-validos": {}
+        },
+        {
+            "index": 66,
+            "esocial_id": "59",
+            "grupo-campo": "procCS",
+            "grupo-pai": "infoTrabFGTS",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "0-1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Informação sobre processo judicial que suspende a exigibilidade da Contribuição Social Rescisória.\nEvento de origem: S-2299.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 67,
+            "esocial_id": "60",
+            "grupo-campo": "nrProcJud",
+            "grupo-pai": "procCS",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "20",
+            "dec": "-",
+            "descricao": "Informar o número de processo judicial cadastrado.",
+            "validacao": "-",
+            "valores-validos": {}
         }
     ]
 }
