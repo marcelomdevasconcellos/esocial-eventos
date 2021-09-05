@@ -476,8 +476,8 @@
             "ocor": "0-1",
             "tamanho": "1-5",
             "dec": "4",
-            "descricao": "Fator Acidentário de Prevenção - FAP.\nValidação: Informação obrigatória e exclusiva se ideEmpregador/tpInsc = [1]. Deve corresponder ao FAP declarado no evento S-1005. Caso não haja informação, retornar o FAP estabelecido para a empresa pelo órgão governamental competente.",
-            "validacao": " Informação obrigatória e exclusiva se ideEmpregador/tpInsc = [1]. Deve corresponder ao FAP declarado no evento S-1005. Caso não haja informação, retornar o FAP estabelecido para a empresa pelo órgão governamental competente.",
+            "descricao": "Fator Acidentário de Prevenção - FAP.\nValidação: Informação obrigatória e exclusiva se ideEmpregador/tpInsc = [1]. Deve corresponder ao FAP estabelecido para a empresa pelo órgão governamental competente, exceto se:\na) ideEstab/tpInsc = [4]; ou\nb) ideEstab/tpInsc = [1] e se houver informação de procAdmJudFap em S-1005; ou\nc) ideEstab/tpInsc = [1] e o estabalecimento não for encontrado na tabela FAP referente ao ano de perApur.\nCaso haja alguma exceção acima, retornar o FAP declarado no evento S-1005.",
+            "validacao": " Informação obrigatória e exclusiva se ideEmpregador/tpInsc = [1]. Deve corresponder ao FAP estabelecido para a empresa pelo órgão governamental competente, exceto se:\\ a) ideEstab/tpInsc = [4]; ou\\ b) ideEstab/tpInsc = [1] e se houver informação de procAdmJudFap em S-1005; ou\\ c) ideEstab/tpInsc = [1] e o estabalecimento não for encontrado na tabela FAP referente ao ano de perApur.\\ Caso haja alguma exceção acima, retornar o FAP declarado no evento S-1005.",
             "valores-validos": {}
         },
         {
@@ -497,6 +497,62 @@
         {
             "index": 34,
             "esocial_id": 34,
+            "grupo-campo": "infoEstabRef",
+            "grupo-pai": "infoEstab",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "0-1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Informações de RAT e FAP de referência, nos casos de processo administrativo ou judicial que altere a(s) alíquota(s).",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 35,
+            "esocial_id": 35,
+            "grupo-campo": "aliqRat",
+            "grupo-pai": "infoEstabRef",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Retornar a alíquota RAT definida na legislação vigente.\nValores válidos: 1, 2, 3\nValidação: Deve corresponder à alíquota definida na legislação vigente para o código CNAE informado em S-1005.",
+            "validacao": " Deve corresponder à alíquota definida na legislação vigente para o código CNAE informado em S-1005.",
+            "valores-validos": {}
+        },
+        {
+            "index": 36,
+            "esocial_id": 36,
+            "grupo-campo": "fap",
+            "grupo-pai": "infoEstabRef",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "0-1",
+            "tamanho": "1-5",
+            "dec": "4",
+            "descricao": "Fator Acidentário de Prevenção - FAP estabelecido pelo órgão governamental competente.\nValidação: Informação obrigatória e exclusiva se ideEmpregador/tpInsc = [1]. Deve corresponder ao FAP estabelecido para a empresa pelo órgão governamental competente.",
+            "validacao": " Informação obrigatória e exclusiva se ideEmpregador/tpInsc = [1]. Deve corresponder ao FAP estabelecido para a empresa pelo órgão governamental competente.",
+            "valores-validos": {}
+        },
+        {
+            "index": 37,
+            "esocial_id": 37,
+            "grupo-campo": "aliqRatAjust",
+            "grupo-pai": "infoEstabRef",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "0-1",
+            "tamanho": "1-5",
+            "dec": "4",
+            "descricao": "Alíquota de referência - RAT após ajuste pelo FAP.\nValidação: Informação obrigatória e exclusiva se ideEmpregador/tpInsc = [1]. Deve corresponder ao resultado da multiplicação dos campos infoEstabRef/aliqRat e infoEstabRef/fap.",
+            "validacao": " Informação obrigatória e exclusiva se ideEmpregador/tpInsc = [1]. Deve corresponder ao resultado da multiplicação dos campos infoEstabRef/aliqRat e infoEstabRef/fap.",
+            "valores-validos": {}
+        },
+        {
+            "index": 38,
+            "esocial_id": 38,
             "grupo-campo": "infoComplObra",
             "grupo-pai": "infoEstab",
             "elem": "G",
@@ -509,8 +565,8 @@
             "valores-validos": {}
         },
         {
-            "index": 35,
-            "esocial_id": 35,
+            "index": 39,
+            "esocial_id": 39,
             "grupo-campo": "indSubstPatrObra",
             "grupo-pai": "infoComplObra",
             "elem": "E",
@@ -527,8 +583,8 @@
             }
         },
         {
-            "index": 36,
-            "esocial_id": 36,
+            "index": 40,
+            "esocial_id": 40,
             "grupo-campo": "ideLotacao",
             "grupo-pai": "ideEstab",
             "elem": "G",
@@ -541,8 +597,8 @@
             "valores-validos": {}
         },
         {
-            "index": 37,
-            "esocial_id": 37,
+            "index": 41,
+            "esocial_id": 41,
             "grupo-campo": "codLotacao",
             "grupo-pai": "ideLotacao",
             "elem": "E",
@@ -555,8 +611,8 @@
             "valores-validos": {}
         },
         {
-            "index": 38,
-            "esocial_id": 38,
+            "index": 42,
+            "esocial_id": 42,
             "grupo-campo": "fpas",
             "grupo-pai": "ideLotacao",
             "elem": "E",
@@ -569,8 +625,8 @@
             "valores-validos": {}
         },
         {
-            "index": 39,
-            "esocial_id": 39,
+            "index": 43,
+            "esocial_id": 43,
             "grupo-campo": "codTercs",
             "grupo-pai": "ideLotacao",
             "elem": "E",
@@ -583,8 +639,8 @@
             "valores-validos": {}
         },
         {
-            "index": 40,
-            "esocial_id": 40,
+            "index": 44,
+            "esocial_id": 44,
             "grupo-campo": "codTercsSusp",
             "grupo-pai": "ideLotacao",
             "elem": "E",
@@ -597,8 +653,8 @@
             "valores-validos": {}
         },
         {
-            "index": 41,
-            "esocial_id": 41,
+            "index": 45,
+            "esocial_id": 45,
             "grupo-campo": "infoTercSusp",
             "grupo-pai": "ideLotacao",
             "elem": "G",
@@ -611,8 +667,8 @@
             "valores-validos": {}
         },
         {
-            "index": 42,
-            "esocial_id": 42,
+            "index": 46,
+            "esocial_id": 46,
             "grupo-campo": "codTerc",
             "grupo-pai": "infoTercSusp",
             "elem": "E",
@@ -625,8 +681,8 @@
             "valores-validos": {}
         },
         {
-            "index": 43,
-            "esocial_id": 43,
+            "index": 47,
+            "esocial_id": 47,
             "grupo-campo": "infoEmprParcial",
             "grupo-pai": "ideLotacao",
             "elem": "G",
@@ -639,8 +695,8 @@
             "valores-validos": {}
         },
         {
-            "index": 44,
-            "esocial_id": 44,
+            "index": 48,
+            "esocial_id": 48,
             "grupo-campo": "tpInscContrat",
             "grupo-pai": "infoEmprParcial",
             "elem": "E",
@@ -656,8 +712,8 @@
             }
         },
         {
-            "index": 45,
-            "esocial_id": 45,
+            "index": 49,
+            "esocial_id": 49,
             "grupo-campo": "nrInscContrat",
             "grupo-pai": "infoEmprParcial",
             "elem": "E",
@@ -670,8 +726,8 @@
             "valores-validos": {}
         },
         {
-            "index": 46,
-            "esocial_id": 46,
+            "index": 50,
+            "esocial_id": 50,
             "grupo-campo": "tpInscProp",
             "grupo-pai": "infoEmprParcial",
             "elem": "E",
@@ -687,8 +743,8 @@
             }
         },
         {
-            "index": 47,
-            "esocial_id": 47,
+            "index": 51,
+            "esocial_id": 51,
             "grupo-campo": "nrInscProp",
             "grupo-pai": "infoEmprParcial",
             "elem": "E",
@@ -701,8 +757,8 @@
             "valores-validos": {}
         },
         {
-            "index": 48,
-            "esocial_id": 48,
+            "index": 52,
+            "esocial_id": 52,
             "grupo-campo": "cnoObra",
             "grupo-pai": "infoEmprParcial",
             "elem": "E",
@@ -715,8 +771,8 @@
             "valores-validos": {}
         },
         {
-            "index": 49,
-            "esocial_id": 49,
+            "index": 53,
+            "esocial_id": 53,
             "grupo-campo": "dadosOpPort",
             "grupo-pai": "ideLotacao",
             "elem": "G",
@@ -729,8 +785,8 @@
             "valores-validos": {}
         },
         {
-            "index": 50,
-            "esocial_id": 50,
+            "index": 54,
+            "esocial_id": 54,
             "grupo-campo": "cnpjOpPortuario",
             "grupo-pai": "dadosOpPort",
             "elem": "E",
@@ -743,8 +799,8 @@
             "valores-validos": {}
         },
         {
-            "index": 51,
-            "esocial_id": 51,
+            "index": 55,
+            "esocial_id": 55,
             "grupo-campo": "aliqRat",
             "grupo-pai": "dadosOpPort",
             "elem": "E",
@@ -759,8 +815,8 @@
             }
         },
         {
-            "index": 52,
-            "esocial_id": 52,
+            "index": 56,
+            "esocial_id": 56,
             "grupo-campo": "fap",
             "grupo-pai": "dadosOpPort",
             "elem": "E",
@@ -773,8 +829,8 @@
             "valores-validos": {}
         },
         {
-            "index": 53,
-            "esocial_id": 53,
+            "index": 57,
+            "esocial_id": 57,
             "grupo-campo": "aliqRatAjust",
             "grupo-pai": "dadosOpPort",
             "elem": "E",
@@ -787,8 +843,8 @@
             "valores-validos": {}
         },
         {
-            "index": 54,
-            "esocial_id": 54,
+            "index": 58,
+            "esocial_id": 58,
             "grupo-campo": "basesRemun",
             "grupo-pai": "ideLotacao",
             "elem": "G",
@@ -801,8 +857,8 @@
             "valores-validos": {}
         },
         {
-            "index": 55,
-            "esocial_id": 55,
+            "index": 59,
+            "esocial_id": 59,
             "grupo-campo": "indIncid",
             "grupo-pai": "basesRemun",
             "elem": "E",
@@ -819,8 +875,8 @@
             }
         },
         {
-            "index": 56,
-            "esocial_id": 56,
+            "index": 60,
+            "esocial_id": 60,
             "grupo-campo": "codCateg",
             "grupo-pai": "basesRemun",
             "elem": "E",
@@ -833,8 +889,8 @@
             "valores-validos": {}
         },
         {
-            "index": 57,
-            "esocial_id": 57,
+            "index": 61,
+            "esocial_id": 61,
             "grupo-campo": "basesCp",
             "grupo-pai": "basesRemun",
             "elem": "G",
@@ -847,8 +903,8 @@
             "valores-validos": {}
         },
         {
-            "index": 58,
-            "esocial_id": 58,
+            "index": 62,
+            "esocial_id": 62,
             "grupo-campo": "vrBcCp00",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -861,8 +917,8 @@
             "valores-validos": {}
         },
         {
-            "index": 59,
-            "esocial_id": 59,
+            "index": 63,
+            "esocial_id": 63,
             "grupo-campo": "vrBcCp15",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -875,8 +931,8 @@
             "valores-validos": {}
         },
         {
-            "index": 60,
-            "esocial_id": 60,
+            "index": 64,
+            "esocial_id": 64,
             "grupo-campo": "vrBcCp20",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -889,8 +945,8 @@
             "valores-validos": {}
         },
         {
-            "index": 61,
-            "esocial_id": 61,
+            "index": 65,
+            "esocial_id": 65,
             "grupo-campo": "vrBcCp25",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -903,8 +959,8 @@
             "valores-validos": {}
         },
         {
-            "index": 62,
-            "esocial_id": 62,
+            "index": 66,
+            "esocial_id": 66,
             "grupo-campo": "vrSuspBcCp00",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -917,8 +973,8 @@
             "valores-validos": {}
         },
         {
-            "index": 63,
-            "esocial_id": 63,
+            "index": 67,
+            "esocial_id": 67,
             "grupo-campo": "vrSuspBcCp15",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -931,8 +987,8 @@
             "valores-validos": {}
         },
         {
-            "index": 64,
-            "esocial_id": 64,
+            "index": 68,
+            "esocial_id": 68,
             "grupo-campo": "vrSuspBcCp20",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -945,8 +1001,8 @@
             "valores-validos": {}
         },
         {
-            "index": 65,
-            "esocial_id": 65,
+            "index": 69,
+            "esocial_id": 69,
             "grupo-campo": "vrSuspBcCp25",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -959,8 +1015,8 @@
             "valores-validos": {}
         },
         {
-            "index": 66,
-            "esocial_id": 66,
+            "index": 70,
+            "esocial_id": 70,
             "grupo-campo": "vrBcCp00VA",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -973,8 +1029,8 @@
             "valores-validos": {}
         },
         {
-            "index": 67,
-            "esocial_id": 67,
+            "index": 71,
+            "esocial_id": 71,
             "grupo-campo": "vrBcCp15VA",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -987,8 +1043,8 @@
             "valores-validos": {}
         },
         {
-            "index": 68,
-            "esocial_id": 68,
+            "index": 72,
+            "esocial_id": 72,
             "grupo-campo": "vrBcCp20VA",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1001,8 +1057,8 @@
             "valores-validos": {}
         },
         {
-            "index": 69,
-            "esocial_id": 69,
+            "index": 73,
+            "esocial_id": 73,
             "grupo-campo": "vrBcCp25VA",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1015,8 +1071,8 @@
             "valores-validos": {}
         },
         {
-            "index": 70,
-            "esocial_id": 70,
+            "index": 74,
+            "esocial_id": 74,
             "grupo-campo": "vrSuspBcCp00VA",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1029,8 +1085,8 @@
             "valores-validos": {}
         },
         {
-            "index": 71,
-            "esocial_id": 71,
+            "index": 75,
+            "esocial_id": 75,
             "grupo-campo": "vrSuspBcCp15VA",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1043,8 +1099,8 @@
             "valores-validos": {}
         },
         {
-            "index": 72,
-            "esocial_id": 72,
+            "index": 76,
+            "esocial_id": 76,
             "grupo-campo": "vrSuspBcCp20VA",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1057,8 +1113,8 @@
             "valores-validos": {}
         },
         {
-            "index": 73,
-            "esocial_id": 73,
+            "index": 77,
+            "esocial_id": 77,
             "grupo-campo": "vrSuspBcCp25VA",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1071,8 +1127,8 @@
             "valores-validos": {}
         },
         {
-            "index": 74,
-            "esocial_id": 74,
+            "index": 78,
+            "esocial_id": 78,
             "grupo-campo": "vrDescSest",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1085,8 +1141,8 @@
             "valores-validos": {}
         },
         {
-            "index": 75,
-            "esocial_id": 75,
+            "index": 79,
+            "esocial_id": 79,
             "grupo-campo": "vrCalcSest",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1099,8 +1155,8 @@
             "valores-validos": {}
         },
         {
-            "index": 76,
-            "esocial_id": 76,
+            "index": 80,
+            "esocial_id": 80,
             "grupo-campo": "vrDescSenat",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1113,8 +1169,8 @@
             "valores-validos": {}
         },
         {
-            "index": 77,
-            "esocial_id": 77,
+            "index": 81,
+            "esocial_id": 81,
             "grupo-campo": "vrCalcSenat",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1127,8 +1183,8 @@
             "valores-validos": {}
         },
         {
-            "index": 78,
-            "esocial_id": 78,
+            "index": 82,
+            "esocial_id": 82,
             "grupo-campo": "vrSalFam",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1141,8 +1197,8 @@
             "valores-validos": {}
         },
         {
-            "index": 79,
-            "esocial_id": 79,
+            "index": 83,
+            "esocial_id": 83,
             "grupo-campo": "vrSalMat",
             "grupo-pai": "basesCp",
             "elem": "E",
@@ -1155,8 +1211,8 @@
             "valores-validos": {}
         },
         {
-            "index": 80,
-            "esocial_id": 80,
+            "index": 84,
+            "esocial_id": 84,
             "grupo-campo": "basesAvNPort",
             "grupo-pai": "ideLotacao",
             "elem": "G",
@@ -1169,8 +1225,8 @@
             "valores-validos": {}
         },
         {
-            "index": 81,
-            "esocial_id": 81,
+            "index": 85,
+            "esocial_id": 85,
             "grupo-campo": "vrBcCp00",
             "grupo-pai": "basesAvNPort",
             "elem": "E",
@@ -1183,8 +1239,8 @@
             "valores-validos": {}
         },
         {
-            "index": 82,
-            "esocial_id": 82,
+            "index": 86,
+            "esocial_id": 86,
             "grupo-campo": "vrBcCp15",
             "grupo-pai": "basesAvNPort",
             "elem": "E",
@@ -1197,8 +1253,8 @@
             "valores-validos": {}
         },
         {
-            "index": 83,
-            "esocial_id": 83,
+            "index": 87,
+            "esocial_id": 87,
             "grupo-campo": "vrBcCp20",
             "grupo-pai": "basesAvNPort",
             "elem": "E",
@@ -1211,8 +1267,8 @@
             "valores-validos": {}
         },
         {
-            "index": 84,
-            "esocial_id": 84,
+            "index": 88,
+            "esocial_id": 88,
             "grupo-campo": "vrBcCp25",
             "grupo-pai": "basesAvNPort",
             "elem": "E",
@@ -1225,8 +1281,8 @@
             "valores-validos": {}
         },
         {
-            "index": 85,
-            "esocial_id": 85,
+            "index": 89,
+            "esocial_id": 89,
             "grupo-campo": "vrBcCp13",
             "grupo-pai": "basesAvNPort",
             "elem": "E",
@@ -1239,8 +1295,8 @@
             "valores-validos": {}
         },
         {
-            "index": 86,
-            "esocial_id": 86,
+            "index": 90,
+            "esocial_id": 90,
             "grupo-campo": "vrDescCP",
             "grupo-pai": "basesAvNPort",
             "elem": "E",
@@ -1253,8 +1309,8 @@
             "valores-validos": {}
         },
         {
-            "index": 87,
-            "esocial_id": 87,
+            "index": 91,
+            "esocial_id": 91,
             "grupo-campo": "infoSubstPatrOpPort",
             "grupo-pai": "ideLotacao",
             "elem": "G",
@@ -1267,8 +1323,8 @@
             "valores-validos": {}
         },
         {
-            "index": 88,
-            "esocial_id": 88,
+            "index": 92,
+            "esocial_id": 92,
             "grupo-campo": "cnpjOpPortuario",
             "grupo-pai": "infoSubstPatrOpPort",
             "elem": "E",
@@ -1281,8 +1337,8 @@
             "valores-validos": {}
         },
         {
-            "index": 89,
-            "esocial_id": 89,
+            "index": 93,
+            "esocial_id": 93,
             "grupo-campo": "basesAquis",
             "grupo-pai": "ideEstab",
             "elem": "G",
@@ -1295,8 +1351,8 @@
             "valores-validos": {}
         },
         {
-            "index": 90,
-            "esocial_id": 90,
+            "index": 94,
+            "esocial_id": 94,
             "grupo-campo": "indAquis",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1317,8 +1373,8 @@
             }
         },
         {
-            "index": 91,
-            "esocial_id": 91,
+            "index": 95,
+            "esocial_id": 95,
             "grupo-campo": "vlrAquis",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1331,8 +1387,8 @@
             "valores-validos": {}
         },
         {
-            "index": 92,
-            "esocial_id": 92,
+            "index": 96,
+            "esocial_id": 96,
             "grupo-campo": "vrCPDescPR",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1345,8 +1401,8 @@
             "valores-validos": {}
         },
         {
-            "index": 93,
-            "esocial_id": 93,
+            "index": 97,
+            "esocial_id": 97,
             "grupo-campo": "vrCPNRet",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1359,8 +1415,8 @@
             "valores-validos": {}
         },
         {
-            "index": 94,
-            "esocial_id": 94,
+            "index": 98,
+            "esocial_id": 98,
             "grupo-campo": "vrRatNRet",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1373,8 +1429,8 @@
             "valores-validos": {}
         },
         {
-            "index": 95,
-            "esocial_id": 95,
+            "index": 99,
+            "esocial_id": 99,
             "grupo-campo": "vrSenarNRet",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1387,8 +1443,8 @@
             "valores-validos": {}
         },
         {
-            "index": 96,
-            "esocial_id": 96,
+            "index": 100,
+            "esocial_id": 100,
             "grupo-campo": "vrCPCalcPR",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1401,8 +1457,8 @@
             "valores-validos": {}
         },
         {
-            "index": 97,
-            "esocial_id": 97,
+            "index": 101,
+            "esocial_id": 101,
             "grupo-campo": "vrRatDescPR",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1415,8 +1471,8 @@
             "valores-validos": {}
         },
         {
-            "index": 98,
-            "esocial_id": 98,
+            "index": 102,
+            "esocial_id": 102,
             "grupo-campo": "vrRatCalcPR",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1429,8 +1485,8 @@
             "valores-validos": {}
         },
         {
-            "index": 99,
-            "esocial_id": 99,
+            "index": 103,
+            "esocial_id": 103,
             "grupo-campo": "vrSenarDesc",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1443,8 +1499,8 @@
             "valores-validos": {}
         },
         {
-            "index": 100,
-            "esocial_id": 100,
+            "index": 104,
+            "esocial_id": 104,
             "grupo-campo": "vrSenarCalc",
             "grupo-pai": "basesAquis",
             "elem": "E",
@@ -1457,8 +1513,8 @@
             "valores-validos": {}
         },
         {
-            "index": 101,
-            "esocial_id": 101,
+            "index": 105,
+            "esocial_id": 105,
             "grupo-campo": "basesComerc",
             "grupo-pai": "ideEstab",
             "elem": "G",
@@ -1471,8 +1527,8 @@
             "valores-validos": {}
         },
         {
-            "index": 102,
-            "esocial_id": 102,
+            "index": 106,
+            "esocial_id": 106,
             "grupo-campo": "indComerc",
             "grupo-pai": "basesComerc",
             "elem": "E",
@@ -1492,8 +1548,8 @@
             }
         },
         {
-            "index": 103,
-            "esocial_id": 103,
+            "index": 107,
+            "esocial_id": 107,
             "grupo-campo": "vrBcComPR",
             "grupo-pai": "basesComerc",
             "elem": "E",
@@ -1506,8 +1562,8 @@
             "valores-validos": {}
         },
         {
-            "index": 104,
-            "esocial_id": 104,
+            "index": 108,
+            "esocial_id": 108,
             "grupo-campo": "vrCPSusp",
             "grupo-pai": "basesComerc",
             "elem": "E",
@@ -1520,8 +1576,8 @@
             "valores-validos": {}
         },
         {
-            "index": 105,
-            "esocial_id": 105,
+            "index": 109,
+            "esocial_id": 109,
             "grupo-campo": "vrRatSusp",
             "grupo-pai": "basesComerc",
             "elem": "E",
@@ -1534,8 +1590,8 @@
             "valores-validos": {}
         },
         {
-            "index": 106,
-            "esocial_id": 106,
+            "index": 110,
+            "esocial_id": 110,
             "grupo-campo": "vrSenarSusp",
             "grupo-pai": "basesComerc",
             "elem": "E",
@@ -1548,8 +1604,8 @@
             "valores-validos": {}
         },
         {
-            "index": 107,
-            "esocial_id": 107,
+            "index": 111,
+            "esocial_id": 111,
             "grupo-campo": "infoCREstab",
             "grupo-pai": "ideEstab",
             "elem": "G",
@@ -1562,66 +1618,10 @@
             "valores-validos": {}
         },
         {
-            "index": 108,
-            "esocial_id": 108,
-            "grupo-campo": "tpCR",
-            "grupo-pai": "infoCREstab",
-            "elem": "E",
-            "tipo": "N",
-            "ocor": "1",
-            "tamanho": "6",
-            "dec": "-",
-            "descricao": "Código de Receita - CR relativo a contribuições sociais devidas à Previdência Social e a Outras Entidades e Fundos (Terceiros), conforme legislação em vigor na competência.\nValidação: Deve ser um código válido, compatível com a classificação tributária do contribuinte e com as informações prestadas nos demais eventos.",
-            "validacao": " Deve ser um código válido, compatível com a classificação tributária do contribuinte e com as informações prestadas nos demais eventos.",
-            "valores-validos": {}
-        },
-        {
-            "index": 109,
-            "esocial_id": 109,
-            "grupo-campo": "vrCR",
-            "grupo-pai": "infoCREstab",
-            "elem": "E",
-            "tipo": "N",
-            "ocor": "1",
-            "tamanho": "1-14",
-            "dec": "2",
-            "descricao": "Valor correspondente ao CR apurado.\nValidação: Deve ser apurado de acordo com a legislação em vigor na competência.\nDeve ser maior que 0 (zero).",
-            "validacao": " Deve ser apurado de acordo com a legislação em vigor na competência.\\ Deve ser maior que 0 (zero).",
-            "valores-validos": {}
-        },
-        {
-            "index": 110,
-            "esocial_id": 110,
-            "grupo-campo": "vrSuspCR",
-            "grupo-pai": "infoCREstab",
-            "elem": "E",
-            "tipo": "N",
-            "ocor": "0-1",
-            "tamanho": "1-14",
-            "dec": "2",
-            "descricao": "Valor suspenso correspondente ao CR apurado.\nValidação: Deve ser apurado de acordo com as informações de processos judiciais e administrativos.",
-            "validacao": " Deve ser apurado de acordo com as informações de processos judiciais e administrativos.",
-            "valores-validos": {}
-        },
-        {
-            "index": 111,
-            "esocial_id": 111,
-            "grupo-campo": "infoCRContrib",
-            "grupo-pai": "infoCS",
-            "elem": "G",
-            "tipo": "-",
-            "ocor": "0-99",
-            "tamanho": "-",
-            "dec": "-",
-            "descricao": "Informações consolidadas das contribuições sociais devidas à Previdência Social e Outras Entidades e Fundos, por Código de Receita - CR.",
-            "validacao": "-",
-            "valores-validos": {}
-        },
-        {
             "index": 112,
             "esocial_id": 112,
             "grupo-campo": "tpCR",
-            "grupo-pai": "infoCRContrib",
+            "grupo-pai": "infoCREstab",
             "elem": "E",
             "tipo": "N",
             "ocor": "1",
@@ -1635,7 +1635,7 @@
             "index": 113,
             "esocial_id": 113,
             "grupo-campo": "vrCR",
-            "grupo-pai": "infoCRContrib",
+            "grupo-pai": "infoCREstab",
             "elem": "E",
             "tipo": "N",
             "ocor": "1",
@@ -1648,6 +1648,62 @@
         {
             "index": 114,
             "esocial_id": 114,
+            "grupo-campo": "vrSuspCR",
+            "grupo-pai": "infoCREstab",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "0-1",
+            "tamanho": "1-14",
+            "dec": "2",
+            "descricao": "Valor suspenso correspondente ao CR apurado.\nValidação: Deve ser apurado de acordo com as informações de processos judiciais e administrativos.",
+            "validacao": " Deve ser apurado de acordo com as informações de processos judiciais e administrativos.",
+            "valores-validos": {}
+        },
+        {
+            "index": 115,
+            "esocial_id": 115,
+            "grupo-campo": "infoCRContrib",
+            "grupo-pai": "infoCS",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "0-99",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Informações consolidadas das contribuições sociais devidas à Previdência Social e Outras Entidades e Fundos, por Código de Receita - CR.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 116,
+            "esocial_id": 116,
+            "grupo-campo": "tpCR",
+            "grupo-pai": "infoCRContrib",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "6",
+            "dec": "-",
+            "descricao": "Código de Receita - CR relativo a contribuições sociais devidas à Previdência Social e a Outras Entidades e Fundos (Terceiros), conforme legislação em vigor na competência.\nValidação: Deve ser um código válido, compatível com a classificação tributária do contribuinte e com as informações prestadas nos demais eventos.",
+            "validacao": " Deve ser um código válido, compatível com a classificação tributária do contribuinte e com as informações prestadas nos demais eventos.",
+            "valores-validos": {}
+        },
+        {
+            "index": 117,
+            "esocial_id": 117,
+            "grupo-campo": "vrCR",
+            "grupo-pai": "infoCRContrib",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1-14",
+            "dec": "2",
+            "descricao": "Valor correspondente ao CR apurado.\nValidação: Deve ser apurado de acordo com a legislação em vigor na competência.\nDeve ser maior que 0 (zero).",
+            "validacao": " Deve ser apurado de acordo com a legislação em vigor na competência.\\ Deve ser maior que 0 (zero).",
+            "valores-validos": {}
+        },
+        {
+            "index": 118,
+            "esocial_id": 118,
             "grupo-campo": "vrCRSusp",
             "grupo-pai": "infoCRContrib",
             "elem": "E",

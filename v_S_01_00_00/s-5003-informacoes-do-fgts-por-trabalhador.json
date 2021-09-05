@@ -208,6 +208,20 @@
         {
             "index": 15,
             "esocial_id": "15",
+            "grupo-campo": "classTrib",
+            "grupo-pai": "infoFGTS",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "0-1",
+            "tamanho": "2",
+            "dec": "-",
+            "descricao": "Preencher com o código correspondente à classificação tributária do contribuinte, conforme Tabela 08.\nEvento de origem: S-1000.\nValidação: Retornar somente se for igual a [04, 22].",
+            "validacao": " Retornar somente se for igual a [04, 22].",
+            "valores-validos": {}
+        },
+        {
+            "index": 16,
+            "esocial_id": "16",
             "grupo-campo": "ideEstab",
             "grupo-pai": "infoFGTS",
             "elem": "G",
@@ -220,8 +234,8 @@
             "valores-validos": {}
         },
         {
-            "index": 16,
-            "esocial_id": "16",
+            "index": 17,
+            "esocial_id": "17",
             "grupo-campo": "tpInsc",
             "grupo-pai": "ideEstab",
             "elem": "E",
@@ -240,8 +254,8 @@
             }
         },
         {
-            "index": 17,
-            "esocial_id": "17",
+            "index": 18,
+            "esocial_id": "18",
             "grupo-campo": "nrInsc",
             "grupo-pai": "ideEstab",
             "elem": "E",
@@ -254,8 +268,8 @@
             "valores-validos": {}
         },
         {
-            "index": 18,
-            "esocial_id": "18",
+            "index": 19,
+            "esocial_id": "19",
             "grupo-campo": "ideLotacao",
             "grupo-pai": "ideEstab",
             "elem": "G",
@@ -268,8 +282,8 @@
             "valores-validos": {}
         },
         {
-            "index": 19,
-            "esocial_id": "19",
+            "index": 20,
+            "esocial_id": "20",
             "grupo-campo": "codLotacao",
             "grupo-pai": "ideLotacao",
             "elem": "E",
@@ -282,8 +296,8 @@
             "valores-validos": {}
         },
         {
-            "index": 20,
-            "esocial_id": "20",
+            "index": 21,
+            "esocial_id": "21",
             "grupo-campo": "tpLotacao",
             "grupo-pai": "ideLotacao",
             "elem": "E",
@@ -296,8 +310,8 @@
             "valores-validos": {}
         },
         {
-            "index": 21,
-            "esocial_id": "21",
+            "index": 22,
+            "esocial_id": "22",
             "grupo-campo": "tpInsc",
             "grupo-pai": "ideLotacao",
             "elem": "E",
@@ -315,8 +329,8 @@
             }
         },
         {
-            "index": 22,
-            "esocial_id": "22",
+            "index": 23,
+            "esocial_id": "23",
             "grupo-campo": "nrInsc",
             "grupo-pai": "ideLotacao",
             "elem": "E",
@@ -329,8 +343,8 @@
             "valores-validos": {}
         },
         {
-            "index": 23,
-            "esocial_id": "23",
+            "index": 24,
+            "esocial_id": "24",
             "grupo-campo": "infoTrabFGTS",
             "grupo-pai": "ideLotacao",
             "elem": "G",
@@ -343,8 +357,8 @@
             "valores-validos": {}
         },
         {
-            "index": 24,
-            "esocial_id": "24",
+            "index": 25,
+            "esocial_id": "25",
             "grupo-campo": "matricula",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -357,8 +371,8 @@
             "valores-validos": {}
         },
         {
-            "index": 25,
-            "esocial_id": "25",
+            "index": 26,
+            "esocial_id": "26",
             "grupo-campo": "codCateg",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -371,8 +385,8 @@
             "valores-validos": {}
         },
         {
-            "index": 26,
-            "esocial_id": "26",
+            "index": 27,
+            "esocial_id": "27",
             "grupo-campo": "categOrig",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -385,8 +399,8 @@
             "valores-validos": {}
         },
         {
-            "index": 27,
-            "esocial_id": "27",
+            "index": 28,
+            "esocial_id": "28",
             "grupo-campo": "tpRegTrab",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -402,8 +416,8 @@
             }
         },
         {
-            "index": 28,
-            "esocial_id": "28",
+            "index": 29,
+            "esocial_id": "29",
             "grupo-campo": "remunSuc",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -420,8 +434,8 @@
             }
         },
         {
-            "index": 29,
-            "esocial_id": "29",
+            "index": 30,
+            "esocial_id": "30",
             "grupo-campo": "dtDeslig",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -434,8 +448,8 @@
             "valores-validos": {}
         },
         {
-            "index": 30,
-            "esocial_id": "30",
+            "index": 31,
+            "esocial_id": "31",
             "grupo-campo": "mtvDeslig",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -448,8 +462,8 @@
             "valores-validos": {}
         },
         {
-            "index": 31,
-            "esocial_id": "31",
+            "index": 32,
+            "esocial_id": "32",
             "grupo-campo": "dtTerm",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -462,8 +476,8 @@
             "valores-validos": {}
         },
         {
-            "index": 32,
-            "esocial_id": "32",
+            "index": 33,
+            "esocial_id": "33",
             "grupo-campo": "mtvDesligTSV",
             "grupo-pai": "infoTrabFGTS",
             "elem": "E",
@@ -476,8 +490,8 @@
             "valores-validos": {}
         },
         {
-            "index": 33,
-            "esocial_id": "33",
+            "index": 34,
+            "esocial_id": "34",
             "grupo-campo": "sucessaoVinc",
             "grupo-pai": "infoTrabFGTS",
             "elem": "G",
@@ -490,8 +504,8 @@
             "valores-validos": {}
         },
         {
-            "index": 34,
-            "esocial_id": "34",
+            "index": 35,
+            "esocial_id": "35",
             "grupo-campo": "tpInsc",
             "grupo-pai": "sucessaoVinc",
             "elem": "E",
@@ -507,8 +521,8 @@
             }
         },
         {
-            "index": 35,
-            "esocial_id": "35",
+            "index": 36,
+            "esocial_id": "36",
             "grupo-campo": "nrInsc",
             "grupo-pai": "sucessaoVinc",
             "elem": "E",
@@ -521,8 +535,8 @@
             "valores-validos": {}
         },
         {
-            "index": 36,
-            "esocial_id": "36",
+            "index": 37,
+            "esocial_id": "37",
             "grupo-campo": "matricAnt",
             "grupo-pai": "sucessaoVinc",
             "elem": "E",
@@ -535,8 +549,8 @@
             "valores-validos": {}
         },
         {
-            "index": 37,
-            "esocial_id": "37",
+            "index": 38,
+            "esocial_id": "38",
             "grupo-campo": "dtAdm",
             "grupo-pai": "sucessaoVinc",
             "elem": "E",
@@ -549,8 +563,8 @@
             "valores-validos": {}
         },
         {
-            "index": 38,
-            "esocial_id": "38",
+            "index": 39,
+            "esocial_id": "39",
             "grupo-campo": "infoBaseFGTS",
             "grupo-pai": "infoTrabFGTS",
             "elem": "G",
@@ -563,8 +577,8 @@
             "valores-validos": {}
         },
         {
-            "index": 39,
-            "esocial_id": "39",
+            "index": 40,
+            "esocial_id": "40",
             "grupo-campo": "basePerApur",
             "grupo-pai": "infoBaseFGTS",
             "elem": "G",
@@ -577,8 +591,8 @@
             "valores-validos": {}
         },
         {
-            "index": 40,
-            "esocial_id": "40",
+            "index": 41,
+            "esocial_id": "41",
             "grupo-campo": "tpValor",
             "grupo-pai": "basePerApur",
             "elem": "E",
@@ -622,8 +636,8 @@
             }
         },
         {
-            "index": 41,
-            "esocial_id": "41",
+            "index": 42,
+            "esocial_id": "42",
             "grupo-campo": "indIncid",
             "grupo-pai": "basePerApur",
             "elem": "E",
@@ -639,8 +653,8 @@
             }
         },
         {
-            "index": 42,
-            "esocial_id": "42",
+            "index": 43,
+            "esocial_id": "43",
             "grupo-campo": "remFGTS",
             "grupo-pai": "basePerApur",
             "elem": "E",
@@ -653,8 +667,8 @@
             "valores-validos": {}
         },
         {
-            "index": 43,
-            "esocial_id": "43",
+            "index": 44,
+            "esocial_id": "44",
             "grupo-campo": "dpsFGTS",
             "grupo-pai": "basePerApur",
             "elem": "E",
@@ -667,8 +681,8 @@
             "valores-validos": {}
         },
         {
-            "index": 44,
-            "esocial_id": "44",
+            "index": 45,
+            "esocial_id": "45",
             "grupo-campo": "detRubrSusp",
             "grupo-pai": "basePerApur",
             "elem": "G",
@@ -681,8 +695,8 @@
             "valores-validos": {}
         },
         {
-            "index": 45,
-            "esocial_id": "45",
+            "index": 46,
+            "esocial_id": "46",
             "grupo-campo": "codRubr",
             "grupo-pai": "detRubrSusp",
             "elem": "E",
@@ -695,8 +709,8 @@
             "valores-validos": {}
         },
         {
-            "index": 46,
-            "esocial_id": "46",
+            "index": 47,
+            "esocial_id": "47",
             "grupo-campo": "ideTabRubr",
             "grupo-pai": "detRubrSusp",
             "elem": "E",
@@ -709,8 +723,8 @@
             "valores-validos": {}
         },
         {
-            "index": 47,
-            "esocial_id": "47",
+            "index": 48,
+            "esocial_id": "48",
             "grupo-campo": "vrRubr",
             "grupo-pai": "detRubrSusp",
             "elem": "E",
@@ -723,8 +737,8 @@
             "valores-validos": {}
         },
         {
-            "index": 48,
-            "esocial_id": "48",
+            "index": 49,
+            "esocial_id": "49",
             "grupo-campo": "ideProcessoFGTS",
             "grupo-pai": "detRubrSusp",
             "elem": "G",
@@ -737,8 +751,8 @@
             "valores-validos": {}
         },
         {
-            "index": 49,
-            "esocial_id": "49",
+            "index": 50,
+            "esocial_id": "50",
             "grupo-campo": "nrProc",
             "grupo-pai": "ideProcessoFGTS",
             "elem": "E",
@@ -751,8 +765,8 @@
             "valores-validos": {}
         },
         {
-            "index": 50,
-            "esocial_id": "50",
+            "index": 51,
+            "esocial_id": "51",
             "grupo-campo": "infoBasePerAntE",
             "grupo-pai": "infoBaseFGTS",
             "elem": "G",
@@ -765,8 +779,8 @@
             "valores-validos": {}
         },
         {
-            "index": 51,
-            "esocial_id": "51",
+            "index": 52,
+            "esocial_id": "52",
             "grupo-campo": "perRef",
             "grupo-pai": "infoBasePerAntE",
             "elem": "E",
@@ -779,8 +793,8 @@
             "valores-validos": {}
         },
         {
-            "index": 52,
-            "esocial_id": "52",
+            "index": 53,
+            "esocial_id": "53",
             "grupo-campo": "tpAcConv",
             "grupo-pai": "infoBasePerAntE",
             "elem": "E",
@@ -796,8 +810,8 @@
             }
         },
         {
-            "index": 53,
-            "esocial_id": "53",
+            "index": 54,
+            "esocial_id": "54",
             "grupo-campo": "basePerAntE",
             "grupo-pai": "infoBasePerAntE",
             "elem": "G",
@@ -810,8 +824,8 @@
             "valores-validos": {}
         },
         {
-            "index": 54,
-            "esocial_id": "54",
+            "index": 55,
+            "esocial_id": "55",
             "grupo-campo": "tpValorE",
             "grupo-pai": "basePerAntE",
             "elem": "E",
@@ -840,8 +854,8 @@
             }
         },
         {
-            "index": 55,
-            "esocial_id": "55",
+            "index": 56,
+            "esocial_id": "56",
             "grupo-campo": "indIncidE",
             "grupo-pai": "basePerAntE",
             "elem": "E",
@@ -857,8 +871,8 @@
             }
         },
         {
-            "index": 56,
-            "esocial_id": "56",
+            "index": 57,
+            "esocial_id": "57",
             "grupo-campo": "remFGTSE",
             "grupo-pai": "basePerAntE",
             "elem": "E",
@@ -871,8 +885,8 @@
             "valores-validos": {}
         },
         {
-            "index": 57,
-            "esocial_id": "57",
+            "index": 58,
+            "esocial_id": "58",
             "grupo-campo": "dpsFGTSE",
             "grupo-pai": "basePerAntE",
             "elem": "E",
@@ -885,8 +899,8 @@
             "valores-validos": {}
         },
         {
-            "index": 58,
-            "esocial_id": "58",
+            "index": 59,
+            "esocial_id": "59",
             "grupo-campo": "detRubrSusp",
             "grupo-pai": "basePerAntE",
             "elem": "G",
@@ -899,8 +913,8 @@
             "valores-validos": {}
         },
         {
-            "index": 59,
-            "esocial_id": "45",
+            "index": 60,
+            "esocial_id": "46",
             "grupo-campo": "codRubr",
             "grupo-pai": "detRubrSusp",
             "elem": "E",
@@ -913,8 +927,8 @@
             "valores-validos": {}
         },
         {
-            "index": 60,
-            "esocial_id": "46",
+            "index": 61,
+            "esocial_id": "47",
             "grupo-campo": "ideTabRubr",
             "grupo-pai": "detRubrSusp",
             "elem": "E",
@@ -927,8 +941,8 @@
             "valores-validos": {}
         },
         {
-            "index": 61,
-            "esocial_id": "47",
+            "index": 62,
+            "esocial_id": "48",
             "grupo-campo": "vrRubr",
             "grupo-pai": "detRubrSusp",
             "elem": "E",
@@ -941,8 +955,8 @@
             "valores-validos": {}
         },
         {
-            "index": 62,
-            "esocial_id": "48",
+            "index": 63,
+            "esocial_id": "49",
             "grupo-campo": "ideProcessoFGTS",
             "grupo-pai": "detRubrSusp",
             "elem": "G",
@@ -955,8 +969,8 @@
             "valores-validos": {}
         },
         {
-            "index": 63,
-            "esocial_id": "49",
+            "index": 64,
+            "esocial_id": "50",
             "grupo-campo": "nrProc",
             "grupo-pai": "ideProcessoFGTS",
             "elem": "E",
@@ -969,8 +983,8 @@
             "valores-validos": {}
         },
         {
-            "index": 66,
-            "esocial_id": "59",
+            "index": 67,
+            "esocial_id": "60",
             "grupo-campo": "procCS",
             "grupo-pai": "infoTrabFGTS",
             "elem": "G",
@@ -983,8 +997,8 @@
             "valores-validos": {}
         },
         {
-            "index": 67,
-            "esocial_id": "60",
+            "index": 68,
+            "esocial_id": "61",
             "grupo-campo": "nrProcJud",
             "grupo-pai": "procCS",
             "elem": "E",

@@ -255,8 +255,8 @@
             "ocor": "1",
             "tamanho": "14",
             "dec": "-",
-            "descricao": "Preencher com o número de inscrição no CAEPF do estabelecimento rural.\nValidação: Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005). Se indGuia estiver preenchido, o número de inscrição deve possuir tpCaepf em S-1005 = [3].",
-            "validacao": " Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005). Se indGuia estiver preenchido, o número de inscrição deve possuir tpCaepf em S-1005 = [3].",
+            "descricao": "Preencher com o número de inscrição no CAEPF do estabelecimento rural.\nValidação: Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005).",
+            "validacao": " Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005).",
             "valores-validos": {}
         },
         {

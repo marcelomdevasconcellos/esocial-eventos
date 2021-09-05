@@ -377,8 +377,8 @@
             "ocor": "0-1",
             "tamanho": "1-999",
             "dec": "-",
-            "descricao": "Observação sobre o procedimento diagnóstico realizado.",
-            "validacao": "-",
+            "descricao": "Observação sobre o procedimento diagnóstico realizado.\nValidação: Preenchimento obrigatório se procRealizado = [0583, 0998, 0999, 1128, 1230, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 9999].",
+            "validacao": " Preenchimento obrigatório se procRealizado = [0583, 0998, 0999, 1128, 1230, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 9999].",
             "valores-validos": {}
         },
         {
@@ -388,11 +388,11 @@
             "grupo-pai": "exame",
             "elem": "E",
             "tipo": "N",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Ordem do exame.\nValores válidos:\n1 - Inicial\n2 - Sequencial",
-            "validacao": "-",
+            "descricao": "Ordem do exame.\nValores válidos:\n1 - Inicial\n2 - Sequencial\nValidação: Preenchimento obrigatório se procRealizado = [0281].",
+            "validacao": " Preenchimento obrigatório se procRealizado = [0281].",
             "valores-validos": {
                 "1": "1 - Inicial",
                 "2": "2 - Sequencial"

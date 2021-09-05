@@ -223,8 +223,8 @@
             "ocor": "1",
             "tamanho": "1-30",
             "dec": "-",
-            "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2200 do respectivo vínculo trabalhista.",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2200 do respectivo vínculo trabalhista.",
+            "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2190 ou S-2200 do respectivo vínculo trabalhista.",
+            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2190 ou S-2200 do respectivo vínculo trabalhista.",
             "valores-validos": {}
         },
         {

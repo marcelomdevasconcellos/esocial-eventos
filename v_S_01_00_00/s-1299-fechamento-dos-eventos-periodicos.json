@@ -27,7 +27,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Fechamento dos Eventos Periódicos.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_REMUN_ANUAL_DEZEMBRO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_FECHAMENTO_FOPAG",
+            "descricao": "Evento Fechamento dos Eventos Periódicos.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_REMUN_ANUAL_DEZEMBRO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_FAP\nREGRA_VALIDA_FECHAMENTO_FOPAG",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -313,8 +313,8 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Solicitação de transmissão imediata da DCTFWeb.\nValores válidos:\nS - Sim\nValidação: Preenchimento obrigatório se classTrib em S-1000 = [04] ou indGuia estiver informado.",
-            "validacao": " Preenchimento obrigatório se classTrib em S-1000 = [04] ou indGuia estiver informado.",
+            "descricao": "Solicitação de transmissão imediata da DCTFWeb.\nValores válidos:\nS - Sim\nValidação: Não informar se perApur < [2021-10]. Preenchimento obrigatório se perApur >= [2021-10] e (classTrib em S-1000 = [04] ou indGuia estiver informado).",
+            "validacao": " Não informar se perApur < [2021-10]. Preenchimento obrigatório se perApur >= [2021-10] e (classTrib em S-1000 = [04] ou indGuia estiver informado).",
             "valores-validos": {
                 "S": "S - Sim"
             }

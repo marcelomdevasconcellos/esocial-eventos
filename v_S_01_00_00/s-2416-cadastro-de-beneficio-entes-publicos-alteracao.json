@@ -276,7 +276,7 @@
             "grupo-campo": "tpBeneficio",
             "grupo-pai": "dadosBeneficio",
             "elem": "E",
-            "tipo": "N",
+            "tipo": "C",
             "ocor": "1",
             "tamanho": "4",
             "dec": "-",

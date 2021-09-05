@@ -155,8 +155,8 @@
             "ocor": "1",
             "tamanho": "8, 11 ou 14",
             "dec": "-",
-            "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo tpInsc.\nValidação: Se tpInsc for igual a [1], deve ser um número de CNPJ válido. Neste caso, deve ser informada apenas a raiz/base (8 posições), exceto se natureza jurídica do declarante for igual a 101-5, 104-0, 107-4, 110-4, 113-9, 116-3, 125-2, 128-7 ou 134-1, situação em que o campo deve ser preenchido com o CNPJ completo (14 posições).\nSe tpInsc for igual a [2], deve ser um CPF válido.",
-            "validacao": " Se tpInsc for igual a [1], deve ser um número de CNPJ válido. Neste caso, deve ser informada apenas a raiz/base (8 posições), exceto se natureza jurídica do declarante for igual a 101-5, 104-0, 107-4, 110-4, 113-9, 116-3, 125-2, 128-7 ou 134-1, situação em que o campo deve ser preenchido com o CNPJ completo (14 posições).\\ Se tpInsc for igual a [2], deve ser um CPF válido.",
+            "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo tpInsc.\nValidação: Se tpInsc for igual a [1], deve ser um número de CNPJ válido. Neste caso, deve ser informada apenas a raiz/base (8 posições), exceto se a natureza jurídica do declarante for igual a 101-5, 104-0, 107-4, 116-3 ou 134-1, situação em que o campo deve ser preenchido com o CNPJ completo (14 posições).\nSe tpInsc for igual a [2], deve ser um CPF válido.",
+            "validacao": " Se tpInsc for igual a [1], deve ser um número de CNPJ válido. Neste caso, deve ser informada apenas a raiz/base (8 posições), exceto se a natureza jurídica do declarante for igual a 101-5, 104-0, 107-4, 116-3 ou 134-1, situação em que o campo deve ser preenchido com o CNPJ completo (14 posições).\\ Se tpInsc for igual a [2], deve ser um CPF válido.",
             "valores-validos": {}
         },
         {
@@ -353,10 +353,10 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indica se houve opção pelo registro eletrônico de empregados.\nValores válidos:\n0 - Não optou pelo registro eletrônico de empregados\n1 - Optou pelo registro eletrônico de empregados",
+            "descricao": "Indica se houve opção pelo registro eletrônico de empregados. Caso o declarante seja órgão público sem empregados regidos pela CLT, informar [0].\nValores válidos:\n0 - Não optou pelo registro eletrônico de empregados (ou opção não aplicável)\n1 - Optou pelo registro eletrônico de empregados",
             "validacao": "-",
             "valores-validos": {
-                "0": "0 - Não optou pelo registro eletrônico de empregados",
+                "0": "0 - Não optou pelo registro eletrônico de empregados (ou opção não aplicável)",
                 "1": "1 - Optou pelo registro eletrônico de empregados"
             }
         },
@@ -711,10 +711,10 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indica se houve opção pelo registro eletrônico de empregados.\nValores válidos:\n0 - Não optou pelo registro eletrônico de empregados\n1 - Optou pelo registro eletrônico de empregados",
+            "descricao": "Indica se houve opção pelo registro eletrônico de empregados. Caso o declarante seja órgão público sem empregados regidos pela CLT, informar [0].\nValores válidos:\n0 - Não optou pelo registro eletrônico de empregados (ou opção não aplicável)\n1 - Optou pelo registro eletrônico de empregados",
             "validacao": "-",
             "valores-validos": {
-                "0": "0 - Não optou pelo registro eletrônico de empregados",
+                "0": "0 - Não optou pelo registro eletrônico de empregados (ou opção não aplicável)",
                 "1": "1 - Optou pelo registro eletrônico de empregados"
             }
         },

@@ -353,7 +353,7 @@
             "grupo-campo": "tpBeneficio",
             "grupo-pai": "dadosBeneficio",
             "elem": "E",
-            "tipo": "N",
+            "tipo": "C",
             "ocor": "1",
             "tamanho": "4",
             "dec": "-",
@@ -466,8 +466,8 @@
             "ocor": "1",
             "tamanho": "11",
             "dec": "-",
-            "descricao": "Preencher com o CPF do instituidor da pensão por morte.\nValidação: Deve ser um CPF válido.",
-            "validacao": " Deve ser um CPF válido.",
+            "descricao": "Preencher com o CPF do instituidor da pensão por morte.\nValidação: Deve ser um CPF válido e diferente do CPF do beneficiário.",
+            "validacao": " Deve ser um CPF válido e diferente do CPF do beneficiário.",
             "valores-validos": {}
         },
         {
@@ -658,7 +658,7 @@
             "grupo-campo": "mtvTermino",
             "grupo-pai": "infoBenTermino",
             "elem": "E",
-            "tipo": "N",
+            "tipo": "C",
             "ocor": "1",
             "tamanho": "2",
             "dec": "-",

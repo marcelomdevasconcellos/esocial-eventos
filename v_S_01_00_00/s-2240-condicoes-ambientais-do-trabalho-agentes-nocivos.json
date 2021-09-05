@@ -427,11 +427,11 @@
             "grupo-pai": "agNoc",
             "elem": "E",
             "tipo": "N",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo de avaliação do agente nocivo.\nValores válidos:\n1 - Critério quantitativo\n2 - Critério qualitativo",
-            "validacao": "-",
+            "descricao": "Tipo de avaliação do agente nocivo.\nValores válidos:\n1 - Critério quantitativo\n2 - Critério qualitativo\nValidação: Não informar se codAgNoc = [09.01.001].",
+            "validacao": " Não informar se codAgNoc = [09.01.001].",
             "valores-validos": {
                 "1": "1 - Critério quantitativo",
                 "2": "2 - Critério qualitativo"
@@ -531,7 +531,7 @@
             "grupo-pai": "agNoc",
             "elem": "G",
             "tipo": "-",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
             "descricao": "Informações relativas a Equipamentos de Proteção Coletiva - EPC e Equipamentos de Proteção Individual - EPI.",
@@ -566,7 +566,7 @@
             "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Os EPCs são eficazes na neutralização dos riscos ao trabalhador?\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo se utilizEPC = [2].",
+            "descricao": "Os EPCs são eficazes na neutralização do risco ao trabalhador?\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo se utilizEPC = [2].",
             "validacao": " Preenchimento obrigatório e exclusivo se utilizEPC = [2].",
             "valores-validos": {
                 "S": "S - Sim",
@@ -594,6 +594,23 @@
         {
             "index": 38,
             "esocial_id": 38,
+            "grupo-campo": "eficEpi",
+            "grupo-pai": "epcEpi",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "0-1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Os EPIs são eficazes na neutralização do risco ao trabalhador?\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo se utilizEPI = [2].",
+            "validacao": " Preenchimento obrigatório e exclusivo se utilizEPI = [2].",
+            "valores-validos": {
+                "S": "S - Sim",
+                "N": "N - Não"
+            }
+        },
+        {
+            "index": 39,
+            "esocial_id": 39,
             "grupo-campo": "epi",
             "grupo-pai": "epcEpi",
             "elem": "G",
@@ -606,8 +623,8 @@
             "valores-validos": {}
         },
         {
-            "index": 39,
-            "esocial_id": 39,
+            "index": 40,
+            "esocial_id": 40,
             "grupo-campo": "docAval",
             "grupo-pai": "epi",
             "elem": "E",
@@ -620,8 +637,8 @@
             "valores-validos": {}
         },
         {
-            "index": 40,
-            "esocial_id": 40,
+            "index": 41,
+            "esocial_id": 41,
             "grupo-campo": "dscEPI",
             "grupo-pai": "epi",
             "elem": "E",
@@ -632,23 +649,6 @@
             "descricao": "Descrição do EPI.\nValidação: Preenchimento obrigatório e exclusivo se docAval não for informado.",
             "validacao": " Preenchimento obrigatório e exclusivo se docAval não for informado.",
             "valores-validos": {}
-        },
-        {
-            "index": 41,
-            "esocial_id": 41,
-            "grupo-campo": "eficEpi",
-            "grupo-pai": "epi",
-            "elem": "E",
-            "tipo": "C",
-            "ocor": "1",
-            "tamanho": "1",
-            "dec": "-",
-            "descricao": "O EPI é eficaz na neutralização do risco ao trabalhador?\nValores válidos:\nS - Sim\nN - Não",
-            "validacao": "-",
-            "valores-validos": {
-                "S": "S - Sim",
-                "N": "N - Não"
-            }
         },
         {
             "index": 42,
@@ -773,7 +773,7 @@
             "grupo-pai": "infoExpRisco",
             "elem": "G",
             "tipo": "-",
-            "ocor": "1-9",
+            "ocor": "1-99",
             "tamanho": "-",
             "dec": "-",
             "descricao": "Informações relativas ao responsável pelos registros ambientais.",

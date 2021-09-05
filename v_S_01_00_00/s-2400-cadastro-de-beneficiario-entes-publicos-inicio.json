@@ -182,8 +182,8 @@
             "ocor": "1",
             "tamanho": "8 ou 14",
             "dec": "-",
-            "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo ideEmpregador/tpInsc e conforme informado em S-1000.\nValidação: A natureza jurídica relativa ao número de inscrição informado deve ser Administração Pública (grupo [1]).",
-            "validacao": " A natureza jurídica relativa ao número de inscrição informado deve ser Administração Pública (grupo [1]).",
+            "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo ideEmpregador/tpInsc e conforme informado em S-1000.\nValidação: A natureza jurídica relativa ao número de inscrição informado deve ser igual a 1XX-X, 201-1, 203-8 ou 307-7.",
+            "validacao": " A natureza jurídica relativa ao número de inscrição informado deve ser igual a 1XX-X, 201-1, 203-8 ou 307-7.",
             "valores-validos": {}
         },
         {

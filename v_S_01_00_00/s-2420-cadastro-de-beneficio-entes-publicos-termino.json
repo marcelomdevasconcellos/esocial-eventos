@@ -262,7 +262,7 @@
             "grupo-campo": "mtvTermino",
             "grupo-pai": "infoBenTermino",
             "elem": "E",
-            "tipo": "N",
+            "tipo": "C",
             "ocor": "1",
             "tamanho": "2",
             "dec": "-",

@@ -665,8 +665,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da Tabela 05.\nValores válidos:\n1 - CNPJ\n3 - CAEPF\n4 - CNO\nValidação: Se classTrib em S-1000 = [21], deve ser igual a [3, 4].\nSe classTrib em S-1000 = [22], deve ser igual a [3, 4] e, se for igual a [3] e não se tratar de empregado doméstico, o CAEPF deve constar na Tabela S-1005 como sendo de segurado especial.\nNos demais casos (classTrib em S-1000 diferente de [21, 22]), deve ser igual a [1, 4].",
-            "validacao": " Se classTrib em S-1000 = [21], deve ser igual a [3, 4].\\ Se classTrib em S-1000 = [22], deve ser igual a [3, 4] e, se for igual a [3] e não se tratar de empregado doméstico, o CAEPF deve constar na Tabela S-1005 como sendo de segurado especial.\\ Nos demais casos (classTrib em S-1000 diferente de [21, 22]), deve ser igual a [1, 4].",
+            "descricao": "Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da Tabela 05.\nValores válidos:\n1 - CNPJ\n3 - CAEPF\n4 - CNO\nValidação: Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\nSe classTrib em S-1000 = [04], deve ser igual a [1].\nNos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
+            "validacao": " Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\\ Se classTrib em S-1000 = [04], deve ser igual a [1].\\ Nos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "3": "3 - CAEPF",
@@ -1043,8 +1043,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da Tabela 05.\nValores válidos:\n1 - CNPJ\n3 - CAEPF\n4 - CNO\nValidação: Se classTrib em S-1000 = [21], deve ser igual a [3, 4].\nSe classTrib em S-1000 = [22], deve ser igual a [3, 4] e, se for igual a [3] e não se tratar de empregado doméstico, o CAEPF deve constar na Tabela S-1005 como sendo de segurado especial.\nNos demais casos (classTrib em S-1000 diferente de [21, 22]), deve ser igual a [1, 4].",
-            "validacao": " Se classTrib em S-1000 = [21], deve ser igual a [3, 4].\\ Se classTrib em S-1000 = [22], deve ser igual a [3, 4] e, se for igual a [3] e não se tratar de empregado doméstico, o CAEPF deve constar na Tabela S-1005 como sendo de segurado especial.\\ Nos demais casos (classTrib em S-1000 diferente de [21, 22]), deve ser igual a [1, 4].",
+            "descricao": "Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da Tabela 05.\nValores válidos:\n1 - CNPJ\n3 - CAEPF\n4 - CNO\nValidação: Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\nSe classTrib em S-1000 = [04], deve ser igual a [1].\nNos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
+            "validacao": " Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\\ Se classTrib em S-1000 = [04], deve ser igual a [1].\\ Nos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "3": "3 - CAEPF",

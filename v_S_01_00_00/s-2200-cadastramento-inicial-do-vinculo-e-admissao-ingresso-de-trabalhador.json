@@ -27,7 +27,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Cadastramento Inicial do Vínculo e Admissão/Ingresso de Trabalhador.\nRegras de validação:\nREGRA_ADMISSAO_POSTERIOR_INICIO_ATIVIDADES\nREGRA_ADMISSAO_VALIDA_DT_ADM\nREGRA_ADMISSAO_VALIDA_DURACAO_CONTRATO\nREGRA_BLOQUEIA_USO_CPF_EMPREGADOR\nREGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB\nREGRA_COMPATIB_CATEG_EVENTO\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_IMPACTO_FOPAG\nREGRA_EVETRAB_VALIDA_OPCAO_FGTS\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_MUDANCA_CPF\nREGRA_REGISTRO_PRELIMINAR\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_MATRICULA\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
+            "descricao": "Evento Cadastramento Inicial do Vínculo e Admissão/Ingresso de Trabalhador.\nRegras de validação:\nREGRA_ADMISSAO_POSTERIOR_INICIO_ATIVIDADES\nREGRA_ADMISSAO_VALIDA_DT_ADM\nREGRA_ADMISSAO_VALIDA_DURACAO_CONTRATO\nREGRA_BLOQUEIA_USO_CPF_EMPREGADOR\nREGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB\nREGRA_COMPATIB_CATEG_EVENTO\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVETRAB_VALIDA_OPCAO_FGTS\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_MUDANCA_CPF\nREGRA_REGISTRO_PRELIMINAR\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_MATRICULA\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -1190,8 +1190,8 @@
             "ocor": "0-1",
             "tamanho": "20",
             "dec": "-",
-            "descricao": "Número que identifica o processo trabalhista, quando a admissão se der por decisão judicial.\nValidação: Não informar se indAdmissao = [1, 2]. Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
-            "validacao": " Não informar se indAdmissao = [1, 2]. Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
+            "descricao": "Número que identifica o processo trabalhista, quando a admissão se der por decisão judicial.\nValidação: Informação obrigatória e exclusiva se indAdmissao = [3]. Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
+            "validacao": " Informação obrigatória e exclusiva se indAdmissao = [3]. Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
             "valores-validos": {}
         },
         {
