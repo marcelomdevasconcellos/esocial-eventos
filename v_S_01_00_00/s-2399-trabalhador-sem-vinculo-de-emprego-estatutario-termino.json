@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -244,7 +244,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2300 do respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300.",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2300 do respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300.",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2300 do respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300.",
             "valores-validos": {}
         },
         {
@@ -258,7 +258,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nInformar somente no caso de TSVE sem informação de matrícula no evento S-2300.\nValidação: Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -286,7 +286,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data do término.\nValidação: Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias.",
-            "validacao": " Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias.",
+            "validacao": "Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias.",
             "valores-validos": {}
         },
         {
@@ -300,7 +300,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Motivo do término.\nValores válidos:\n01 - Exoneração do diretor não empregado sem justa causa, por deliberação da assembleia, dos sócios cotistas ou da autoridade competente\n02 - Término de mandato do diretor não empregado que não tenha sido reconduzido ao cargo\n03 - Exoneração a pedido de diretor não empregado\n04 - Exoneração do diretor não empregado por culpa recíproca ou força maior\n05 - Morte do diretor não empregado\n06 - Exoneração do diretor não empregado por falência, encerramento ou supressão de parte da empresa\n07 - Mudança de CPF\n99 - Outros\nValidação: Informação obrigatória se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [721] ou se o grupo mudancaCPF estiver preenchido. Não preencher nas demais situações.",
-            "validacao": " Informação obrigatória se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [721] ou se o grupo mudancaCPF estiver preenchido. Não preencher nas demais situações.",
+            "validacao": "Informação obrigatória se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [721] ou se o grupo mudancaCPF estiver preenchido. Não preencher nas demais situações.",
             "valores-validos": {
                 "01": "01 - Exoneração do diretor não empregado sem justa causa, por deliberação da assembleia, dos sócios cotistas ou da autoridade competente",
                 "02": "02 - Término de mandato do diretor não empregado que não tenha sido reconduzido ao cargo",
@@ -323,7 +323,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de pensão alimentícia para fins de retenção de FGTS.\nValores válidos:\n0 - Não existe pensão alimentícia\n1 - Percentual de pensão alimentícia\n2 - Valor de pensão alimentícia\n3 - Percentual e valor de pensão alimentícia\nValidação: Informação obrigatória se o código de categoria no RET for igual a [201, 202, 721] e se dtTerm for posterior a 21/04/2019.\nInformação opcional se o código de categoria no RET for igual a [201, 202, 721] e se dtTerm for igual ou anterior a 21/04/2019.\nNão preencher nas demais situações.",
-            "validacao": " Informação obrigatória se o código de categoria no RET for igual a [201, 202, 721] e se dtTerm for posterior a 21/04/2019.\\ Informação opcional se o código de categoria no RET for igual a [201, 202, 721] e se dtTerm for igual ou anterior a 21/04/2019.\\ Não preencher nas demais situações.",
+            "validacao": "Informação obrigatória se o código de categoria no RET for igual a [201, 202, 721] e se dtTerm for posterior a 21/04/2019.\\ Informação opcional se o código de categoria no RET for igual a [201, 202, 721] e se dtTerm for igual ou anterior a 21/04/2019.\\ Não preencher nas demais situações.",
             "valores-validos": {
                 "0": "0 - Não existe pensão alimentícia",
                 "1": "1 - Percentual de pensão alimentícia",
@@ -342,7 +342,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Percentual a ser destinado a pensão alimentícia.\nValidação: Deve ser maior que 0 (zero) e menor ou igual a 100 (cem).\nInformação obrigatória e exclusiva se pensAlim = [1, 3].",
-            "validacao": " Deve ser maior que 0 (zero) e menor ou igual a 100 (cem).\\ Informação obrigatória e exclusiva se pensAlim = [1, 3].",
+            "validacao": "Deve ser maior que 0 (zero) e menor ou igual a 100 (cem).\\ Informação obrigatória e exclusiva se pensAlim = [1, 3].",
             "valores-validos": {}
         },
         {
@@ -356,7 +356,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor da pensão alimentícia.\nValidação: Deve ser maior que 0 (zero).\nInformação obrigatória e exclusiva se pensAlim = [2, 3].",
-            "validacao": " Deve ser maior que 0 (zero).\\ Informação obrigatória e exclusiva se pensAlim = [2, 3].",
+            "validacao": "Deve ser maior que 0 (zero).\\ Informação obrigatória e exclusiva se pensAlim = [2, 3].",
             "valores-validos": {}
         },
         {
@@ -370,7 +370,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Número que identifica o processo trabalhista, quando o término de TSVE se der por decisão judicial.\nValidação: Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
-            "validacao": " Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
+            "validacao": "Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
             "valores-validos": {}
         },
         {
@@ -398,7 +398,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o novo CPF do trabalhador.\nValidação: Deve ser um CPF válido e diferente do CPF do empregador e do antigo CPF do trabalhador.",
-            "validacao": " Deve ser um CPF válido e diferente do CPF do empregador e do antigo CPF do trabalhador.",
+            "validacao": "Deve ser um CPF válido e diferente do CPF do empregador e do antigo CPF do trabalhador.",
             "valores-validos": {}
         },
         {
@@ -440,7 +440,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Identificador atribuído pela empresa para o demonstrativo de valores devidos ao trabalhador relativo a verbas rescisórias.\nValidação: Deve ser um identificador único dentro da mesma competência (mês/ano da data de término) para cada um dos demonstrativos do trabalhador.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " Deve ser um identificador único dentro da mesma competência (mês/ano da data de término) para cada um dos demonstrativos do trabalhador.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "Deve ser um identificador único dentro da mesma competência (mês/ano da data de término) para cada um dos demonstrativos do trabalhador.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -485,7 +485,7 @@
             "tamanho": "12 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do estabelecimento do contribuinte de acordo com o tipo de inscrição indicado no campo ideEstabLot/tpInsc.\nValidação: A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
-            "validacao": " A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
+            "validacao": "A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
             "valores-validos": {}
         },
         {
@@ -527,7 +527,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica:\na) cujo codIncCP em S-1010 seja igual a [25, 26, 51];\nb) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtTerm >= [2021-07].",
-            "validacao": " Não pode ser utilizada rubrica:\\ a) cujo codIncCP em S-1010 seja igual a [25, 26, 51];\\ b) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtTerm >= [2021-07].",
+            "validacao": "Não pode ser utilizada rubrica:\\ a) cujo codIncCP em S-1010 seja igual a [25, 26, 51];\\ b) cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtTerm >= [2021-07].",
             "valores-validos": {}
         },
         {
@@ -555,7 +555,7 @@
             "tamanho": "1-12",
             "dec": "2",
             "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -569,7 +569,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Informar o fator, percentual, etc. da rubrica, quando necessário. Ex.: Adicional de horas extras 50%, relacionado a uma rubrica de horas extras: Fator = 50.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -583,7 +583,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor total da rubrica.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -597,7 +597,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtTerm >= [2021-07].",
-            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtTerm >= [2021-07].",
+            "validacao": "Informação obrigatória e exclusiva se mês/ano de dtTerm >= [2021-07].",
             "valores-validos": {
                 "0": "0 - Normal (apuração sob a folha de pagamento declarada no eSocial)",
                 "1": "1 - Situação especial de apuração de IR"
@@ -677,7 +677,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -691,7 +691,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -768,7 +768,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo remunOutrEmpr/tpInsc.\nValidação: a) Se remunOutrEmpr/tpInsc = [1], deve ser um CNPJ válido, diferente do CNPJ base indicado no evento de Informações do Empregador (S-1000) e dos estabelecimentos informados através do evento S-1005.\nb) Se remunOutrEmpr/tpInsc = [2], deve ser um CPF válido e diferente do CPF do trabalhador e ainda, caso o empregador seja pessoa física, diferente do CPF do empregador.",
-            "validacao": " a) Se remunOutrEmpr/tpInsc = [1], deve ser um CNPJ válido, diferente do CNPJ base indicado no evento de Informações do Empregador (S-1000) e dos estabelecimentos informados através do evento S-1005.\\ b) Se remunOutrEmpr/tpInsc = [2], deve ser um CPF válido e diferente do CPF do trabalhador e ainda, caso o empregador seja pessoa física, diferente do CPF do empregador.",
+            "validacao": "a) Se remunOutrEmpr/tpInsc = [1], deve ser um CNPJ válido, diferente do CNPJ base indicado no evento de Informações do Empregador (S-1000) e dos estabelecimentos informados através do evento S-1005.\\ b) Se remunOutrEmpr/tpInsc = [2], deve ser um CPF válido e diferente do CPF do trabalhador e ainda, caso o empregador seja pessoa física, diferente do CPF do empregador.",
             "valores-validos": {}
         },
         {
@@ -782,7 +782,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador na qual houve a remuneração.\nValidação: Deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -796,7 +796,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Preencher com o valor da remuneração recebida pelo trabalhador na outra empresa/atividade, sobre a qual houve desconto/recolhimento da contribuição do segurado.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -824,7 +824,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data final da quarentena a que está sujeito o trabalhador. No caso de término reconhecido judicialmente com data anterior a competências com remunerações já informadas no eSocial, informar o último dia trabalhado.\nValidação: Deve ser uma data posterior a dtTerm.",
-            "validacao": " Deve ser uma data posterior a dtTerm.",
+            "validacao": "Deve ser uma data posterior a dtTerm.",
             "valores-validos": {}
         }
     ]

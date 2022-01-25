@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -253,7 +253,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Informar a data da efetiva reativação do benefício.\nValidação: Deve ser posterior à data de cessação do benefício e igual ou anterior à data atual.",
-            "validacao": " Deve ser posterior à data de cessação do benefício e igual ou anterior à data atual.",
+            "validacao": "Deve ser posterior à data de cessação do benefício e igual ou anterior à data atual.",
             "valores-validos": {}
         },
         {
@@ -267,7 +267,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de início dos efeitos financeiros da reativação do benefício.\nValidação: Deve ser uma data igual ou anterior à data da efetiva reativação do benefício e posterior à data de sua cessação.",
-            "validacao": " Deve ser uma data igual ou anterior à data da efetiva reativação do benefício e posterior à data de sua cessação.",
+            "validacao": "Deve ser uma data igual ou anterior à data da efetiva reativação do benefício e posterior à data de sua cessação.",
             "valores-validos": {}
         }
     ]

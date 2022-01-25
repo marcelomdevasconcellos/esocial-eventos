@@ -211,7 +211,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento.\nValidação: O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -225,7 +225,7 @@
             "tamanho": "1-8",
             "dec": "-",
             "descricao": "Preencher com o identificador da Tabela de Rubricas no âmbito do empregador.\nValidação: O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -239,7 +239,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -253,7 +253,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -295,7 +295,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Informar o código de classificação da rubrica.\nValidação: Deve ser um código válido e existente na Tabela 03.",
-            "validacao": " Deve ser um código válido e existente na Tabela 03.",
+            "validacao": "Deve ser um código válido e existente na Tabela 03.",
             "valores-validos": {}
         },
         {
@@ -328,7 +328,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Código de incidência tributária da rubrica para a Previdência Social.\nValores válidos:\n00 - Não é base de cálculo\n01 - Não é base de cálculo em função de acordos internacionais de previdência social\n\nBase de cálculo das contribuições sociais - Salário de contribuição:\n11 - Mensal\n12 - 13º salário\n13 - Exclusiva do empregador - Mensal\n14 - Exclusiva do empregador - 13° salário\n15 - Exclusiva do segurado - Mensal\n16 - Exclusiva do segurado - 13° salário\n21 - Salário-maternidade mensal, pago pelo empregador\n22 - Salário-maternidade 13º salário, pago pelo empregador\n25 - Salário-maternidade mensal, pago pelo INSS\n26 - Salário-maternidade 13° salário, pago pelo INSS\n\nContribuição descontada do segurado sobre salário de contribuição:\n31 - Mensal\n32 - 13º salário\n34 - SEST\n35 - SENAT\n\nOutros:\n51 - Salário-família\n\nSuspensão de incidência sobre salário de contribuição em decorrência de decisão judicial:\n91 - Mensal\n92 - 13º salário\n93 - Salário-maternidade\n94 - Salário-maternidade 13º salário\n95 - Exclusiva do empregador - Mensal\n96 - Exclusiva do empregador - 13º salário\n97 - Exclusiva do empregador - Salário-maternidade\n98 - Exclusiva do empregador - Salário-maternidade 13º salário\nValidação: Para utilização de código [91, 92, 93, 94, 95, 96, 97, 98], é necessária a existência de grupo com informações relativas ao processo.",
-            "validacao": " Para utilização de código [91, 92, 93, 94, 95, 96, 97, 98], é necessária a existência de grupo com informações relativas ao processo.",
+            "validacao": "Para utilização de código [91, 92, 93, 94, 95, 96, 97, 98], é necessária a existência de grupo com informações relativas ao processo.",
             "valores-validos": {
                 "00": "00 - Não é base de cálculo",
                 "01": "01 - Não é base de cálculo em função de acordos internacionais de previdência social  Base de cálculo das contribuições sociais - Salário de contribuição:",
@@ -368,7 +368,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Código de incidência tributária da rubrica para o Imposto de Renda Retido na Fonte - IRRF.\nValidação: Deve ser um código válido e existente na Tabela 21.\nPara utilização de código [9X] ou [9XXX], é necessária a existência de grupo com informações relativas ao processo.",
-            "validacao": " Deve ser um código válido e existente na Tabela 21.\\ Para utilização de código [9X] ou [9XXX], é necessária a existência de grupo com informações relativas ao processo.",
+            "validacao": "Deve ser um código válido e existente na Tabela 21.\\ Para utilização de código [9X] ou [9XXX], é necessária a existência de grupo com informações relativas ao processo.",
             "valores-validos": {}
         },
         {
@@ -382,7 +382,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Código de incidência da rubrica para o Fundo de Garantia do Tempo de Serviço - FGTS.\nValores válidos:\n00 - Não é base de cálculo do FGTS\n11 - Base de cálculo do FGTS mensal\n12 - Base de cálculo do FGTS 13° salário\n21 - Base de cálculo do FGTS aviso prévio indenizado\n91 - Incidência suspensa em decorrência de decisão judicial - FGTS mensal\n92 - Incidência suspensa em decorrência de decisão judicial - FGTS 13º salário\n93 - Incidência suspensa em decorrência de decisão judicial - FGTS aviso prévio indenizado\nValidação: Para utilização de código [91, 92, 93], é necessária a existência de grupo com informações relativas ao processo.",
-            "validacao": " Para utilização de código [91, 92, 93], é necessária a existência de grupo com informações relativas ao processo.",
+            "validacao": "Para utilização de código [91, 92, 93], é necessária a existência de grupo com informações relativas ao processo.",
             "valores-validos": {
                 "00": "00 - Não é base de cálculo do FGTS",
                 "11": "11 - Base de cálculo do FGTS mensal",
@@ -425,7 +425,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Informar se a rubrica compõe o teto remuneratório específico (art. 37, XI, da CF/1988).\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório se a natureza jurídica do declarante for Administração Pública (grupo [1]).",
-            "validacao": " Preenchimento obrigatório se a natureza jurídica do declarante for Administração Pública (grupo [1]).",
+            "validacao": "Preenchimento obrigatório se a natureza jurídica do declarante for Administração Pública (grupo [1]).",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -487,7 +487,7 @@
             "tamanho": "17, 20 ou 21",
             "dec": "-",
             "descricao": "Informar um número de processo cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -518,7 +518,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -546,7 +546,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -560,7 +560,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -588,7 +588,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1, 7].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
             "valores-validos": {}
         },
         {
@@ -630,7 +630,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento.\nValidação: O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -644,7 +644,7 @@
             "tamanho": "1-8",
             "dec": "-",
             "descricao": "Preencher com o identificador da Tabela de Rubricas no âmbito do empregador.\nValidação: O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -658,7 +658,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -672,7 +672,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -714,7 +714,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Informar o código de classificação da rubrica.\nValidação: Deve ser um código válido e existente na Tabela 03.",
-            "validacao": " Deve ser um código válido e existente na Tabela 03.",
+            "validacao": "Deve ser um código válido e existente na Tabela 03.",
             "valores-validos": {}
         },
         {
@@ -747,7 +747,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Código de incidência tributária da rubrica para a Previdência Social.\nValores válidos:\n00 - Não é base de cálculo\n01 - Não é base de cálculo em função de acordos internacionais de previdência social\n\nBase de cálculo das contribuições sociais - Salário de contribuição:\n11 - Mensal\n12 - 13º salário\n13 - Exclusiva do empregador - Mensal\n14 - Exclusiva do empregador - 13° salário\n15 - Exclusiva do segurado - Mensal\n16 - Exclusiva do segurado - 13° salário\n21 - Salário-maternidade mensal, pago pelo empregador\n22 - Salário-maternidade 13º salário, pago pelo empregador\n25 - Salário-maternidade mensal, pago pelo INSS\n26 - Salário-maternidade 13° salário, pago pelo INSS\n\nContribuição descontada do segurado sobre salário de contribuição:\n31 - Mensal\n32 - 13º salário\n34 - SEST\n35 - SENAT\n\nOutros:\n51 - Salário-família\n\nSuspensão de incidência sobre salário de contribuição em decorrência de decisão judicial:\n91 - Mensal\n92 - 13º salário\n93 - Salário-maternidade\n94 - Salário-maternidade 13º salário\n95 - Exclusiva do empregador - Mensal\n96 - Exclusiva do empregador - 13º salário\n97 - Exclusiva do empregador - Salário-maternidade\n98 - Exclusiva do empregador - Salário-maternidade 13º salário\nValidação: Para utilização de código [91, 92, 93, 94, 95, 96, 97, 98], é necessária a existência de grupo com informações relativas ao processo.",
-            "validacao": " Para utilização de código [91, 92, 93, 94, 95, 96, 97, 98], é necessária a existência de grupo com informações relativas ao processo.",
+            "validacao": "Para utilização de código [91, 92, 93, 94, 95, 96, 97, 98], é necessária a existência de grupo com informações relativas ao processo.",
             "valores-validos": {
                 "00": "00 - Não é base de cálculo",
                 "01": "01 - Não é base de cálculo em função de acordos internacionais de previdência social  Base de cálculo das contribuições sociais - Salário de contribuição:",
@@ -787,7 +787,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Código de incidência tributária da rubrica para o Imposto de Renda Retido na Fonte - IRRF.\nValidação: Deve ser um código válido e existente na Tabela 21.\nPara utilização de código [9X] ou [9XXX], é necessária a existência de grupo com informações relativas ao processo.",
-            "validacao": " Deve ser um código válido e existente na Tabela 21.\\ Para utilização de código [9X] ou [9XXX], é necessária a existência de grupo com informações relativas ao processo.",
+            "validacao": "Deve ser um código válido e existente na Tabela 21.\\ Para utilização de código [9X] ou [9XXX], é necessária a existência de grupo com informações relativas ao processo.",
             "valores-validos": {}
         },
         {
@@ -801,7 +801,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Código de incidência da rubrica para o Fundo de Garantia do Tempo de Serviço - FGTS.\nValores válidos:\n00 - Não é base de cálculo do FGTS\n11 - Base de cálculo do FGTS mensal\n12 - Base de cálculo do FGTS 13° salário\n21 - Base de cálculo do FGTS aviso prévio indenizado\n91 - Incidência suspensa em decorrência de decisão judicial - FGTS mensal\n92 - Incidência suspensa em decorrência de decisão judicial - FGTS 13º salário\n93 - Incidência suspensa em decorrência de decisão judicial - FGTS aviso prévio indenizado\nValidação: Para utilização de código [91, 92, 93], é necessária a existência de grupo com informações relativas ao processo.",
-            "validacao": " Para utilização de código [91, 92, 93], é necessária a existência de grupo com informações relativas ao processo.",
+            "validacao": "Para utilização de código [91, 92, 93], é necessária a existência de grupo com informações relativas ao processo.",
             "valores-validos": {
                 "00": "00 - Não é base de cálculo do FGTS",
                 "11": "11 - Base de cálculo do FGTS mensal",
@@ -844,7 +844,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Informar se a rubrica compõe o teto remuneratório específico (art. 37, XI, da CF/1988).\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório se a natureza jurídica do declarante for Administração Pública (grupo [1]).",
-            "validacao": " Preenchimento obrigatório se a natureza jurídica do declarante for Administração Pública (grupo [1]).",
+            "validacao": "Preenchimento obrigatório se a natureza jurídica do declarante for Administração Pública (grupo [1]).",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -906,7 +906,7 @@
             "tamanho": "17, 20 ou 21",
             "dec": "-",
             "descricao": "Informar um número de processo cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -937,7 +937,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -965,7 +965,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -979,7 +979,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -1007,7 +1007,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1, 7].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
             "valores-validos": {}
         },
         {
@@ -1035,7 +1035,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -1049,7 +1049,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -1091,7 +1091,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento.\nValidação: O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O código não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -1105,7 +1105,7 @@
             "tamanho": "1-8",
             "dec": "-",
             "descricao": "Preencher com o identificador da Tabela de Rubricas no âmbito do empregador.\nValidação: O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O identificador não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -1119,7 +1119,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -1133,7 +1133,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         }
     ]

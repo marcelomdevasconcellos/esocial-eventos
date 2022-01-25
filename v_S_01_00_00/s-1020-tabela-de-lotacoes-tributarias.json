@@ -211,7 +211,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador para a lotação tributária.\nValidação: O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -225,7 +225,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -239,7 +239,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -267,7 +267,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de lotação.\nValidação: Deve ser um código válido e existente na Tabela 10, bem como compatível com a classificação tributária indicada no evento S-1000, conforme Tabela 12.",
-            "validacao": " Deve ser um código válido e existente na Tabela 10, bem como compatível com a classificação tributária indicada no evento S-1000, conforme Tabela 12.",
+            "validacao": "Deve ser um código válido e existente na Tabela 10, bem como compatível com a classificação tributária indicada no evento S-1000, conforme Tabela 12.",
             "valores-validos": {}
         },
         {
@@ -281,7 +281,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de inscrição, conforme Tabela 05.\nValores válidos:\n1 - CNPJ\n2 - CPF\n4 - CNO\nValidação: O campo não deve ser preenchido se tpLotacao for igual a [01, 10, 21, 24, 90, 91]. Nos demais casos, observar conteúdo exigido para o campo dadosLotacao/nrInsc, conforme Tabela 10.",
-            "validacao": " O campo não deve ser preenchido se tpLotacao for igual a [01, 10, 21, 24, 90, 91]. Nos demais casos, observar conteúdo exigido para o campo dadosLotacao/nrInsc, conforme Tabela 10.",
+            "validacao": "O campo não deve ser preenchido se tpLotacao for igual a [01, 10, 21, 24, 90, 91]. Nos demais casos, observar conteúdo exigido para o campo dadosLotacao/nrInsc, conforme Tabela 10.",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "2": "2 - CPF",
@@ -299,7 +299,7 @@
             "tamanho": "11, 12 ou 14",
             "dec": "-",
             "descricao": "Preencher com o número de inscrição (CNPJ, CPF, CNO) ao qual pertence a lotação tributária.\nValidação: a) Deve ser preenchido de acordo com o conteúdo exigido, conforme especificado no campo dadosLotacao/tpInsc e na Tabela 10;\nb) Deve ser um identificador válido, constante das bases da RFB.",
-            "validacao": " a) Deve ser preenchido de acordo com o conteúdo exigido, conforme especificado no campo dadosLotacao/tpInsc e na Tabela 10;\\ b) Deve ser um identificador válido, constante das bases da RFB.",
+            "validacao": "a) Deve ser preenchido de acordo com o conteúdo exigido, conforme especificado no campo dadosLotacao/tpInsc e na Tabela 10;\\ b) Deve ser um identificador válido, constante das bases da RFB.",
             "valores-validos": {}
         },
         {
@@ -327,7 +327,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código relativo ao FPAS.\nValidação: Deve ser um código FPAS válido, conforme Tabela 04.",
-            "validacao": " Deve ser um código FPAS válido, conforme Tabela 04.",
+            "validacao": "Deve ser um código FPAS válido, conforme Tabela 04.",
             "valores-validos": {}
         },
         {
@@ -341,7 +341,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Preencher com o código de Terceiros, já considerando a existência de eventuais convênios para recolhimento direto. Ex.: Se o contribuinte está enquadrado com FPAS [507], cujo código cheio de Terceiros é [0079], se possuir convênio com SENAI deve informar o código [0075].\nValidação: Se a classificação tributária em S-1000 for igual a [01, 02, 03, 04], informar [0000]. Nos demais casos, o código de Terceiros informado deve ser compatível com o código de FPAS informado, conforme Tabela 04.",
-            "validacao": " Se a classificação tributária em S-1000 for igual a [01, 02, 03, 04], informar [0000]. Nos demais casos, o código de Terceiros informado deve ser compatível com o código de FPAS informado, conforme Tabela 04.",
+            "validacao": "Se a classificação tributária em S-1000 for igual a [01, 02, 03, 04], informar [0000]. Nos demais casos, o código de Terceiros informado deve ser compatível com o código de FPAS informado, conforme Tabela 04.",
             "valores-validos": {}
         },
         {
@@ -354,8 +354,8 @@
             "ocor": "0-1",
             "tamanho": "4",
             "dec": "-",
-            "descricao": "Informar o código combinado dos Terceiros para os quais o recolhimento está suspenso em virtude de processos judiciais. Ex.: Se o contribuinte possui decisões de processos para suspensão de recolhimentos ao SESI (0008) e ao SEBRAE (0064), deve informar o código combinado das duas entidades, ou seja, [0072].\nValidação: Deve ser um código consistente com a Tabela 04.\nDeve haver um processo em procJudTerceiro para cada código de Terceiro cujo recolhimento esteja suspenso.",
-            "validacao": " Deve ser um código consistente com a Tabela 04.\\ Deve haver um processo em procJudTerceiro para cada código de Terceiro cujo recolhimento esteja suspenso.",
+            "descricao": "Informar o código combinado dos Terceiros para os quais o recolhimento está suspenso em virtude de processos judiciais. Ex.: Se o contribuinte possui decisões de processos para suspensão de recolhimentos ao SESI (0008) e ao SEBRAE (0064), deve informar o código combinado das duas entidades, ou seja, [0072].\nValidação: Deve ser um código consistente com a Tabela 04.\nDeve haver pelo menos um processo em procJudTerceiro para cada código de Terceiro cujo recolhimento esteja suspenso.",
+            "validacao": "Deve ser um código consistente com a Tabela 04.\\ Deve haver pelo menos um processo em procJudTerceiro para cada código de Terceiro cujo recolhimento esteja suspenso.",
             "valores-validos": {}
         },
         {
@@ -397,7 +397,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Informar o código de Terceiro.\nValidação: Deve ser um código de Terceiro válido e compatível com o FPAS/Terceiros informado no grupo superior, conforme Tabela 04.",
-            "validacao": " Deve ser um código de Terceiro válido e compatível com o FPAS/Terceiros informado no grupo superior, conforme Tabela 04.",
+            "validacao": "Deve ser um código de Terceiro válido e compatível com o FPAS/Terceiros informado no grupo superior, conforme Tabela 04.",
             "valores-validos": {}
         },
         {
@@ -411,7 +411,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -425,7 +425,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -470,7 +470,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Número de inscrição (CNPJ/CPF) do contratante.\nValidação: Deve ser um número de CNPJ ou CPF válido, conforme definido em tpInscContrat.",
-            "validacao": " Deve ser um número de CNPJ ou CPF válido, conforme definido em tpInscContrat.",
+            "validacao": "Deve ser um número de CNPJ ou CPF válido, conforme definido em tpInscContrat.",
             "valores-validos": {}
         },
         {
@@ -501,7 +501,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
             "valores-validos": {}
         },
         {
@@ -543,7 +543,7 @@
             "tamanho": "1-5",
             "dec": "4",
             "descricao": "Fator Acidentário de Prevenção - FAP.\nValidação: Deve ser um número maior ou igual a 0,5000 e menor ou igual a 2,0000, de acordo com o estabelecido pelo órgão governamental competente.",
-            "validacao": " Deve ser um número maior ou igual a 0,5000 e menor ou igual a 2,0000, de acordo com o estabelecido pelo órgão governamental competente.",
+            "validacao": "Deve ser um número maior ou igual a 0,5000 e menor ou igual a 2,0000, de acordo com o estabelecido pelo órgão governamental competente.",
             "valores-validos": {}
         },
         {
@@ -585,7 +585,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador para a lotação tributária.\nValidação: O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -599,7 +599,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -613,7 +613,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -641,7 +641,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de lotação.\nValidação: Deve ser um código válido e existente na Tabela 10, bem como compatível com a classificação tributária indicada no evento S-1000, conforme Tabela 12.",
-            "validacao": " Deve ser um código válido e existente na Tabela 10, bem como compatível com a classificação tributária indicada no evento S-1000, conforme Tabela 12.",
+            "validacao": "Deve ser um código válido e existente na Tabela 10, bem como compatível com a classificação tributária indicada no evento S-1000, conforme Tabela 12.",
             "valores-validos": {}
         },
         {
@@ -655,7 +655,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de inscrição, conforme Tabela 05.\nValores válidos:\n1 - CNPJ\n2 - CPF\n4 - CNO\nValidação: O campo não deve ser preenchido se tpLotacao for igual a [01, 10, 21, 24, 90, 91]. Nos demais casos, observar conteúdo exigido para o campo dadosLotacao/nrInsc, conforme Tabela 10.",
-            "validacao": " O campo não deve ser preenchido se tpLotacao for igual a [01, 10, 21, 24, 90, 91]. Nos demais casos, observar conteúdo exigido para o campo dadosLotacao/nrInsc, conforme Tabela 10.",
+            "validacao": "O campo não deve ser preenchido se tpLotacao for igual a [01, 10, 21, 24, 90, 91]. Nos demais casos, observar conteúdo exigido para o campo dadosLotacao/nrInsc, conforme Tabela 10.",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "2": "2 - CPF",
@@ -673,7 +673,7 @@
             "tamanho": "11, 12 ou 14",
             "dec": "-",
             "descricao": "Preencher com o número de inscrição (CNPJ, CPF, CNO) ao qual pertence a lotação tributária.\nValidação: a) Deve ser preenchido de acordo com o conteúdo exigido, conforme especificado no campo dadosLotacao/tpInsc e na Tabela 10;\nb) Deve ser um identificador válido, constante das bases da RFB.",
-            "validacao": " a) Deve ser preenchido de acordo com o conteúdo exigido, conforme especificado no campo dadosLotacao/tpInsc e na Tabela 10;\\ b) Deve ser um identificador válido, constante das bases da RFB.",
+            "validacao": "a) Deve ser preenchido de acordo com o conteúdo exigido, conforme especificado no campo dadosLotacao/tpInsc e na Tabela 10;\\ b) Deve ser um identificador válido, constante das bases da RFB.",
             "valores-validos": {}
         },
         {
@@ -701,7 +701,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código relativo ao FPAS.\nValidação: Deve ser um código FPAS válido, conforme Tabela 04.",
-            "validacao": " Deve ser um código FPAS válido, conforme Tabela 04.",
+            "validacao": "Deve ser um código FPAS válido, conforme Tabela 04.",
             "valores-validos": {}
         },
         {
@@ -715,7 +715,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Preencher com o código de Terceiros, já considerando a existência de eventuais convênios para recolhimento direto. Ex.: Se o contribuinte está enquadrado com FPAS [507], cujo código cheio de Terceiros é [0079], se possuir convênio com SENAI deve informar o código [0075].\nValidação: Se a classificação tributária em S-1000 for igual a [01, 02, 03, 04], informar [0000]. Nos demais casos, o código de Terceiros informado deve ser compatível com o código de FPAS informado, conforme Tabela 04.",
-            "validacao": " Se a classificação tributária em S-1000 for igual a [01, 02, 03, 04], informar [0000]. Nos demais casos, o código de Terceiros informado deve ser compatível com o código de FPAS informado, conforme Tabela 04.",
+            "validacao": "Se a classificação tributária em S-1000 for igual a [01, 02, 03, 04], informar [0000]. Nos demais casos, o código de Terceiros informado deve ser compatível com o código de FPAS informado, conforme Tabela 04.",
             "valores-validos": {}
         },
         {
@@ -728,8 +728,8 @@
             "ocor": "0-1",
             "tamanho": "4",
             "dec": "-",
-            "descricao": "Informar o código combinado dos Terceiros para os quais o recolhimento está suspenso em virtude de processos judiciais. Ex.: Se o contribuinte possui decisões de processos para suspensão de recolhimentos ao SESI (0008) e ao SEBRAE (0064), deve informar o código combinado das duas entidades, ou seja, [0072].\nValidação: Deve ser um código consistente com a Tabela 04.\nDeve haver um processo em procJudTerceiro para cada código de Terceiro cujo recolhimento esteja suspenso.",
-            "validacao": " Deve ser um código consistente com a Tabela 04.\\ Deve haver um processo em procJudTerceiro para cada código de Terceiro cujo recolhimento esteja suspenso.",
+            "descricao": "Informar o código combinado dos Terceiros para os quais o recolhimento está suspenso em virtude de processos judiciais. Ex.: Se o contribuinte possui decisões de processos para suspensão de recolhimentos ao SESI (0008) e ao SEBRAE (0064), deve informar o código combinado das duas entidades, ou seja, [0072].\nValidação: Deve ser um código consistente com a Tabela 04.\nDeve haver pelo menos um processo em procJudTerceiro para cada código de Terceiro cujo recolhimento esteja suspenso.",
+            "validacao": "Deve ser um código consistente com a Tabela 04.\\ Deve haver pelo menos um processo em procJudTerceiro para cada código de Terceiro cujo recolhimento esteja suspenso.",
             "valores-validos": {}
         },
         {
@@ -771,7 +771,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Informar o código de Terceiro.\nValidação: Deve ser um código de Terceiro válido e compatível com o FPAS/Terceiros informado no grupo superior, conforme Tabela 04.",
-            "validacao": " Deve ser um código de Terceiro válido e compatível com o FPAS/Terceiros informado no grupo superior, conforme Tabela 04.",
+            "validacao": "Deve ser um código de Terceiro válido e compatível com o FPAS/Terceiros informado no grupo superior, conforme Tabela 04.",
             "valores-validos": {}
         },
         {
@@ -785,7 +785,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -799,7 +799,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -844,7 +844,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Número de inscrição (CNPJ/CPF) do contratante.\nValidação: Deve ser um número de CNPJ ou CPF válido, conforme definido em tpInscContrat.",
-            "validacao": " Deve ser um número de CNPJ ou CPF válido, conforme definido em tpInscContrat.",
+            "validacao": "Deve ser um número de CNPJ ou CPF válido, conforme definido em tpInscContrat.",
             "valores-validos": {}
         },
         {
@@ -875,7 +875,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
             "valores-validos": {}
         },
         {
@@ -917,7 +917,7 @@
             "tamanho": "1-5",
             "dec": "4",
             "descricao": "Fator Acidentário de Prevenção - FAP.\nValidação: Deve ser um número maior ou igual a 0,5000 e menor ou igual a 2,0000, de acordo com o estabelecido pelo órgão governamental competente.",
-            "validacao": " Deve ser um número maior ou igual a 0,5000 e menor ou igual a 2,0000, de acordo com o estabelecido pelo órgão governamental competente.",
+            "validacao": "Deve ser um número maior ou igual a 0,5000 e menor ou igual a 2,0000, de acordo com o estabelecido pelo órgão governamental competente.",
             "valores-validos": {}
         },
         {
@@ -945,7 +945,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -959,7 +959,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -1001,7 +1001,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador para a lotação tributária.\nValidação: O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O código atribuído não pode conter a expressão 'eSocial' nas 7 primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -1015,7 +1015,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -1029,7 +1029,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         }
     ]

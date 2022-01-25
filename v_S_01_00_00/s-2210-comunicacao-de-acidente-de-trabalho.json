@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -228,7 +228,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
             "valores-validos": {}
         },
         {
@@ -242,7 +242,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nInformar somente no caso de TSVE sem informação de matrícula no evento S-2300.\nValidação: Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -270,7 +270,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data do acidente.\nValidação: Deve ser uma data válida, igual ou anterior à data atual e igual ou posterior à data de admissão do trabalhador e à data de início da obrigatoriedade deste evento para o empregador no eSocial.\nSe tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
-            "validacao": " Deve ser uma data válida, igual ou anterior à data atual e igual ou posterior à data de admissão do trabalhador e à data de início da obrigatoriedade deste evento para o empregador no eSocial.\\ Se tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
+            "validacao": "Deve ser uma data válida, igual ou anterior à data atual e igual ou posterior à data de admissão do trabalhador e à data de início da obrigatoriedade deste evento para o empregador no eSocial.\\ Se tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
             "valores-validos": {}
         },
         {
@@ -301,8 +301,8 @@
             "ocor": "0-1",
             "tamanho": "4",
             "dec": "-",
-            "descricao": "Hora do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\nSe tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\\ Se tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
+            "descricao": "Hora do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório e exclusivo se tpAcid = [1, 3]. Se informada, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\nSe tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpAcid = [1, 3]. Se informada, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\\ Se tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
             "valores-validos": {}
         },
         {
@@ -316,7 +316,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Horas trabalhadas antes da ocorrência do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
             "valores-validos": {}
         },
         {
@@ -348,7 +348,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Houve óbito?\nValores válidos:\nS - Sim\nN - Não\nValidação: Se o tpCat for igual a [3], o campo deverá sempre ser preenchido com [S]. Se o tpCat for igual a [2], o campo deverá sempre ser preenchido com [N].",
-            "validacao": " Se o tpCat for igual a [3], o campo deverá sempre ser preenchido com [S]. Se o tpCat for igual a [2], o campo deverá sempre ser preenchido com [N].",
+            "validacao": "Se o tpCat for igual a [3], o campo deverá sempre ser preenchido com [S]. Se o tpCat for igual a [2], o campo deverá sempre ser preenchido com [N].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -365,7 +365,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data do óbito.\nValidação: Deve ser uma data válida, igual ou posterior a dtAcid e igual ou anterior à data atual.\nPreenchimento obrigatório e exclusivo se indCatObito = [S].",
-            "validacao": " Deve ser uma data válida, igual ou posterior a dtAcid e igual ou anterior à data atual.\\ Preenchimento obrigatório e exclusivo se indCatObito = [S].",
+            "validacao": "Deve ser uma data válida, igual ou posterior a dtAcid e igual ou anterior à data atual.\\ Preenchimento obrigatório e exclusivo se indCatObito = [S].",
             "valores-validos": {}
         },
         {
@@ -396,7 +396,7 @@
             "tamanho": "9",
             "dec": "-",
             "descricao": "Preencher com o código da situação geradora do acidente ou da doença profissional.\nValidação: Deve ser um código válido e existente na Tabela 15.",
-            "validacao": " Deve ser um código válido e existente na Tabela 15.",
+            "validacao": "Deve ser um código válido e existente na Tabela 15.",
             "valores-validos": {}
         },
         {
@@ -492,7 +492,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Tipo de logradouro.\nValidação: Se informado, deve ser um código válido e existente na Tabela 20.",
-            "validacao": " Se informado, deve ser um código válido e existente na Tabela 20.",
+            "validacao": "Se informado, deve ser um código válido e existente na Tabela 20.",
             "valores-validos": {}
         },
         {
@@ -562,7 +562,7 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Preenchimento obrigatório se tpLocal = [1, 3, 5]. Não preencher se tpLocal = [2].\nSe preenchido, deve ser informado apenas com números, com 8 (oito) posições.",
-            "validacao": " Preenchimento obrigatório se tpLocal = [1, 3, 5]. Não preencher se tpLocal = [2].\\ Se preenchido, deve ser informado apenas com números, com 8 (oito) posições.",
+            "validacao": "Preenchimento obrigatório se tpLocal = [1, 3, 5]. Não preencher se tpLocal = [2].\\ Se preenchido, deve ser informado apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
@@ -576,7 +576,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Preenchimento obrigatório se tpLocal = [1, 3, 4, 5]. Não preencher se tpLocal = [2].\nSe informado, deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Preenchimento obrigatório se tpLocal = [1, 3, 4, 5]. Não preencher se tpLocal = [2].\\ Se informado, deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Preenchimento obrigatório se tpLocal = [1, 3, 4, 5]. Não preencher se tpLocal = [2].\\ Se informado, deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -590,7 +590,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com a sigla da Unidade da Federação - UF.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO\nValidação: Preenchimento obrigatório se tpLocal = [1, 3, 4, 5]. Não preencher se tpLocal = [2].",
-            "validacao": " Preenchimento obrigatório se tpLocal = [1, 3, 4, 5]. Não preencher se tpLocal = [2].",
+            "validacao": "Preenchimento obrigatório se tpLocal = [1, 3, 4, 5]. Não preencher se tpLocal = [2].",
             "valores-validos": {}
         },
         {
@@ -604,7 +604,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país.\nValidação: Deve ser um código de país válido e existente na Tabela 06.\nPreenchimento obrigatório se tpLocal = [2]. Não preencher nos demais casos.",
-            "validacao": " Deve ser um código de país válido e existente na Tabela 06.\\ Preenchimento obrigatório se tpLocal = [2]. Não preencher nos demais casos.",
+            "validacao": "Deve ser um código de país válido e existente na Tabela 06.\\ Preenchimento obrigatório se tpLocal = [2]. Não preencher nos demais casos.",
             "valores-validos": {}
         },
         {
@@ -618,7 +618,7 @@
             "tamanho": "4-12",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal.\nValidação: Preenchimento obrigatório se tpLocal = [2]. Não preencher nos demais casos.",
-            "validacao": " Preenchimento obrigatório se tpLocal = [2]. Não preencher nos demais casos.",
+            "validacao": "Preenchimento obrigatório se tpLocal = [2]. Não preencher nos demais casos.",
             "valores-validos": {}
         },
         {
@@ -664,7 +664,7 @@
             "tamanho": "12 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do estabelecimento, de acordo com o tipo de inscrição indicado no campo ideLocalAcid/tpInsc. Se o acidente ou a doença ocupacional ocorreu em local onde o trabalhador presta serviços, deve ser um número de inscrição pertencente à contratante dos serviços.\nValidação: Deve ser compatível com o conteúdo do campo ideLocalAcid/tpInsc. Deve ser um identificador válido, constante das bases da RFB, e:\na) Se tpLocal = [1], deve ser válido e existente na Tabela de Estabelecimentos (S-1005);\nb) Se tpLocal = [3], deve ser diferente dos estabelecimentos informados na Tabela S-1005 e, se ideLocalAcid/tpInsc = [1], diferente do CNPJ base indicado em S-1000.",
-            "validacao": " Deve ser compatível com o conteúdo do campo ideLocalAcid/tpInsc. Deve ser um identificador válido, constante das bases da RFB, e:\\ a) Se tpLocal = [1], deve ser válido e existente na Tabela de Estabelecimentos (S-1005);\\ b) Se tpLocal = [3], deve ser diferente dos estabelecimentos informados na Tabela S-1005 e, se ideLocalAcid/tpInsc = [1], diferente do CNPJ base indicado em S-1000.",
+            "validacao": "Deve ser compatível com o conteúdo do campo ideLocalAcid/tpInsc. Deve ser um identificador válido, constante das bases da RFB, e:\\ a) Se tpLocal = [1], deve ser válido e existente na Tabela de Estabelecimentos (S-1005);\\ b) Se tpLocal = [3], deve ser diferente dos estabelecimentos informados na Tabela S-1005 e, se ideLocalAcid/tpInsc = [1], diferente do CNPJ base indicado em S-1000.",
             "valores-validos": {}
         },
         {
@@ -692,7 +692,7 @@
             "tamanho": "9",
             "dec": "-",
             "descricao": "Preencher com o código correspondente à parte atingida.\nValidação: Deve ser um código válido e existente na Tabela 13.",
-            "validacao": " Deve ser um código válido e existente na Tabela 13.",
+            "validacao": "Deve ser um código válido e existente na Tabela 13.",
             "valores-validos": {}
         },
         {
@@ -739,7 +739,7 @@
             "tamanho": "9",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao agente causador do acidente.\nValidação: Deve ser um código válido e existente na Tabela 14 ou na Tabela 15.",
-            "validacao": " Deve ser um código válido e existente na Tabela 14 ou na Tabela 15.",
+            "validacao": "Deve ser um código válido e existente na Tabela 14 ou na Tabela 15.",
             "valores-validos": {}
         },
         {
@@ -766,8 +766,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data do atendimento.\nValidação: Deve ser uma data válida, igual ou anterior à data atual.",
-            "validacao": " Deve ser uma data válida, igual ou anterior à data atual.",
+            "descricao": "Data do atendimento.\nValidação: Deve ser uma data igual ou posterior a dtAcid e igual ou anterior à data atual.",
+            "validacao": "Deve ser uma data igual ou posterior a dtAcid e igual ou anterior à data atual.",
             "valores-validos": {}
         },
         {
@@ -781,7 +781,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Hora do atendimento, no formato HHMM.\nValidação: Deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
-            "validacao": " Deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
+            "validacao": "Deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
             "valores-validos": {}
         },
         {
@@ -826,7 +826,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de afastamento do trabalho durante o tratamento.\nValores válidos:\nS - Sim\nN - Não\nValidação: Se o campo indCatObito for igual a [S], o campo deve sempre ser preenchido com [N].",
-            "validacao": " Se o campo indCatObito for igual a [S], o campo deve sempre ser preenchido com [N].",
+            "validacao": "Se o campo indCatObito for igual a [S], o campo deve sempre ser preenchido com [N].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -843,7 +843,7 @@
             "tamanho": "9",
             "dec": "-",
             "descricao": "Preencher com a descrição da natureza da lesão.\nValidação: Deve ser um código válido e existente na Tabela 17.",
-            "validacao": " Deve ser um código válido e existente na Tabela 17.",
+            "validacao": "Deve ser um código válido e existente na Tabela 17.",
             "valores-validos": {}
         },
         {
@@ -885,7 +885,7 @@
             "tamanho": "3-4",
             "dec": "-",
             "descricao": "Informar o código da tabela de Classificação Internacional de Doenças - CID.\nValidação: Deve ser preenchido com caracteres alfanuméricos, conforme opções constantes na tabela CID.",
-            "validacao": " Deve ser preenchido com caracteres alfanuméricos, conforme opções constantes na tabela CID.",
+            "validacao": "Deve ser preenchido com caracteres alfanuméricos, conforme opções constantes na tabela CID.",
             "valores-validos": {}
         },
         {
@@ -1001,7 +1001,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Informar o número do recibo da última CAT referente ao mesmo acidente/doença relacionada ao trabalho, nos casos:\na) de CAT de reabertura;\nb) de óbito, quando houver CAT anterior.\nValidação: Deve corresponder ao número do recibo do arquivo relativo à última CAT informada anteriormente, pertencente ao mesmo contrato, desde que indCatObito da última CAT informada seja igual a [N]. O sistema não efetuará a conferência da informação se dtAcid for anterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200.\nOBS.: Quando a data do acidente for anterior à data de obrigatoriedade do empregador ao envio deste evento, a CAT de reabertura e/ou de óbito não devem ser informadas ao eSocial, mantendo-se o procedimento realizado na emissão da CAT original.",
-            "validacao": " Deve corresponder ao número do recibo do arquivo relativo à última CAT informada anteriormente, pertencente ao mesmo contrato, desde que indCatObito da última CAT informada seja igual a [N]. O sistema não efetuará a conferência da informação se dtAcid for anterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200.\\ OBS.: Quando a data do acidente for anterior à data de obrigatoriedade do empregador ao envio deste evento, a CAT de reabertura e/ou de óbito não devem ser informadas ao eSocial, mantendo-se o procedimento realizado na emissão da CAT original.",
+            "validacao": "Deve corresponder ao número do recibo do arquivo relativo à última CAT informada anteriormente, pertencente ao mesmo contrato, desde que indCatObito da última CAT informada seja igual a [N]. O sistema não efetuará a conferência da informação se dtAcid for anterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200.\\ OBS.: Quando a data do acidente for anterior à data de obrigatoriedade do empregador ao envio deste evento, a CAT de reabertura e/ou de óbito não devem ser informadas ao eSocial, mantendo-se o procedimento realizado na emissão da CAT original.",
             "valores-validos": {}
         }
     ]

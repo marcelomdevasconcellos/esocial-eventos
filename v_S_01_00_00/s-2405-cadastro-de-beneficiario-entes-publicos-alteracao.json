@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -211,7 +211,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Informar o CPF do beneficiário.\nValidação: Deve ser um CPF válido e cadastrado pelo órgão público declarante por meio do evento S-2400.",
-            "validacao": " Deve ser um CPF válido e cadastrado pelo órgão público declarante por meio do evento S-2400.",
+            "validacao": "Deve ser um CPF válido e cadastrado pelo órgão público declarante por meio do evento S-2400.",
             "valores-validos": {}
         },
         {
@@ -239,7 +239,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de alteração.\nValidação: Deve ser posterior à data de início informada no evento S-2400 e igual ou anterior à data atual.",
-            "validacao": " Deve ser posterior à data de início informada no evento S-2400 e igual ou anterior à data atual.",
+            "validacao": "Deve ser posterior à data de início informada no evento S-2400 e igual ou anterior à data atual.",
             "valores-validos": {}
         },
         {
@@ -384,7 +384,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Tipo de logradouro.\nValidação: Se informado, deve ser um código válido e existente na Tabela 20.",
-            "validacao": " Se informado, deve ser um código válido e existente na Tabela 20.",
+            "validacao": "Se informado, deve ser um código válido e existente na Tabela 20.",
             "valores-validos": {}
         },
         {
@@ -454,7 +454,7 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Deve ser preenchido apenas com números, com 8 (oito) posições.",
-            "validacao": " Deve ser preenchido apenas com números, com 8 (oito) posições.",
+            "validacao": "Deve ser preenchido apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
@@ -468,7 +468,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -510,7 +510,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -622,7 +622,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Tipo de dependente.\nValidação: Deve ser um código válido e existente na Tabela 07.",
-            "validacao": " Deve ser um código válido e existente na Tabela 07.",
+            "validacao": "Deve ser um código válido e existente na Tabela 07.",
             "valores-validos": {}
         },
         {
@@ -650,7 +650,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de nascimento.\nValidação: Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
-            "validacao": " Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
+            "validacao": "Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
             "valores-validos": {}
         },
         {
@@ -664,7 +664,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Número de inscrição no CPF.\nValidação: Deve ser um número de CPF válido, observando o que segue:\na) O preenchimento é obrigatório se depIRRF = [S];\nb) Não pode haver mais de um dependente com o mesmo número de CPF.",
-            "validacao": " Deve ser um número de CPF válido, observando o que segue:\\ a) O preenchimento é obrigatório se depIRRF = [S];\\ b) Não pode haver mais de um dependente com o mesmo número de CPF.",
+            "validacao": "Deve ser um número de CPF válido, observando o que segue:\\ a) O preenchimento é obrigatório se depIRRF = [S];\\ b) Não pode haver mais de um dependente com o mesmo número de CPF.",
             "valores-validos": {}
         },
         {

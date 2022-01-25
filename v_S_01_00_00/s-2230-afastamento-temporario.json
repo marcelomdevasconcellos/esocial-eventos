@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -228,7 +228,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
             "valores-validos": {}
         },
         {
@@ -242,7 +242,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nInformar somente no caso de TSVE sem informação de matrícula no evento S-2300.\nValidação: Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -284,7 +284,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de início do afastamento.\nValidação: Deve-se obedecer às seguintes regras:\na) Não pode ser posterior à data atual, exceto se:\na1) codMotAfast = [15] (férias), situação em que pode ser até 60 dias posterior à data atual;\na2) codMotAfast = [18], situação em que pode ser até 120 dias posterior à data atual;\nb) É necessário que o trabalhador esteja, antes da data de início do afastamento, em atividade, ou seja, não pode existir evento de afastamento anterior a dtIniAfast sem que este tenha sido encerrado.",
-            "validacao": " Deve-se obedecer às seguintes regras:\\ a) Não pode ser posterior à data atual, exceto se:\\ a1) codMotAfast = [15] (férias), situação em que pode ser até 60 dias posterior à data atual;\\ a2) codMotAfast = [18], situação em que pode ser até 120 dias posterior à data atual;\\ b) É necessário que o trabalhador esteja, antes da data de início do afastamento, em atividade, ou seja, não pode existir evento de afastamento anterior a dtIniAfast sem que este tenha sido encerrado.",
+            "validacao": "Deve-se obedecer às seguintes regras:\\ a) Não pode ser posterior à data atual, exceto se:\\ a1) codMotAfast = [15] (férias), situação em que pode ser até 60 dias posterior à data atual;\\ a2) codMotAfast = [18], situação em que pode ser até 120 dias posterior à data atual;\\ b) É necessário que o trabalhador esteja, antes da data de início do afastamento, em atividade, ou seja, não pode existir evento de afastamento anterior a dtIniAfast sem que este tenha sido encerrado.",
             "valores-validos": {}
         },
         {
@@ -298,7 +298,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com o código do motivo de afastamento temporário.\nValidação: Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18. Se a natureza jurídica do declarante for Administração Pública (grupo [1]), não pode ser informado [14].",
-            "validacao": " Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18. Se a natureza jurídica do declarante for Administração Pública (grupo [1]), não pode ser informado [14].",
+            "validacao": "Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18. Se a natureza jurídica do declarante for Administração Pública (grupo [1]), não pode ser informado [14].",
             "valores-validos": {}
         },
         {
@@ -329,7 +329,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de acidente de trânsito.\nValores válidos:\n1 - Atropelamento\n2 - Colisão\n3 - Outros\nValidação: Somente pode ser preenchido se codMotAfast = [01, 03].",
-            "validacao": " Somente pode ser preenchido se codMotAfast = [01, 03].",
+            "validacao": "Somente pode ser preenchido se codMotAfast = [01, 03].",
             "valores-validos": {
                 "1": "1 - Atropelamento",
                 "2": "2 - Colisão",
@@ -347,7 +347,7 @@
             "tamanho": "1-255",
             "dec": "-",
             "descricao": "Detalhar as informações sobre o afastamento do trabalhador, de maneira a explicitar os motivos do mesmo.\nValidação: O preenchimento é obrigatório se codMotAfast = [21].",
-            "validacao": " O preenchimento é obrigatório se codMotAfast = [21].",
+            "validacao": "O preenchimento é obrigatório se codMotAfast = [21].",
             "valores-validos": {}
         },
         {
@@ -375,7 +375,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de início do período aquisitivo de férias.\nValidação: Deve ser igual ou posterior à data de admissão.",
-            "validacao": " Deve ser igual ou posterior à data de admissão.",
+            "validacao": "Deve ser igual ou posterior à data de admissão.",
             "valores-validos": {}
         },
         {
@@ -389,7 +389,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de término do período aquisitivo de férias.\nInformar o campo somente se o período aquisitivo for diferente de 1 ano.\nValidação: Se informada, deve ser uma data posterior a dtInicio.",
-            "validacao": " Se informada, deve ser uma data posterior a dtInicio.",
+            "validacao": "Se informada, deve ser uma data posterior a dtInicio.",
             "valores-validos": {}
         },
         {
@@ -417,7 +417,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Preencher com o CNPJ do órgão/entidade para o qual o trabalhador foi cedido/requisitado.\nValidação: Deve ser um CNPJ diferente do CNPJ do empregador e diferente dos estabelecimentos informados através do evento S-1005.\nRegra de validação:\nREGRA_VALIDA_CNPJ",
-            "validacao": " Deve ser um CNPJ diferente do CNPJ do empregador e diferente dos estabelecimentos informados através do evento S-1005.\\ [[Regra de validação:\\ REGRA_VALIDA_CNPJ",
+            "validacao": "Deve ser um CNPJ diferente do CNPJ do empregador e diferente dos estabelecimentos informados através do evento S-1005.\\ [[Regra de validação:\\ REGRA_VALIDA_CNPJ",
             "valores-validos": {}
         },
         {
@@ -463,7 +463,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "CNPJ do sindicato no qual o trabalhador exercerá o mandato.\nValidação: Deve ser um CNPJ diferente do CNPJ base do empregador e diferente dos informados na Tabela de Estabelecimentos (S-1005).\nRegra de validação:\nREGRA_VALIDA_CNPJ",
-            "validacao": " Deve ser um CNPJ diferente do CNPJ base do empregador e diferente dos informados na Tabela de Estabelecimentos (S-1005).\\ [[Regra de validação:\\ REGRA_VALIDA_CNPJ",
+            "validacao": "Deve ser um CNPJ diferente do CNPJ base do empregador e diferente dos informados na Tabela de Estabelecimentos (S-1005).\\ [[Regra de validação:\\ REGRA_VALIDA_CNPJ",
             "valores-validos": {}
         },
         {
@@ -508,8 +508,8 @@
             "ocor": "1",
             "tamanho": "14",
             "dec": "-",
-            "descricao": "CNPJ do órgão no qual o trabalhador exercerá o mandato eletivo.\nValidação: Deve ser um CNPJ diferente do CNPJ base do empregador e diferente dos informados na Tabela de Estabelecimentos (S-1005).\nRegra de validação:\nREGRA_VALIDA_CNPJ",
-            "validacao": " Deve ser um CNPJ diferente do CNPJ base do empregador e diferente dos informados na Tabela de Estabelecimentos (S-1005).\\ [[Regra de validação:\\ REGRA_VALIDA_CNPJ",
+            "descricao": "CNPJ do órgão no qual o trabalhador exercerá o mandato eletivo.\nRegra de validação:\nREGRA_VALIDA_CNPJ",
+            "validacao": "-",
             "valores-validos": {}
         },
         {
@@ -523,7 +523,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicar se o servidor optou pela remuneração do cargo efetivo.\nValores válidos:\nS - Sim\nN - Não\nValidação: Informação obrigatória e exclusiva se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [301].",
-            "validacao": " Informação obrigatória e exclusiva se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [301].",
+            "validacao": "Informação obrigatória e exclusiva se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [301].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -572,7 +572,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de processo.\nValores válidos:\n1 - Administrativo\n2 - Judicial\n3 - Número de Benefício - NB do INSS\nValidação: O preenchimento é obrigatório se origRetif = [2, 3].",
-            "validacao": " O preenchimento é obrigatório se origRetif = [2, 3].",
+            "validacao": "O preenchimento é obrigatório se origRetif = [2, 3].",
             "valores-validos": {
                 "1": "1 - Administrativo",
                 "2": "2 - Judicial",
@@ -590,7 +590,7 @@
             "tamanho": "10, 17, 20 ou 21",
             "dec": "-",
             "descricao": "Informar o número do processo administrativo/judicial ou do benefício de acordo com o tipo informado em tpProc.\nValidação: O preenchimento é obrigatório se origRetif = [2, 3]. Deve ser um número de processo/benefício válido e:\na) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\nb) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\nc) Se tpProc = [3], deve possuir 10 (dez) algarismos.",
-            "validacao": " O preenchimento é obrigatório se origRetif = [2, 3]. Deve ser um número de processo/benefício válido e:\\ a) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\\ b) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\\ c) Se tpProc = [3], deve possuir 10 (dez) algarismos.",
+            "validacao": "O preenchimento é obrigatório se origRetif = [2, 3]. Deve ser um número de processo/benefício válido e:\\ a) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\\ b) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\\ c) Se tpProc = [3], deve possuir 10 (dez) algarismos.",
             "valores-validos": {}
         },
         {
@@ -618,7 +618,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data do término do afastamento do trabalhador.\nValidação: Deve ser igual ou posterior à data de início do afastamento do trabalhador.",
-            "validacao": " Deve ser igual ou posterior à data de início do afastamento do trabalhador.",
+            "validacao": "Deve ser igual ou posterior à data de início do afastamento do trabalhador.",
             "valores-validos": {}
         }
     ]

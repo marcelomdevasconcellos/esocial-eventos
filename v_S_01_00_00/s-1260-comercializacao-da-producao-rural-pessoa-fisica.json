@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -101,7 +101,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações.\nValidação: Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
-            "validacao": " Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": "Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
             "valores-validos": {}
         },
         {
@@ -256,7 +256,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Preencher com o número de inscrição no CAEPF do estabelecimento rural.\nValidação: Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005).",
-            "validacao": " Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005).",
+            "validacao": "Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005).",
             "valores-validos": {}
         },
         {
@@ -283,12 +283,12 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Indicativo de comercialização.\nValores válidos:\n2 - Comercialização da produção efetuada diretamente no varejo a consumidor final ou a outro produtor rural pessoa física por produtor rural pessoa física, inclusive por segurado especial, ou por pessoa física não produtor rural\n3 - Comercialização da produção por prod. rural PF/seg. especial - Vendas a PJ (exceto entidade inscrita no Programa de Aquisição de Alimentos - PAA) ou a intermediário PF\n7 - Comercialização da produção isenta de acordo com a Lei 13.606/2018\n8 - Comercialização da produção da pessoa física/segurado especial para entidade inscrita no PAA\n9 - Comercialização da produção no mercado externo",
+            "descricao": "Indicativo de comercialização.\nValores válidos:\n2 - Comercialização da produção efetuada diretamente no varejo a consumidor final ou a outro produtor rural pessoa física por produtor rural pessoa física, inclusive por segurado especial, ou por pessoa física não produtor rural\n3 - Comercialização da produção por prod. rural PF/seg. especial - Vendas a PJ (exceto entidade inscrita no Programa de Aquisição de Alimentos - PAA) ou a intermediário PF\n7 - Comercialização da produção isenta de acordo com a Lei 13.606/2018 efetuada diretamente no varejo a consumidor final ou a outro produtor rural pessoa física por produtor rural pessoa física, inclusive por segurado especial, ou por pessoa física não produtor rural\n8 - Comercialização da produção da pessoa física/segurado especial para entidade inscrita no PAA\n9 - Comercialização da produção no mercado externo",
             "validacao": "-",
             "valores-validos": {
                 "2": "2 - Comercialização da produção efetuada diretamente no varejo a consumidor final ou a outro produtor rural pessoa física por produtor rural pessoa física, inclusive por segurado especial, ou por pessoa física não produtor rural",
                 "3": "3 - Comercialização da produção por prod. rural PF/seg. especial - Vendas a PJ (exceto entidade inscrita no Programa de Aquisição de Alimentos - PAA) ou a intermediário PF",
-                "7": "7 - Comercialização da produção isenta de acordo com a Lei 13.606/2018",
+                "7": "7 - Comercialização da produção isenta de acordo com a Lei 13.606/2018 efetuada diretamente no varejo a consumidor final ou a outro produtor rural pessoa física por produtor rural pessoa física, inclusive por segurado especial, ou por pessoa física não produtor rural",
                 "8": "8 - Comercialização da produção da pessoa física/segurado especial para entidade inscrita no PAA",
                 "9": "9 - Comercialização da produção no mercado externo"
             }
@@ -304,7 +304,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Preencher com o valor total da comercialização.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -332,7 +332,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de inscrição, conforme Tabela 05.\nValores válidos:\n1 - CNPJ\n2 - CPF\nValidação: Se indComerc for igual a [3, 7], deve ser igual a [1, 2]. Se indComerc for igual a [8], deve ser igual a [1].",
-            "validacao": " Se indComerc for igual a [3, 7], deve ser igual a [1, 2]. Se indComerc for igual a [8], deve ser igual a [1].",
+            "validacao": "Se indComerc for igual a [3, 7], deve ser igual a [1, 2]. Se indComerc for igual a [8], deve ser igual a [1].",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "2": "2 - CPF"
@@ -349,7 +349,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo ideAdquir/tpInsc.\nValidação: A inscrição informada deve ser compatível com o ideAdquir/tpInsc e diferente da inscrição do declarante.",
-            "validacao": " A inscrição informada deve ser compatível com o ideAdquir/tpInsc e diferente da inscrição do declarante.",
+            "validacao": "A inscrição informada deve ser compatível com o ideAdquir/tpInsc e diferente da inscrição do declarante.",
             "valores-validos": {}
         },
         {
@@ -363,7 +363,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor bruto da comercialização da produção.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -419,7 +419,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de emissão da nota fiscal/fatura.\nValidação: O mês/ano da emissão da nota fiscal deve ser igual ao mês/ano indicado no registro de abertura do arquivo.",
-            "validacao": " O mês/ano da emissão da nota fiscal deve ser igual ao mês/ano indicado no registro de abertura do arquivo.",
+            "validacao": "O mês/ano da emissão da nota fiscal deve ser igual ao mês/ano indicado no registro de abertura do arquivo.",
             "valores-validos": {}
         },
         {
@@ -520,7 +520,7 @@
             "tamanho": "17, 20 ou 21",
             "dec": "-",
             "descricao": "Informar um número de processo cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo administrativo ou judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -534,7 +534,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -548,7 +548,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor da contribuição previdenciária com exigibilidade suspensa.\nValidação: Preenchimento obrigatório se vrRatSusp e vrSenarSusp não tiverem sido preenchidos.\nDeve ser um valor maior que 0 (zero).",
-            "validacao": " Preenchimento obrigatório se vrRatSusp e vrSenarSusp não tiverem sido preenchidos.\\ Deve ser um valor maior que 0 (zero).",
+            "validacao": "Preenchimento obrigatório se vrRatSusp e vrSenarSusp não tiverem sido preenchidos.\\ Deve ser um valor maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -562,7 +562,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor da contribuição para GILRAT com exigibilidade suspensa.\nValidação: Preenchimento obrigatório se vrCPSusp e vrSenarSusp não tiverem sido preenchidos.\nDeve ser um valor maior que 0 (zero).",
-            "validacao": " Preenchimento obrigatório se vrCPSusp e vrSenarSusp não tiverem sido preenchidos.\\ Deve ser um valor maior que 0 (zero).",
+            "validacao": "Preenchimento obrigatório se vrCPSusp e vrSenarSusp não tiverem sido preenchidos.\\ Deve ser um valor maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -576,7 +576,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor da contribuição para o SENAR com exigibilidade suspensa.\nValidação: Preenchimento obrigatório se vrCPSusp e vrRatSusp não tiverem sido preenchidos.\nDeve ser um valor maior que 0 (zero).",
-            "validacao": " Preenchimento obrigatório se vrCPSusp e vrRatSusp não tiverem sido preenchidos.\\ Deve ser um valor maior que 0 (zero).",
+            "validacao": "Preenchimento obrigatório se vrCPSusp e vrRatSusp não tiverem sido preenchidos.\\ Deve ser um valor maior que 0 (zero).",
             "valores-validos": {}
         }
     ]

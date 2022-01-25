@@ -70,7 +70,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo que deu origem ao presente arquivo de retorno ao empregador.\nValidação: Deve ser um recibo de entrega válido, correspondente ao arquivo que deu origem ao presente arquivo de retorno (S-1200, S-2299, S-2399 ou S-3000).",
-            "validacao": " Deve ser um recibo de entrega válido, correspondente ao arquivo que deu origem ao presente arquivo de retorno (S-1200, S-2299, S-2399 ou S-3000).",
+            "validacao": "Deve ser um recibo de entrega válido, correspondente ao arquivo que deu origem ao presente arquivo de retorno (S-1200, S-2299, S-2399 ou S-3000).",
             "valores-validos": {}
         },
         {
@@ -174,7 +174,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o número do CPF do trabalhador.\nValidação: Deve ser um CPF constante no arquivo gerado pelo empregador no evento de origem.",
-            "validacao": " Deve ser um CPF constante no arquivo gerado pelo empregador no evento de origem.",
+            "validacao": "Deve ser um CPF constante no arquivo gerado pelo empregador no evento de origem.",
             "valores-validos": {}
         },
         {
@@ -417,14 +417,15 @@
             "ocor": "1",
             "tamanho": "6",
             "dec": "-",
-            "descricao": "Código de Receita - CR da contribuição descontada do trabalhador.\nValores válidos:\n108201 - Contribuição Previdenciária - CP descontada do segurado empregado/avulso\n108202 - CP descontada do segurado empregado rural curto prazo - Lei 11.718/2008\n108203 - CP descontada do segurado empregado doméstico\n108204 - CP descontada do segurado especial curto prazo - Lei 11.718/2008\n108205 - CP descontada do segurado empregado do segurado especial\n108221 - CP descontada do segurado empregado/avulso 13° salário\n108222 - CP descontada do segurado empregado rural curto prazo 13° salário - Lei 11.718/2008\n108223 - CP descontada do segurado empregado doméstico 13° salário\n108224 - CP descontada do segurado especial curto prazo 13° salário - Lei 11.718/2008\n108225 - CP descontada do segurado empregado do segurado especial 13° salário\n109901 - CP descontada do contribuinte individual, alíquota de 11%\n109902 - CP descontada do contribuinte individual, alíquota de 20%\nValidação: Se indApuracao = [2], deve ser igual a [108221, 108222, 108223, 108224, 108225].",
-            "validacao": " Se indApuracao = [2], deve ser igual a [108221, 108222, 108223, 108224, 108225].",
+            "descricao": "Código de Receita - CR da contribuição descontada do trabalhador.\nValores válidos:\n108201 - Contribuição Previdenciária - CP descontada do segurado empregado/avulso\n108202 - CP descontada do segurado empregado rural curto prazo - Lei 11.718/2008\n108203 - CP descontada do segurado empregado doméstico\n108204 - CP descontada do segurado especial curto prazo - Lei 11.718/2008\n108205 - CP descontada do segurado empregado do segurado especial\n108207 - CP descontada do segurado empregado do MEI\n108221 - CP descontada do segurado empregado/avulso 13° salário\n108222 - CP descontada do segurado empregado rural curto prazo 13° salário - Lei 11.718/2008\n108223 - CP descontada do segurado empregado doméstico 13° salário\n108224 - CP descontada do segurado especial curto prazo 13° salário - Lei 11.718/2008\n108225 - CP descontada do segurado empregado do segurado especial 13° salário\n109901 - CP descontada do contribuinte individual, alíquota de 11%\n109902 - CP descontada do contribuinte individual, alíquota de 20%\nValidação: Se indApuracao = [2], deve ser igual a [108221, 108222, 108223, 108224, 108225].",
+            "validacao": "Se indApuracao = [2], deve ser igual a [108221, 108222, 108223, 108224, 108225].",
             "valores-validos": {
                 "108201": "108201 - Contribuição Previdenciária - CP descontada do segurado empregado/avulso",
                 "108202": "108202 - CP descontada do segurado empregado rural curto prazo - Lei 11.718/2008",
                 "108203": "108203 - CP descontada do segurado empregado doméstico",
                 "108204": "108204 - CP descontada do segurado especial curto prazo - Lei 11.718/2008",
                 "108205": "108205 - CP descontada do segurado empregado do segurado especial",
+                "108207": "108207 - CP descontada do segurado empregado do MEI",
                 "108221": "108221 - CP descontada do segurado empregado/avulso 13° salário",
                 "108222": "108222 - CP descontada do segurado empregado rural curto prazo 13° salário - Lei 11.718/2008",
                 "108223": "108223 - CP descontada do segurado empregado doméstico 13° salário",
@@ -444,8 +445,8 @@
             "ocor": "1",
             "tamanho": "1-14",
             "dec": "2",
-            "descricao": "Valor da contribuição do segurado, devida à Previdência Social, calculada segundo as regras da legislação em vigor, por CR.\nValidação: 1. Se {indMV} do S-1200/S-2299/S-2399 = [3], vrCpSeg = [0]; portanto, não há CR.\n \n2. Se {indMV} do S-1200/S-2299/S-2399 = [1, 2], efetuar o somatório das ocorrências do campo {vlrRemunOE} e o somatório de valor quando tpValor = [11, 12, 13, 14, 19], resultando em [TotalRemun]. Este procedimento visa a identificação da(s) alíquota(s) aplicável(eis):\n2.1. Se {indMV} do S-1200/S-2299/S-2399 = [1], aplicar a(s) alíquota(s) conforme a categoria do segurado sobre a remuneração paga pelo declarante (somatório de valor quando tpValor = [11, 12, 13, 14, 19]), observado o limite máximo do salário de contribuição.\n2.2. Se {indMV} do S-1200/S-2299/S-2399 = [2]:\na) Se [TotalRemun] ultrapassar o limite máximo do salário de contribuição, aplicar a(s) alíquota(s) conforme a categoria do segurado sobre a diferença entre o referido limite máximo e o somatório das ocorrências do campo {vlrRemunOE}. Para os períodos de apuração iguais ou posteriores a 03/2020, observar a(s) faixa(s) de remuneração já tributada(s) em outra(s) empresa(s) nas categorias empregado/avulso/agente público.\nb) Se [TotalRemun] for inferior ao limite máximo do salário de contribuição:\nb1) Para as categorias empregado/avulso/agente público: somar {vlrRemunOE} destas mesmas categorias com o somatório de valor quando tpValor = [11, 12, 13, 14, 19] e aplicar a(s) alíquota(s). Para os períodos de apuração iguais ou posteriores a 03/2020, observar a(s) faixa(s) de remuneração já tributada(s) em outra(s) empresa(s) nas categorias empregado/avulso/agente público.\nb2) Para categoria contribuinte individual: aplicar a alíquota sobre a remuneração paga pelo declarante (somatório de valor quando tpValor = [11, 12, 13, 14, 19]).\n \n3. Se não for informado o grupo {infoMV} do S-1200/S-2299/S-2399:\na) Se o trabalhador presta serviço para a empresa declarante em apenas uma categoria (codCateg), efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] e aplicar a(s) alíquota(s) conforme a categoria.\nb) Se o trabalhador presta serviço para a empresa declarante em mais de uma categoria (codCateg):\nI. Efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] para todas as categorias de segurado empregado/avulso/agente público e aplicar a(s) alíquota(s) correta(s) conforme faixa salarial, observado o limite máximo do salário de contribuição.\nII. Caso o somatório do item I não tenha atingido o limite máximo do salário de contribuição, efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] para todas as categorias diferentes de segurado empregado e aplicar a alíquota correta conforme a categoria, observado o limite máximo do salário de contribuição.\n \nOBS.: a) No caso de indApuracao = [1], o cálculo deve ser efetuado separadamente para infoBaseCS/ind13 = [0] e infoBaseCS/ind13 = [1]. A soma de ambos os cálculos deve corresponder ao valor de vrCpSeg.\nb) Aplica-se a alíquota de 20% para o cálculo da contribuição previdenciária a ser descontada de remuneração de trabalhador pertencente às categorias [731, 734], quando o empregador for cooperativa de trabalho (indCoop em S-1000 = [1]), ou pertencente ao grupo \"Contribuinte Individual\", quando o Empregador tiver classificação tributária (classTrib em S-1000) = [04, 70, 80]). Caso o trabalhador receba remuneração da empresa em outra categoria do grupo \"Contribuinte Individual\", primeiro deve ser aplicado o desconto sobre essa categoria (7XX) e depois sobre a remuneração das categorias [731, 734], observado o limite máximo do salário de contribuição.\nc) vrCpSeg deve ser igual a vrDescSeg nas seguintes situações:\nc1) Se houver informações em {infoPerAnt} na composição de valor;\nc2) Se houver informação de {procJudTrab} com {tpTrib} = [2] nos eventos que contenham informações de remuneração (S-1200, S-2299 e S-2399);\nc3) Se houver processo do empregador informado em S-1010, contestando incidência de contribuição previdenciária em rubricas utilizadas na composição da remuneração do trabalhador;\nc4) Se, no período de apuração mensal, houver remuneração referente a 13º salário (codIncCP em S-1010 = [12, 14, 16, 22, 26, 32, 92, 94, 96, 98]). Nesse caso, o campo vrCpSeg será igual ao valor calculado sobre a remuneração mensal acrescido do desconto sobre a remuneração relativa a 13° salário informado pelo empregador;\nc5) se {procEmi} do evento S-1200/S-2299/S-2399 for igual a [2, 4, 22].\nd) No caso de trabalhador categoria = [102], utilizar somente a alíquota de 8%, observado o limite máximo do salário de contribuição.\ne) No caso de empregador com classTrib em S-1000 = [21], exceto se ideEstabLot/tpInsc = [4], ou com classTrib em S-1000 = [60], não calcular para a categoria do grupo \"Contribuinte Individual\" (7XX). O valor deve ser zerado.\nf) Não calcular quando a categoria do trabalhador for [741] (MEI). O valor deve ser zerado.\ng) Não calcular quando a lotação tributária for [91]. O valor deve ser zerado.",
-            "validacao": " 1. Se {indMV} do S-1200/S-2299/S-2399 = [3], vrCpSeg = [0]; portanto, não há CR.\\  \\ 2. Se {indMV} do S-1200/S-2299/S-2399 = [1, 2], efetuar o somatório das ocorrências do campo {vlrRemunOE} e o somatório de valor quando tpValor = [11, 12, 13, 14, 19], resultando em [TotalRemun]. Este procedimento visa a identificação da(s) alíquota(s) aplicável(eis):\\ 2.1. Se {indMV} do S-1200/S-2299/S-2399 = [1], aplicar a(s) alíquota(s) conforme a categoria do segurado sobre a remuneração paga pelo declarante (somatório de valor quando tpValor = [11, 12, 13, 14, 19]), observado o limite máximo do salário de contribuição.\\ 2.2. Se {indMV} do S-1200/S-2299/S-2399 = [2]:\\ a) Se [TotalRemun] ultrapassar o limite máximo do salário de contribuição, aplicar a(s) alíquota(s) conforme a categoria do segurado sobre a diferença entre o referido limite máximo e o somatório das ocorrências do campo {vlrRemunOE}. Para os períodos de apuração iguais ou posteriores a 03/2020, observar a(s) faixa(s) de remuneração já tributada(s) em outra(s) empresa(s) nas categorias empregado/avulso/agente público.\\ b) Se [TotalRemun] for inferior ao limite máximo do salário de contribuição:\\ b1) Para as categorias empregado/avulso/agente público: somar {vlrRemunOE} destas mesmas categorias com o somatório de valor quando tpValor = [11, 12, 13, 14, 19] e aplicar a(s) alíquota(s). Para os períodos de apuração iguais ou posteriores a 03/2020, observar a(s) faixa(s) de remuneração já tributada(s) em outra(s) empresa(s) nas categorias empregado/avulso/agente público.\\ b2) Para categoria contribuinte individual: aplicar a alíquota sobre a remuneração paga pelo declarante (somatório de valor quando tpValor = [11, 12, 13, 14, 19]).\\  \\ 3. Se não for informado o grupo {infoMV} do S-1200/S-2299/S-2399:\\ a) Se o trabalhador presta serviço para a empresa declarante em apenas uma categoria (codCateg), efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] e aplicar a(s) alíquota(s) conforme a categoria.\\ b) Se o trabalhador presta serviço para a empresa declarante em mais de uma categoria (codCateg):\\ I. Efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] para todas as categorias de segurado empregado/avulso/agente público e aplicar a(s) alíquota(s) correta(s) conforme faixa salarial, observado o limite máximo do salário de contribuição.\\ II. Caso o somatório do item I não tenha atingido o limite máximo do salário de contribuição, efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] para todas as categorias diferentes de segurado empregado e aplicar a alíquota correta conforme a categoria, observado o limite máximo do salário de contribuição.\\  \\ OBS.: a) No caso de indApuracao = [1], o cálculo deve ser efetuado separadamente para infoBaseCS/ind13 = [0] e infoBaseCS/ind13 = [1]. A soma de ambos os cálculos deve corresponder ao valor de vrCpSeg.\\ b) Aplica-se a alíquota de 20% para o cálculo da contribuição previdenciária a ser descontada de remuneração de trabalhador pertencente às categorias [731, 734], quando o empregador for cooperativa de trabalho (indCoop em S-1000 = [1]), ou pertencente ao grupo \"Contribuinte Individual\", quando o Empregador tiver classificação tributária (classTrib em S-1000) = [04, 70, 80]). Caso o trabalhador receba remuneração da empresa em outra categoria do grupo \"Contribuinte Individual\", primeiro deve ser aplicado o desconto sobre essa categoria (7XX) e depois sobre a remuneração das categorias [731, 734], observado o limite máximo do salário de contribuição.\\ c) vrCpSeg deve ser igual a vrDescSeg nas seguintes situações:\\ c1) Se houver informações em {infoPerAnt} na composição de valor;\\ c2) Se houver informação de {procJudTrab} com {tpTrib} = [2] nos eventos que contenham informações de remuneração (S-1200, S-2299 e S-2399);\\ c3) Se houver processo do empregador informado em S-1010, contestando incidência de contribuição previdenciária em rubricas utilizadas na composição da remuneração do trabalhador;\\ c4) Se, no período de apuração mensal, houver remuneração referente a 13º salário (codIncCP em S-1010 = [12, 14, 16, 22, 26, 32, 92, 94, 96, 98]). Nesse caso, o campo vrCpSeg será igual ao valor calculado sobre a remuneração mensal acrescido do desconto sobre a remuneração relativa a 13° salário informado pelo empregador;\\ c5) se {procEmi} do evento S-1200/S-2299/S-2399 for igual a [2, 4, 22].\\ d) No caso de trabalhador categoria = [102], utilizar somente a alíquota de 8%, observado o limite máximo do salário de contribuição.\\ e) No caso de empregador com classTrib em S-1000 = [21], exceto se ideEstabLot/tpInsc = [4], ou com classTrib em S-1000 = [60], não calcular para a categoria do grupo \"Contribuinte Individual\" (7XX). O valor deve ser zerado.\\ f) Não calcular quando a categoria do trabalhador for [741] (MEI). O valor deve ser zerado.\\ g) Não calcular quando a lotação tributária for [91]. O valor deve ser zerado.",
+            "descricao": "Valor da contribuição do segurado, devida à Previdência Social, calculada segundo as regras da legislação em vigor, por CR.\nValidação: 1. Se {indMV} do S-1200/S-2299/S-2399 = [3], vrCpSeg = [0]; portanto, não há CR.\n \n2. Se {indMV} do S-1200/S-2299/S-2399 = [1, 2], efetuar o somatório das ocorrências do campo {vlrRemunOE} e o somatório de valor quando tpValor = [11, 12, 13, 14, 19], resultando em [TotalRemun]. Este procedimento visa a identificação da(s) alíquota(s) aplicável(eis):\n2.1. Se {indMV} do S-1200/S-2299/S-2399 = [1], aplicar a(s) alíquota(s) conforme a categoria do segurado sobre a remuneração paga pelo declarante (somatório de valor quando tpValor = [11, 12, 13, 14, 19]), observado o limite máximo do salário de contribuição.\n2.2. Se {indMV} do S-1200/S-2299/S-2399 = [2]:\na) Se [TotalRemun] ultrapassar o limite máximo do salário de contribuição, aplicar a(s) alíquota(s) conforme a categoria do segurado sobre a diferença entre o referido limite máximo e o somatório das ocorrências do campo {vlrRemunOE}. Para os períodos de apuração iguais ou posteriores a 03/2020, observar a(s) faixa(s) de remuneração já tributada(s) em outra(s) empresa(s) nas categorias empregado/avulso/agente público.\nb) Se [TotalRemun] for inferior ao limite máximo do salário de contribuição:\nb1) Para as categorias empregado/avulso/agente público: somar {vlrRemunOE} destas mesmas categorias com o somatório de valor quando tpValor = [11, 12, 13, 14, 19] e aplicar a(s) alíquota(s). Para os períodos de apuração iguais ou posteriores a 03/2020, observar a(s) faixa(s) de remuneração já tributada(s) em outra(s) empresa(s) nas categorias empregado/avulso/agente público.\nb2) Para categoria contribuinte individual: aplicar a alíquota sobre a remuneração paga pelo declarante (somatório de valor quando tpValor = [11, 12, 13, 14, 19]).\n \n3. Se não for informado o grupo {infoMV} do S-1200/S-2299/S-2399:\na) Se o trabalhador presta serviço para a empresa declarante em apenas uma categoria (codCateg), efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] e aplicar a(s) alíquota(s) conforme a categoria.\nb) Se o trabalhador presta serviço para a empresa declarante em mais de uma categoria (codCateg):\nI. Efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] para todas as categorias de segurado empregado/avulso/agente público e aplicar a(s) alíquota(s) correta(s) conforme faixa salarial, observado o limite máximo do salário de contribuição.\nII. Caso o somatório do item I não tenha atingido o limite máximo do salário de contribuição, efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] para todas as categorias diferentes de segurado empregado e aplicar a alíquota correta conforme a categoria, observado o limite máximo do salário de contribuição.\n \nOBS.: a) No caso de indApuracao = [1], o cálculo deve ser efetuado separadamente para infoBaseCS/ind13 = [0] e infoBaseCS/ind13 = [1]. A soma de ambos os cálculos deve corresponder ao valor de vrCpSeg.\nb) Aplica-se a alíquota de 20% para o cálculo da contribuição previdenciária a ser descontada de remuneração de trabalhador pertencente às categorias [731, 734], quando o empregador for cooperativa de trabalho (indCoop em S-1000 = [1]), ou pertencente ao grupo \"Contribuinte Individual\", quando o Empregador tiver classTrib = [04, 70, 80]). Caso o trabalhador receba remuneração da empresa em outra categoria do grupo \"Contribuinte Individual\", primeiro deve ser aplicado o desconto sobre essa categoria (7XX) e depois sobre a remuneração das categorias [731, 734], observado o limite máximo do salário de contribuição.\nc) vrCpSeg deve ser igual a vrDescSeg nas seguintes situações:\nc1) Se houver informações em {infoPerAnt} na composição de valor;\nc2) Se houver informação de {procJudTrab} com {tpTrib} = [2] nos eventos que contenham informações de remuneração (S-1200, S-2299 e S-2399);\nc3) Se houver processo do empregador informado em S-1010, contestando incidência de contribuição previdenciária em rubricas utilizadas na composição da remuneração do trabalhador;\nc4) Se, no período de apuração mensal, houver remuneração referente a 13º salário (codIncCP em S-1010 = [12, 14, 16, 22, 26, 32, 92, 94, 96, 98]). Nesse caso, o campo vrCpSeg será igual ao valor calculado sobre a remuneração mensal acrescido do desconto sobre a remuneração relativa a 13° salário informado pelo empregador;\nc5) Se {procEmi} do evento S-1200/S-2299/S-2399 for igual a [2, 4, 22];\nc6) Para as categorias do grupo \"Contribuinte Individual\" (7XX), se o campo dtTrans11096 em S-1000 for informado.\nd) No caso de trabalhador categoria = [102], utilizar somente a alíquota de 8%, observado o limite máximo do salário de contribuição.\ne) No caso de empregador com classTrib = [21, 22], exceto se ideEstabLot/tpInsc = [4], ou com classTrib = [60], não calcular para a categoria do grupo \"Contribuinte Individual\" (7XX). O valor deve ser zerado.\nf) Não calcular quando a categoria do trabalhador for [741] (MEI). O valor deve ser zerado.\ng) Não calcular quando a lotação tributária for [91]. O valor deve ser zerado.",
+            "validacao": "1. Se {indMV} do S-1200/S-2299/S-2399 = [3], vrCpSeg = [0]; portanto, não há CR.\\  \\ 2. Se {indMV} do S-1200/S-2299/S-2399 = [1, 2], efetuar o somatório das ocorrências do campo {vlrRemunOE} e o somatório de valor quando tpValor = [11, 12, 13, 14, 19], resultando em [TotalRemun]. Este procedimento visa a identificação da(s) alíquota(s) aplicável(eis):\\ 2.1. Se {indMV} do S-1200/S-2299/S-2399 = [1], aplicar a(s) alíquota(s) conforme a categoria do segurado sobre a remuneração paga pelo declarante (somatório de valor quando tpValor = [11, 12, 13, 14, 19]), observado o limite máximo do salário de contribuição.\\ 2.2. Se {indMV} do S-1200/S-2299/S-2399 = [2]:\\ a) Se [TotalRemun] ultrapassar o limite máximo do salário de contribuição, aplicar a(s) alíquota(s) conforme a categoria do segurado sobre a diferença entre o referido limite máximo e o somatório das ocorrências do campo {vlrRemunOE}. Para os períodos de apuração iguais ou posteriores a 03/2020, observar a(s) faixa(s) de remuneração já tributada(s) em outra(s) empresa(s) nas categorias empregado/avulso/agente público.\\ b) Se [TotalRemun] for inferior ao limite máximo do salário de contribuição:\\ b1) Para as categorias empregado/avulso/agente público: somar {vlrRemunOE} destas mesmas categorias com o somatório de valor quando tpValor = [11, 12, 13, 14, 19] e aplicar a(s) alíquota(s). Para os períodos de apuração iguais ou posteriores a 03/2020, observar a(s) faixa(s) de remuneração já tributada(s) em outra(s) empresa(s) nas categorias empregado/avulso/agente público.\\ b2) Para categoria contribuinte individual: aplicar a alíquota sobre a remuneração paga pelo declarante (somatório de valor quando tpValor = [11, 12, 13, 14, 19]).\\  \\ 3. Se não for informado o grupo {infoMV} do S-1200/S-2299/S-2399:\\ a) Se o trabalhador presta serviço para a empresa declarante em apenas uma categoria (codCateg), efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] e aplicar a(s) alíquota(s) conforme a categoria.\\ b) Se o trabalhador presta serviço para a empresa declarante em mais de uma categoria (codCateg):\\ I. Efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] para todas as categorias de segurado empregado/avulso/agente público e aplicar a(s) alíquota(s) correta(s) conforme faixa salarial, observado o limite máximo do salário de contribuição.\\ II. Caso o somatório do item I não tenha atingido o limite máximo do salário de contribuição, efetuar o somatório de valor quando tpValor = [11, 12, 13, 14, 19] para todas as categorias diferentes de segurado empregado e aplicar a alíquota correta conforme a categoria, observado o limite máximo do salário de contribuição.\\  \\ OBS.: a) No caso de indApuracao = [1], o cálculo deve ser efetuado separadamente para infoBaseCS/ind13 = [0] e infoBaseCS/ind13 = [1]. A soma de ambos os cálculos deve corresponder ao valor de vrCpSeg.\\ b) Aplica-se a alíquota de 20% para o cálculo da contribuição previdenciária a ser descontada de remuneração de trabalhador pertencente às categorias [731, 734], quando o empregador for cooperativa de trabalho (indCoop em S-1000 = [1]), ou pertencente ao grupo \"Contribuinte Individual\", quando o Empregador tiver classTrib = [04, 70, 80]). Caso o trabalhador receba remuneração da empresa em outra categoria do grupo \"Contribuinte Individual\", primeiro deve ser aplicado o desconto sobre essa categoria (7XX) e depois sobre a remuneração das categorias [731, 734], observado o limite máximo do salário de contribuição.\\ c) vrCpSeg deve ser igual a vrDescSeg nas seguintes situações:\\ c1) Se houver informações em {infoPerAnt} na composição de valor;\\ c2) Se houver informação de {procJudTrab} com {tpTrib} = [2] nos eventos que contenham informações de remuneração (S-1200, S-2299 e S-2399);\\ c3) Se houver processo do empregador informado em S-1010, contestando incidência de contribuição previdenciária em rubricas utilizadas na composição da remuneração do trabalhador;\\ c4) Se, no período de apuração mensal, houver remuneração referente a 13º salário (codIncCP em S-1010 = [12, 14, 16, 22, 26, 32, 92, 94, 96, 98]). Nesse caso, o campo vrCpSeg será igual ao valor calculado sobre a remuneração mensal acrescido do desconto sobre a remuneração relativa a 13° salário informado pelo empregador;\\ c5) Se {procEmi} do evento S-1200/S-2299/S-2399 for igual a [2, 4, 22];\\ c6) Para as categorias do grupo \"Contribuinte Individual\" (7XX), se o campo dtTrans11096 em S-1000 for informado.\\ d) No caso de trabalhador categoria = [102], utilizar somente a alíquota de 8%, observado o limite máximo do salário de contribuição.\\ e) No caso de empregador com classTrib = [21, 22], exceto se ideEstabLot/tpInsc = [4], ou com classTrib = [60], não calcular para a categoria do grupo \"Contribuinte Individual\" (7XX). O valor deve ser zerado.\\ f) Não calcular quando a categoria do trabalhador for [741] (MEI). O valor deve ser zerado.\\ g) Não calcular quando a lotação tributária for [91]. O valor deve ser zerado.",
             "valores-validos": {}
         },
         {
@@ -479,6 +480,20 @@
         {
             "index": 33,
             "esocial_id": 33,
+            "grupo-campo": "classTrib",
+            "grupo-pai": "infoCp",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "2",
+            "dec": "-",
+            "descricao": "Preencher com o código correspondente à classificação tributária do contribuinte, conforme Tabela 08.\nEvento de origem: S-1000.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 34,
+            "esocial_id": 34,
             "grupo-campo": "ideEstabLot",
             "grupo-pai": "infoCp",
             "elem": "G",
@@ -491,8 +506,8 @@
             "valores-validos": {}
         },
         {
-            "index": 34,
-            "esocial_id": 34,
+            "index": 35,
+            "esocial_id": 35,
             "grupo-campo": "tpInsc",
             "grupo-pai": "ideEstabLot",
             "elem": "E",
@@ -511,8 +526,8 @@
             }
         },
         {
-            "index": 35,
-            "esocial_id": 35,
+            "index": 36,
+            "esocial_id": 36,
             "grupo-campo": "nrInsc",
             "grupo-pai": "ideEstabLot",
             "elem": "E",
@@ -525,8 +540,8 @@
             "valores-validos": {}
         },
         {
-            "index": 36,
-            "esocial_id": 36,
+            "index": 37,
+            "esocial_id": 37,
             "grupo-campo": "codLotacao",
             "grupo-pai": "ideEstabLot",
             "elem": "E",
@@ -539,8 +554,8 @@
             "valores-validos": {}
         },
         {
-            "index": 37,
-            "esocial_id": 37,
+            "index": 38,
+            "esocial_id": 38,
             "grupo-campo": "infoCategIncid",
             "grupo-pai": "ideEstabLot",
             "elem": "G",
@@ -553,8 +568,8 @@
             "valores-validos": {}
         },
         {
-            "index": 38,
-            "esocial_id": 38,
+            "index": 39,
+            "esocial_id": 39,
             "grupo-campo": "matricula",
             "grupo-pai": "infoCategIncid",
             "elem": "E",
@@ -567,8 +582,8 @@
             "valores-validos": {}
         },
         {
-            "index": 39,
-            "esocial_id": 39,
+            "index": 40,
+            "esocial_id": 40,
             "grupo-campo": "codCateg",
             "grupo-pai": "infoCategIncid",
             "elem": "E",
@@ -577,12 +592,12 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador, conforme Tabela 01.\nValidação: Se o evento de origem for S-1200, retornar o código de categoria informado nesse evento. Se o evento de origem for S-2299 ou S-2399, retornar o código de categoria existente no Registro de Eventos Trabalhistas - RET.",
-            "validacao": " Se o evento de origem for S-1200, retornar o código de categoria informado nesse evento. Se o evento de origem for S-2299 ou S-2399, retornar o código de categoria existente no Registro de Eventos Trabalhistas - RET.",
+            "validacao": "Se o evento de origem for S-1200, retornar o código de categoria informado nesse evento. Se o evento de origem for S-2299 ou S-2399, retornar o código de categoria existente no Registro de Eventos Trabalhistas - RET.",
             "valores-validos": {}
         },
         {
-            "index": 40,
-            "esocial_id": 40,
+            "index": 41,
+            "esocial_id": 41,
             "grupo-campo": "indSimples",
             "grupo-pai": "infoCategIncid",
             "elem": "E",
@@ -600,8 +615,8 @@
             }
         },
         {
-            "index": 41,
-            "esocial_id": 41,
+            "index": 42,
+            "esocial_id": 42,
             "grupo-campo": "infoBaseCS",
             "grupo-pai": "infoCategIncid",
             "elem": "G",
@@ -614,8 +629,8 @@
             "valores-validos": {}
         },
         {
-            "index": 42,
-            "esocial_id": 42,
+            "index": 43,
+            "esocial_id": 43,
             "grupo-campo": "ind13",
             "grupo-pai": "infoBaseCS",
             "elem": "E",
@@ -624,15 +639,15 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de 13° salário.\nValores válidos:\n0 - Mensal\n1 - 13° salário (codIncCP em S-1010 = [12, 14, 16, 22, 26, 32, 92, 94, 96, 98])\nValidação: Se indApuracao = [2], preencher com [1].",
-            "validacao": " Se indApuracao = [2], preencher com [1].",
+            "validacao": "Se indApuracao = [2], preencher com [1].",
             "valores-validos": {
                 "0": "0 - Mensal",
                 "1": "1 - 13° salário (codIncCP em S-1010 = [12, 14, 16, 22, 26, 32, 92, 94, 96, 98])"
             }
         },
         {
-            "index": 43,
-            "esocial_id": 43,
+            "index": 44,
+            "esocial_id": 44,
             "grupo-campo": "tpValor",
             "grupo-pai": "infoBaseCS",
             "elem": "E",
@@ -685,8 +700,8 @@
             }
         },
         {
-            "index": 44,
-            "esocial_id": 44,
+            "index": 45,
+            "esocial_id": 45,
             "grupo-campo": "valor",
             "grupo-pai": "infoBaseCS",
             "elem": "E",
@@ -695,12 +710,12 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor da base de cálculo, dedução ou desconto da contribuição social devida à Previdência Social ou a Outras Entidades e Fundos, conforme definido no campo tpValor.\nValidação: Deve ser maior que 0 (zero).\nDeve corresponder ao somatório dos valores informados no campo {vrRubr} em S-1200 e S-2299 (grupos {infoPerApur} e {infoPerAnt}), e também em S-2399, obedecendo ao que segue:\na) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4], observando a tabela de relacionamento abaixo:\ntpValor = [11]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\ntpValor = [12]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2];\ntpValor = [13]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3];\ntpValor = [14]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4];\ntpValor = [15]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\ntpValor = [16]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2];\ntpValor = [17]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3];\ntpValor = [18]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4];\ntpValor = [19], codIncCP em S-1010 = [15, 16, 21, 22];\ntpValor = [31], codIncCP em S-1010 = [51];\ntpValor = [32], codIncCP em S-1010 = [21, 22] ou (natRubr em S-1010 = [4050, 4051] com codIncCP em S-1010 = [9X]);\ntpValor = [41]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\ntpValor = [42]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\ntpValor = [43]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\ntpValor = [44]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\ntpValor = [45]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\ntpValor = [46]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\ntpValor = [47]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\ntpValor = [48]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\ntpValor = [49], codIncCP em S-1010 = [15, 16, 21, 22], observado o limite para codCateg = [107, 108];\ntpValor = [81]*, codIncCP em S-1010 = [91, 92] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\ntpValor = [82]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\ntpValor = [83]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\ntpValor = [84]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\ntpValor = [85]**, codIncCP em S-1010 = [95, 96] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\ntpValor = [86]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\ntpValor = [87]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\ntpValor = [88]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\ntpValor = [91]*, codIncCP em S-1010 = [91, 92] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\ntpValor = [92]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [2];\ntpValor = [93]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [3];\ntpValor = [94]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [4];\ntpValor = [95]**, codIncCP em S-1010 = [95, 96] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\ntpValor = [96]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [2];\ntpValor = [97]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [3];\ntpValor = [98]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [4].\n \nb) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3], observando a tabela de relacionamento abaixo:\ntpValor = [21], codIncCP em S-1010 = [31, 32];\ntpValor = [22], codIncCP em S-1010 = [34];\ntpValor = [23], codIncCP em S-1010 = [35].\n \n* Caso codIncCP da rubrica em S-1010 seja igual a [91, 92, 93, 94] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor também deve ser computado na composição das bases do tpValor = [11, 12, 13, 14, 41, 42, 43, 44].\nSe codCateg = [107, 108], caso tpValor = [11] seja maior que o limite do salário-base para essas categorias, então tpValor = [81] é igual a {tpValor}=[41] – ({tpValor}=[11] – {tpValor}=[91]). Se tpValor = [81] resultar negativo, informar 0 (zero). O mesmo se aplica para tpValor = [82, 83, 84].\n** Caso codIncCP da rubrica em S-1010 seja igual a [95, 96, 97, 98] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor também deve ser computado na composição das bases do tpValor = [15, 16, 17, 18, 45, 46, 47, 48].\nSe codCateg = [107, 108], caso tpValor = [15] seja maior que o limite do salário-base para essas categorias, então tpValor = [85] é igual a {tpValor}=[45] – ({tpValor}=[15] – {tpValor}=[95]). Se tpValor = [85] resultar negativo, informar 0 (zero). O mesmo se aplica para tpValor = [86, 87, 88].\n*** Caso indSusp do respectivo processo em S-1070 seja igual a [90] (decisão definitiva), o valor não deve ser computado.",
-            "validacao": " Deve ser maior que 0 (zero).\\ Deve corresponder ao somatório dos valores informados no campo {vrRubr} em S-1200 e S-2299 (grupos {infoPerApur} e {infoPerAnt}), e também em S-2399, obedecendo ao que segue:\\ a) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4], observando a tabela de relacionamento abaixo:\\ tpValor = [11]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpValor = [12]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2];\\ tpValor = [13]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3];\\ tpValor = [14]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4];\\ tpValor = [15]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpValor = [16]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2];\\ tpValor = [17]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3];\\ tpValor = [18]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4];\\ tpValor = [19], codIncCP em S-1010 = [15, 16, 21, 22];\\ tpValor = [31], codIncCP em S-1010 = [51];\\ tpValor = [32], codIncCP em S-1010 = [21, 22] ou (natRubr em S-1010 = [4050, 4051] com codIncCP em S-1010 = [9X]);\\ tpValor = [41]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\\ tpValor = [42]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\\ tpValor = [43]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\\ tpValor = [44]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\\ tpValor = [45]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\\ tpValor = [46]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\\ tpValor = [47]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\\ tpValor = [48]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\\ tpValor = [49], codIncCP em S-1010 = [15, 16, 21, 22], observado o limite para codCateg = [107, 108];\\ tpValor = [81]*, codIncCP em S-1010 = [91, 92] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\\ tpValor = [82]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\\ tpValor = [83]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\\ tpValor = [84]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\\ tpValor = [85]**, codIncCP em S-1010 = [95, 96] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\\ tpValor = [86]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\\ tpValor = [87]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\\ tpValor = [88]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\\ tpValor = [91]*, codIncCP em S-1010 = [91, 92] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpValor = [92]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [2];\\ tpValor = [93]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [3];\\ tpValor = [94]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [4];\\ tpValor = [95]**, codIncCP em S-1010 = [95, 96] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpValor = [96]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [2];\\ tpValor = [97]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [3];\\ tpValor = [98]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [4].\\  \\ b) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3], observando a tabela de relacionamento abaixo:\\ tpValor = [21], codIncCP em S-1010 = [31, 32];\\ tpValor = [22], codIncCP em S-1010 = [34];\\ tpValor = [23], codIncCP em S-1010 = [35].\\  \\ * Caso codIncCP da rubrica em S-1010 seja igual a [91, 92, 93, 94] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor também deve ser computado na composição das bases do tpValor = [11, 12, 13, 14, 41, 42, 43, 44].\\ Se codCateg = [107, 108], caso tpValor = [11] seja maior que o limite do salário-base para essas categorias, então tpValor = [81] é igual a {tpValor}=[41] – ({tpValor}=[11] – {tpValor}=[91]). Se tpValor = [81] resultar negativo, informar 0 (zero). O mesmo se aplica para tpValor = [82, 83, 84].\\ ** Caso codIncCP da rubrica em S-1010 seja igual a [95, 96, 97, 98] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor também deve ser computado na composição das bases do tpValor = [15, 16, 17, 18, 45, 46, 47, 48].\\ Se codCateg = [107, 108], caso tpValor = [15] seja maior que o limite do salário-base para essas categorias, então tpValor = [85] é igual a {tpValor}=[45] – ({tpValor}=[15] – {tpValor}=[95]). Se tpValor = [85] resultar negativo, informar 0 (zero). O mesmo se aplica para tpValor = [86, 87, 88].\\ *** Caso indSusp do respectivo processo em S-1070 seja igual a [90] (decisão definitiva), o valor não deve ser computado.",
+            "validacao": "Deve ser maior que 0 (zero).\\ Deve corresponder ao somatório dos valores informados no campo {vrRubr} em S-1200 e S-2299 (grupos {infoPerApur} e {infoPerAnt}), e também em S-2399, obedecendo ao que segue:\\ a) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4], observando a tabela de relacionamento abaixo:\\ tpValor = [11]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpValor = [12]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2];\\ tpValor = [13]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3];\\ tpValor = [14]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4];\\ tpValor = [15]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpValor = [16]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2];\\ tpValor = [17]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3];\\ tpValor = [18]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4];\\ tpValor = [19], codIncCP em S-1010 = [15, 16, 21, 22];\\ tpValor = [31], codIncCP em S-1010 = [51];\\ tpValor = [32], codIncCP em S-1010 = [21, 22] ou (natRubr em S-1010 = [4050, 4051] com codIncCP em S-1010 = [9X]);\\ tpValor = [41]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\\ tpValor = [42]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\\ tpValor = [43]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\\ tpValor = [44]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\\ tpValor = [45]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\\ tpValor = [46]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\\ tpValor = [47]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\\ tpValor = [48]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\\ tpValor = [49], codIncCP em S-1010 = [15, 16, 21, 22], observado o limite para codCateg = [107, 108];\\ tpValor = [81]*, codIncCP em S-1010 = [91, 92] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\\ tpValor = [82]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\\ tpValor = [83]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\\ tpValor = [84]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\\ tpValor = [85]**, codIncCP em S-1010 = [95, 96] e ({grauExp} em S-1200/S-2299 = [1] ou não informado), observado o limite para codCateg = [107, 108];\\ tpValor = [86]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [2], observado o limite para codCateg = [107, 108];\\ tpValor = [87]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [3], observado o limite para codCateg = [107, 108];\\ tpValor = [88]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [4], observado o limite para codCateg = [107, 108];\\ tpValor = [91]*, codIncCP em S-1010 = [91, 92] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpValor = [92]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [2];\\ tpValor = [93]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [3];\\ tpValor = [94]*, codIncCP em S-1010 = [91, 92] e {grauExp} em S-1200/S-2299 = [4];\\ tpValor = [95]**, codIncCP em S-1010 = [95, 96] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpValor = [96]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [2];\\ tpValor = [97]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [3];\\ tpValor = [98]**, codIncCP em S-1010 = [95, 96] e {grauExp} em S-1200/S-2299 = [4].\\  \\ b) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3], observando a tabela de relacionamento abaixo:\\ tpValor = [21], codIncCP em S-1010 = [31, 32];\\ tpValor = [22], codIncCP em S-1010 = [34];\\ tpValor = [23], codIncCP em S-1010 = [35].\\  \\ * Caso codIncCP da rubrica em S-1010 seja igual a [91, 92, 93, 94] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor também deve ser computado na composição das bases do tpValor = [11, 12, 13, 14, 41, 42, 43, 44].\\ Se codCateg = [107, 108], caso tpValor = [11] seja maior que o limite do salário-base para essas categorias, então tpValor = [81] é igual a {tpValor}=[41] – ({tpValor}=[11] – {tpValor}=[91]). Se tpValor = [81] resultar negativo, informar 0 (zero). O mesmo se aplica para tpValor = [82, 83, 84].\\ ** Caso codIncCP da rubrica em S-1010 seja igual a [95, 96, 97, 98] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor também deve ser computado na composição das bases do tpValor = [15, 16, 17, 18, 45, 46, 47, 48].\\ Se codCateg = [107, 108], caso tpValor = [15] seja maior que o limite do salário-base para essas categorias, então tpValor = [85] é igual a {tpValor}=[45] – ({tpValor}=[15] – {tpValor}=[95]). Se tpValor = [85] resultar negativo, informar 0 (zero). O mesmo se aplica para tpValor = [86, 87, 88].\\ *** Caso indSusp do respectivo processo em S-1070 seja igual a [90] (decisão definitiva), o valor não deve ser computado.",
             "valores-validos": {}
         },
         {
-            "index": 45,
-            "esocial_id": 45,
+            "index": 46,
+            "esocial_id": 46,
             "grupo-campo": "calcTerc",
             "grupo-pai": "infoCategIncid",
             "elem": "G",
@@ -713,8 +728,8 @@
             "valores-validos": {}
         },
         {
-            "index": 46,
-            "esocial_id": 46,
+            "index": 47,
+            "esocial_id": 47,
             "grupo-campo": "tpCR",
             "grupo-pai": "calcTerc",
             "elem": "E",
@@ -730,8 +745,8 @@
             }
         },
         {
-            "index": 47,
-            "esocial_id": 47,
+            "index": 48,
+            "esocial_id": 48,
             "grupo-campo": "vrCsSegTerc",
             "grupo-pai": "calcTerc",
             "elem": "E",
@@ -740,12 +755,12 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor da contribuição social devida a Outras Entidades ou Fundos, calculada segundo a legislação em vigor, por CR.\nValidação: calcTerc/tpCR = [121802] - Somatório de valor quando tpValor = [11, 12, 13, 14], multiplicado pela alíquota de 1,5%, se codCateg = [711, 712, 734] (transportador autônomo) e ideEmpregador/tpInsc = [1];\ncalcTerc/tpCR = [122102] - Somatório de valor quando tpValor = [11, 12, 13, 14], multiplicado pela alíquota de 1,0%, se codCateg = [711, 712, 734] (transportador autônomo) e ideEmpregador/tpInsc = [1].\nOBS.: No período de 04/2020 a 06/2020, as alíquotas devem ser 0,75% para o SEST e 0,5% para o SENAT.",
-            "validacao": " calcTerc/tpCR = [121802] - Somatório de valor quando tpValor = [11, 12, 13, 14], multiplicado pela alíquota de 1,5%, se codCateg = [711, 712, 734] (transportador autônomo) e ideEmpregador/tpInsc = [1];\\ calcTerc/tpCR = [122102] - Somatório de valor quando tpValor = [11, 12, 13, 14], multiplicado pela alíquota de 1,0%, se codCateg = [711, 712, 734] (transportador autônomo) e ideEmpregador/tpInsc = [1].\\ OBS.: No período de 04/2020 a 06/2020, as alíquotas devem ser 0,75% para o SEST e 0,5% para o SENAT.",
+            "validacao": "calcTerc/tpCR = [121802] - Somatório de valor quando tpValor = [11, 12, 13, 14], multiplicado pela alíquota de 1,5%, se codCateg = [711, 712, 734] (transportador autônomo) e ideEmpregador/tpInsc = [1];\\ calcTerc/tpCR = [122102] - Somatório de valor quando tpValor = [11, 12, 13, 14], multiplicado pela alíquota de 1,0%, se codCateg = [711, 712, 734] (transportador autônomo) e ideEmpregador/tpInsc = [1].\\ OBS.: No período de 04/2020 a 06/2020, as alíquotas devem ser 0,75% para o SEST e 0,5% para o SENAT.",
             "valores-validos": {}
         },
         {
-            "index": 48,
-            "esocial_id": 48,
+            "index": 49,
+            "esocial_id": 49,
             "grupo-campo": "vrDescTerc",
             "grupo-pai": "calcTerc",
             "elem": "E",
@@ -758,8 +773,8 @@
             "valores-validos": {}
         },
         {
-            "index": 49,
-            "esocial_id": 49,
+            "index": 50,
+            "esocial_id": 50,
             "grupo-campo": "infoPerRef",
             "grupo-pai": "infoCategIncid",
             "elem": "G",
@@ -772,8 +787,8 @@
             "valores-validos": {}
         },
         {
-            "index": 50,
-            "esocial_id": 50,
+            "index": 51,
+            "esocial_id": 51,
             "grupo-campo": "perRef",
             "grupo-pai": "infoPerRef",
             "elem": "E",
@@ -786,8 +801,8 @@
             "valores-validos": {}
         },
         {
-            "index": 51,
-            "esocial_id": 51,
+            "index": 52,
+            "esocial_id": 52,
             "grupo-campo": "ideADC",
             "grupo-pai": "infoPerRef",
             "elem": "G",
@@ -800,8 +815,8 @@
             "valores-validos": {}
         },
         {
-            "index": 52,
-            "esocial_id": 52,
+            "index": 53,
+            "esocial_id": 53,
             "grupo-campo": "dtAcConv",
             "grupo-pai": "ideADC",
             "elem": "E",
@@ -814,8 +829,8 @@
             "valores-validos": {}
         },
         {
-            "index": 53,
-            "esocial_id": 53,
+            "index": 54,
+            "esocial_id": 54,
             "grupo-campo": "tpAcConv",
             "grupo-pai": "ideADC",
             "elem": "E",
@@ -837,8 +852,8 @@
             }
         },
         {
-            "index": 54,
-            "esocial_id": 54,
+            "index": 55,
+            "esocial_id": 55,
             "grupo-campo": "dsc",
             "grupo-pai": "ideADC",
             "elem": "E",
@@ -851,8 +866,8 @@
             "valores-validos": {}
         },
         {
-            "index": 55,
-            "esocial_id": 55,
+            "index": 56,
+            "esocial_id": 56,
             "grupo-campo": "remunSuc",
             "grupo-pai": "ideADC",
             "elem": "E",
@@ -868,8 +883,8 @@
             }
         },
         {
-            "index": 56,
-            "esocial_id": 56,
+            "index": 57,
+            "esocial_id": 57,
             "grupo-campo": "detInfoPerRef",
             "grupo-pai": "infoPerRef",
             "elem": "G",
@@ -882,8 +897,8 @@
             "valores-validos": {}
         },
         {
-            "index": 57,
-            "esocial_id": 57,
+            "index": 58,
+            "esocial_id": 58,
             "grupo-campo": "ind13",
             "grupo-pai": "detInfoPerRef",
             "elem": "E",
@@ -892,15 +907,15 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de 13° salário.\nValores válidos:\n0 - Mensal\n1 - 13° salário (codIncCP em S-1010 = [12, 14, 16, 22, 26, 32, 92, 94, 96, 98])\nValidação: Se indApuracao = [2], preencher com [1].",
-            "validacao": " Se indApuracao = [2], preencher com [1].",
+            "validacao": "Se indApuracao = [2], preencher com [1].",
             "valores-validos": {
                 "0": "0 - Mensal",
                 "1": "1 - 13° salário (codIncCP em S-1010 = [12, 14, 16, 22, 26, 32, 92, 94, 96, 98])"
             }
         },
         {
-            "index": 58,
-            "esocial_id": 58,
+            "index": 59,
+            "esocial_id": 59,
             "grupo-campo": "tpVrPerRef",
             "grupo-pai": "detInfoPerRef",
             "elem": "E",
@@ -928,8 +943,8 @@
             }
         },
         {
-            "index": 59,
-            "esocial_id": 59,
+            "index": 60,
+            "esocial_id": 60,
             "grupo-campo": "vrPerRef",
             "grupo-pai": "detInfoPerRef",
             "elem": "E",
@@ -938,7 +953,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor da base de cálculo, dedução ou desconto da contribuição social, conforme definido no campo tpVrPerRef.\nValidação: Deve ser maior que 0 (zero).\nDeve corresponder ao somatório dos valores informados no campo {vrRubr} em S-1200 e S-2299 (grupos {infoPerApur} e {infoPerAnt}), e também em S-2399, obedecendo ao que segue:\na) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4], observando a tabela de relacionamento abaixo:\ntpVrPerRef = [11]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\ntpVrPerRef = [12]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2];\ntpVrPerRef = [13]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3];\ntpVrPerRef = [14]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4];\ntpVrPerRef = [15]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\ntpVrPerRef = [16]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2];\ntpVrPerRef = [17]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3];\ntpVrPerRef = [18]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4];\ntpVrPerRef = [19], codIncCP em S-1010 = [15, 16, 21, 22];\ntpVrPerRef = [31], codIncCP em S-1010 = [51];\ntpVrPerRef = [32], codIncCP em S-1010 = [21, 22] ou (natRubr em S-1010 = [4050, 4051] com codIncCP em S-1010 = [9X]).\n \nb) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3], observando a tabela de relacionamento abaixo:\ntpVrPerRef = [21], codIncCP em S-1010 = [31, 32];\ntpVrPerRef = [22], codIncCP em S-1010 = [34];\ntpVrPerRef = [23], codIncCP em S-1010 = [35].\n \n* Caso codIncCP da rubrica em S-1010 seja igual a [91, 92, 93, 94] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor deve ser computado na composição das bases do tpVrPerRef = [11, 12, 13, 14].\n** Caso codIncCP da rubrica em S-1010 seja igual a [95, 96, 97, 98] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor deve ser computado na composição das bases do tpVrPerRef = [15, 16, 17, 18].\n*** Caso indSusp do respectivo processo em S-1070 seja igual a [90] (decisão definitiva), o valor não deve ser computado.",
-            "validacao": " Deve ser maior que 0 (zero).\\ Deve corresponder ao somatório dos valores informados no campo {vrRubr} em S-1200 e S-2299 (grupos {infoPerApur} e {infoPerAnt}), e também em S-2399, obedecendo ao que segue:\\ a) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4], observando a tabela de relacionamento abaixo:\\ tpVrPerRef = [11]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpVrPerRef = [12]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2];\\ tpVrPerRef = [13]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3];\\ tpVrPerRef = [14]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4];\\ tpVrPerRef = [15]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpVrPerRef = [16]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2];\\ tpVrPerRef = [17]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3];\\ tpVrPerRef = [18]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4];\\ tpVrPerRef = [19], codIncCP em S-1010 = [15, 16, 21, 22];\\ tpVrPerRef = [31], codIncCP em S-1010 = [51];\\ tpVrPerRef = [32], codIncCP em S-1010 = [21, 22] ou (natRubr em S-1010 = [4050, 4051] com codIncCP em S-1010 = [9X]).\\  \\ b) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3], observando a tabela de relacionamento abaixo:\\ tpVrPerRef = [21], codIncCP em S-1010 = [31, 32];\\ tpVrPerRef = [22], codIncCP em S-1010 = [34];\\ tpVrPerRef = [23], codIncCP em S-1010 = [35].\\  \\ * Caso codIncCP da rubrica em S-1010 seja igual a [91, 92, 93, 94] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor deve ser computado na composição das bases do tpVrPerRef = [11, 12, 13, 14].\\ ** Caso codIncCP da rubrica em S-1010 seja igual a [95, 96, 97, 98] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor deve ser computado na composição das bases do tpVrPerRef = [15, 16, 17, 18].\\ *** Caso indSusp do respectivo processo em S-1070 seja igual a [90] (decisão definitiva), o valor não deve ser computado.",
+            "validacao": "Deve ser maior que 0 (zero).\\ Deve corresponder ao somatório dos valores informados no campo {vrRubr} em S-1200 e S-2299 (grupos {infoPerApur} e {infoPerAnt}), e também em S-2399, obedecendo ao que segue:\\ a) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4], observando a tabela de relacionamento abaixo:\\ tpVrPerRef = [11]*, codIncCP em S-1010 = [11, 12] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpVrPerRef = [12]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [2];\\ tpVrPerRef = [13]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [3];\\ tpVrPerRef = [14]*, codIncCP em S-1010 = [11, 12] e {grauExp} em S-1200/S-2299 = [4];\\ tpVrPerRef = [15]**, codIncCP em S-1010 = [13, 14] e ({grauExp} em S-1200/S-2299 = [1] ou não informado);\\ tpVrPerRef = [16]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [2];\\ tpVrPerRef = [17]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [3];\\ tpVrPerRef = [18]**, codIncCP em S-1010 = [13, 14] e {grauExp} em S-1200/S-2299 = [4];\\ tpVrPerRef = [19], codIncCP em S-1010 = [15, 16, 21, 22];\\ tpVrPerRef = [31], codIncCP em S-1010 = [51];\\ tpVrPerRef = [32], codIncCP em S-1010 = [21, 22] ou (natRubr em S-1010 = [4050, 4051] com codIncCP em S-1010 = [9X]).\\  \\ b) Somar os valores das rubricas cujo tpRubr em S-1010 seja igual a [2, 4] e subtrair os valores das rubricas cujo tpRubr em S-1010 seja igual a [1, 3], observando a tabela de relacionamento abaixo:\\ tpVrPerRef = [21], codIncCP em S-1010 = [31, 32];\\ tpVrPerRef = [22], codIncCP em S-1010 = [34];\\ tpVrPerRef = [23], codIncCP em S-1010 = [35].\\  \\ * Caso codIncCP da rubrica em S-1010 seja igual a [91, 92, 93, 94] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor deve ser computado na composição das bases do tpVrPerRef = [11, 12, 13, 14].\\ ** Caso codIncCP da rubrica em S-1010 seja igual a [95, 96, 97, 98] e indSusp do respectivo processo em S-1070 seja diferente de [90] (decisão definitiva), o valor deve ser computado na composição das bases do tpVrPerRef = [15, 16, 17, 18].\\ *** Caso indSusp do respectivo processo em S-1070 seja igual a [90] (decisão definitiva), o valor não deve ser computado.",
             "valores-validos": {}
         }
     ]

@@ -199,7 +199,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do evento que será excluído.\nValidação: O recibo deve ser relativo ao mesmo tipo de evento indicado em tpEvento e o respectivo evento não deve constar como excluído ou retificado. Além disso, no caso de exclusão de eventos em que existe a identificação do trabalhador, o evento que está sendo excluído deve referir-se ao mesmo trabalhador identificado por cpfTrab.",
-            "validacao": " O recibo deve ser relativo ao mesmo tipo de evento indicado em tpEvento e o respectivo evento não deve constar como excluído ou retificado. Além disso, no caso de exclusão de eventos em que existe a identificação do trabalhador, o evento que está sendo excluído deve referir-se ao mesmo trabalhador identificado por cpfTrab.",
+            "validacao": "O recibo deve ser relativo ao mesmo tipo de evento indicado em tpEvento e o respectivo evento não deve constar como excluído ou retificado. Além disso, no caso de exclusão de eventos em que existe a identificação do trabalhador, o evento que está sendo excluído deve referir-se ao mesmo trabalhador identificado por cpfTrab.",
             "valores-validos": {}
         },
         {
@@ -227,7 +227,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o número do CPF do trabalhador ou do beneficiário.\nValidação: O CPF indicado deve existir na base de dados do RET.",
-            "validacao": " O CPF indicado deve existir na base de dados do RET.",
+            "validacao": "O CPF indicado deve existir na base de dados do RET.",
             "valores-validos": {}
         },
         {
@@ -255,7 +255,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de período de apuração.\nValores válidos:\n1 - Mensal\n2 - Anual (13° salário)\nValidação: Preenchimento obrigatório e exclusivo se tpEvento = [S-1200, S-1202, S-1207, S-1280, S-1300].",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpEvento = [S-1200, S-1202, S-1207, S-1280, S-1300].",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpEvento = [S-1200, S-1202, S-1207, S-1280, S-1300].",
             "valores-validos": {
                 "1": "1 - Mensal",
                 "2": "2 - Anual (13° salário)"
@@ -272,7 +272,7 @@
             "tamanho": "4 ou 7",
             "dec": "-",
             "descricao": "Informar o mês/ano (formato AAAA-MM) ou apenas o ano (formato AAAA) de referência das informações.\nValidação: Deve ser um mês/ano ou ano válido, posterior à implementação do eSocial. Somente pode ser informado ano (formato AAAA) se indApuracao = [2].",
-            "validacao": " Deve ser um mês/ano ou ano válido, posterior à implementação do eSocial. Somente pode ser informado ano (formato AAAA) se indApuracao = [2].",
+            "validacao": "Deve ser um mês/ano ou ano válido, posterior à implementação do eSocial. Somente pode ser informado ano (formato AAAA) se indApuracao = [2].",
             "valores-validos": {}
         }
     ]

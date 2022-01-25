@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -253,7 +253,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de alteração das informações relativas ao benefício.\nValidação: Deve ser igual ou anterior à data atual.",
-            "validacao": " Deve ser igual ou anterior à data atual.",
+            "validacao": "Deve ser igual ou anterior à data atual.",
             "valores-validos": {}
         },
         {
@@ -281,7 +281,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Tipo de benefício.\nValidação: Deve ser um código válido e existente na Tabela 25. Se cadIni em S-2410 for igual a [N], não é permitido utilizar código do grupo [08] dessa tabela.",
-            "validacao": " Deve ser um código válido e existente na Tabela 25. Se cadIni em S-2410 for igual a [N], não é permitido utilizar código do grupo [08] dessa tabela.",
+            "validacao": "Deve ser um código válido e existente na Tabela 25. Se cadIni em S-2410 for igual a [N], não é permitido utilizar código do grupo [08] dessa tabela.",
             "valores-validos": {}
         },
         {
@@ -314,7 +314,7 @@
             "tamanho": "1-255",
             "dec": "-",
             "descricao": "Descrição do instrumento ou situação que originou o pagamento do benefício.\nValidação: Preenchimento obrigatório se tpBeneficio = [0909, 1001, 1009].",
-            "validacao": " Preenchimento obrigatório se tpBeneficio = [0909, 1001, 1009].",
+            "validacao": "Preenchimento obrigatório se tpBeneficio = [0909, 1001, 1009].",
             "valores-validos": {}
         },
         {
@@ -407,7 +407,7 @@
             "tamanho": "1-255",
             "dec": "-",
             "descricao": "Descrição do motivo da suspensão do benefício.\nValidação: Preenchimento obrigatório e exclusivo se mtvSuspensao = [99].",
-            "validacao": " Preenchimento obrigatório e exclusivo se mtvSuspensao = [99].",
+            "validacao": "Preenchimento obrigatório e exclusivo se mtvSuspensao = [99].",
             "valores-validos": {}
         }
     ]

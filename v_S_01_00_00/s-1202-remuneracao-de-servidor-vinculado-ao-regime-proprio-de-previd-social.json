@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -118,7 +118,7 @@
             "tamanho": "4 ou 7",
             "dec": "-",
             "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações, se indApuracao for igual a [1], ou apenas o ano (formato AAAA), se indApuracao for igual a [2].\nValidação: Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
-            "validacao": " Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": "Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
             "valores-validos": {}
         },
         {
@@ -242,7 +242,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o número do CPF do trabalhador.\nValidação: Deve ser um CPF válido.",
-            "validacao": " Deve ser um CPF válido.",
+            "validacao": "Deve ser um CPF válido.",
             "valores-validos": {}
         },
         {
@@ -284,7 +284,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de nascimento.\nValidação: Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
-            "validacao": " Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
+            "validacao": "Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
             "valores-validos": {}
         },
         {
@@ -312,7 +312,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Informar o CNPJ do órgão público anterior.\nValidação: Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
-            "validacao": " Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
+            "validacao": "Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
             "valores-validos": {}
         },
         {
@@ -382,7 +382,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Identificador atribuído pelo órgão público para o demonstrativo de valores devidos ao trabalhador. O ente público pode preencher este campo utilizando-se de um identificador padrão para todos os trabalhadores; no entanto, havendo mais de um demonstrativo relativo a uma mesma competência, devem ser utilizados identificadores diferentes para cada um dos demonstrativos.\nValidação: Deve ser um identificador único dentro do mesmo perApur para cada um dos demonstrativos do trabalhador.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " Deve ser um identificador único dentro do mesmo perApur para cada um dos demonstrativos do trabalhador.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "Deve ser um identificador único dentro do mesmo perApur para cada um dos demonstrativos do trabalhador.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -396,7 +396,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -482,7 +482,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300 ou, no caso de remunPerAnt, se remunOrgSuc = [S].",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300 ou, no caso de remunPerAnt, se remunOrgSuc = [S].",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300 ou, no caso de remunPerAnt, se remunOrgSuc = [S].",
             "valores-validos": {}
         },
         {
@@ -538,7 +538,7 @@
             "tamanho": "1-12",
             "dec": "2",
             "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.).\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -552,7 +552,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Informar o fator, percentual, etc. da rubrica, quando necessário.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -566,7 +566,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor total da rubrica.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -642,7 +642,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Informar o período ao qual se refere o complemento de remuneração, no formato AAAA-MM.\nValidação: Deve ser igual ou anterior ao período de apuração informado em perApur.\nDeve ser informado no formato AAAA-MM.",
-            "validacao": " Deve ser igual ou anterior ao período de apuração informado em perApur.\\ Deve ser informado no formato AAAA-MM.",
+            "validacao": "Deve ser igual ou anterior ao período de apuração informado em perApur.\\ Deve ser informado no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -714,7 +714,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300 ou, no caso de remunPerAnt, se remunOrgSuc = [S].",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300 ou, no caso de remunPerAnt, se remunOrgSuc = [S].",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300 ou, no caso de remunPerAnt, se remunOrgSuc = [S].",
             "valores-validos": {}
         },
         {
@@ -770,7 +770,7 @@
             "tamanho": "1-12",
             "dec": "2",
             "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.).\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -784,7 +784,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Informar o fator, percentual, etc. da rubrica, quando necessário.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -798,7 +798,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor total da rubrica.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {

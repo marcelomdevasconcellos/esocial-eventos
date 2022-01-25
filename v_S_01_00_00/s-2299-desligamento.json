@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -244,7 +244,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2200 do respectivo vínculo trabalhista.",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2200 do respectivo vínculo trabalhista.",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2200 do respectivo vínculo trabalhista.",
             "valores-validos": {}
         },
         {
@@ -272,7 +272,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Código de motivo do desligamento.\nValidação: Deve ser um código válido e existente na Tabela 19, bem como compatível com o código de categoria do trabalhador, conforme Tabela 19.",
-            "validacao": " Deve ser um código válido e existente na Tabela 19, bem como compatível com o código de categoria do trabalhador, conforme Tabela 19.",
+            "validacao": "Deve ser um código válido e existente na Tabela 19, bem como compatível com o código de categoria do trabalhador, conforme Tabela 19.",
             "valores-validos": {}
         },
         {
@@ -286,7 +286,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de desligamento do vínculo (último dia trabalhado).\nValidação: Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias. No caso de empregado reintegrado e quando não se tratar de retificação do desligamento anterior à reintegração, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
-            "validacao": " Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias. No caso de empregado reintegrado e quando não se tratar de retificação do desligamento anterior à reintegração, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
+            "validacao": "Deve ser uma data igual ou anterior à data atual acrescida de 10 (dez) dias. No caso de empregado reintegrado e quando não se tratar de retificação do desligamento anterior à reintegração, também deve ser uma data igual ou posterior a dtEfetRetorno do evento S-2298.",
             "valores-validos": {}
         },
         {
@@ -300,7 +300,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de concessão do aviso prévio.\nValidação: Se informada, deve ser igual ou posterior à data de admissão e igual ou anterior a dtDeslig.",
-            "validacao": " Se informada, deve ser igual ou posterior à data de admissão e igual ou anterior a dtDeslig.",
+            "validacao": "Se informada, deve ser igual ou posterior à data de admissão e igual ou anterior a dtDeslig.",
             "valores-validos": {}
         },
         {
@@ -331,7 +331,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data projetada para o término do aviso prévio indenizado.\nValidação: Obrigatório se indPagtoAPI for igual a [S], devendo ser igual ou posterior a dtDeslig.",
-            "validacao": " Obrigatório se indPagtoAPI for igual a [S], devendo ser igual ou posterior a dtDeslig.",
+            "validacao": "Obrigatório se indPagtoAPI for igual a [S], devendo ser igual ou posterior a dtDeslig.",
             "valores-validos": {}
         },
         {
@@ -345,7 +345,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de pensão alimentícia para fins de retenção de FGTS.\nValores válidos:\n0 - Não existe pensão alimentícia\n1 - Percentual de pensão alimentícia\n2 - Valor de pensão alimentícia\n3 - Percentual e valor de pensão alimentícia\nValidação: Preenchimento obrigatório e exclusivo se o vínculo for celetista (tpRegTrab em S-2200 = [1]).",
-            "validacao": " Preenchimento obrigatório e exclusivo se o vínculo for celetista (tpRegTrab em S-2200 = [1]).",
+            "validacao": "Preenchimento obrigatório e exclusivo se o vínculo for celetista (tpRegTrab em S-2200 = [1]).",
             "valores-validos": {
                 "0": "0 - Não existe pensão alimentícia",
                 "1": "1 - Percentual de pensão alimentícia",
@@ -364,7 +364,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Percentual a ser destinado a pensão alimentícia.\nValidação: Deve ser maior que 0 (zero) e menor ou igual a 100 (cem).\nInformação obrigatória e exclusiva se pensAlim = [1, 3].",
-            "validacao": " Deve ser maior que 0 (zero) e menor ou igual a 100 (cem).\\ Informação obrigatória e exclusiva se pensAlim = [1, 3].",
+            "validacao": "Deve ser maior que 0 (zero) e menor ou igual a 100 (cem).\\ Informação obrigatória e exclusiva se pensAlim = [1, 3].",
             "valores-validos": {}
         },
         {
@@ -378,7 +378,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor da pensão alimentícia.\nValidação: Deve ser maior que 0 (zero).\nInformação obrigatória e exclusiva se pensAlim = [2, 3].",
-            "validacao": " Deve ser maior que 0 (zero).\\ Informação obrigatória e exclusiva se pensAlim = [2, 3].",
+            "validacao": "Deve ser maior que 0 (zero).\\ Informação obrigatória e exclusiva se pensAlim = [2, 3].",
             "valores-validos": {}
         },
         {
@@ -392,7 +392,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Número que identifica o processo trabalhista, quando o desligamento se der por decisão judicial.\nValidação: Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
-            "validacao": " Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
+            "validacao": "Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
             "valores-validos": {}
         },
         {
@@ -420,7 +420,7 @@
             "tamanho": "1-2",
             "dec": "-",
             "descricao": "Dia do mês efetivamente trabalhado pelo empregado com contrato de trabalho intermitente.\nCaso não tenha havido trabalho no mês, informar 0 (zero).\nValidação: Deve ser um número entre 0 e 31, de acordo com o calendário anual.",
-            "validacao": " Deve ser um número entre 0 e 31, de acordo com o calendário anual.",
+            "validacao": "Deve ser um número entre 0 e 31, de acordo com o calendário anual.",
             "valores-validos": {}
         },
         {
@@ -493,7 +493,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do empregador sucessor, de acordo com o tipo de inscrição indicado no campo sucessaoVinc/tpInsc.\nValidação: Deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\nSe sucessaoVinc/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.\nSe sucessaoVinc/tpInsc = [2], deve possuir 11 (onze) algarismos.",
-            "validacao": " Deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\\ Se sucessaoVinc/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.\\ Se sucessaoVinc/tpInsc = [2], deve possuir 11 (onze) algarismos.",
+            "validacao": "Deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\\ Se sucessaoVinc/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.\\ Se sucessaoVinc/tpInsc = [2], deve possuir 11 (onze) algarismos.",
             "valores-validos": {}
         },
         {
@@ -521,7 +521,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o CPF do novo titular.\nValidação: Deve ser um CPF válido e diferente do CPF do declarante e do empregado.",
-            "validacao": " Deve ser um CPF válido e diferente do CPF do declarante e do empregado.",
+            "validacao": "Deve ser um CPF válido e diferente do CPF do declarante e do empregado.",
             "valores-validos": {}
         },
         {
@@ -535,7 +535,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de nascimento do novo titular.\nValidação: Deve corresponder à data de nascimento cadastrada na base de dados do CPF do cpfSubstituto.",
-            "validacao": " Deve corresponder à data de nascimento cadastrada na base de dados do CPF do cpfSubstituto.",
+            "validacao": "Deve corresponder à data de nascimento cadastrada na base de dados do CPF do cpfSubstituto.",
             "valores-validos": {}
         },
         {
@@ -563,7 +563,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o novo CPF do trabalhador.\nValidação: Deve ser um CPF válido e diferente do CPF do empregador e do antigo CPF do trabalhador.",
-            "validacao": " Deve ser um CPF válido e diferente do CPF do empregador e do antigo CPF do trabalhador.",
+            "validacao": "Deve ser um CPF válido e diferente do CPF do empregador e do antigo CPF do trabalhador.",
             "valores-validos": {}
         },
         {
@@ -605,7 +605,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Identificador atribuído pela empresa para o demonstrativo de valores devidos ao trabalhador relativo a verbas rescisórias.\nValidação: Deve ser um identificador único dentro da mesma competência (mês/ano da data de desligamento) para cada um dos demonstrativos do trabalhador.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " Deve ser um identificador único dentro da mesma competência (mês/ano da data de desligamento) para cada um dos demonstrativos do trabalhador.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "Deve ser um identificador único dentro da mesma competência (mês/ano da data de desligamento) para cada um dos demonstrativos do trabalhador.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -647,7 +647,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da Tabela 05.\nValores válidos:\n1 - CNPJ\n3 - CAEPF\n4 - CNO\nValidação: Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\nSe classTrib em S-1000 = [04], deve ser igual a [1].\nNos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
-            "validacao": " Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\\ Se classTrib em S-1000 = [04], deve ser igual a [1].\\ Nos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
+            "validacao": "Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\\ Se classTrib em S-1000 = [04], deve ser igual a [1].\\ Nos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "3": "3 - CAEPF",
@@ -665,7 +665,7 @@
             "tamanho": "12 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do estabelecimento do contribuinte de acordo com o tipo de inscrição indicado no campo ideEstabLot/tpInsc.\nValidação: A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
-            "validacao": " A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
+            "validacao": "A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
             "valores-validos": {}
         },
         {
@@ -707,7 +707,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
-            "validacao": " Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
+            "validacao": "Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
             "valores-validos": {}
         },
         {
@@ -735,7 +735,7 @@
             "tamanho": "1-12",
             "dec": "2",
             "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -749,7 +749,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Informar o fator, percentual, etc. da rubrica, quando necessário. Ex.: Adicional de horas extras 50%, relacionado a uma rubrica de horas extras: Fator = 50.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -763,7 +763,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor total da rubrica.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -777,7 +777,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
-            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
+            "validacao": "Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
             "valores-validos": {
                 "0": "0 - Normal (apuração sob a folha de pagamento declarada no eSocial)",
                 "1": "1 - Situação especial de apuração de IR"
@@ -887,7 +887,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data da assinatura do acordo, convenção coletiva, sentença normativa ou da conversão da licença saúde em acidente de trabalho.\nValidação: Informação obrigatória se tpAcConv = [A, B, C, D, E]. Se preenchida, seu mês/ano deve ser igual ou anterior ao mês/ano da data de desligamento, em dtDeslig. A data deve ser igual ou posterior a 01/01/1890.",
-            "validacao": " Informação obrigatória se tpAcConv = [A, B, C, D, E]. Se preenchida, seu mês/ano deve ser igual ou anterior ao mês/ano da data de desligamento, em dtDeslig. A data deve ser igual ou posterior a 01/01/1890.",
+            "validacao": "Informação obrigatória se tpAcConv = [A, B, C, D, E]. Se preenchida, seu mês/ano deve ser igual ou anterior ao mês/ano da data de desligamento, em dtDeslig. A data deve ser igual ou posterior a 01/01/1890.",
             "valores-validos": {}
         },
         {
@@ -901,7 +901,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo do instrumento ou situação ensejadora da remuneração relativa a períodos de apuração anteriores.\nValores válidos:\nA - Acordo Coletivo de Trabalho\nB - Legislação federal, estadual, municipal ou distrital\nC - Convenção Coletiva de Trabalho\nD - Sentença normativa - Dissídio\nE - Conversão de licença saúde em acidente de trabalho\nG - Antecipação de diferenças de acordo, convenção ou dissídio coletivo\nH - Recolhimento mensal de FGTS anterior ao início de obrigatoriedade dos eventos periódicos\nValidação: Se classTrib em S-1000 = [04, 22], não pode ser informado [E, H].",
-            "validacao": " Se classTrib em S-1000 = [04, 22], não pode ser informado [E, H].",
+            "validacao": "Se classTrib em S-1000 = [04, 22], não pode ser informado [E, H].",
             "valores-validos": {
                 "A": "A - Acordo Coletivo de Trabalho",
                 "B": "B - Legislação federal, estadual, municipal ou distrital",
@@ -951,7 +951,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Informar o período ao qual se refere o complemento de remuneração, no formato AAAA-MM.\nValidação: Deve ser igual ou anterior ao mês/ano da data do desligamento, informada em dtDeslig.\nDeve ser informado no formato AAAA-MM.\nSe tpAcConv = [H], deve ser anterior ao início dos eventos periódicos para o empregador no eSocial.",
-            "validacao": " Deve ser igual ou anterior ao mês/ano da data do desligamento, informada em dtDeslig.\\ Deve ser informado no formato AAAA-MM.\\ Se tpAcConv = [H], deve ser anterior ao início dos eventos periódicos para o empregador no eSocial.",
+            "validacao": "Deve ser igual ou anterior ao mês/ano da data do desligamento, informada em dtDeslig.\\ Deve ser informado no formato AAAA-MM.\\ Se tpAcConv = [H], deve ser anterior ao início dos eventos periódicos para o empregador no eSocial.",
             "valores-validos": {}
         },
         {
@@ -979,7 +979,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de inscrição do estabelecimento, de acordo com as opções da Tabela 05.\nValores válidos:\n1 - CNPJ\n3 - CAEPF\n4 - CNO\nValidação: Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\nSe classTrib em S-1000 = [04], deve ser igual a [1].\nNos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
-            "validacao": " Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\\ Se classTrib em S-1000 = [04], deve ser igual a [1].\\ Nos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
+            "validacao": "Se classTrib em S-1000 = [21, 22], deve ser igual a [3, 4].\\ Se classTrib em S-1000 = [04], deve ser igual a [1].\\ Nos demais casos (classTrib em S-1000 diferente de [04, 21, 22]), deve ser igual a [1, 4].",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "3": "3 - CAEPF",
@@ -997,7 +997,7 @@
             "tamanho": "12 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do estabelecimento do contribuinte de acordo com o tipo de inscrição indicado no campo ideEstabLot/tpInsc.\nValidação: A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
-            "validacao": " A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
+            "validacao": "A inscrição informada deve ser compatível com ideEstabLot/tpInsc.",
             "valores-validos": {}
         },
         {
@@ -1039,7 +1039,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador que identifica a rubrica em sua folha de pagamento ou o código da rubrica constante da Tabela de Rubricas Padrão.\nValidação: Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
-            "validacao": " Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
+            "validacao": "Não pode ser utilizada rubrica cuja natRubr em S-1010 seja igual a [1801, 9220], desde que mês/ano de dtDeslig >= [2021-07].",
             "valores-validos": {}
         },
         {
@@ -1067,7 +1067,7 @@
             "tamanho": "1-12",
             "dec": "2",
             "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.). Ex.: Quantidade de horas extras trabalhadas relacionada com uma rubrica de hora extra, quantidade de dias trabalhados relacionada com uma rubrica de salário, etc.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1081,7 +1081,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Informar o fator, percentual, etc. da rubrica, quando necessário. Ex.: Adicional de horas extras 50%, relacionado a uma rubrica de horas extras: Fator = 50.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1095,7 +1095,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor total da rubrica.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1109,7 +1109,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de tipo de apuração de IR.\nValores válidos:\n0 - Normal (apuração sob a folha de pagamento declarada no eSocial)\n1 - Situação especial de apuração de IR\nValidação: Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
-            "validacao": " Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
+            "validacao": "Informação obrigatória e exclusiva se mês/ano de dtDeslig >= [2021-07].",
             "valores-validos": {
                 "0": "0 - Normal (apuração sob a folha de pagamento declarada no eSocial)",
                 "1": "1 - Situação especial de apuração de IR"
@@ -1222,7 +1222,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1].",
             "valores-validos": {}
         },
         {
@@ -1236,7 +1236,7 @@
             "tamanho": "1-14",
             "dec": "-",
             "descricao": "Código do indicativo da suspensão, atribuído pelo empregador em S-1070.\nValidação: A informação prestada deve estar de acordo com o que foi informado em S-1070.",
-            "validacao": " A informação prestada deve estar de acordo com o que foi informado em S-1070.",
+            "validacao": "A informação prestada deve estar de acordo com o que foi informado em S-1070.",
             "valores-validos": {}
         },
         {
@@ -1313,7 +1313,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo remunOutrEmpr/tpInsc.\nValidação: a) Se remunOutrEmpr/tpInsc = [1], deve ser um CNPJ válido, diferente do CNPJ base indicado no evento de Informações do Empregador (S-1000) e dos estabelecimentos informados através do evento S-1005.\nb) Se remunOutrEmpr/tpInsc = [2], deve ser um CPF válido e diferente do CPF do trabalhador e ainda, caso o empregador seja pessoa física, diferente do CPF do empregador.",
-            "validacao": " a) Se remunOutrEmpr/tpInsc = [1], deve ser um CNPJ válido, diferente do CNPJ base indicado no evento de Informações do Empregador (S-1000) e dos estabelecimentos informados através do evento S-1005.\\ b) Se remunOutrEmpr/tpInsc = [2], deve ser um CPF válido e diferente do CPF do trabalhador e ainda, caso o empregador seja pessoa física, diferente do CPF do empregador.",
+            "validacao": "a) Se remunOutrEmpr/tpInsc = [1], deve ser um CNPJ válido, diferente do CNPJ base indicado no evento de Informações do Empregador (S-1000) e dos estabelecimentos informados através do evento S-1005.\\ b) Se remunOutrEmpr/tpInsc = [2], deve ser um CPF válido e diferente do CPF do trabalhador e ainda, caso o empregador seja pessoa física, diferente do CPF do empregador.",
             "valores-validos": {}
         },
         {
@@ -1327,7 +1327,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador na qual houve a remuneração.\nValidação: Deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -1341,7 +1341,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Preencher com o valor da remuneração recebida pelo trabalhador na outra empresa/atividade, sobre a qual houve desconto/recolhimento da contribuição do segurado.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1369,7 +1369,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Informar um número de processo judicial cadastrado através do evento S-1070, cujo indMatProc seja igual a [1, 7].\nValidação: Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
-            "validacao": " Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
+            "validacao": "Deve ser um número de processo judicial válido e existente na Tabela de Processos (S-1070), com indMatProc = [1, 7].",
             "valores-validos": {}
         },
         {
@@ -1397,7 +1397,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data final da quarentena a que está sujeito o trabalhador. No caso de desligamento reconhecido judicialmente ou de concessão de aposentadoria de servidor com data anterior a competências com remunerações já informadas no eSocial, informar o último dia trabalhado.\nValidação: Deve ser uma data posterior a dtDeslig.",
-            "validacao": " Deve ser uma data posterior a dtDeslig.",
+            "validacao": "Deve ser uma data posterior a dtDeslig.",
             "valores-validos": {}
         },
         {

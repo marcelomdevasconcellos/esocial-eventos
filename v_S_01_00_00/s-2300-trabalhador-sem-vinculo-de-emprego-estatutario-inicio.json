@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -369,7 +369,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país de nascimento do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -383,7 +383,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país de nacionalidade do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -425,7 +425,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Tipo de logradouro.\nValidação: Se informado, deve ser um código válido e existente na Tabela 20.",
-            "validacao": " Se informado, deve ser um código válido e existente na Tabela 20.",
+            "validacao": "Se informado, deve ser um código válido e existente na Tabela 20.",
             "valores-validos": {}
         },
         {
@@ -495,7 +495,7 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Deve ser preenchido apenas com números, com 8 (oito) posições.",
-            "validacao": " Deve ser preenchido apenas com números, com 8 (oito) posições.",
+            "validacao": "Deve ser preenchido apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
@@ -509,7 +509,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -551,7 +551,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -663,7 +663,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório se dtInicio >= [2021-07-19].",
-            "validacao": " Preenchimento obrigatório se dtInicio >= [2021-07-19].",
+            "validacao": "Preenchimento obrigatório se dtInicio >= [2021-07-19].",
             "valores-validos": {
                 "1": "1 - Prazo indeterminado",
                 "2": "2 - Prazo determinado"
@@ -680,7 +680,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Condição de ingresso do trabalhador imigrante.\nValores válidos:\n1 - Refugiado\n2 - Solicitante de refúgio\n3 - Permanência no Brasil em razão de reunião familiar\n4 - Beneficiado pelo acordo entre países do Mercosul\n5 - Dependente de agente diplomático e/ou consular de países que mantêm acordo de reciprocidade para o exercício de atividade remunerada no Brasil\n6 - Beneficiado pelo Tratado de Amizade, Cooperação e Consulta entre a República Federativa do Brasil e a República Portuguesa\n7 - Outra condição\nValidação: Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
-            "validacao": " Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
+            "validacao": "Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
             "valores-validos": {
                 "1": "1 - Refugiado",
                 "2": "2 - Solicitante de refúgio",
@@ -846,7 +846,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Tipo de dependente.\nValidação: Deve ser um código válido e existente na Tabela 07.",
-            "validacao": " Deve ser um código válido e existente na Tabela 07.",
+            "validacao": "Deve ser um código válido e existente na Tabela 07.",
             "valores-validos": {}
         },
         {
@@ -874,7 +874,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de nascimento.\nValidação: Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
-            "validacao": " Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
+            "validacao": "Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
             "valores-validos": {}
         },
         {
@@ -888,7 +888,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Número de inscrição no CPF.\nValidação: Deve ser um número de CPF válido, observando o que segue:\na) O preenchimento é obrigatório se depIRRF = [S];\nb) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\nc) Não pode haver mais de um dependente com o mesmo número de CPF.",
-            "validacao": " Deve ser um número de CPF válido, observando o que segue:\\ a) O preenchimento é obrigatório se depIRRF = [S];\\ b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\\ c) Não pode haver mais de um dependente com o mesmo número de CPF.",
+            "validacao": "Deve ser um número de CPF válido, observando o que segue:\\ a) O preenchimento é obrigatório se depIRRF = [S];\\ b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\\ c) Não pode haver mais de um dependente com o mesmo número de CPF.",
             "valores-validos": {}
         },
         {
@@ -967,7 +967,7 @@
             "tamanho": "8-13",
             "dec": "-",
             "descricao": "Número de telefone do trabalhador, com DDD.\nValidação: Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
-            "validacao": " Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
+            "validacao": "Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
             "valores-validos": {}
         },
         {
@@ -981,7 +981,7 @@
             "tamanho": "6-60",
             "dec": "-",
             "descricao": "Endereço eletrônico.\nValidação: O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
-            "validacao": " O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
+            "validacao": "O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
             "valores-validos": {}
         },
         {
@@ -1026,7 +1026,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa.\nValidação: Preenchimento obrigatório se indRetif = [1]. No caso de retificação (indRetif = [2]), a matrícula deve ser preenchida caso tenha sido informada no evento original.\nO valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " Preenchimento obrigatório se indRetif = [1]. No caso de retificação (indRetif = [2]), a matrícula deve ser preenchida caso tenha sido informada no evento original.\\ O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "Preenchimento obrigatório se indRetif = [1]. No caso de retificação (indRetif = [2]), a matrícula deve ser preenchida caso tenha sido informada no evento original.\\ O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -1040,7 +1040,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -1054,7 +1054,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de início, que pode ser:\na) Para o cooperado, a data de ingresso na cooperativa;\nb) Para o diretor não empregado, a data de posse no cargo;\nc) Para o dirigente sindical, a data de início do mandato no sindicato;\nd) Para o estagiário, a data de início do estágio;\ne) Para o trabalhador avulso, a data de ingresso no Órgão Gestor de Mão de Obra - OGMO ou no sindicato;\nf) Para o servidor público exercente de cargo eletivo, a data de início do mandato;\ng) Para os demais trabalhadores, a data de início das atividades.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser posterior à data de nascimento do trabalhador e não pode ser posterior a 30 (trinta) dias da data atual;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial;\nc) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial.",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de nascimento do trabalhador e não pode ser posterior a 30 (trinta) dias da data atual;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial;\\ c) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial.",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de nascimento do trabalhador e não pode ser posterior a 30 (trinta) dias da data atual;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial;\\ c) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial.",
             "valores-validos": {}
         },
         {
@@ -1068,7 +1068,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Número que identifica o processo trabalhista, quando o início de TSVE se der por decisão judicial.\nValidação: Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
-            "validacao": " Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
+            "validacao": "Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
             "valores-validos": {}
         },
         {
@@ -1082,7 +1082,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Natureza da atividade.\nValores válidos:\n1 - Trabalho urbano\n2 - Trabalho rural\nValidação: Preenchimento obrigatório se codCateg = [201, 202, 401, 731, 734, 738]. Não deve ser preenchido se codCateg = [721, 722, 771, 901].",
-            "validacao": " Preenchimento obrigatório se codCateg = [201, 202, 401, 731, 734, 738]. Não deve ser preenchido se codCateg = [721, 722, 771, 901].",
+            "validacao": "Preenchimento obrigatório se codCateg = [201, 202, 401, 731, 734, 738]. Não deve ser preenchido se codCateg = [721, 722, 771, 901].",
             "valores-validos": {
                 "1": "1 - Trabalho urbano",
                 "2": "2 - Trabalho rural"
@@ -1127,7 +1127,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar o nome do cargo.\nValidação: Preenchimento obrigatório se codCateg for diferente de [410].",
-            "validacao": " Preenchimento obrigatório se codCateg for diferente de [410].",
+            "validacao": "Preenchimento obrigatório se codCateg for diferente de [410].",
             "valores-validos": {}
         },
         {
@@ -1141,7 +1141,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a Classificação Brasileira de Ocupações - CBO relativa ao cargo.\nValidação: Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -1155,7 +1155,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar o nome da função de confiança.\nValidação: Preenchimento obrigatório se codCateg = [410] e não houver informação de nmCargo.",
-            "validacao": " Preenchimento obrigatório se codCateg = [410] e não houver informação de nmCargo.",
+            "validacao": "Preenchimento obrigatório se codCateg = [410] e não houver informação de nmCargo.",
             "valores-validos": {}
         },
         {
@@ -1169,7 +1169,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a CBO relativa à função de confiança/cargo em comissão.\nValidação: Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -1197,7 +1197,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Salário base do trabalhador, correspondente à parte fixa da remuneração.\nValidação: Se undSalFixo for igual a [7], preencher com 0 (zero).",
-            "validacao": " Se undSalFixo for igual a [7], preencher com 0 (zero).",
+            "validacao": "Se undSalFixo for igual a [7], preencher com 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1233,7 +1233,7 @@
             "tamanho": "1-999",
             "dec": "-",
             "descricao": "Descrição do salário por tarefa ou variável e como este é calculado. Ex.: Comissões pagas no percentual de 10% sobre as vendas.\nValidação: Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
-            "validacao": " Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
+            "validacao": "Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
             "valores-validos": {}
         },
         {
@@ -1289,7 +1289,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código correspondente à categoria de origem do dirigente sindical.\nValidação: Deve ser um código válido e existente na Tabela 01, diferente de [401].",
-            "validacao": " Deve ser um código válido e existente na Tabela 01, diferente de [401].",
+            "validacao": "Deve ser um código válido e existente na Tabela 01, diferente de [401].",
             "valores-validos": {}
         },
         {
@@ -1303,7 +1303,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de inscrição, conforme Tabela 05.\nValores válidos:\n1 - CNPJ\n2 - CPF\nValidação: O preenchimento é obrigatório e exclusivo se infoDirigenteSindical/categOrig corresponder a \"Empregado\", \"Agente Público\", \"Avulso\" ou for igual a [721].",
-            "validacao": " O preenchimento é obrigatório e exclusivo se infoDirigenteSindical/categOrig corresponder a \"Empregado\", \"Agente Público\", \"Avulso\" ou for igual a [721].",
+            "validacao": "O preenchimento é obrigatório e exclusivo se infoDirigenteSindical/categOrig corresponder a \"Empregado\", \"Agente Público\", \"Avulso\" ou for igual a [721].",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "2": "2 - CPF"
@@ -1320,7 +1320,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do empregador de origem do dirigente sindical, de acordo com o tipo de inscrição indicado no campo infoDirigenteSindical/tpInsc.\nValidação: Preenchimento obrigatório e exclusivo se infoDirigenteSindical/tpInsc for informado. Se preenchido, deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\nSe infoDirigenteSindical/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador e dos estabelecimentos informados através do evento S-1005.\nSe infoDirigenteSindical/tpInsc = [2], deve possuir 11 (onze) algarismos.",
-            "validacao": " Preenchimento obrigatório e exclusivo se infoDirigenteSindical/tpInsc for informado. Se preenchido, deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\\ Se infoDirigenteSindical/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador e dos estabelecimentos informados através do evento S-1005.\\ Se infoDirigenteSindical/tpInsc = [2], deve possuir 11 (onze) algarismos.",
+            "validacao": "Preenchimento obrigatório e exclusivo se infoDirigenteSindical/tpInsc for informado. Se preenchido, deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\\ Se infoDirigenteSindical/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador e dos estabelecimentos informados através do evento S-1005.\\ Se infoDirigenteSindical/tpInsc = [2], deve possuir 11 (onze) algarismos.",
             "valores-validos": {}
         },
         {
@@ -1334,7 +1334,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de admissão (ou de início) do dirigente sindical na empresa de origem.\nValidação: O preenchimento é obrigatório se infoDirigenteSindical/categOrig corresponder a \"Empregado\", \"Agente Público\", \"Avulso\" ou for igual a [721].",
-            "validacao": " O preenchimento é obrigatório se infoDirigenteSindical/categOrig corresponder a \"Empregado\", \"Agente Público\", \"Avulso\" ou for igual a [721].",
+            "validacao": "O preenchimento é obrigatório se infoDirigenteSindical/categOrig corresponder a \"Empregado\", \"Agente Público\", \"Avulso\" ou for igual a [721].",
             "valores-validos": {}
         },
         {
@@ -1348,7 +1348,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Preencher com a matrícula do trabalhador na empresa de origem.\nValidação: Preenchimento obrigatório se infoDirigenteSindical/categOrig corresponder a \"Empregado\" ou \"Agente Público\".",
-            "validacao": " Preenchimento obrigatório se infoDirigenteSindical/categOrig corresponder a \"Empregado\" ou \"Agente Público\".",
+            "validacao": "Preenchimento obrigatório se infoDirigenteSindical/categOrig corresponder a \"Empregado\" ou \"Agente Público\".",
             "valores-validos": {}
         },
         {
@@ -1362,7 +1362,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de regime trabalhista.\nValores válidos:\n1 - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas\n2 - Estatutário/legislações específicas (servidor temporário, militar, agente político, etc.)\nValidação: O preenchimento é obrigatório e exclusivo se infoDirigenteSindical/categOrig corresponder a \"Empregado\" ou \"Agente Público\".",
-            "validacao": " O preenchimento é obrigatório e exclusivo se infoDirigenteSindical/categOrig corresponder a \"Empregado\" ou \"Agente Público\".",
+            "validacao": "O preenchimento é obrigatório e exclusivo se infoDirigenteSindical/categOrig corresponder a \"Empregado\" ou \"Agente Público\".",
             "valores-validos": {
                 "1": "1 - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas",
                 "2": "2 - Estatutário/legislações específicas (servidor temporário, militar, agente político, etc.)"
@@ -1379,7 +1379,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares).\nValores válidos:\n1 - Regime Geral de Previdência Social - RGPS\n2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares\n3 - Regime de Previdência Social no exterior\nValidação: Se infoDirigenteSindical/categOrig for relativa a \"Empregado\", não pode ser preenchido com [2].",
-            "validacao": " Se infoDirigenteSindical/categOrig for relativa a \"Empregado\", não pode ser preenchido com [2].",
+            "validacao": "Se infoDirigenteSindical/categOrig for relativa a \"Empregado\", não pode ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Regime Geral de Previdência Social - RGPS",
                 "2": "2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares",
@@ -1396,7 +1396,7 @@
             "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Informações relativas ao trabalhador cedido/em exercício em outro órgão, preenchidas exclusivamente pelo cessionário/órgão de destino.",
+            "descricao": "Informações relativas ao trabalhador cedido/em exercício em outro órgão ou servidor público indicado para conselho, preenchidas exclusivamente pelo cessionário/órgão de destino.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -1410,8 +1410,8 @@
             "ocor": "1",
             "tamanho": "3",
             "dec": "-",
-            "descricao": "Preencher com o código correspondente à categoria de origem do trabalhador cedido.\nValidação: Deve ser um código válido e existente na Tabela 01, diferente de [410].",
-            "validacao": " Deve ser um código válido e existente na Tabela 01, diferente de [410].",
+            "descricao": "Preencher com o código correspondente à categoria de origem do trabalhador cedido ou do servidor público indicado para conselho.\nValidação: Deve ser um código válido e existente na Tabela 01, diferente de [305, 410].",
+            "validacao": "Deve ser um código válido e existente na Tabela 01, diferente de [305, 410].",
             "valores-validos": {}
         },
         {
@@ -1425,7 +1425,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Informar o CNPJ do empregador/órgão público cedente/de origem.\nValidação: Deve ser um CNPJ diferente do CNPJ do empregador/órgão público e diferente dos estabelecimentos informados através do evento S-1005.\nRegra de validação:\nREGRA_VALIDA_CNPJ",
-            "validacao": " Deve ser um CNPJ diferente do CNPJ do empregador/órgão público e diferente dos estabelecimentos informados através do evento S-1005.\\ [[Regra de validação:\\ REGRA_VALIDA_CNPJ",
+            "validacao": "Deve ser um CNPJ diferente do CNPJ do empregador/órgão público e diferente dos estabelecimentos informados através do evento S-1005.\\ [[Regra de validação:\\ REGRA_VALIDA_CNPJ",
             "valores-validos": {}
         },
         {
@@ -1453,7 +1453,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de admissão (ou de exercício) do trabalhador no empregador/órgão público cedente/de origem.\nValidação: Deve ser uma data anterior a dtInicio e igual ou posterior a 01/01/1890.",
-            "validacao": " Deve ser uma data anterior a dtInicio e igual ou posterior a 01/01/1890.",
+            "validacao": "Deve ser uma data anterior a dtInicio e igual ou posterior a 01/01/1890.",
             "valores-validos": {}
         },
         {
@@ -1483,8 +1483,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares).\nValores válidos:\n1 - Regime Geral de Previdência Social - RGPS\n2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares\n3 - Regime de Previdência Social no exterior\nValidação: Se infoTrabCedido/categOrig for relativa a \"Empregado\", não pode ser preenchido com [2].",
-            "validacao": " Se infoTrabCedido/categOrig for relativa a \"Empregado\", não pode ser preenchido com [2].",
+            "descricao": "Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares).\nValores válidos:\n1 - Regime Geral de Previdência Social - RGPS\n2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares\n3 - Regime de Previdência Social no exterior\nValidação: Se infoTrabCedido/categOrig for relativa a \"Empregado\", não pode ser preenchido com [2]. Se codCateg = [305], deve ser preenchido com [2].",
+            "validacao": "Se infoTrabCedido/categOrig for relativa a \"Empregado\", não pode ser preenchido com [2]. Se codCateg = [305], deve ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Regime Geral de Previdência Social - RGPS",
                 "2": "2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares",
@@ -1508,6 +1508,62 @@
         {
             "index": 100,
             "esocial_id": 100,
+            "grupo-campo": "categOrig",
+            "grupo-pai": "infoMandElet",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "3",
+            "dec": "-",
+            "descricao": "Preencher com o código correspondente à categoria de origem do servidor.\nValidação: Deve ser um código válido e existente na Tabela 01, diferente de [304].",
+            "validacao": "Deve ser um código válido e existente na Tabela 01, diferente de [304].",
+            "valores-validos": {}
+        },
+        {
+            "index": 101,
+            "esocial_id": 101,
+            "grupo-campo": "cnpjOrig",
+            "grupo-pai": "infoMandElet",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "14",
+            "dec": "-",
+            "descricao": "Informar o CNPJ do órgão público de origem.\nRegra de validação:\nREGRA_VALIDA_CNPJ",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 102,
+            "esocial_id": 102,
+            "grupo-campo": "matricOrig",
+            "grupo-pai": "infoMandElet",
+            "elem": "E",
+            "tipo": "C",
+            "ocor": "1",
+            "tamanho": "1-30",
+            "dec": "-",
+            "descricao": "Preencher com a matrícula do servidor no órgão público de origem.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 103,
+            "esocial_id": 103,
+            "grupo-campo": "dtExercOrig",
+            "grupo-pai": "infoMandElet",
+            "elem": "E",
+            "tipo": "D",
+            "ocor": "1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Preencher com a data de exercício do servidor no órgão público de origem.\nValidação: Deve ser uma data anterior a dtInicio e igual ou posterior a 01/01/1890.",
+            "validacao": "Deve ser uma data anterior a dtInicio e igual ou posterior a 01/01/1890.",
+            "valores-validos": {}
+        },
+        {
+            "index": 104,
+            "esocial_id": 104,
             "grupo-campo": "indRemunCargo",
             "grupo-pai": "infoMandElet",
             "elem": "E",
@@ -1516,15 +1572,15 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicar se o servidor optou pela remuneração do cargo efetivo.\nValores válidos:\nS - Sim\nN - Não\nValidação: Informação obrigatória e exclusiva se CBOCargo = [111120, 111250, 111255]).",
-            "validacao": " Informação obrigatória e exclusiva se CBOCargo = [111120, 111250, 111255]).",
+            "validacao": "Informação obrigatória e exclusiva se CBOCargo = [111120, 111250, 111255]).",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
             }
         },
         {
-            "index": 101,
-            "esocial_id": 101,
+            "index": 105,
+            "esocial_id": 105,
             "grupo-campo": "tpRegTrab",
             "grupo-pai": "infoMandElet",
             "elem": "E",
@@ -1540,8 +1596,8 @@
             }
         },
         {
-            "index": 102,
-            "esocial_id": 102,
+            "index": 106,
+            "esocial_id": 106,
             "grupo-campo": "tpRegPrev",
             "grupo-pai": "infoMandElet",
             "elem": "E",
@@ -1558,8 +1614,8 @@
             }
         },
         {
-            "index": 103,
-            "esocial_id": 103,
+            "index": 107,
+            "esocial_id": 107,
             "grupo-campo": "infoEstagiario",
             "grupo-pai": "infoComplementares",
             "elem": "G",
@@ -1572,8 +1628,8 @@
             "valores-validos": {}
         },
         {
-            "index": 104,
-            "esocial_id": 104,
+            "index": 108,
+            "esocial_id": 108,
             "grupo-campo": "natEstagio",
             "grupo-pai": "infoEstagiario",
             "elem": "E",
@@ -1589,8 +1645,8 @@
             }
         },
         {
-            "index": 105,
-            "esocial_id": 105,
+            "index": 109,
+            "esocial_id": 109,
             "grupo-campo": "nivEstagio",
             "grupo-pai": "infoEstagiario",
             "elem": "E",
@@ -1610,8 +1666,8 @@
             }
         },
         {
-            "index": 106,
-            "esocial_id": 106,
+            "index": 110,
+            "esocial_id": 110,
             "grupo-campo": "areaAtuacao",
             "grupo-pai": "infoEstagiario",
             "elem": "E",
@@ -1624,8 +1680,8 @@
             "valores-validos": {}
         },
         {
-            "index": 107,
-            "esocial_id": 107,
+            "index": 111,
+            "esocial_id": 111,
             "grupo-campo": "nrApol",
             "grupo-pai": "infoEstagiario",
             "elem": "E",
@@ -1638,8 +1694,8 @@
             "valores-validos": {}
         },
         {
-            "index": 108,
-            "esocial_id": 108,
+            "index": 112,
+            "esocial_id": 112,
             "grupo-campo": "dtPrevTerm",
             "grupo-pai": "infoEstagiario",
             "elem": "E",
@@ -1648,12 +1704,12 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data prevista para o término do estágio.\nValidação: Deve ser uma data posterior à data de início do estágio.",
-            "validacao": " Deve ser uma data posterior à data de início do estágio.",
+            "validacao": "Deve ser uma data posterior à data de início do estágio.",
             "valores-validos": {}
         },
         {
-            "index": 109,
-            "esocial_id": 109,
+            "index": 113,
+            "esocial_id": 113,
             "grupo-campo": "instEnsino",
             "grupo-pai": "infoEstagiario",
             "elem": "G",
@@ -1666,8 +1722,8 @@
             "valores-validos": {}
         },
         {
-            "index": 110,
-            "esocial_id": 110,
+            "index": 114,
+            "esocial_id": 114,
             "grupo-campo": "cnpjInstEnsino",
             "grupo-pai": "instEnsino",
             "elem": "E",
@@ -1676,12 +1732,12 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Preencher com o CNPJ da instituição de ensino. Deve ser preenchido apenas se a instituição de ensino for brasileira.\nValidação: Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
-            "validacao": " Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "validacao": "Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
         {
-            "index": 111,
-            "esocial_id": 111,
+            "index": 115,
+            "esocial_id": 115,
             "grupo-campo": "nmRazao",
             "grupo-pai": "instEnsino",
             "elem": "E",
@@ -1690,12 +1746,12 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar a razão social.\nValidação: Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
-            "validacao": " Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
+            "validacao": "Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
             "valores-validos": {}
         },
         {
-            "index": 112,
-            "esocial_id": 112,
+            "index": 116,
+            "esocial_id": 116,
             "grupo-campo": "dscLograd",
             "grupo-pai": "instEnsino",
             "elem": "E",
@@ -1704,12 +1760,12 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Descrição do logradouro.\nValidação: Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
-            "validacao": " Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
+            "validacao": "Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
             "valores-validos": {}
         },
         {
-            "index": 113,
-            "esocial_id": 113,
+            "index": 117,
+            "esocial_id": 117,
             "grupo-campo": "nrLograd",
             "grupo-pai": "instEnsino",
             "elem": "E",
@@ -1718,12 +1774,12 @@
             "tamanho": "1-10",
             "dec": "-",
             "descricao": "Número do logradouro.\nSe não houver número a ser informado, preencher com \"S/N\".\nValidação: Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
-            "validacao": " Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
+            "validacao": "Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
             "valores-validos": {}
         },
         {
-            "index": 114,
-            "esocial_id": 114,
+            "index": 118,
+            "esocial_id": 118,
             "grupo-campo": "bairro",
             "grupo-pai": "instEnsino",
             "elem": "E",
@@ -1732,12 +1788,12 @@
             "tamanho": "1-90",
             "dec": "-",
             "descricao": "Nome do bairro/distrito.\nValidação: Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
-            "validacao": " Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
+            "validacao": "Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
             "valores-validos": {}
         },
         {
-            "index": 115,
-            "esocial_id": 115,
+            "index": 119,
+            "esocial_id": 119,
             "grupo-campo": "cep",
             "grupo-pai": "instEnsino",
             "elem": "E",
@@ -1746,12 +1802,12 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser preenchido apenas com números, com 8 (oito) posições.",
-            "validacao": " Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser preenchido apenas com números, com 8 (oito) posições.",
+            "validacao": "Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser preenchido apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
-            "index": 116,
-            "esocial_id": 116,
+            "index": 120,
+            "esocial_id": 120,
             "grupo-campo": "codMunic",
             "grupo-pai": "instEnsino",
             "elem": "E",
@@ -1760,12 +1816,12 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
-            "index": 117,
-            "esocial_id": 117,
+            "index": 121,
+            "esocial_id": 121,
             "grupo-campo": "uf",
             "grupo-pai": "instEnsino",
             "elem": "E",
@@ -1774,12 +1830,12 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com a sigla da Unidade da Federação - UF.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO\nValidação: Não informar se o campo cnpjInstEnsino estiver preenchido.",
-            "validacao": " Não informar se o campo cnpjInstEnsino estiver preenchido.",
+            "validacao": "Não informar se o campo cnpjInstEnsino estiver preenchido.",
             "valores-validos": {}
         },
         {
-            "index": 118,
-            "esocial_id": 118,
+            "index": 122,
+            "esocial_id": 122,
             "grupo-campo": "ageIntegracao",
             "grupo-pai": "infoEstagiario",
             "elem": "G",
@@ -1792,8 +1848,8 @@
             "valores-validos": {}
         },
         {
-            "index": 119,
-            "esocial_id": 119,
+            "index": 123,
+            "esocial_id": 123,
             "grupo-campo": "cnpjAgntInteg",
             "grupo-pai": "ageIntegracao",
             "elem": "E",
@@ -1802,12 +1858,12 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "CNPJ do agente de integração.\nValidação: Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
-            "validacao": " Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "validacao": "Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
         {
-            "index": 120,
-            "esocial_id": 120,
+            "index": 124,
+            "esocial_id": 124,
             "grupo-campo": "supervisorEstagio",
             "grupo-pai": "infoEstagiario",
             "elem": "G",
@@ -1820,8 +1876,8 @@
             "valores-validos": {}
         },
         {
-            "index": 121,
-            "esocial_id": 121,
+            "index": 125,
+            "esocial_id": 125,
             "grupo-campo": "cpfSupervisor",
             "grupo-pai": "supervisorEstagio",
             "elem": "E",
@@ -1830,12 +1886,12 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "CPF do responsável pela supervisão do estagiário.\nValidação: Deve ser um CPF válido.",
-            "validacao": " Deve ser um CPF válido.",
+            "validacao": "Deve ser um CPF válido.",
             "valores-validos": {}
         },
         {
-            "index": 122,
-            "esocial_id": 122,
+            "index": 126,
+            "esocial_id": 126,
             "grupo-campo": "mudancaCPF",
             "grupo-pai": "infoTSVInicio",
             "elem": "G",
@@ -1848,8 +1904,8 @@
             "valores-validos": {}
         },
         {
-            "index": 123,
-            "esocial_id": 123,
+            "index": 127,
+            "esocial_id": 127,
             "grupo-campo": "cpfAnt",
             "grupo-pai": "mudancaCPF",
             "elem": "E",
@@ -1862,8 +1918,8 @@
             "valores-validos": {}
         },
         {
-            "index": 124,
-            "esocial_id": 124,
+            "index": 128,
+            "esocial_id": 128,
             "grupo-campo": "matricAnt",
             "grupo-pai": "mudancaCPF",
             "elem": "E",
@@ -1876,8 +1932,8 @@
             "valores-validos": {}
         },
         {
-            "index": 125,
-            "esocial_id": 125,
+            "index": 129,
+            "esocial_id": 129,
             "grupo-campo": "dtAltCPF",
             "grupo-pai": "mudancaCPF",
             "elem": "E",
@@ -1890,8 +1946,8 @@
             "valores-validos": {}
         },
         {
-            "index": 126,
-            "esocial_id": 126,
+            "index": 130,
+            "esocial_id": 130,
             "grupo-campo": "observacao",
             "grupo-pai": "mudancaCPF",
             "elem": "E",
@@ -1904,8 +1960,8 @@
             "valores-validos": {}
         },
         {
-            "index": 127,
-            "esocial_id": 127,
+            "index": 131,
+            "esocial_id": 131,
             "grupo-campo": "afastamento",
             "grupo-pai": "infoTSVInicio",
             "elem": "G",
@@ -1918,8 +1974,8 @@
             "valores-validos": {}
         },
         {
-            "index": 128,
-            "esocial_id": 128,
+            "index": 132,
+            "esocial_id": 132,
             "grupo-campo": "dtIniAfast",
             "grupo-pai": "afastamento",
             "elem": "E",
@@ -1928,12 +1984,12 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de início do afastamento.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de início do TSVE;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\nc) Se cadIni = [N], deve ser anterior à data de alteração do CPF do trabalhador (dtAltCPF).",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de início do TSVE;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\\ c) Se cadIni = [N], deve ser anterior à data de alteração do CPF do trabalhador (dtAltCPF).",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de início do TSVE;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\\ c) Se cadIni = [N], deve ser anterior à data de alteração do CPF do trabalhador (dtAltCPF).",
             "valores-validos": {}
         },
         {
-            "index": 129,
-            "esocial_id": 129,
+            "index": 133,
+            "esocial_id": 133,
             "grupo-campo": "codMotAfast",
             "grupo-pai": "afastamento",
             "elem": "E",
@@ -1942,12 +1998,12 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com o código do motivo de afastamento temporário.\nValidação: Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18.",
-            "validacao": " Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18.",
+            "validacao": "Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18.",
             "valores-validos": {}
         },
         {
-            "index": 130,
-            "esocial_id": 130,
+            "index": 134,
+            "esocial_id": 134,
             "grupo-campo": "termino",
             "grupo-pai": "infoTSVInicio",
             "elem": "G",
@@ -1960,8 +2016,8 @@
             "valores-validos": {}
         },
         {
-            "index": 131,
-            "esocial_id": 131,
+            "index": 135,
+            "esocial_id": 135,
             "grupo-campo": "dtTerm",
             "grupo-pai": "termino",
             "elem": "E",
@@ -1970,7 +2026,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data do término.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de início do TSVE;\nb) Deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de início do TSVE;\\ b) Deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de início do TSVE;\\ b) Deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
             "valores-validos": {}
         }
     ]

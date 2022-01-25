@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -101,7 +101,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações.\nValidação: Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
-            "validacao": " Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": "Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
             "valores-validos": {}
         },
         {
@@ -262,7 +262,7 @@
             "tamanho": "12 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do estabelecimento do contribuinte de acordo com o tipo de inscrição indicado no campo remunAvNP/tpInsc.\nValidação: Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005).",
-            "validacao": " Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005).",
+            "validacao": "Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005).",
             "valores-validos": {}
         },
         {
@@ -276,7 +276,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador para a lotação tributária.\nValidação: Deve ser um código válido e existente na Tabela de Lotações Tributárias (S-1020).",
-            "validacao": " Deve ser um código válido e existente na Tabela de Lotações Tributárias (S-1020).",
+            "validacao": "Deve ser um código válido e existente na Tabela de Lotações Tributárias (S-1020).",
             "valores-validos": {}
         },
         {

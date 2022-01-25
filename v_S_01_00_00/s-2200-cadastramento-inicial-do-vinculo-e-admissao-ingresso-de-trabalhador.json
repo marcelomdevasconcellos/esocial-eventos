@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -370,7 +370,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país de nascimento do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -384,7 +384,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país de nacionalidade do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -426,7 +426,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Tipo de logradouro.\nValidação: Se informado, deve ser um código válido e existente na Tabela 20.",
-            "validacao": " Se informado, deve ser um código válido e existente na Tabela 20.",
+            "validacao": "Se informado, deve ser um código válido e existente na Tabela 20.",
             "valores-validos": {}
         },
         {
@@ -496,7 +496,7 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Deve ser preenchido apenas com números, com 8 (oito) posições.",
-            "validacao": " Deve ser preenchido apenas com números, com 8 (oito) posições.",
+            "validacao": "Deve ser preenchido apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
@@ -510,7 +510,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -552,7 +552,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -664,7 +664,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório se (dtAdm ou dtExercicio) >= [2021-07-19].",
-            "validacao": " Preenchimento obrigatório se (dtAdm ou dtExercicio) >= [2021-07-19].",
+            "validacao": "Preenchimento obrigatório se (dtAdm ou dtExercicio) >= [2021-07-19].",
             "valores-validos": {
                 "1": "1 - Prazo indeterminado",
                 "2": "2 - Prazo determinado"
@@ -681,7 +681,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Condição de ingresso do trabalhador imigrante.\nValores válidos:\n1 - Refugiado\n2 - Solicitante de refúgio\n3 - Permanência no Brasil em razão de reunião familiar\n4 - Beneficiado pelo acordo entre países do Mercosul\n5 - Dependente de agente diplomático e/ou consular de países que mantêm acordo de reciprocidade para o exercício de atividade remunerada no Brasil\n6 - Beneficiado pelo Tratado de Amizade, Cooperação e Consulta entre a República Federativa do Brasil e a República Portuguesa\n7 - Outra condição\nValidação: Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
-            "validacao": " Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
+            "validacao": "Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
             "valores-validos": {
                 "1": "1 - Refugiado",
                 "2": "2 - Solicitante de refúgio",
@@ -819,7 +819,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Informar se o trabalhador preenche cota de pessoas com deficiência habilitadas ou de beneficiários reabilitados.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo se tpRegTrab = [1]. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\nEsta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpRegTrab = [1]. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\\ Esta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpRegTrab = [1]. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\\ Esta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -864,7 +864,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Tipo de dependente.\nValidação: Deve ser um código válido e existente na Tabela 07.",
-            "validacao": " Deve ser um código válido e existente na Tabela 07.",
+            "validacao": "Deve ser um código válido e existente na Tabela 07.",
             "valores-validos": {}
         },
         {
@@ -892,7 +892,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de nascimento.\nValidação: Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
-            "validacao": " Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
+            "validacao": "Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
             "valores-validos": {}
         },
         {
@@ -906,7 +906,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Número de inscrição no CPF.\nValidação: Deve ser um número de CPF válido, observando o que segue:\na) O preenchimento é obrigatório se depIRRF = [S];\nb) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\nc) Não pode haver mais de um dependente com o mesmo número de CPF.",
-            "validacao": " Deve ser um número de CPF válido, observando o que segue:\\ a) O preenchimento é obrigatório se depIRRF = [S];\\ b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\\ c) Não pode haver mais de um dependente com o mesmo número de CPF.",
+            "validacao": "Deve ser um número de CPF válido, observando o que segue:\\ a) O preenchimento é obrigatório se depIRRF = [S];\\ b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\\ c) Não pode haver mais de um dependente com o mesmo número de CPF.",
             "valores-validos": {}
         },
         {
@@ -920,7 +920,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Sexo do dependente.\nValores válidos:\nM - Masculino\nF - Feminino\nValidação: Preenchimento obrigatório se tpRegPrev = [2] e cadIni = [N]. Não informar se tpRegPrev for diferente de [2].",
-            "validacao": " Preenchimento obrigatório se tpRegPrev = [2] e cadIni = [N]. Não informar se tpRegPrev for diferente de [2].",
+            "validacao": "Preenchimento obrigatório se tpRegPrev = [2] e cadIni = [N]. Não informar se tpRegPrev for diferente de [2].",
             "valores-validos": {
                 "M": "M - Masculino",
                 "F": "F - Feminino"
@@ -1002,7 +1002,7 @@
             "tamanho": "8-13",
             "dec": "-",
             "descricao": "Número de telefone do trabalhador, com DDD.\nValidação: Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
-            "validacao": " Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
+            "validacao": "Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
             "valores-validos": {}
         },
         {
@@ -1016,7 +1016,7 @@
             "tamanho": "6-60",
             "dec": "-",
             "descricao": "Endereço eletrônico.\nValidação: O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
-            "validacao": " O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
+            "validacao": "O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
             "valores-validos": {}
         },
         {
@@ -1044,7 +1044,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -1058,7 +1058,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de regime trabalhista.\nValores válidos:\n1 - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas\n2 - Estatutário/legislações específicas (servidor temporário, militar, agente político, etc.)\nValidação: Se codCateg = [104], deve ser preenchido com [1].",
-            "validacao": " Se codCateg = [104], deve ser preenchido com [1].",
+            "validacao": "Se codCateg = [104], deve ser preenchido com [1].",
             "valores-validos": {
                 "1": "1 - CLT - Consolidação das Leis de Trabalho e legislações trabalhistas específicas",
                 "2": "2 - Estatutário/legislações específicas (servidor temporário, militar, agente político, etc.)"
@@ -1075,7 +1075,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares).\nValores válidos:\n1 - Regime Geral de Previdência Social - RGPS\n2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares\n3 - Regime de Previdência Social no exterior\nValidação: Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [101, 102, 103, 105, 106, 107, 108, 111], não pode ser preenchido com [2].",
-            "validacao": " Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [101, 102, 103, 105, 106, 107, 108, 111], não pode ser preenchido com [2].",
+            "validacao": "Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [101, 102, 103, 105, 106, 107, 108, 111], não pode ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Regime Geral de Previdência Social - RGPS",
                 "2": "2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares",
@@ -1138,7 +1138,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de admissão do trabalhador.\nNo caso de transferência do empregado ou de mudança de CPF, preencher com a data inicial do vínculo no primeiro empregador (data de início do vínculo).\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser posterior à data de nascimento do trabalhador;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial;\nc) Se cadIni = [N] e tpAdmissao = [1], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial.",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de nascimento do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial;\\ c) Se cadIni = [N] e tpAdmissao = [1], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial.",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de nascimento do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial;\\ c) Se cadIni = [N] e tpAdmissao = [1], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador no eSocial.",
             "valores-validos": {}
         },
         {
@@ -1151,11 +1151,11 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo de admissão do trabalhador.\nValores válidos:\n1 - Admissão\n2 - Transferência de empresa do mesmo grupo econômico\n3 - Transferência de empresa consorciada ou de consórcio\n4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão\n5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar\n6 - Mudança de CPF\nValidação: Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\nSe for igual a [6], cadIni deve ser igual a [N].",
-            "validacao": " Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\\ Se for igual a [6], cadIni deve ser igual a [N].",
+            "descricao": "Tipo de admissão do trabalhador.\nValores válidos:\n1 - Admissão\n2 - Transferência de empresa do mesmo grupo econômico ou transferência entre órgãos do mesmo Ente Federativo\n3 - Transferência de empresa consorciada ou de consórcio\n4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão\n5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar\n6 - Mudança de CPF\nValidação: Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\nSe for igual a [6], cadIni deve ser igual a [N].",
+            "validacao": "Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\\ Se for igual a [6], cadIni deve ser igual a [N].",
             "valores-validos": {
                 "1": "1 - Admissão",
-                "2": "2 - Transferência de empresa do mesmo grupo econômico",
+                "2": "2 - Transferência de empresa do mesmo grupo econômico ou transferência entre órgãos do mesmo Ente Federativo",
                 "3": "3 - Transferência de empresa consorciada ou de consórcio",
                 "4": "4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão",
                 "5": "5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar",
@@ -1191,7 +1191,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Número que identifica o processo trabalhista, quando a admissão se der por decisão judicial.\nValidação: Informação obrigatória e exclusiva se indAdmissao = [3]. Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
-            "validacao": " Informação obrigatória e exclusiva se indAdmissao = [3]. Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
+            "validacao": "Informação obrigatória e exclusiva se indAdmissao = [3]. Se preenchido, deve ser um processo judicial válido, com 20 (vinte) algarismos.",
             "valores-validos": {}
         },
         {
@@ -1224,7 +1224,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Natureza da atividade.\nValores válidos:\n1 - Trabalho urbano\n2 - Trabalho rural\nValidação: Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
-            "validacao": " Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
+            "validacao": "Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Trabalho urbano",
                 "2": "2 - Trabalho rural"
@@ -1241,7 +1241,7 @@
             "tamanho": "1-2",
             "dec": "-",
             "descricao": "Mês relativo à data base da categoria profissional do trabalhador.\nValidação: Se informado, deve ser maior ou igual a 1 e menor ou igual a 12.",
-            "validacao": " Se informado, deve ser maior ou igual a 1 e menor ou igual a 12.",
+            "validacao": "Se informado, deve ser maior ou igual a 1 e menor ou igual a 12.",
             "valores-validos": {}
         },
         {
@@ -1255,7 +1255,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Preencher com o CNPJ do sindicato representativo da categoria (preponderante ou diferenciada).\nValidação: Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
-            "validacao": " Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "validacao": "Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
         {
@@ -1373,7 +1373,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do contratante de serviços, de acordo com o tipo de inscrição informado em ideEstabVinc/tpInsc.\nValidação: Se ideEstabVinc/tpInsc for igual a [1], deve ser um CNPJ válido, com 14 (catorze) algarismos. Se ideEstabVinc/tpInsc for igual a [2], deve ser um CPF válido.",
-            "validacao": " Se ideEstabVinc/tpInsc for igual a [1], deve ser um CNPJ válido, com 14 (catorze) algarismos. Se ideEstabVinc/tpInsc for igual a [2], deve ser um CPF válido.",
+            "validacao": "Se ideEstabVinc/tpInsc for igual a [1], deve ser um CNPJ válido, com 14 (catorze) algarismos. Se ideEstabVinc/tpInsc for igual a [2], deve ser um CPF válido.",
             "valores-validos": {}
         },
         {
@@ -1401,7 +1401,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "CPF do trabalhador substituído.\nValidação: Deve ser um CPF válido.",
-            "validacao": " Deve ser um CPF válido.",
+            "validacao": "Deve ser um CPF válido.",
             "valores-validos": {}
         },
         {
@@ -1446,7 +1446,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do estabelecimento para o qual a contratação de aprendiz foi efetivada, de acordo com o tipo de inscrição indicado no campo aprend/tpInsc.\nValidação: Deve ser um identificador válido e:\na) Se aprend/tpInsc = [1], deve ser informado com 14 (catorze) algarismos. Se o empregador for pessoa jurídica, a raiz do CNPJ informado deve ser diferente de ideEmpregador/nrInsc.\nb) Se aprend/tpInsc = [2], deve ser diferente do CPF do empregado. Se o empregador for pessoa física, também deve ser diferente do CPF do empregador.",
-            "validacao": " Deve ser um identificador válido e:\\ a) Se aprend/tpInsc = [1], deve ser informado com 14 (catorze) algarismos. Se o empregador for pessoa jurídica, a raiz do CNPJ informado deve ser diferente de ideEmpregador/nrInsc.\\ b) Se aprend/tpInsc = [2], deve ser diferente do CPF do empregado. Se o empregador for pessoa física, também deve ser diferente do CPF do empregador.",
+            "validacao": "Deve ser um identificador válido e:\\ a) Se aprend/tpInsc = [1], deve ser informado com 14 (catorze) algarismos. Se o empregador for pessoa jurídica, a raiz do CNPJ informado deve ser diferente de ideEmpregador/nrInsc.\\ b) Se aprend/tpInsc = [2], deve ser diferente do CPF do empregado. Se o empregador for pessoa física, também deve ser diferente do CPF do empregador.",
             "valores-validos": {}
         },
         {
@@ -1474,7 +1474,7 @@
             "tamanho": "1-2",
             "dec": "-",
             "descricao": "Preencher com o tipo de provimento.\nValores válidos:\n1 - Nomeação em cargo efetivo\n2 - Nomeação exclusivamente em cargo em comissão\n3 - Incorporação, matrícula ou nomeação (militar)\n5 - Redistribuição\n6 - Diplomação\n7 - Contratação por tempo determinado\n8 - Remoção (em caso de alteração do órgão declarante)\n9 - Designação\n10 - Mudança de CPF\n99 - Outros não relacionados acima\nValidação: Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\nSe codCateg = [302], deve ser preenchido com [2].",
-            "validacao": " Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\\ Se codCateg = [302], deve ser preenchido com [2].",
+            "validacao": "Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\\ Se codCateg = [302], deve ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Nomeação em cargo efetivo",
                 "2": "2 - Nomeação exclusivamente em cargo em comissão",
@@ -1499,7 +1499,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data da entrada em exercício pelo servidor.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser posterior à data de nascimento do trabalhador;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador/ente público no eSocial;\nc) Se cadIni = [N] e tpProv for diferente de [5, 8, 10], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador/ente público no eSocial.",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de nascimento do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador/ente público no eSocial;\\ c) Se cadIni = [N] e tpProv for diferente de [5, 8, 10], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador/ente público no eSocial.",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de nascimento do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador/ente público no eSocial;\\ c) Se cadIni = [N] e tpProv for diferente de [5, 8, 10], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador/ente público no eSocial.",
             "valores-validos": {}
         },
         {
@@ -1513,7 +1513,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de plano de segregação da massa.\nValores válidos:\n0 - Sem segregação da massa\n1 - Fundo em capitalização\n2 - Fundo em repartição\n3 - Mantido pelo Tesouro\nValidação: Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
             "valores-validos": {
                 "0": "0 - Sem segregação da massa",
                 "1": "1 - Fundo em capitalização",
@@ -1532,7 +1532,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Informar se o servidor está sujeito ao teto do RGPS pela instituição do regime de previdência complementar.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -1549,7 +1549,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicar se o servidor recebe abono permanência.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
-            "validacao": " Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpRegPrev = [2].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -1566,7 +1566,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Informar a data de inicio do abono permanência.\nValidação: Preenchimento obrigatório se indAbonoPerm = [S] e cadIni = [N]. Não informar se indAbonoPerm = [N]. Se preenchida, devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de exercício do servidor;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público;\nc) Se cadIni = [N], deve ser igual ou anterior à data da transferência ou alteração do CPF do servidor (sucessaoVinc/dtTransf ou dtAltCPF). Não informar se tpProv for diferente de [5, 8, 10].",
-            "validacao": " Preenchimento obrigatório se indAbonoPerm = [S] e cadIni = [N]. Não informar se indAbonoPerm = [N]. Se preenchida, devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de exercício do servidor;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público;\\ c) Se cadIni = [N], deve ser igual ou anterior à data da transferência ou alteração do CPF do servidor (sucessaoVinc/dtTransf ou dtAltCPF). Não informar se tpProv for diferente de [5, 8, 10].",
+            "validacao": "Preenchimento obrigatório se indAbonoPerm = [S] e cadIni = [N]. Não informar se indAbonoPerm = [N]. Se preenchida, devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de exercício do servidor;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público;\\ c) Se cadIni = [N], deve ser igual ou anterior à data da transferência ou alteração do CPF do servidor (sucessaoVinc/dtTransf ou dtAltCPF). Não informar se tpProv for diferente de [5, 8, 10].",
             "valores-validos": {}
         },
         {
@@ -1594,7 +1594,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar o nome do cargo.\nValidação: O preenchimento é obrigatório, exceto se for relativo a servidor nomeado em cargo em comissão (tpRegTrab = [2] e tpProv = [2]).",
-            "validacao": " O preenchimento é obrigatório, exceto se for relativo a servidor nomeado em cargo em comissão (tpRegTrab = [2] e tpProv = [2]).",
+            "validacao": "O preenchimento é obrigatório, exceto se for relativo a servidor nomeado em cargo em comissão (tpRegTrab = [2] e tpProv = [2]).",
             "valores-validos": {}
         },
         {
@@ -1608,7 +1608,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a Classificação Brasileira de Ocupações - CBO relativa ao cargo.\nValidação: Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -1622,7 +1622,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de ingresso do servidor no cargo.\nValidação: Não preencher se tpRegTrab = [1] ou se CBOCargo não for informado. Se preenchida, devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de exercício do servidor;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público;\nc) Se cadIni = [N], deve ser igual ou anterior à data da transferência ou alteração do CPF do servidor (sucessaoVinc/dtTransf ou dtAltCPF). Não informar se tpProv for diferente de [5, 8, 10].",
-            "validacao": " Não preencher se tpRegTrab = [1] ou se CBOCargo não for informado. Se preenchida, devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de exercício do servidor;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público;\\ c) Se cadIni = [N], deve ser igual ou anterior à data da transferência ou alteração do CPF do servidor (sucessaoVinc/dtTransf ou dtAltCPF). Não informar se tpProv for diferente de [5, 8, 10].",
+            "validacao": "Não preencher se tpRegTrab = [1] ou se CBOCargo não for informado. Se preenchida, devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de exercício do servidor;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público;\\ c) Se cadIni = [N], deve ser igual ou anterior à data da transferência ou alteração do CPF do servidor (sucessaoVinc/dtTransf ou dtAltCPF). Não informar se tpProv for diferente de [5, 8, 10].",
             "valores-validos": {}
         },
         {
@@ -1636,7 +1636,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar o nome da função de confiança/cargo em comissão.\nValidação: Preenchimento obrigatório se for relativo a servidor nomeado em cargo em comissão (tpRegTrab = [2] e tpProv = [2]).",
-            "validacao": " Preenchimento obrigatório se for relativo a servidor nomeado em cargo em comissão (tpRegTrab = [2] e tpProv = [2]).",
+            "validacao": "Preenchimento obrigatório se for relativo a servidor nomeado em cargo em comissão (tpRegTrab = [2] e tpProv = [2]).",
             "valores-validos": {}
         },
         {
@@ -1650,7 +1650,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a CBO relativa à função de confiança/cargo em comissão.\nValidação: Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -1664,7 +1664,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Informar se o cargo, emprego ou função pública é acumulável.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório se cadIni = [N] e se a natureza jurídica do declarante for igual a 1XX-X, 201-1 ou 203-8.",
-            "validacao": " Preenchimento obrigatório se cadIni = [N] e se a natureza jurídica do declarante for igual a 1XX-X, 201-1 ou 203-8.",
+            "validacao": "Preenchimento obrigatório se cadIni = [N] e se a natureza jurídica do declarante for igual a 1XX-X, 201-1 ou 203-8.",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -1681,7 +1681,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -1709,7 +1709,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Salário base do trabalhador, correspondente à parte fixa da remuneração.\nValidação: Se undSalFixo for igual a [7], preencher com 0 (zero).",
-            "validacao": " Se undSalFixo for igual a [7], preencher com 0 (zero).",
+            "validacao": "Se undSalFixo for igual a [7], preencher com 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1745,7 +1745,7 @@
             "tamanho": "1-999",
             "dec": "-",
             "descricao": "Descrição do salário por tarefa ou variável e como este é calculado. Ex.: Comissões pagas no percentual de 10% sobre as vendas.\nValidação: Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
-            "validacao": " Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
+            "validacao": "Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
             "valores-validos": {}
         },
         {
@@ -1791,7 +1791,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data do término do contrato por prazo determinado.\nValidação: O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Se preenchido, deve ser igual ou posterior à data de admissão (no caso de transferência ou mudança de CPF, igual ou posterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200, conforme o caso).",
-            "validacao": " O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Se preenchido, deve ser igual ou posterior à data de admissão (no caso de transferência ou mudança de CPF, igual ou posterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200, conforme o caso).",
+            "validacao": "O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Se preenchido, deve ser igual ou posterior à data de admissão (no caso de transferência ou mudança de CPF, igual ou posterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200, conforme o caso).",
             "valores-validos": {}
         },
         {
@@ -1805,7 +1805,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicar se o contrato por prazo determinado contém cláusula assecuratória do direito recíproco de rescisão antes da data de seu término.\nValores válidos:\nS - Sim\nN - Não\nValidação: O preenchimento é obrigatório se tpContr = [2, 3]. Não preencher se tpContr = [1].",
-            "validacao": " O preenchimento é obrigatório se tpContr = [2, 3]. Não preencher se tpContr = [1].",
+            "validacao": "O preenchimento é obrigatório se tpContr = [2, 3]. Não preencher se tpContr = [1].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -1822,7 +1822,7 @@
             "tamanho": "1-255",
             "dec": "-",
             "descricao": "Indicação do objeto determinante da contratação por prazo determinado (obra, serviço, safra, etc.).\nValidação: O preenchimento é obrigatório e exclusivo se tpContr = [3].",
-            "validacao": " O preenchimento é obrigatório e exclusivo se tpContr = [3].",
+            "validacao": "O preenchimento é obrigatório e exclusivo se tpContr = [3].",
             "valores-validos": {}
         },
         {
@@ -1882,7 +1882,7 @@
             "tamanho": "12 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo localTrabGeral/tpInsc.\nValidação: Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005), bem como compatível com localTrabGeral/tpInsc.",
-            "validacao": " Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005), bem como compatível com localTrabGeral/tpInsc.",
+            "validacao": "Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005), bem como compatível com localTrabGeral/tpInsc.",
             "valores-validos": {}
         },
         {
@@ -1924,7 +1924,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Tipo de logradouro.\nValidação: Se informado, deve ser um código válido e existente na Tabela 20.",
-            "validacao": " Se informado, deve ser um código válido e existente na Tabela 20.",
+            "validacao": "Se informado, deve ser um código válido e existente na Tabela 20.",
             "valores-validos": {}
         },
         {
@@ -1994,7 +1994,7 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Deve ser preenchido apenas com números, com 8 (oito) posições.",
-            "validacao": " Deve ser preenchido apenas com números, com 8 (oito) posições.",
+            "validacao": "Deve ser preenchido apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
@@ -2008,7 +2008,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -2050,7 +2050,7 @@
             "tamanho": "1-4",
             "dec": "2",
             "descricao": "Quantidade média de horas relativas à jornada semanal do trabalhador.\nValidação: Deve ser preenchida se codCateg for diferente de [111]. Se informada, deve ser maior que 0 (zero).",
-            "validacao": " Deve ser preenchida se codCateg for diferente de [111]. Se informada, deve ser maior que 0 (zero).",
+            "validacao": "Deve ser preenchida se codCateg for diferente de [111]. Se informada, deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -2086,7 +2086,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código relativo ao tipo de contrato em tempo parcial.\nValores válidos:\n0 - Não é contrato em tempo parcial\n1 - Limitado a 25 horas semanais\n2 - Limitado a 30 horas semanais\n3 - Limitado a 26 horas semanais\nValidação: O código [1] só é válido se codCateg = [104]. Os códigos [2, 3] não são válidos se codCateg = [104].",
-            "validacao": " O código [1] só é válido se codCateg = [104]. Os códigos [2, 3] não são válidos se codCateg = [104].",
+            "validacao": "O código [1] só é válido se codCateg = [104]. Os códigos [2, 3] não são válidos se codCateg = [104].",
             "valores-validos": {
                 "0": "0 - Não é contrato em tempo parcial",
                 "1": "1 - Limitado a 25 horas semanais",
@@ -2105,7 +2105,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicar se a jornada semanal possui horário noturno (no todo ou em parte).\nValores válidos:\nS - Sim\nN - Não\nValidação: Informação obrigatória se codCateg for diferente de [111].",
-            "validacao": " Informação obrigatória se codCateg for diferente de [111].",
+            "validacao": "Informação obrigatória se codCateg for diferente de [111].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -2150,7 +2150,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Preencher com o número do processo judicial.\nValidação: Deve ser um número de processo judicial válido.",
-            "validacao": " Deve ser um número de processo judicial válido.",
+            "validacao": "Deve ser um número de processo judicial válido.",
             "valores-validos": {}
         },
         {
@@ -2206,7 +2206,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Informar o código do treinamento, capacitação, exercício simulado ou outra anotação, conforme Tabela 28.\nValidação: Deve ser um código válido e existente na Tabela 28.",
-            "validacao": " Deve ser um código válido e existente na Tabela 28.",
+            "validacao": "Deve ser um código válido e existente na Tabela 28.",
             "valores-validos": {}
         },
         {
@@ -2234,7 +2234,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código correspondente ao tipo de inscrição, conforme Tabela 05.\nValores válidos:\n1 - CNPJ\n2 - CPF\n5 - CGC\n6 - CEI\nValidação: Somente é possível informar [5] se dtTransf for igual ou anterior a [1999-06-30].\nSomente é possível informar [6] se dtTransf for igual ou anterior a [2011-12-31].",
-            "validacao": " Somente é possível informar [5] se dtTransf for igual ou anterior a [1999-06-30].\\ Somente é possível informar [6] se dtTransf for igual ou anterior a [2011-12-31].",
+            "validacao": "Somente é possível informar [5] se dtTransf for igual ou anterior a [1999-06-30].\\ Somente é possível informar [6] se dtTransf for igual ou anterior a [2011-12-31].",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "2": "2 - CPF",
@@ -2253,7 +2253,7 @@
             "tamanho": "8-14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do empregador anterior, de acordo com o tipo de inscrição indicado no campo sucessaoVinc/tpInsc.\nValidação: Deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\nSe sucessaoVinc/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.\nSe sucessaoVinc/tpInsc = [2], deve possuir 11 (onze) algarismos.\nSe sucessaoVinc/tpInsc = [5], deve possuir somente algarismos.\nSe sucessaoVinc/tpInsc = [6], deve possuir 12 (doze) algarismos.",
-            "validacao": " Deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\\ Se sucessaoVinc/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.\\ Se sucessaoVinc/tpInsc = [2], deve possuir 11 (onze) algarismos.\\ Se sucessaoVinc/tpInsc = [5], deve possuir somente algarismos.\\ Se sucessaoVinc/tpInsc = [6], deve possuir 12 (doze) algarismos.",
+            "validacao": "Deve ser um número de inscrição válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000.\\ Se sucessaoVinc/tpInsc = [1], deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do empregador (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.\\ Se sucessaoVinc/tpInsc = [2], deve possuir 11 (onze) algarismos.\\ Se sucessaoVinc/tpInsc = [5], deve possuir somente algarismos.\\ Se sucessaoVinc/tpInsc = [6], deve possuir 12 (doze) algarismos.",
             "valores-validos": {}
         },
         {
@@ -2267,7 +2267,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula do trabalhador no empregador anterior.\nValidação: O preenchimento é obrigatório se cadIni = [N].",
-            "validacao": " O preenchimento é obrigatório se cadIni = [N].",
+            "validacao": "O preenchimento é obrigatório se cadIni = [N].",
             "valores-validos": {}
         },
         {
@@ -2281,7 +2281,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data da transferência do empregado para o empregador declarante.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser posterior à data de admissão do trabalhador;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\nc) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de admissão do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\\ c) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de admissão do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\\ c) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
             "valores-validos": {}
         },
         {
@@ -2323,7 +2323,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o número do CPF do representante anterior da unidade familiar.\nValidação: Deve ser um CPF válido e diferente do CPF do declarante e do empregado.",
-            "validacao": " Deve ser um CPF válido e diferente do CPF do declarante e do empregado.",
+            "validacao": "Deve ser um CPF válido e diferente do CPF do declarante e do empregado.",
             "valores-validos": {}
         },
         {
@@ -2449,7 +2449,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de início do afastamento.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\nc) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF). Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\\ c) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF). Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\\ c) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF). Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
             "valores-validos": {}
         },
         {
@@ -2463,7 +2463,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com o código do motivo de afastamento temporário.\nValidação: Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18. Se a natureza jurídica do declarante for Administração Pública (grupo [1]), não pode ser informado [14].",
-            "validacao": " Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18. Se a natureza jurídica do declarante for Administração Pública (grupo [1]), não pode ser informado [14].",
+            "validacao": "Deve ser um código válido e existente na Tabela 18, bem como compatível com o código de categoria do trabalhador, conforme Tabela 18. Se a natureza jurídica do declarante for Administração Pública (grupo [1]), não pode ser informado [14].",
             "valores-validos": {}
         },
         {
@@ -2491,7 +2491,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de desligamento do vínculo (último dia trabalhado).\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\nc) Se cadIni = [N], deve ser anterior à data da transferência do empregado (sucessaoVinc/dtTransf ou transfDom/dtTransf). Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8].",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\\ c) Se cadIni = [N], deve ser anterior à data da transferência do empregado (sucessaoVinc/dtTransf ou transfDom/dtTransf). Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8].",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador;\\ c) Se cadIni = [N], deve ser anterior à data da transferência do empregado (sucessaoVinc/dtTransf ou transfDom/dtTransf). Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8].",
             "valores-validos": {}
         },
         {
@@ -2519,7 +2519,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de início da cessão/exercício em outro órgão.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público e a natureza jurídica do declarante deve ser Administração Pública (grupo [1]);\nc) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf ou dtAltCPF) e igual ou posterior a [2021-07-19]. Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público e a natureza jurídica do declarante deve ser Administração Pública (grupo [1]);\\ c) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf ou dtAltCPF) e igual ou posterior a [2021-07-19]. Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de admissão/exercício do trabalhador;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público e a natureza jurídica do declarante deve ser Administração Pública (grupo [1]);\\ c) Se cadIni = [N], deve ser anterior à data da transferência ou alteração do CPF do empregado (sucessaoVinc/dtTransf ou dtAltCPF) e igual ou posterior a [2021-07-19]. Não informar se tpAdmissao = [1] ou se tpProv for diferente de [5, 8, 10].",
             "valores-validos": {}
         }
     ]

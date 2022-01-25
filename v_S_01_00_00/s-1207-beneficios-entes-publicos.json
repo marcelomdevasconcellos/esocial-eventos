@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -118,7 +118,7 @@
             "tamanho": "4 ou 7",
             "dec": "-",
             "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações, se indApuracao for igual a [1], ou apenas o ano (formato AAAA), se indApuracao for igual a [2].\nValidação: Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
-            "validacao": " Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": "Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
             "valores-validos": {}
         },
         {
@@ -242,7 +242,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Informar o CPF do beneficiário.\nValidação: Deve ser um CPF válido.",
-            "validacao": " Deve ser um CPF válido.",
+            "validacao": "Deve ser um CPF válido.",
             "valores-validos": {}
         },
         {
@@ -270,7 +270,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Identificador atribuído pelo órgão público para o demonstrativo de valores devidos ao beneficiário. O ente público pode preencher este campo utilizando-se de um identificador padrão para todos os beneficiários; no entanto, havendo mais de um demonstrativo relativo a uma mesma competência, devem ser utilizados identificadores diferentes para cada um dos demonstrativos.\nValidação: Deve ser um identificador único dentro do mesmo perApur para cada um dos demonstrativos do beneficiário.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " Deve ser um identificador único dentro do mesmo perApur para cada um dos demonstrativos do beneficiário.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "Deve ser um identificador único dentro do mesmo perApur para cada um dos demonstrativos do beneficiário.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -398,7 +398,7 @@
             "tamanho": "1-12",
             "dec": "2",
             "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.).\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -412,7 +412,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Informar o fator, percentual, etc. da rubrica, quando necessário.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -426,7 +426,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor total da rubrica.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -485,7 +485,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Informar o período ao qual se refere o complemento de provento ou pensão, no formato AAAA-MM.\nValidação: Deve ser igual ou anterior ao período de apuração informado em perApur.\nDeve ser informado no formato AAAA-MM.",
-            "validacao": " Deve ser igual ou anterior ao período de apuração informado em perApur.\\ Deve ser informado no formato AAAA-MM.",
+            "validacao": "Deve ser igual ou anterior ao período de apuração informado em perApur.\\ Deve ser informado no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -585,7 +585,7 @@
             "tamanho": "1-12",
             "dec": "2",
             "descricao": "Informar a quantidade de referência para apuração (em horas, cotas, meses, etc.).\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -599,7 +599,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Informar o fator, percentual, etc. da rubrica, quando necessário.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -613,7 +613,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor total da rubrica.\nValidação: Deve ser maior que 0 (zero).",
-            "validacao": " Deve ser maior que 0 (zero).",
+            "validacao": "Deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {

@@ -229,7 +229,7 @@
             "tamanho": "16, 17, 20 ou 21",
             "dec": "-",
             "descricao": "Informar o número do processo administrativo/judicial de acordo com o tipo informado em tpProc.\nValidação: Deve ser um número de processo válido e:\na) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\nb) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\nc) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
-            "validacao": " Deve ser um número de processo válido e:\\ a) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\\ b) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\\ c) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
+            "validacao": "Deve ser um número de processo válido e:\\ a) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\\ b) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\\ c) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
             "valores-validos": {}
         },
         {
@@ -243,7 +243,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -257,7 +257,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -285,7 +285,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo da autoria da ação judicial.\nValores válidos:\n1 - Próprio contribuinte\n2 - Outra entidade, empresa ou empregado\nValidação: Preenchimento obrigatório se tpProc = [2].",
-            "validacao": " Preenchimento obrigatório se tpProc = [2].",
+            "validacao": "Preenchimento obrigatório se tpProc = [2].",
             "valores-validos": {
                 "1": "1 - Próprio contribuinte",
                 "2": "2 - Outra entidade, empresa ou empregado"
@@ -361,7 +361,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -417,7 +417,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Indicativo de suspensão da exigibilidade.\nValores válidos:\n01 - Liminar em mandado de segurança\n02 - Depósito judicial do montante integral\n03 - Depósito administrativo do montante integral\n04 - Antecipação de tutela\n05 - Liminar em medida cautelar\n08 - Sentença em mandado de segurança favorável ao contribuinte\n09 - Sentença em ação ordinária favorável ao contribuinte e confirmada pelo TRF\n10 - Acórdão do TRF favorável ao contribuinte\n11 - Acórdão do STJ em recurso especial favorável ao contribuinte\n12 - Acórdão do STF em recurso extraordinário favorável ao contribuinte\n13 - Sentença 1ª instância não transitada em julgado com efeito suspensivo\n14 - Contestação administrativa FAP\n90 - Decisão definitiva a favor do contribuinte\n92 - Sem suspensão da exigibilidade\nValidação: Se tpProc = [1], deve ser preenchido com [03, 14, 92].\nSe tpProc = [2], deve ser preenchido com [01, 02, 04, 05, 08, 09, 10, 11, 12, 13, 90, 92].\nSe tpProc = [4], deve ser preenchido com [14].",
-            "validacao": " Se tpProc = [1], deve ser preenchido com [03, 14, 92].\\ Se tpProc = [2], deve ser preenchido com [01, 02, 04, 05, 08, 09, 10, 11, 12, 13, 90, 92].\\ Se tpProc = [4], deve ser preenchido com [14].",
+            "validacao": "Se tpProc = [1], deve ser preenchido com [03, 14, 92].\\ Se tpProc = [2], deve ser preenchido com [01, 02, 04, 05, 08, 09, 10, 11, 12, 13, 90, 92].\\ Se tpProc = [4], deve ser preenchido com [14].",
             "valores-validos": {
                 "01": "01 - Liminar em mandado de segurança",
                 "02": "02 - Depósito judicial do montante integral",
@@ -460,7 +460,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de depósito do montante integral.\nValores válidos:\nS - Sim\nN - Não\nValidação: Se indSusp = [90], preencher obrigatoriamente com [N].\nSe indSusp = [02, 03] preencher obrigatoriamente com [S].",
-            "validacao": " Se indSusp = [90], preencher obrigatoriamente com [N].\\ Se indSusp = [02, 03] preencher obrigatoriamente com [S].",
+            "validacao": "Se indSusp = [90], preencher obrigatoriamente com [N].\\ Se indSusp = [02, 03] preencher obrigatoriamente com [S].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -523,7 +523,7 @@
             "tamanho": "16, 17, 20 ou 21",
             "dec": "-",
             "descricao": "Informar o número do processo administrativo/judicial de acordo com o tipo informado em tpProc.\nValidação: Deve ser um número de processo válido e:\na) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\nb) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\nc) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
-            "validacao": " Deve ser um número de processo válido e:\\ a) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\\ b) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\\ c) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
+            "validacao": "Deve ser um número de processo válido e:\\ a) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\\ b) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\\ c) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
             "valores-validos": {}
         },
         {
@@ -537,7 +537,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -551,7 +551,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -579,7 +579,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo da autoria da ação judicial.\nValores válidos:\n1 - Próprio contribuinte\n2 - Outra entidade, empresa ou empregado\nValidação: Preenchimento obrigatório se tpProc = [2].",
-            "validacao": " Preenchimento obrigatório se tpProc = [2].",
+            "validacao": "Preenchimento obrigatório se tpProc = [2].",
             "valores-validos": {
                 "1": "1 - Próprio contribuinte",
                 "2": "2 - Outra entidade, empresa ou empregado"
@@ -655,7 +655,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -711,7 +711,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Indicativo de suspensão da exigibilidade.\nValores válidos:\n01 - Liminar em mandado de segurança\n02 - Depósito judicial do montante integral\n03 - Depósito administrativo do montante integral\n04 - Antecipação de tutela\n05 - Liminar em medida cautelar\n08 - Sentença em mandado de segurança favorável ao contribuinte\n09 - Sentença em ação ordinária favorável ao contribuinte e confirmada pelo TRF\n10 - Acórdão do TRF favorável ao contribuinte\n11 - Acórdão do STJ em recurso especial favorável ao contribuinte\n12 - Acórdão do STF em recurso extraordinário favorável ao contribuinte\n13 - Sentença 1ª instância não transitada em julgado com efeito suspensivo\n14 - Contestação administrativa FAP\n90 - Decisão definitiva a favor do contribuinte\n92 - Sem suspensão da exigibilidade\nValidação: Se tpProc = [1], deve ser preenchido com [03, 14, 92].\nSe tpProc = [2], deve ser preenchido com [01, 02, 04, 05, 08, 09, 10, 11, 12, 13, 90, 92].\nSe tpProc = [4], deve ser preenchido com [14].",
-            "validacao": " Se tpProc = [1], deve ser preenchido com [03, 14, 92].\\ Se tpProc = [2], deve ser preenchido com [01, 02, 04, 05, 08, 09, 10, 11, 12, 13, 90, 92].\\ Se tpProc = [4], deve ser preenchido com [14].",
+            "validacao": "Se tpProc = [1], deve ser preenchido com [03, 14, 92].\\ Se tpProc = [2], deve ser preenchido com [01, 02, 04, 05, 08, 09, 10, 11, 12, 13, 90, 92].\\ Se tpProc = [4], deve ser preenchido com [14].",
             "valores-validos": {
                 "01": "01 - Liminar em mandado de segurança",
                 "02": "02 - Depósito judicial do montante integral",
@@ -754,7 +754,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de depósito do montante integral.\nValores válidos:\nS - Sim\nN - Não\nValidação: Se indSusp = [90], preencher obrigatoriamente com [N].\nSe indSusp = [02, 03] preencher obrigatoriamente com [S].",
-            "validacao": " Se indSusp = [90], preencher obrigatoriamente com [N].\\ Se indSusp = [02, 03] preencher obrigatoriamente com [S].",
+            "validacao": "Se indSusp = [90], preencher obrigatoriamente com [N].\\ Se indSusp = [02, 03] preencher obrigatoriamente com [S].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -785,7 +785,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -799,7 +799,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -859,7 +859,7 @@
             "tamanho": "16, 17, 20 ou 21",
             "dec": "-",
             "descricao": "Informar o número do processo administrativo/judicial de acordo com o tipo informado em tpProc.\nValidação: Deve ser um número de processo válido e:\na) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\nb) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\nc) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
-            "validacao": " Deve ser um número de processo válido e:\\ a) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\\ b) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\\ c) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
+            "validacao": "Deve ser um número de processo válido e:\\ a) Se tpProc = [1], deve possuir 17 (dezessete) ou 21 (vinte e um) algarismos;\\ b) Se tpProc = [2], deve possuir 20 (vinte) algarismos;\\ c) Se tpProc = [4], deve possuir 16 (dezesseis) algarismos.",
             "valores-validos": {}
         },
         {
@@ -873,7 +873,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -887,7 +887,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         }
     ]

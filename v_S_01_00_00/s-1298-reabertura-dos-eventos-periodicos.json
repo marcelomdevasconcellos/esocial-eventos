@@ -87,7 +87,7 @@
             "tamanho": "4 ou 7",
             "dec": "-",
             "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações, se indApuracao for igual a [1], ou apenas o ano (formato AAAA), se indApuracao for igual a [2].\nValidação: Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
-            "validacao": " Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": "Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
             "valores-validos": {}
         },
         {

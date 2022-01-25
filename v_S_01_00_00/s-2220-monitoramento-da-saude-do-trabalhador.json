@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -228,7 +228,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2190, S-2200 ou S-2300 do respectivo contrato. Não preencher no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE sem informação de matrícula no evento S-2300.",
             "valores-validos": {}
         },
         {
@@ -242,7 +242,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nInformar somente no caso de TSVE sem informação de matrícula no evento S-2300.\nValidação: Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -270,7 +270,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo do exame médico ocupacional.\nValores válidos:\n0 - Exame médico admissional\n1 - Exame médico periódico, conforme Norma Regulamentadora 07 - NR-07 e/ou planejamento do Programa de Controle Médico de Saúde Ocupacional - PCMSO\n2 - Exame médico de retorno ao trabalho\n3 - Exame médico de mudança de função ou de mudança de risco ocupacional\n4 - Exame médico de monitoração pontual, não enquadrado nos demais casos\n9 - Exame médico demissional\nValidação: Se informado [0], não pode existir outro evento S-2220 para o mesmo contrato com dtAso anterior.",
-            "validacao": " Se informado [0], não pode existir outro evento S-2220 para o mesmo contrato com dtAso anterior.",
+            "validacao": "Se informado [0], não pode existir outro evento S-2220 para o mesmo contrato com dtAso anterior.",
             "valores-validos": {
                 "0": "0 - Exame médico admissional",
                 "1": "1 - Exame médico periódico, conforme Norma Regulamentadora 07 - NR-07 e/ou planejamento do Programa de Controle Médico de Saúde Ocupacional - PCMSO",
@@ -304,8 +304,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data de emissão do ASO.\nValidação: Deve ser uma data válida, igual ou anterior à data atual e igual ou posterior à data de início da obrigatoriedade deste evento para o empregador no eSocial.",
-            "validacao": " Deve ser uma data válida, igual ou anterior à data atual e igual ou posterior à data de início da obrigatoriedade deste evento para o empregador no eSocial.",
+            "descricao": "Data de emissão do ASO.\nValidação: Deve ser uma data válida, igual ou anterior à data atual e igual ou posterior à data de início da obrigatoriedade deste evento para o empregador no eSocial. Se tpExameOcup for diferente de [0], também deve ser igual ou posterior à data de admissão/exercício ou de início.",
+            "validacao": "Deve ser uma data válida, igual ou anterior à data atual e igual ou posterior à data de início da obrigatoriedade deste evento para o empregador no eSocial. Se tpExameOcup for diferente de [0], também deve ser igual ou posterior à data de admissão/exercício ou de início.",
             "valores-validos": {}
         },
         {
@@ -349,8 +349,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data do exame realizado.\nValidação: Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso.",
-            "validacao": " Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso.",
+            "descricao": "Data do exame realizado.\nValidação: Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso. Se tpExameOcup for diferente de [0], também deve ser igual ou posterior à data de admissão/exercício ou de início.",
+            "validacao": "Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso. Se tpExameOcup for diferente de [0], também deve ser igual ou posterior à data de admissão/exercício ou de início.",
             "valores-validos": {}
         },
         {
@@ -364,7 +364,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Código do procedimento diagnóstico.\nValidação: Deve ser um código válido e existente na Tabela 27.",
-            "validacao": " Deve ser um código válido e existente na Tabela 27.",
+            "validacao": "Deve ser um código válido e existente na Tabela 27.",
             "valores-validos": {}
         },
         {
@@ -378,7 +378,7 @@
             "tamanho": "1-999",
             "dec": "-",
             "descricao": "Observação sobre o procedimento diagnóstico realizado.\nValidação: Preenchimento obrigatório se procRealizado = [0583, 0998, 0999, 1128, 1230, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 9999].",
-            "validacao": " Preenchimento obrigatório se procRealizado = [0583, 0998, 0999, 1128, 1230, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 9999].",
+            "validacao": "Preenchimento obrigatório se procRealizado = [0583, 0998, 0999, 1128, 1230, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 9999].",
             "valores-validos": {}
         },
         {
@@ -392,7 +392,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Ordem do exame.\nValores válidos:\n1 - Inicial\n2 - Sequencial\nValidação: Preenchimento obrigatório se procRealizado = [0281].",
-            "validacao": " Preenchimento obrigatório se procRealizado = [0281].",
+            "validacao": "Preenchimento obrigatório se procRealizado = [0281].",
             "valores-validos": {
                 "1": "1 - Inicial",
                 "2": "2 - Sequencial"
@@ -498,7 +498,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o CPF do médico responsável/coordenador do PCMSO.\nValidação: Se informado, deve ser um CPF válido.",
-            "validacao": " Se informado, deve ser um CPF válido.",
+            "validacao": "Se informado, deve ser um CPF válido.",
             "valores-validos": {}
         },
         {

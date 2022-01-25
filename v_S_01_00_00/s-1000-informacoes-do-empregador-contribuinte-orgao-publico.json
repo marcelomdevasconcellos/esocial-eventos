@@ -156,7 +156,7 @@
             "tamanho": "8, 11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo tpInsc.\nValidação: Se tpInsc for igual a [1], deve ser um número de CNPJ válido. Neste caso, deve ser informada apenas a raiz/base (8 posições), exceto se a natureza jurídica do declarante for igual a 101-5, 104-0, 107-4, 116-3 ou 134-1, situação em que o campo deve ser preenchido com o CNPJ completo (14 posições).\nSe tpInsc for igual a [2], deve ser um CPF válido.",
-            "validacao": " Se tpInsc for igual a [1], deve ser um número de CNPJ válido. Neste caso, deve ser informada apenas a raiz/base (8 posições), exceto se a natureza jurídica do declarante for igual a 101-5, 104-0, 107-4, 116-3 ou 134-1, situação em que o campo deve ser preenchido com o CNPJ completo (14 posições).\\ Se tpInsc for igual a [2], deve ser um CPF válido.",
+            "validacao": "Se tpInsc for igual a [1], deve ser um número de CNPJ válido. Neste caso, deve ser informada apenas a raiz/base (8 posições), exceto se a natureza jurídica do declarante for igual a 101-5, 104-0, 107-4, 116-3 ou 134-1, situação em que o campo deve ser preenchido com o CNPJ completo (14 posições).\\ Se tpInsc for igual a [2], deve ser um CPF válido.",
             "valores-validos": {}
         },
         {
@@ -212,7 +212,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
@@ -226,7 +226,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
@@ -254,7 +254,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com o código correspondente à classificação tributária do contribuinte.\nValidação: Deve ser um código válido e existente na Tabela 08. Os códigos [21] e [22] somente podem ser utilizados se tpInsc for igual a [2]. Para os demais códigos, tpInsc deve ser igual a [1].",
-            "validacao": " Deve ser um código válido e existente na Tabela 08. Os códigos [21] e [22] somente podem ser utilizados se tpInsc for igual a [2]. Para os demais códigos, tpInsc deve ser igual a [1].",
+            "validacao": "Deve ser um código válido e existente na Tabela 08. Os códigos [21] e [22] somente podem ser utilizados se tpInsc for igual a [2]. Para os demais códigos, tpInsc deve ser igual a [1].",
             "valores-validos": {}
         },
         {
@@ -268,7 +268,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de cooperativa.\nValores válidos:\n0 - Não é cooperativa\n1 - Cooperativa de trabalho\n2 - Cooperativa de produção\n3 - Outras cooperativas\nValidação: O preenchimento do campo é exclusivo e obrigatório para PJ. Somente pode ser diferente de [0] se a natureza jurídica do declarante for igual a 214-3.",
-            "validacao": " O preenchimento do campo é exclusivo e obrigatório para PJ. Somente pode ser diferente de [0] se a natureza jurídica do declarante for igual a 214-3.",
+            "validacao": "O preenchimento do campo é exclusivo e obrigatório para PJ. Somente pode ser diferente de [0] se a natureza jurídica do declarante for igual a 214-3.",
             "valores-validos": {
                 "0": "0 - Não é cooperativa",
                 "1": "1 - Cooperativa de trabalho",
@@ -287,7 +287,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de construtora.\nValores válidos:\n0 - Não é construtora\n1 - Empresa construtora\nValidação: O preenchimento do campo é exclusivo e obrigatório para PJ.",
-            "validacao": " O preenchimento do campo é exclusivo e obrigatório para PJ.",
+            "validacao": "O preenchimento do campo é exclusivo e obrigatório para PJ.",
             "valores-validos": {
                 "0": "0 - Não é construtora",
                 "1": "1 - Empresa construtora"
@@ -304,7 +304,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de desoneração da folha.\nValores válidos:\n0 - Não aplicável\n1 - Empresa enquadrada nos arts. 7º a 9º da Lei 12.546/2011\nValidação: Pode ser igual a [1] apenas se classTrib = [02, 03, 99]. Nos demais casos, deve ser igual a [0].",
-            "validacao": " Pode ser igual a [1] apenas se classTrib = [02, 03, 99]. Nos demais casos, deve ser igual a [0].",
+            "validacao": "Pode ser igual a [1] apenas se classTrib = [02, 03, 99]. Nos demais casos, deve ser igual a [0].",
             "valores-validos": {
                 "0": "0 - Não aplicável",
                 "1": "1 - Empresa enquadrada nos arts. 7º a 9º da Lei 12.546/2011"
@@ -321,7 +321,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo da opção pelo produtor rural pela forma de tributação da contribuição previdenciária, nos termos do art. 25, § 13, da Lei 8.212/1991 e do art. 25, § 7°, da Lei 8.870/1994. O não preenchimento deste campo por parte do produtor rural implica opção pela comercialização da sua produção.\nValores válidos:\n1 - Sobre a comercialização da sua produção\n2 - Sobre a folha de pagamento\nValidação: Não preencher se classTrib for diferente de [07, 21].",
-            "validacao": " Não preencher se classTrib for diferente de [07, 21].",
+            "validacao": "Não preencher se classTrib for diferente de [07, 21].",
             "valores-validos": {
                 "1": "1 - Sobre a comercialização da sua produção",
                 "2": "2 - Sobre a folha de pagamento"
@@ -338,7 +338,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de microempresa - ME ou empresa de pequeno porte - EPP para permissão de acesso ao módulo simplificado. Não preencher caso o empregador não se enquadre como micro ou pequena empresa.\nValores válidos:\nS - Sim\nValidação: Não preencher se classTrib = [21, 22].",
-            "validacao": " Não preencher se classTrib = [21, 22].",
+            "validacao": "Não preencher se classTrib = [21, 22].",
             "valores-validos": {
                 "S": "S - Sim"
             }
@@ -371,12 +371,26 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "CNPJ do Ente Federativo Responsável - EFR.\nValidação: Preenchimento obrigatório e exclusivo se a natureza jurídica do declarante for Administração Pública (grupo [1]). Nesse caso, informar o campo com 14 (catorze) algarismos.\nInformação validada no cadastro do CNPJ da RFB.",
-            "validacao": " Preenchimento obrigatório e exclusivo se a natureza jurídica do declarante for Administração Pública (grupo [1]). Nesse caso, informar o campo com 14 (catorze) algarismos.\\ Informação validada no cadastro do CNPJ da RFB.",
+            "validacao": "Preenchimento obrigatório e exclusivo se a natureza jurídica do declarante for Administração Pública (grupo [1]). Nesse caso, informar o campo com 14 (catorze) algarismos.\\ Informação validada no cadastro do CNPJ da RFB.",
             "valores-validos": {}
         },
         {
             "index": 25,
             "esocial_id": "25",
+            "grupo-campo": "dtTrans11096",
+            "grupo-pai": "infoCadastro",
+            "elem": "E",
+            "tipo": "D",
+            "ocor": "0-1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Data da transformação em sociedade de fins lucrativos - Lei 11.096/2005.\nValidação: Não preencher se classTrib = [21, 22].",
+            "validacao": "Não preencher se classTrib = [21, 22].",
+            "valores-validos": {}
+        },
+        {
+            "index": 26,
+            "esocial_id": "26",
             "grupo-campo": "dadosIsencao",
             "grupo-pai": "infoCadastro",
             "elem": "G",
@@ -389,8 +403,8 @@
             "valores-validos": {}
         },
         {
-            "index": 26,
-            "esocial_id": "26",
+            "index": 27,
+            "esocial_id": "27",
             "grupo-campo": "ideMinLei",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -403,8 +417,8 @@
             "valores-validos": {}
         },
         {
-            "index": 27,
-            "esocial_id": "27",
+            "index": 28,
+            "esocial_id": "28",
             "grupo-campo": "nrCertif",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -417,8 +431,8 @@
             "valores-validos": {}
         },
         {
-            "index": 28,
-            "esocial_id": "28",
+            "index": 29,
+            "esocial_id": "29",
             "grupo-campo": "dtEmisCertif",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -431,8 +445,8 @@
             "valores-validos": {}
         },
         {
-            "index": 29,
-            "esocial_id": "29",
+            "index": 30,
+            "esocial_id": "30",
             "grupo-campo": "dtVencCertif",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -441,12 +455,12 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de vencimento do certificado.\nValidação: Não pode ser anterior a dtEmisCertif.",
-            "validacao": " Não pode ser anterior a dtEmisCertif.",
+            "validacao": "Não pode ser anterior a dtEmisCertif.",
             "valores-validos": {}
         },
         {
-            "index": 30,
-            "esocial_id": "30",
+            "index": 31,
+            "esocial_id": "31",
             "grupo-campo": "nrProtRenov",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -459,8 +473,8 @@
             "valores-validos": {}
         },
         {
-            "index": 31,
-            "esocial_id": "31",
+            "index": 32,
+            "esocial_id": "32",
             "grupo-campo": "dtProtRenov",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -473,8 +487,8 @@
             "valores-validos": {}
         },
         {
-            "index": 32,
-            "esocial_id": "32",
+            "index": 33,
+            "esocial_id": "33",
             "grupo-campo": "dtDou",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -487,8 +501,8 @@
             "valores-validos": {}
         },
         {
-            "index": 33,
-            "esocial_id": "33",
+            "index": 34,
+            "esocial_id": "34",
             "grupo-campo": "pagDou",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -501,8 +515,8 @@
             "valores-validos": {}
         },
         {
-            "index": 34,
-            "esocial_id": "34",
+            "index": 35,
+            "esocial_id": "35",
             "grupo-campo": "infoOrgInternacional",
             "grupo-pai": "infoCadastro",
             "elem": "G",
@@ -515,8 +529,8 @@
             "valores-validos": {}
         },
         {
-            "index": 35,
-            "esocial_id": "35",
+            "index": 36,
+            "esocial_id": "36",
             "grupo-campo": "indAcordoIsenMulta",
             "grupo-pai": "infoOrgInternacional",
             "elem": "E",
@@ -532,8 +546,8 @@
             }
         },
         {
-            "index": 36,
-            "esocial_id": "36",
+            "index": 37,
+            "esocial_id": "37",
             "grupo-campo": "alteracao",
             "grupo-pai": "infoEmpregador",
             "elem": "G",
@@ -546,8 +560,8 @@
             "valores-validos": {}
         },
         {
-            "index": 37,
-            "esocial_id": "37",
+            "index": 38,
+            "esocial_id": "38",
             "grupo-campo": "idePeriodo",
             "grupo-pai": "alteracao",
             "elem": "G",
@@ -560,7 +574,7 @@
             "valores-validos": {}
         },
         {
-            "index": 38,
+            "index": 39,
             "esocial_id": "14",
             "grupo-campo": "iniValid",
             "grupo-pai": "idePeriodo",
@@ -570,11 +584,11 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
-            "index": 39,
+            "index": 40,
             "esocial_id": "15",
             "grupo-campo": "fimValid",
             "grupo-pai": "idePeriodo",
@@ -584,12 +598,12 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
-            "index": 41,
-            "esocial_id": "38",
+            "index": 42,
+            "esocial_id": "39",
             "grupo-campo": "infoCadastro",
             "grupo-pai": "alteracao",
             "elem": "G",
@@ -602,7 +616,7 @@
             "valores-validos": {}
         },
         {
-            "index": 42,
+            "index": 43,
             "esocial_id": "17",
             "grupo-campo": "classTrib",
             "grupo-pai": "infoCadastro",
@@ -612,11 +626,11 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com o código correspondente à classificação tributária do contribuinte.\nValidação: Deve ser um código válido e existente na Tabela 08. Os códigos [21] e [22] somente podem ser utilizados se tpInsc for igual a [2]. Para os demais códigos, tpInsc deve ser igual a [1].",
-            "validacao": " Deve ser um código válido e existente na Tabela 08. Os códigos [21] e [22] somente podem ser utilizados se tpInsc for igual a [2]. Para os demais códigos, tpInsc deve ser igual a [1].",
+            "validacao": "Deve ser um código válido e existente na Tabela 08. Os códigos [21] e [22] somente podem ser utilizados se tpInsc for igual a [2]. Para os demais códigos, tpInsc deve ser igual a [1].",
             "valores-validos": {}
         },
         {
-            "index": 43,
+            "index": 44,
             "esocial_id": "18",
             "grupo-campo": "indCoop",
             "grupo-pai": "infoCadastro",
@@ -626,7 +640,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de cooperativa.\nValores válidos:\n0 - Não é cooperativa\n1 - Cooperativa de trabalho\n2 - Cooperativa de produção\n3 - Outras cooperativas\nValidação: O preenchimento do campo é exclusivo e obrigatório para PJ. Somente pode ser diferente de [0] se a natureza jurídica do declarante for igual a 214-3.",
-            "validacao": " O preenchimento do campo é exclusivo e obrigatório para PJ. Somente pode ser diferente de [0] se a natureza jurídica do declarante for igual a 214-3.",
+            "validacao": "O preenchimento do campo é exclusivo e obrigatório para PJ. Somente pode ser diferente de [0] se a natureza jurídica do declarante for igual a 214-3.",
             "valores-validos": {
                 "0": "0 - Não é cooperativa",
                 "1": "1 - Cooperativa de trabalho",
@@ -635,7 +649,7 @@
             }
         },
         {
-            "index": 44,
+            "index": 45,
             "esocial_id": "19",
             "grupo-campo": "indConstr",
             "grupo-pai": "infoCadastro",
@@ -645,14 +659,14 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de construtora.\nValores válidos:\n0 - Não é construtora\n1 - Empresa construtora\nValidação: O preenchimento do campo é exclusivo e obrigatório para PJ.",
-            "validacao": " O preenchimento do campo é exclusivo e obrigatório para PJ.",
+            "validacao": "O preenchimento do campo é exclusivo e obrigatório para PJ.",
             "valores-validos": {
                 "0": "0 - Não é construtora",
                 "1": "1 - Empresa construtora"
             }
         },
         {
-            "index": 45,
+            "index": 46,
             "esocial_id": "20",
             "grupo-campo": "indDesFolha",
             "grupo-pai": "infoCadastro",
@@ -662,14 +676,14 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de desoneração da folha.\nValores válidos:\n0 - Não aplicável\n1 - Empresa enquadrada nos arts. 7º a 9º da Lei 12.546/2011\nValidação: Pode ser igual a [1] apenas se classTrib = [02, 03, 99]. Nos demais casos, deve ser igual a [0].",
-            "validacao": " Pode ser igual a [1] apenas se classTrib = [02, 03, 99]. Nos demais casos, deve ser igual a [0].",
+            "validacao": "Pode ser igual a [1] apenas se classTrib = [02, 03, 99]. Nos demais casos, deve ser igual a [0].",
             "valores-validos": {
                 "0": "0 - Não aplicável",
                 "1": "1 - Empresa enquadrada nos arts. 7º a 9º da Lei 12.546/2011"
             }
         },
         {
-            "index": 46,
+            "index": 47,
             "esocial_id": "21",
             "grupo-campo": "indOpcCP",
             "grupo-pai": "infoCadastro",
@@ -679,14 +693,14 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo da opção pelo produtor rural pela forma de tributação da contribuição previdenciária, nos termos do art. 25, § 13, da Lei 8.212/1991 e do art. 25, § 7°, da Lei 8.870/1994. O não preenchimento deste campo por parte do produtor rural implica opção pela comercialização da sua produção.\nValores válidos:\n1 - Sobre a comercialização da sua produção\n2 - Sobre a folha de pagamento\nValidação: Não preencher se classTrib for diferente de [07, 21].",
-            "validacao": " Não preencher se classTrib for diferente de [07, 21].",
+            "validacao": "Não preencher se classTrib for diferente de [07, 21].",
             "valores-validos": {
                 "1": "1 - Sobre a comercialização da sua produção",
                 "2": "2 - Sobre a folha de pagamento"
             }
         },
         {
-            "index": 47,
+            "index": 48,
             "esocial_id": "22",
             "grupo-campo": "indPorte",
             "grupo-pai": "infoCadastro",
@@ -696,13 +710,13 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicativo de microempresa - ME ou empresa de pequeno porte - EPP para permissão de acesso ao módulo simplificado. Não preencher caso o empregador não se enquadre como micro ou pequena empresa.\nValores válidos:\nS - Sim\nValidação: Não preencher se classTrib = [21, 22].",
-            "validacao": " Não preencher se classTrib = [21, 22].",
+            "validacao": "Não preencher se classTrib = [21, 22].",
             "valores-validos": {
                 "S": "S - Sim"
             }
         },
         {
-            "index": 48,
+            "index": 49,
             "esocial_id": "23",
             "grupo-campo": "indOptRegEletron",
             "grupo-pai": "infoCadastro",
@@ -719,7 +733,7 @@
             }
         },
         {
-            "index": 49,
+            "index": 50,
             "esocial_id": "24",
             "grupo-campo": "cnpjEFR",
             "grupo-pai": "infoCadastro",
@@ -729,12 +743,26 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "CNPJ do Ente Federativo Responsável - EFR.\nValidação: Preenchimento obrigatório e exclusivo se a natureza jurídica do declarante for Administração Pública (grupo [1]). Nesse caso, informar o campo com 14 (catorze) algarismos.\nInformação validada no cadastro do CNPJ da RFB.",
-            "validacao": " Preenchimento obrigatório e exclusivo se a natureza jurídica do declarante for Administração Pública (grupo [1]). Nesse caso, informar o campo com 14 (catorze) algarismos.\\ Informação validada no cadastro do CNPJ da RFB.",
+            "validacao": "Preenchimento obrigatório e exclusivo se a natureza jurídica do declarante for Administração Pública (grupo [1]). Nesse caso, informar o campo com 14 (catorze) algarismos.\\ Informação validada no cadastro do CNPJ da RFB.",
             "valores-validos": {}
         },
         {
-            "index": 50,
+            "index": 51,
             "esocial_id": "25",
+            "grupo-campo": "dtTrans11096",
+            "grupo-pai": "infoCadastro",
+            "elem": "E",
+            "tipo": "D",
+            "ocor": "0-1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Data da transformação em sociedade de fins lucrativos - Lei 11.096/2005.\nValidação: Não preencher se classTrib = [21, 22].",
+            "validacao": "Não preencher se classTrib = [21, 22].",
+            "valores-validos": {}
+        },
+        {
+            "index": 52,
+            "esocial_id": "26",
             "grupo-campo": "dadosIsencao",
             "grupo-pai": "infoCadastro",
             "elem": "G",
@@ -747,8 +775,8 @@
             "valores-validos": {}
         },
         {
-            "index": 51,
-            "esocial_id": "26",
+            "index": 53,
+            "esocial_id": "27",
             "grupo-campo": "ideMinLei",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -761,8 +789,8 @@
             "valores-validos": {}
         },
         {
-            "index": 52,
-            "esocial_id": "27",
+            "index": 54,
+            "esocial_id": "28",
             "grupo-campo": "nrCertif",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -775,8 +803,8 @@
             "valores-validos": {}
         },
         {
-            "index": 53,
-            "esocial_id": "28",
+            "index": 55,
+            "esocial_id": "29",
             "grupo-campo": "dtEmisCertif",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -789,8 +817,8 @@
             "valores-validos": {}
         },
         {
-            "index": 54,
-            "esocial_id": "29",
+            "index": 56,
+            "esocial_id": "30",
             "grupo-campo": "dtVencCertif",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -799,12 +827,12 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de vencimento do certificado.\nValidação: Não pode ser anterior a dtEmisCertif.",
-            "validacao": " Não pode ser anterior a dtEmisCertif.",
+            "validacao": "Não pode ser anterior a dtEmisCertif.",
             "valores-validos": {}
         },
         {
-            "index": 55,
-            "esocial_id": "30",
+            "index": 57,
+            "esocial_id": "31",
             "grupo-campo": "nrProtRenov",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -817,8 +845,8 @@
             "valores-validos": {}
         },
         {
-            "index": 56,
-            "esocial_id": "31",
+            "index": 58,
+            "esocial_id": "32",
             "grupo-campo": "dtProtRenov",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -831,8 +859,8 @@
             "valores-validos": {}
         },
         {
-            "index": 57,
-            "esocial_id": "32",
+            "index": 59,
+            "esocial_id": "33",
             "grupo-campo": "dtDou",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -845,8 +873,8 @@
             "valores-validos": {}
         },
         {
-            "index": 58,
-            "esocial_id": "33",
+            "index": 60,
+            "esocial_id": "34",
             "grupo-campo": "pagDou",
             "grupo-pai": "dadosIsencao",
             "elem": "E",
@@ -859,8 +887,8 @@
             "valores-validos": {}
         },
         {
-            "index": 59,
-            "esocial_id": "34",
+            "index": 61,
+            "esocial_id": "35",
             "grupo-campo": "infoOrgInternacional",
             "grupo-pai": "infoCadastro",
             "elem": "G",
@@ -873,8 +901,8 @@
             "valores-validos": {}
         },
         {
-            "index": 60,
-            "esocial_id": "35",
+            "index": 62,
+            "esocial_id": "36",
             "grupo-campo": "indAcordoIsenMulta",
             "grupo-pai": "infoOrgInternacional",
             "elem": "E",
@@ -890,8 +918,8 @@
             }
         },
         {
-            "index": 62,
-            "esocial_id": "39",
+            "index": 64,
+            "esocial_id": "40",
             "grupo-campo": "novaValidade",
             "grupo-pai": "alteracao",
             "elem": "G",
@@ -904,7 +932,7 @@
             "valores-validos": {}
         },
         {
-            "index": 63,
+            "index": 65,
             "esocial_id": "14",
             "grupo-campo": "iniValid",
             "grupo-pai": "idePeriodo",
@@ -914,11 +942,11 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
-            "index": 64,
+            "index": 66,
             "esocial_id": "15",
             "grupo-campo": "fimValid",
             "grupo-pai": "idePeriodo",
@@ -928,12 +956,12 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         },
         {
-            "index": 66,
-            "esocial_id": "40",
+            "index": 68,
+            "esocial_id": "41",
             "grupo-campo": "exclusao",
             "grupo-pai": "infoEmpregador",
             "elem": "G",
@@ -946,8 +974,8 @@
             "valores-validos": {}
         },
         {
-            "index": 67,
-            "esocial_id": "41",
+            "index": 69,
+            "esocial_id": "42",
             "grupo-campo": "idePeriodo",
             "grupo-pai": "exclusao",
             "elem": "G",
@@ -960,7 +988,7 @@
             "valores-validos": {}
         },
         {
-            "index": 68,
+            "index": 70,
             "esocial_id": "14",
             "grupo-campo": "iniValid",
             "grupo-pai": "idePeriodo",
@@ -970,11 +998,11 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de início da validade das informações prestadas no evento, no formato AAAA-MM.\nValidação: Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de início de obrigatoriedade deste evento para o empregador no eSocial, no formato AAAA-MM.",
             "valores-validos": {}
         },
         {
-            "index": 69,
+            "index": 71,
             "esocial_id": "15",
             "grupo-campo": "fimValid",
             "grupo-pai": "idePeriodo",
@@ -984,7 +1012,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o mês e ano de término da validade das informações, se houver.\nValidação: Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
-            "validacao": " Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
+            "validacao": "Se informado, deve estar no formato AAAA-MM e ser um período igual ou posterior a iniValid.",
             "valores-validos": {}
         }
     ]

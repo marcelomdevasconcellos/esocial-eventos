@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -228,7 +228,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2300 do respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300.",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2300 do respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300.",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2300 do respectivo contrato. Não preencher no caso de TSVE sem informação de matrícula no evento S-2300.",
             "valores-validos": {}
         },
         {
@@ -242,7 +242,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nInformar somente no caso de TSVE sem informação de matrícula no evento S-2300.\nValidação: Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Informação obrigatória e exclusiva se não houver preenchimento de matricula. Se informado, deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -270,7 +270,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data da alteração das informações.\nValidação: Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
-            "validacao": " Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
+            "validacao": "Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
             "valores-validos": {}
         },
         {
@@ -284,7 +284,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Natureza da atividade.\nValores válidos:\n1 - Trabalho urbano\n2 - Trabalho rural\nValidação: Preenchimento obrigatório se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [201, 202, 401, 731, 734, 738]. Não deve ser preenchido se o código de categoria no RET for igual a [721, 722, 771, 901].",
-            "validacao": " Preenchimento obrigatório se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [201, 202, 401, 731, 734, 738]. Não deve ser preenchido se o código de categoria no RET for igual a [721, 722, 771, 901].",
+            "validacao": "Preenchimento obrigatório se o código de categoria no Registro de Eventos Trabalhistas - RET for igual a [201, 202, 401, 731, 734, 738]. Não deve ser preenchido se o código de categoria no RET for igual a [721, 722, 771, 901].",
             "valores-validos": {
                 "1": "1 - Trabalho urbano",
                 "2": "2 - Trabalho rural"
@@ -329,7 +329,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar o nome do cargo.\nValidação: Preenchimento obrigatório se o código de categoria no RET for diferente de [410].",
-            "validacao": " Preenchimento obrigatório se o código de categoria no RET for diferente de [410].",
+            "validacao": "Preenchimento obrigatório se o código de categoria no RET for diferente de [410].",
             "valores-validos": {}
         },
         {
@@ -343,7 +343,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a Classificação Brasileira de Ocupações - CBO relativa ao cargo.\nValidação: Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -357,7 +357,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar o nome da função de confiança.\nValidação: Preenchimento obrigatório se o código de categoria no RET for igual a [410] e não houver informação de nmCargo.",
-            "validacao": " Preenchimento obrigatório se o código de categoria no RET for igual a [410] e não houver informação de nmCargo.",
+            "validacao": "Preenchimento obrigatório se o código de categoria no RET for igual a [410] e não houver informação de nmCargo.",
             "valores-validos": {}
         },
         {
@@ -371,7 +371,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a CBO relativa à função de confiança/cargo em comissão.\nValidação: Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -399,7 +399,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Salário base do trabalhador, correspondente à parte fixa da remuneração.\nValidação: Se undSalFixo for igual a [7], preencher com 0 (zero).",
-            "validacao": " Se undSalFixo for igual a [7], preencher com 0 (zero).",
+            "validacao": "Se undSalFixo for igual a [7], preencher com 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -435,7 +435,7 @@
             "tamanho": "1-999",
             "dec": "-",
             "descricao": "Descrição do salário por tarefa ou variável e como este é calculado. Ex.: Comissões pagas no percentual de 10% sobre as vendas.\nValidação: Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
-            "validacao": " Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
+            "validacao": "Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
             "valores-validos": {}
         },
         {
@@ -463,7 +463,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares).\nValores válidos:\n1 - Regime Geral de Previdência Social - RGPS\n2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares\n3 - Regime de Previdência Social no exterior\nValidação: Se infoDirigenteSindical/categOrig do evento S-2300 for relativa a \"Empregado\", não pode ser preenchido com [2].",
-            "validacao": " Se infoDirigenteSindical/categOrig do evento S-2300 for relativa a \"Empregado\", não pode ser preenchido com [2].",
+            "validacao": "Se infoDirigenteSindical/categOrig do evento S-2300 for relativa a \"Empregado\", não pode ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Regime Geral de Previdência Social - RGPS",
                 "2": "2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares",
@@ -495,7 +495,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares).\nValores válidos:\n1 - Regime Geral de Previdência Social - RGPS\n2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares\n3 - Regime de Previdência Social no exterior\nValidação: Se infoTrabCedido/categOrig do evento S-2300 for relativa a \"Empregado\", não pode ser preenchido com [2].",
-            "validacao": " Se infoTrabCedido/categOrig do evento S-2300 for relativa a \"Empregado\", não pode ser preenchido com [2].",
+            "validacao": "Se infoTrabCedido/categOrig do evento S-2300 for relativa a \"Empregado\", não pode ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Regime Geral de Previdência Social - RGPS",
                 "2": "2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares",
@@ -527,7 +527,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicar se o servidor optou pela remuneração do cargo efetivo.\nValores válidos:\nS - Sim\nN - Não\nValidação: Informação obrigatória e exclusiva se CBOCargo = [111120, 111250, 111255]).",
-            "validacao": " Informação obrigatória e exclusiva se CBOCargo = [111120, 111250, 111255]).",
+            "validacao": "Informação obrigatória e exclusiva se CBOCargo = [111120, 111250, 111255]).",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -642,7 +642,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data prevista para o término do estágio.\nValidação: Deve ser uma data posterior à data de início do estágio.",
-            "validacao": " Deve ser uma data posterior à data de início do estágio.",
+            "validacao": "Deve ser uma data posterior à data de início do estágio.",
             "valores-validos": {}
         },
         {
@@ -670,7 +670,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Preencher com o CNPJ da instituição de ensino. Deve ser preenchido apenas se a instituição de ensino for brasileira.\nValidação: Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
-            "validacao": " Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "validacao": "Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
         {
@@ -684,7 +684,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar a razão social.\nValidação: Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
-            "validacao": " Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
+            "validacao": "Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
             "valores-validos": {}
         },
         {
@@ -698,7 +698,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Descrição do logradouro.\nValidação: Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
-            "validacao": " Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
+            "validacao": "Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
             "valores-validos": {}
         },
         {
@@ -712,7 +712,7 @@
             "tamanho": "1-10",
             "dec": "-",
             "descricao": "Número do logradouro.\nSe não houver número a ser informado, preencher com \"S/N\".\nValidação: Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
-            "validacao": " Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
+            "validacao": "Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
             "valores-validos": {}
         },
         {
@@ -726,7 +726,7 @@
             "tamanho": "1-90",
             "dec": "-",
             "descricao": "Nome do bairro/distrito.\nValidação: Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
-            "validacao": " Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
+            "validacao": "Preenchimento obrigatório e exclusivo se o campo cnpjInstEnsino não estiver preenchido.",
             "valores-validos": {}
         },
         {
@@ -740,7 +740,7 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser preenchido apenas com números, com 8 (oito) posições.",
-            "validacao": " Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser preenchido apenas com números, com 8 (oito) posições.",
+            "validacao": "Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser preenchido apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
@@ -754,7 +754,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Não informar se o campo cnpjInstEnsino estiver preenchido. Se informado, deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -768,7 +768,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Preencher com a sigla da Unidade da Federação - UF.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO\nValidação: Não informar se o campo cnpjInstEnsino estiver preenchido.",
-            "validacao": " Não informar se o campo cnpjInstEnsino estiver preenchido.",
+            "validacao": "Não informar se o campo cnpjInstEnsino estiver preenchido.",
             "valores-validos": {}
         },
         {
@@ -796,7 +796,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "CNPJ do agente de integração.\nValidação: Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
-            "validacao": " Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "validacao": "Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
         {
@@ -824,7 +824,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "CPF do responsável pela supervisão do estagiário.\nValidação: Deve ser um CPF válido.",
-            "validacao": " Deve ser um CPF válido.",
+            "validacao": "Deve ser um CPF válido.",
             "valores-validos": {}
         }
     ]

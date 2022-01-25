@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -243,7 +243,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de admissão do trabalhador (ou data de início, no caso de Trabalhador Sem Vínculo de Emprego/Estatutário - TSVE).\nValidação: Deve ser posterior à data de nascimento do trabalhador e igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
-            "validacao": " Deve ser posterior à data de nascimento do trabalhador e igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
+            "validacao": "Deve ser posterior à data de nascimento do trabalhador e igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o empregador.",
             "valores-validos": {}
         },
         {
@@ -257,7 +257,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa.\nValidação: O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\nRegra de validação:\nREGRA_CARACTERE_ESPECIAL",
-            "validacao": " O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
+            "validacao": "O valor informado não pode conter a expressão 'eSocial' nas 7 (sete) primeiras posições.\\ [[Regra de validação:\\ REGRA_CARACTERE_ESPECIAL",
             "valores-validos": {}
         },
         {
@@ -271,7 +271,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nValidação: Deve ser um código de categoria sujeito ao Registro de Eventos Trabalhistas - RET de trabalhador não vinculado ao Regime Próprio de Previdência Social - RPPS, ou seja, \"Empregado\" ([1XX]), algumas categorias de \"Agente Público\" ([301, 302, 303, 304, 306, 307, 309, 310, 312]), \"Avulso\" ([2XX]), \"Cessão\" ([4XX]), algumas categorias de \"Contribuinte Individual\" ([721, 722, 723, 731, 734, 738, 761, 771]) ou de \"Bolsista\" ([901, 902]).",
-            "validacao": " Deve ser um código de categoria sujeito ao Registro de Eventos Trabalhistas - RET de trabalhador não vinculado ao Regime Próprio de Previdência Social - RPPS, ou seja, \"Empregado\" ([1XX]), algumas categorias de \"Agente Público\" ([301, 302, 303, 304, 306, 307, 309, 310, 312]), \"Avulso\" ([2XX]), \"Cessão\" ([4XX]), algumas categorias de \"Contribuinte Individual\" ([721, 722, 723, 731, 734, 738, 761, 771]) ou de \"Bolsista\" ([901, 902]).",
+            "validacao": "Deve ser um código de categoria sujeito ao Registro de Eventos Trabalhistas - RET de trabalhador não vinculado ao Regime Próprio de Previdência Social - RPPS, ou seja, \"Empregado\" ([1XX]), algumas categorias de \"Agente Público\" ([301, 302, 303, 304, 306, 307, 309, 310, 312]), \"Avulso\" ([2XX]), \"Cessão\" ([4XX]), algumas categorias de \"Contribuinte Individual\" ([721, 722, 723, 731, 734, 738, 761, 771]) ou de \"Bolsista\" ([901, 902]).",
             "valores-validos": {}
         },
         {
@@ -285,7 +285,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Natureza da atividade.\nValores válidos:\n1 - Trabalho urbano\n2 - Trabalho rural\nValidação: Preenchimento obrigatório se codCateg for relativo a \"Empregado\", \"Agente Público\", \"Avulso\" ou igual a [401, 731, 734, 738]. Não deve ser preenchido se codCateg = [721, 722, 771, 901].\nSe codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
-            "validacao": " Preenchimento obrigatório se codCateg for relativo a \"Empregado\", \"Agente Público\", \"Avulso\" ou igual a [401, 731, 734, 738]. Não deve ser preenchido se codCateg = [721, 722, 771, 901].\\ Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
+            "validacao": "Preenchimento obrigatório se codCateg for relativo a \"Empregado\", \"Agente Público\", \"Avulso\" ou igual a [401, 731, 734, 738]. Não deve ser preenchido se codCateg = [721, 722, 771, 901].\\ Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Trabalho urbano",
                 "2": "2 - Trabalho rural"
@@ -316,7 +316,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a Classificação Brasileira de Ocupações - CBO relativa ao cargo.\nValidação: Deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -330,7 +330,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Salário base do trabalhador, correspondente à parte fixa da remuneração.\nValidação: Se undSalFixo for igual a [7], preencher com 0 (zero).",
-            "validacao": " Se undSalFixo for igual a [7], preencher com 0 (zero).",
+            "validacao": "Se undSalFixo for igual a [7], preencher com 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -384,7 +384,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data do término do contrato por prazo determinado.\nValidação: O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Deve ser igual ou posterior à data de admissão.",
-            "validacao": " O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Deve ser igual ou posterior à data de admissão.",
+            "validacao": "O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Deve ser igual ou posterior à data de admissão.",
             "valores-validos": {}
         }
     ]

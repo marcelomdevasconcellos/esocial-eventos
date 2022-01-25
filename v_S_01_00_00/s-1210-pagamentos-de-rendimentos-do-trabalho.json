@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -101,7 +101,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações.\nValidação: Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
-            "validacao": " Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": "Deve ser um mês/ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
             "valores-validos": {}
         },
         {
@@ -244,7 +244,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Informar o CPF do beneficiário.\nValidação: Deve ser o mesmo CPF informado no evento de remuneração ou desligamento (S-1200, S-1202, S-1207, S-2299 ou S-2399).",
-            "validacao": " Deve ser o mesmo CPF informado no evento de remuneração ou desligamento (S-1200, S-1202, S-1207, S-2299 ou S-2399).",
+            "validacao": "Deve ser o mesmo CPF informado no evento de remuneração ou desligamento (S-1200, S-1202, S-1207, S-2299 ou S-2399).",
             "valores-validos": {}
         },
         {
@@ -272,7 +272,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Informar a data de pagamento.\nValidação: A data informada deve estar compreendida no período de apuração (perApur), exceto se procEmi = [2, 4, 22].",
-            "validacao": " A data informada deve estar compreendida no período de apuração (perApur), exceto se procEmi = [2, 4, 22].",
+            "validacao": "A data informada deve estar compreendida no período de apuração (perApur), exceto se procEmi = [2, 4, 22].",
             "valores-validos": {}
         },
         {
@@ -306,7 +306,7 @@
             "tamanho": "4 ou 7",
             "dec": "-",
             "descricao": "Informar a competência declarada no campo {perApur} do evento remuneratório a que se refere o pagamento, no formato AAAA-MM (ou AAAA, se for relativa à folha de 13° salário). Se tpPgto = [2, 3], informar o mês/ano da data de desligamento (ou de término), no formato AAAA-MM.\nValidação: Deve corresponder ao conteúdo indicado na relação a seguir:\nSe tpPgto = [1], perApur do S-1200;\nSe tpPgto = [2], mês/ano de dtDeslig do S-2299 (formato AAAA-MM);\nSe tpPgto = [3], mês/ano de dtTerm do S-2399 (formato AAAA-MM);\nSe tpPgto = [4], perApur do S-1202;\nSe tpPgto = [5], perApur do S-1207.",
-            "validacao": " Deve corresponder ao conteúdo indicado na relação a seguir:\\ Se tpPgto = [1], perApur do S-1200;\\ Se tpPgto = [2], mês/ano de dtDeslig do S-2299 (formato AAAA-MM);\\ Se tpPgto = [3], mês/ano de dtTerm do S-2399 (formato AAAA-MM);\\ Se tpPgto = [4], perApur do S-1202;\\ Se tpPgto = [5], perApur do S-1207.",
+            "validacao": "Deve corresponder ao conteúdo indicado na relação a seguir:\\ Se tpPgto = [1], perApur do S-1200;\\ Se tpPgto = [2], mês/ano de dtDeslig do S-2299 (formato AAAA-MM);\\ Se tpPgto = [3], mês/ano de dtTerm do S-2399 (formato AAAA-MM);\\ Se tpPgto = [4], perApur do S-1202;\\ Se tpPgto = [5], perApur do S-1207.",
             "valores-validos": {}
         },
         {
@@ -320,7 +320,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Identificador atribuído pela fonte pagadora para o demonstrativo de valores devidos ao trabalhador conforme definido em S-1200, S-1202, S-1207, S-2299 ou S-2399.\nValidação: Deve ser um valor atribuído pela fonte pagadora em S-1200, S-1202, S-1207, S-2299 ou S-2399 no campo {ideDmDev}, obedecendo à relação:\nSe tpPgto = [1], em S-1200;\nSe tpPgto = [2], em S-2299;\nSe tpPgto = [3], em S-2399;\nSe tpPgto = [4], em S-1202;\nSe tpPgto = [5], em S-1207.",
-            "validacao": " Deve ser um valor atribuído pela fonte pagadora em S-1200, S-1202, S-1207, S-2299 ou S-2399 no campo {ideDmDev}, obedecendo à relação:\\ Se tpPgto = [1], em S-1200;\\ Se tpPgto = [2], em S-2299;\\ Se tpPgto = [3], em S-2399;\\ Se tpPgto = [4], em S-1202;\\ Se tpPgto = [5], em S-1207.",
+            "validacao": "Deve ser um valor atribuído pela fonte pagadora em S-1200, S-1202, S-1207, S-2299 ou S-2399 no campo {ideDmDev}, obedecendo à relação:\\ Se tpPgto = [1], em S-1200;\\ Se tpPgto = [2], em S-2299;\\ Se tpPgto = [3], em S-2399;\\ Se tpPgto = [4], em S-1202;\\ Se tpPgto = [5], em S-1207.",
             "valores-validos": {}
         },
         {
@@ -334,7 +334,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Valor líquido recebido pelo trabalhador, composto pelos vencimentos e descontos, inclusive os descontos de IRRF e de pensão alimentícia (se houver).\nValidação: Não pode ser um valor negativo.",
-            "validacao": " Não pode ser um valor negativo.",
+            "validacao": "Não pode ser um valor negativo.",
             "valores-validos": {}
         }
     ]

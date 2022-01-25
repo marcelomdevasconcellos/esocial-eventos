@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -118,7 +118,7 @@
             "tamanho": "4 ou 7",
             "dec": "-",
             "descricao": "Informar o mês/ano (formato AAAA-MM) de referência das informações, se indApuracao for igual a [1], ou apenas o ano (formato AAAA), se indApuracao for igual a [2].\nValidação: Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
-            "validacao": " Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
+            "validacao": "Deve ser um mês/ano ou ano válido, igual ou posterior ao início da obrigatoriedade dos eventos periódicos para o empregador.",
             "valores-validos": {}
         },
         {
@@ -278,7 +278,7 @@
             "tamanho": "1-5",
             "dec": "2",
             "descricao": "Percentual não substituído pela contribuição prevista na Lei 12.546/2011.\nInformar 0 (zero) se indSubstPatr = [1]. Caso contrário, preencher com o percentual correspondente à razão entre a receita de atividades não relacionadas nos arts. 7º e 8º da Lei 12.546/2011 e a receita bruta total.\nValidação: Se indSubstPatr = [1], informar 0 (zero).",
-            "validacao": " Se indSubstPatr = [1], informar 0 (zero).",
+            "validacao": "Se indSubstPatr = [1], informar 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -306,7 +306,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Informar o código atribuído pelo empregador para a lotação tributária.\nValidação: Deve ser um código válido e existente na Tabela de Lotações Tributárias (S-1020), com tpLotacao = [08].",
-            "validacao": " Deve ser um código válido e existente na Tabela de Lotações Tributárias (S-1020), com tpLotacao = [08].",
+            "validacao": "Deve ser um código válido e existente na Tabela de Lotações Tributárias (S-1020), com tpLotacao = [08].",
             "valores-validos": {}
         },
         {
@@ -350,6 +350,40 @@
             "descricao": "Informe o fator a ser utilizado para cálculo da contribuição patronal do décimo terceiro dos trabalhadores envolvidos na execução das atividades enquadradas no Anexo IV em conjunto com as dos Anexos I a III e V da Lei Complementar 123/2006.",
             "validacao": "-",
             "valores-validos": {}
+        },
+        {
+            "index": 24,
+            "esocial_id": 24,
+            "grupo-campo": "infoPercTransf11096",
+            "grupo-pai": "evtInfoComplPer",
+            "elem": "G",
+            "tipo": "-",
+            "ocor": "0-1",
+            "tamanho": "-",
+            "dec": "-",
+            "descricao": "Grupo preenchido por entidade que tenha se transformado em sociedade de fins lucrativos nos termos e no prazo da Lei 11.096/2005.",
+            "validacao": "-",
+            "valores-validos": {}
+        },
+        {
+            "index": 25,
+            "esocial_id": 25,
+            "grupo-campo": "percTransf",
+            "grupo-pai": "infoPercTransf11096",
+            "elem": "E",
+            "tipo": "N",
+            "ocor": "1",
+            "tamanho": "1",
+            "dec": "-",
+            "descricao": "Informe o percentual de contribuição social devida em caso de transformação em sociedade de fins lucrativos - Lei 11.096/2005.\nValores válidos:\n1 - 0,2000\n2 - 0,4000\n3 - 0,6000\n4 - 0,8000\n5 - 1,0000",
+            "validacao": "-",
+            "valores-validos": {
+                "1": "1 - 0,2000",
+                "2": "2 - 0,4000",
+                "3": "3 - 0,6000",
+                "4": "4 - 0,8000",
+                "5": "5 - 1,0000"
+            }
         }
     ]
 }

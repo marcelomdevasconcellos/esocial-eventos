@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -242,7 +242,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data da alteração das informações.\nValidação: Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
-            "validacao": " Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
+            "validacao": "Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
             "valores-validos": {}
         },
         {
@@ -383,7 +383,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país de nacionalidade do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -425,7 +425,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Tipo de logradouro.\nValidação: Se informado, deve ser um código válido e existente na Tabela 20.",
-            "validacao": " Se informado, deve ser um código válido e existente na Tabela 20.",
+            "validacao": "Se informado, deve ser um código válido e existente na Tabela 20.",
             "valores-validos": {}
         },
         {
@@ -495,7 +495,7 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Deve ser preenchido apenas com números, com 8 (oito) posições.",
-            "validacao": " Deve ser preenchido apenas com números, com 8 (oito) posições.",
+            "validacao": "Deve ser preenchido apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
@@ -509,7 +509,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -551,7 +551,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código do país.\nValidação: Deve ser um código válido e existente na Tabela 06.",
-            "validacao": " Deve ser um código válido e existente na Tabela 06.",
+            "validacao": "Deve ser um código válido e existente na Tabela 06.",
             "valores-validos": {}
         },
         {
@@ -663,7 +663,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tempo de residência do trabalhador imigrante.\nValores válidos:\n1 - Prazo indeterminado\n2 - Prazo determinado\nValidação: Preenchimento obrigatório quando houver trabalhador com (dtAdm ou dtExercicio ou dtInicio) no Registro de Eventos Trabalhistas - RET >= [2021-07-19].",
-            "validacao": " Preenchimento obrigatório quando houver trabalhador com (dtAdm ou dtExercicio ou dtInicio) no Registro de Eventos Trabalhistas - RET >= [2021-07-19].",
+            "validacao": "Preenchimento obrigatório quando houver trabalhador com (dtAdm ou dtExercicio ou dtInicio) no Registro de Eventos Trabalhistas - RET >= [2021-07-19].",
             "valores-validos": {
                 "1": "1 - Prazo indeterminado",
                 "2": "2 - Prazo determinado"
@@ -680,7 +680,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Condição de ingresso do trabalhador imigrante.\nValores válidos:\n1 - Refugiado\n2 - Solicitante de refúgio\n3 - Permanência no Brasil em razão de reunião familiar\n4 - Beneficiado pelo acordo entre países do Mercosul\n5 - Dependente de agente diplomático e/ou consular de países que mantêm acordo de reciprocidade para o exercício de atividade remunerada no Brasil\n6 - Beneficiado pelo Tratado de Amizade, Cooperação e Consulta entre a República Federativa do Brasil e a República Portuguesa\n7 - Outra condição\nValidação: Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
-            "validacao": " Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
+            "validacao": "Se tmpResid = [1], não pode ser informado [2, 5]. Se tmpResid = [2], não pode ser informado [1].",
             "valores-validos": {
                 "1": "1 - Refugiado",
                 "2": "2 - Solicitante de refúgio",
@@ -818,7 +818,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Informar se o trabalhador preenche cota de pessoas com deficiência habilitadas ou de beneficiários reabilitados.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200 com tpRegTrab = [1] e ativo em dtAlteracao. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\nEsta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
-            "validacao": " Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200 com tpRegTrab = [1] e ativo em dtAlteracao. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\\ Esta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
+            "validacao": "Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200 com tpRegTrab = [1] e ativo em dtAlteracao. Somente pode ser informado [S] se pelo menos um dos campos a seguir estiver preenchido com [S]: defFisica, defVisual, defAuditiva, defMental, defIntelectual e reabReadap.\\ Esta validação não deve ser realizada quando se tratar de evento enviado em versão do leiaute anterior a S-1.0.",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -863,7 +863,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Tipo de dependente.\nValidação: Deve ser um código válido e existente na Tabela 07.",
-            "validacao": " Deve ser um código válido e existente na Tabela 07.",
+            "validacao": "Deve ser um código válido e existente na Tabela 07.",
             "valores-validos": {}
         },
         {
@@ -891,7 +891,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data de nascimento.\nValidação: Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
-            "validacao": " Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
+            "validacao": "Deve ser maior ou igual que 01/01/1890 e menor ou igual à data atual.",
             "valores-validos": {}
         },
         {
@@ -905,7 +905,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Número de inscrição no CPF.\nValidação: Deve ser um número de CPF válido, observando o que segue:\na) O preenchimento é obrigatório se depIRRF = [S];\nb) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\nc) Não pode haver mais de um dependente com o mesmo número de CPF.",
-            "validacao": " Deve ser um número de CPF válido, observando o que segue:\\ a) O preenchimento é obrigatório se depIRRF = [S];\\ b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\\ c) Não pode haver mais de um dependente com o mesmo número de CPF.",
+            "validacao": "Deve ser um número de CPF válido, observando o que segue:\\ a) O preenchimento é obrigatório se depIRRF = [S];\\ b) Em arquivo de empregador Pessoa Física, deve ser diferente do CPF informado em ideEmpregador;\\ c) Não pode haver mais de um dependente com o mesmo número de CPF.",
             "valores-validos": {}
         },
         {
@@ -919,7 +919,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Sexo do dependente.\nValores válidos:\nM - Masculino\nF - Feminino\nValidação: Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200, ativo em dtAlteracao e com {tpRegPrev} = [2] no RET.",
-            "validacao": " Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200, ativo em dtAlteracao e com {tpRegPrev} = [2] no RET.",
+            "validacao": "Preenchimento obrigatório e exclusivo quando houver trabalhador cadastrado no evento S-2200, ativo em dtAlteracao e com {tpRegPrev} = [2] no RET.",
             "valores-validos": {
                 "M": "M - Masculino",
                 "F": "F - Feminino"
@@ -1001,7 +1001,7 @@
             "tamanho": "8-13",
             "dec": "-",
             "descricao": "Número de telefone do trabalhador, com DDD.\nValidação: Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
-            "validacao": " Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
+            "validacao": "Se preenchido, deve conter apenas números, com o mínimo de dez dígitos.",
             "valores-validos": {}
         },
         {
@@ -1015,7 +1015,7 @@
             "tamanho": "6-60",
             "dec": "-",
             "descricao": "Endereço eletrônico.\nValidação: O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
-            "validacao": " O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
+            "validacao": "O e-mail deve ser possuir o caractere \"@\" e este não pode estar no início e no fim do e-mail. Deve possuir no mínimo um caractere \".\" depois do @ e não pode estar no início ou no final do e-mail.",
             "valores-validos": {}
         }
     ]

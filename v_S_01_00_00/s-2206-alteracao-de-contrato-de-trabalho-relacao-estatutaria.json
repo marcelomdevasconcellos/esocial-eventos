@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -228,7 +228,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula atribuída ao trabalhador pela empresa ou, no caso de servidor público, a matrícula constante no Sistema de Administração de Recursos Humanos do órgão.\nValidação: Deve corresponder à matrícula informada pelo empregador no evento S-2200 do respectivo vínculo trabalhista.",
-            "validacao": " Deve corresponder à matrícula informada pelo empregador no evento S-2200 do respectivo vínculo trabalhista.",
+            "validacao": "Deve corresponder à matrícula informada pelo empregador no evento S-2200 do respectivo vínculo trabalhista.",
             "valores-validos": {}
         },
         {
@@ -256,7 +256,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data da alteração das informações.\nValidação: Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
-            "validacao": " Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
+            "validacao": "Não pode ser posterior a 180 (cento e oitenta) dias da data atual.",
             "valores-validos": {}
         },
         {
@@ -270,7 +270,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data dos efeitos remuneratórios da alteração contratual.\nSe a alteração foi fruto de lei, acordo coletivo, convenção coletiva ou sentença normativa, informar a data a partir da qual a alteração produz efeitos remuneratórios.\nValidação: Deve ser uma data válida, igual ou posterior à data de admissão.",
-            "validacao": " Deve ser uma data válida, igual ou posterior à data de admissão.",
+            "validacao": "Deve ser uma data válida, igual ou posterior à data de admissão.",
             "valores-validos": {}
         },
         {
@@ -312,7 +312,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Tipo de regime previdenciário (ou Sistema de Proteção Social dos Militares).\nValores válidos:\n1 - Regime Geral de Previdência Social - RGPS\n2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares\n3 - Regime de Previdência Social no exterior\nValidação: Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [101, 102, 103, 105, 106, 107, 108, 111], não pode ser preenchido com [2].",
-            "validacao": " Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [101, 102, 103, 105, 106, 107, 108, 111], não pode ser preenchido com [2].",
+            "validacao": "Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [101, 102, 103, 105, 106, 107, 108, 111], não pode ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Regime Geral de Previdência Social - RGPS",
                 "2": "2 - Regime Próprio de Previdência Social - RPPS ou Sistema de Proteção Social dos Militares",
@@ -326,7 +326,7 @@
             "grupo-pai": "vinculo",
             "elem": "G",
             "tipo": "-",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
             "descricao": "Informações do regime trabalhista.",
@@ -377,7 +377,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Natureza da atividade.\nValores válidos:\n1 - Trabalho urbano\n2 - Trabalho rural\nValidação: Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
-            "validacao": " Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
+            "validacao": "Se codCateg = [104], deve ser preenchido com [1]. Se codCateg = [102], deve ser preenchido com [2].",
             "valores-validos": {
                 "1": "1 - Trabalho urbano",
                 "2": "2 - Trabalho rural"
@@ -394,7 +394,7 @@
             "tamanho": "1-2",
             "dec": "-",
             "descricao": "Mês relativo à data base da categoria profissional do trabalhador.\nValidação: Se informado, deve ser maior ou igual a 1 e menor ou igual a 12.",
-            "validacao": " Se informado, deve ser maior ou igual a 1 e menor ou igual a 12.",
+            "validacao": "Se informado, deve ser maior ou igual a 1 e menor ou igual a 12.",
             "valores-validos": {}
         },
         {
@@ -408,7 +408,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Preencher com o CNPJ do sindicato representativo da categoria (preponderante ou diferenciada).\nValidação: Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
-            "validacao": " Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "validacao": "Deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
         {
@@ -481,7 +481,7 @@
             "tamanho": "11 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do estabelecimento para o qual a contratação de aprendiz foi efetivada, de acordo com o tipo de inscrição indicado no campo aprend/tpInsc.\nValidação: Deve ser um identificador válido e:\na) Se aprend/tpInsc = [1], deve ser informado com 14 (catorze) algarismos. Se o empregador for pessoa jurídica, a raiz do CNPJ informado deve ser diferente de ideEmpregador/nrInsc.\nb) Se aprend/tpInsc = [2], deve ser diferente do CPF do empregado. Se o empregador for pessoa física, também deve ser diferente do CPF do empregador.",
-            "validacao": " Deve ser um identificador válido e:\\ a) Se aprend/tpInsc = [1], deve ser informado com 14 (catorze) algarismos. Se o empregador for pessoa jurídica, a raiz do CNPJ informado deve ser diferente de ideEmpregador/nrInsc.\\ b) Se aprend/tpInsc = [2], deve ser diferente do CPF do empregado. Se o empregador for pessoa física, também deve ser diferente do CPF do empregador.",
+            "validacao": "Deve ser um identificador válido e:\\ a) Se aprend/tpInsc = [1], deve ser informado com 14 (catorze) algarismos. Se o empregador for pessoa jurídica, a raiz do CNPJ informado deve ser diferente de ideEmpregador/nrInsc.\\ b) Se aprend/tpInsc = [2], deve ser diferente do CPF do empregado. Se o empregador for pessoa física, também deve ser diferente do CPF do empregador.",
             "valores-validos": {}
         },
         {
@@ -576,7 +576,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar o nome do cargo.\nValidação: O preenchimento é obrigatório, exceto se for relativo a servidor nomeado em cargo em comissão (no evento S-2200, tpRegTrab = [2] e tpProv = [2]).",
-            "validacao": " O preenchimento é obrigatório, exceto se for relativo a servidor nomeado em cargo em comissão (no evento S-2200, tpRegTrab = [2] e tpProv = [2]).",
+            "validacao": "O preenchimento é obrigatório, exceto se for relativo a servidor nomeado em cargo em comissão (no evento S-2200, tpRegTrab = [2] e tpProv = [2]).",
             "valores-validos": {}
         },
         {
@@ -590,7 +590,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a Classificação Brasileira de Ocupações - CBO relativa ao cargo.\nValidação: Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Informação obrigatória e exclusiva se nmCargo for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -604,7 +604,7 @@
             "tamanho": "1-100",
             "dec": "-",
             "descricao": "Informar o nome da função de confiança/cargo em comissão.\nValidação: Preenchimento obrigatório se for relativo a servidor nomeado em cargo em comissão (no evento S-2200, tpRegTrab = [2] e tpProv = [2]).",
-            "validacao": " Preenchimento obrigatório se for relativo a servidor nomeado em cargo em comissão (no evento S-2200, tpRegTrab = [2] e tpProv = [2]).",
+            "validacao": "Preenchimento obrigatório se for relativo a servidor nomeado em cargo em comissão (no evento S-2200, tpRegTrab = [2] e tpProv = [2]).",
             "valores-validos": {}
         },
         {
@@ -618,7 +618,7 @@
             "tamanho": "6",
             "dec": "-",
             "descricao": "Informar a CBO relativa à função de confiança/cargo em comissão.\nValidação: Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
-            "validacao": " Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
+            "validacao": "Informação obrigatória e exclusiva se nmFuncao for preenchido. Se informado, deve ser um código válido e existente na tabela de CBO, com 6 (seis) posições.",
             "valores-validos": {}
         },
         {
@@ -632,7 +632,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Informar se o cargo, emprego ou função pública é acumulável.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório se a natureza jurídica do declarante for igual a 1XX-X, 201-1 ou 203-8.",
-            "validacao": " Preenchimento obrigatório se a natureza jurídica do declarante for igual a 1XX-X, 201-1 ou 203-8.",
+            "validacao": "Preenchimento obrigatório se a natureza jurídica do declarante for igual a 1XX-X, 201-1 ou 203-8.",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -649,7 +649,7 @@
             "tamanho": "3",
             "dec": "-",
             "descricao": "Preencher com o código da categoria do trabalhador.\nValidação: Deve ser um código válido e existente na Tabela 01.",
-            "validacao": " Deve ser um código válido e existente na Tabela 01.",
+            "validacao": "Deve ser um código válido e existente na Tabela 01.",
             "valores-validos": {}
         },
         {
@@ -677,7 +677,7 @@
             "tamanho": "1-14",
             "dec": "2",
             "descricao": "Salário base do trabalhador, correspondente à parte fixa da remuneração.\nValidação: Se undSalFixo for igual a [7], preencher com 0 (zero).",
-            "validacao": " Se undSalFixo for igual a [7], preencher com 0 (zero).",
+            "validacao": "Se undSalFixo for igual a [7], preencher com 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -713,7 +713,7 @@
             "tamanho": "1-999",
             "dec": "-",
             "descricao": "Descrição do salário por tarefa ou variável e como este é calculado. Ex.: Comissões pagas no percentual de 10% sobre as vendas.\nValidação: Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
-            "validacao": " Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
+            "validacao": "Preenchimento obrigatório se undSalFixo for igual a [6, 7].",
             "valores-validos": {}
         },
         {
@@ -759,7 +759,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data do término do contrato por prazo determinado.\nValidação: O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Se preenchido, deve ser igual ou posterior à data de admissão (no caso de transferência ou mudança de CPF, igual ou posterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200, conforme o caso).",
-            "validacao": " O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Se preenchido, deve ser igual ou posterior à data de admissão (no caso de transferência ou mudança de CPF, igual ou posterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200, conforme o caso).",
+            "validacao": "O preenchimento é obrigatório se tpContr = [2]. Não informar se tpContr = [1]. Se preenchido, deve ser igual ou posterior à data de admissão (no caso de transferência ou mudança de CPF, igual ou posterior a sucessaoVinc/dtTransf, transfDom/dtTransf ou dtAltCPF do evento S-2200, conforme o caso).",
             "valores-validos": {}
         },
         {
@@ -773,7 +773,7 @@
             "tamanho": "1-255",
             "dec": "-",
             "descricao": "Indicação do objeto determinante da contratação por prazo determinado (obra, serviço, safra, etc.).\nValidação: O preenchimento é obrigatório e exclusivo se tpContr = [3].",
-            "validacao": " O preenchimento é obrigatório e exclusivo se tpContr = [3].",
+            "validacao": "O preenchimento é obrigatório e exclusivo se tpContr = [3].",
             "valores-validos": {}
         },
         {
@@ -833,7 +833,7 @@
             "tamanho": "12 ou 14",
             "dec": "-",
             "descricao": "Informar o número de inscrição do contribuinte de acordo com o tipo de inscrição indicado no campo localTrabGeral/tpInsc.\nValidação: Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005), bem como compatível com localTrabGeral/tpInsc.",
-            "validacao": " Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005), bem como compatível com localTrabGeral/tpInsc.",
+            "validacao": "Deve ser um número de inscrição válido e existente na Tabela de Estabelecimentos (S-1005), bem como compatível com localTrabGeral/tpInsc.",
             "valores-validos": {}
         },
         {
@@ -875,7 +875,7 @@
             "tamanho": "1-4",
             "dec": "-",
             "descricao": "Tipo de logradouro.\nValidação: Se informado, deve ser um código válido e existente na Tabela 20.",
-            "validacao": " Se informado, deve ser um código válido e existente na Tabela 20.",
+            "validacao": "Se informado, deve ser um código válido e existente na Tabela 20.",
             "valores-validos": {}
         },
         {
@@ -945,7 +945,7 @@
             "tamanho": "8",
             "dec": "-",
             "descricao": "Código de Endereçamento Postal - CEP.\nValidação: Deve ser preenchido apenas com números, com 8 (oito) posições.",
-            "validacao": " Deve ser preenchido apenas com números, com 8 (oito) posições.",
+            "validacao": "Deve ser preenchido apenas com números, com 8 (oito) posições.",
             "valores-validos": {}
         },
         {
@@ -959,7 +959,7 @@
             "tamanho": "7",
             "dec": "-",
             "descricao": "Preencher com o código do município, conforme tabela do IBGE.\nValidação: Deve ser um código válido e existente na tabela do IBGE.",
-            "validacao": " Deve ser um código válido e existente na tabela do IBGE.",
+            "validacao": "Deve ser um código válido e existente na tabela do IBGE.",
             "valores-validos": {}
         },
         {
@@ -1001,7 +1001,7 @@
             "tamanho": "1-4",
             "dec": "2",
             "descricao": "Quantidade média de horas relativas à jornada semanal do trabalhador.\nValidação: Deve ser preenchida se codCateg for diferente de [111]. Se informada, deve ser maior que 0 (zero).",
-            "validacao": " Deve ser preenchida se codCateg for diferente de [111]. Se informada, deve ser maior que 0 (zero).",
+            "validacao": "Deve ser preenchida se codCateg for diferente de [111]. Se informada, deve ser maior que 0 (zero).",
             "valores-validos": {}
         },
         {
@@ -1037,7 +1037,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Preencher com o código relativo ao tipo de contrato em tempo parcial.\nValores válidos:\n0 - Não é contrato em tempo parcial\n1 - Limitado a 25 horas semanais\n2 - Limitado a 30 horas semanais\n3 - Limitado a 26 horas semanais\nValidação: O código [1] só é válido se codCateg = [104]. Os códigos [2, 3] não são válidos se codCateg = [104].",
-            "validacao": " O código [1] só é válido se codCateg = [104]. Os códigos [2, 3] não são válidos se codCateg = [104].",
+            "validacao": "O código [1] só é válido se codCateg = [104]. Os códigos [2, 3] não são válidos se codCateg = [104].",
             "valores-validos": {
                 "0": "0 - Não é contrato em tempo parcial",
                 "1": "1 - Limitado a 25 horas semanais",
@@ -1056,7 +1056,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicar se a jornada semanal possui horário noturno (no todo ou em parte).\nValores válidos:\nS - Sim\nN - Não\nValidação: Informação obrigatória se codCateg for diferente de [111].",
-            "validacao": " Informação obrigatória se codCateg for diferente de [111].",
+            "validacao": "Informação obrigatória se codCateg for diferente de [111].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -1101,7 +1101,7 @@
             "tamanho": "20",
             "dec": "-",
             "descricao": "Preencher com o número do processo judicial.\nValidação: Deve ser um número de processo judicial válido.",
-            "validacao": " Deve ser um número de processo judicial válido.",
+            "validacao": "Deve ser um número de processo judicial válido.",
             "valores-validos": {}
         },
         {
@@ -1157,7 +1157,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Informar o código do treinamento, capacitação, exercício simulado ou outra anotação, conforme Tabela 28.\nValidação: Deve ser um código válido e existente na Tabela 28.",
-            "validacao": " Deve ser um código válido e existente na Tabela 28.",
+            "validacao": "Deve ser um código válido e existente na Tabela 28.",
             "valores-validos": {}
         }
     ]

@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -253,7 +253,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de cessação do benefício.\nValidação: Deve ser igual ou anterior à data atual. No caso de benefício reativado, também deve ser uma data igual ou posterior a dtEfetReativ do evento S-2418.",
-            "validacao": " Deve ser igual ou anterior à data atual. No caso de benefício reativado, também deve ser uma data igual ou posterior a dtEfetReativ do evento S-2418.",
+            "validacao": "Deve ser igual ou anterior à data atual. No caso de benefício reativado, também deve ser uma data igual ou posterior a dtEfetReativ do evento S-2418.",
             "valores-validos": {}
         },
         {
@@ -267,7 +267,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Motivo da cessação do benefício.\nValidação: Deve ser um código válido e existente na Tabela 26.",
-            "validacao": " Deve ser um código válido e existente na Tabela 26.",
+            "validacao": "Deve ser um código válido e existente na Tabela 26.",
             "valores-validos": {}
         },
         {
@@ -281,7 +281,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Informar o CNPJ do órgão público sucessor.\nValidação: Preenchimento obrigatório e exclusivo se mtvTermino = [09].\nDeve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
-            "validacao": " Preenchimento obrigatório e exclusivo se mtvTermino = [09].\\ Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
+            "validacao": "Preenchimento obrigatório e exclusivo se mtvTermino = [09].\\ Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
             "valores-validos": {}
         },
         {
@@ -295,7 +295,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o novo CPF do beneficiário.\nValidação: Preenchimento obrigatório e exclusivo se mtvTermino = [10].\nDeve ser um CPF válido e diferente do antigo CPF do beneficiário.",
-            "validacao": " Preenchimento obrigatório e exclusivo se mtvTermino = [10].\\ Deve ser um CPF válido e diferente do antigo CPF do beneficiário.",
+            "validacao": "Preenchimento obrigatório e exclusivo se mtvTermino = [10].\\ Deve ser um CPF válido e diferente do antigo CPF do beneficiário.",
             "valores-validos": {}
         }
     ]

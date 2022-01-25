@@ -87,7 +87,7 @@
             "tamanho": "23",
             "dec": "-",
             "descricao": "Preencher com o número do recibo do arquivo a ser retificado.\nValidação: O preenchimento é obrigatório se indRetif = [2].\nDeve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
-            "validacao": " O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
+            "validacao": "O preenchimento é obrigatório se indRetif = [2].\\ Deve ser um recibo de entrega válido, correspondente ao arquivo que está sendo retificado.",
             "valores-validos": {}
         },
         {
@@ -211,7 +211,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Informar o CPF do beneficiário.\nValidação: Deve observar o que segue:\na) Se cadIni = [S], deve estar cadastrado no evento S-2400 com data de início igual à data de obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\nb) Se indSitBenef = [1], deve estar cadastrado no evento S-2400 com data de início igual ou anterior a dtIniBeneficio (ou a dtPublic, caso este campo tenha sido informado);\nc) Se indSitBenef = [2, 3], deve estar cadastrado no evento S-2400 com data de início igual ou anterior a dtTransf ou dtAltCPF, respectivamente.",
-            "validacao": " Deve observar o que segue:\\ a) Se cadIni = [S], deve estar cadastrado no evento S-2400 com data de início igual à data de obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\\ b) Se indSitBenef = [1], deve estar cadastrado no evento S-2400 com data de início igual ou anterior a dtIniBeneficio (ou a dtPublic, caso este campo tenha sido informado);\\ c) Se indSitBenef = [2, 3], deve estar cadastrado no evento S-2400 com data de início igual ou anterior a dtTransf ou dtAltCPF, respectivamente.",
+            "validacao": "Deve observar o que segue:\\ a) Se cadIni = [S], deve estar cadastrado no evento S-2400 com data de início igual à data de obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\\ b) Se indSitBenef = [1], deve estar cadastrado no evento S-2400 com data de início igual ou anterior a dtIniBeneficio (ou a dtPublic, caso este campo tenha sido informado);\\ c) Se indSitBenef = [2, 3], deve estar cadastrado no evento S-2400 com data de início igual ou anterior a dtTransf ou dtAltCPF, respectivamente.",
             "valores-validos": {}
         },
         {
@@ -225,7 +225,7 @@
             "tamanho": "1-30",
             "dec": "-",
             "descricao": "Matrícula do servidor/militar constante no Sistema de Administração de Recursos Humanos do órgão cujo vínculo deu ensejo ao benefício. No caso de pensão por morte, informar a matrícula do instituidor da pensão.\nValidação: Informação obrigatória se cadIni = [N] e tpBeneficio pertencer ao grupo [01, 02, 03, 04, 05, 06, 11] da Tabela 25.",
-            "validacao": " Informação obrigatória se cadIni = [N] e tpBeneficio pertencer ao grupo [01, 02, 03, 04, 05, 06, 11] da Tabela 25.",
+            "validacao": "Informação obrigatória se cadIni = [N] e tpBeneficio pertencer ao grupo [01, 02, 03, 04, 05, 06, 11] da Tabela 25.",
             "valores-validos": {}
         },
         {
@@ -238,8 +238,8 @@
             "ocor": "0-1",
             "tamanho": "14",
             "dec": "-",
-            "descricao": "Preencher com o CNPJ do órgão público responsável pela matrícula do servidor/militar. Informação obrigatória se cadIni = [N], desde que haja informação de matrícula e que o CNPJ seja diferente do CNPJ do órgão declarante.\nValidação: Preenchimento obrigatório se cadIni = [N] e houver informação de matricula, exceto se existir vínculo (evento S-2200) para o beneficiário (indicado em cpfBenef e matricula) no órgão declarante.\nSe informado, deve ser um CNPJ válido e diferente do CNPJ do órgão público declarante, com 14 (catorze) algarismos.",
-            "validacao": " Preenchimento obrigatório se cadIni = [N] e houver informação de matricula, exceto se existir vínculo (evento S-2200) para o beneficiário (indicado em cpfBenef e matricula) no órgão declarante.\\ Se informado, deve ser um CNPJ válido e diferente do CNPJ do órgão público declarante, com 14 (catorze) algarismos.",
+            "descricao": "Preencher com o CNPJ do órgão público responsável pela matrícula do servidor/militar. Informação obrigatória se cadIni = [N], desde que haja informação de matrícula e que o CNPJ seja diferente do CNPJ do órgão declarante.\nValidação: Preenchimento obrigatório se cadIni = [N] e houver informação de matricula, exceto se existir vínculo (evento S-2200) no órgão declarante para o beneficiário (indicado em cpfBenef e matricula) ou, se tpBeneficio pertencer ao grupo [06] da Tabela 25, para o instituidor da pensão por morte (indicado em cpfInst e matricula).\nSe informado, deve ser um CNPJ válido e diferente do CNPJ do órgão público declarante, com 14 (catorze) algarismos.",
+            "validacao": "Preenchimento obrigatório se cadIni = [N] e houver informação de matricula, exceto se existir vínculo (evento S-2200) no órgão declarante para o beneficiário (indicado em cpfBenef e matricula) ou, se tpBeneficio pertencer ao grupo [06] da Tabela 25, para o instituidor da pensão por morte (indicado em cpfInst e matricula).\\ Se informado, deve ser um CNPJ válido e diferente do CNPJ do órgão público declarante, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
         {
@@ -284,7 +284,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Indicar a situação do benefício no órgão declarante.\nValores válidos:\n1 - Benefício concedido pelo próprio órgão declarante\n2 - Benefício transferido de outro órgão\n3 - Mudança de CPF do beneficiário\nValidação: Preenchimento obrigatório e exclusivo se cadIni = [N].",
-            "validacao": " Preenchimento obrigatório e exclusivo se cadIni = [N].",
+            "validacao": "Preenchimento obrigatório e exclusivo se cadIni = [N].",
             "valores-validos": {
                 "1": "1 - Benefício concedido pelo próprio órgão declarante",
                 "2": "2 - Benefício transferido de outro órgão",
@@ -316,7 +316,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de início do benefício.\nValidação: Deve observar o que segue:\na) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\nb) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial e igual ou anterior à data atual.",
-            "validacao": " Deve observar o que segue:\\ a) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\\ b) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial e igual ou anterior à data atual.",
+            "validacao": "Deve observar o que segue:\\ a) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\\ b) Se cadIni = [N], deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial e igual ou anterior à data atual.",
             "valores-validos": {}
         },
         {
@@ -330,7 +330,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Informar a data de publicação da concessão do benefício, somente quando o ato concessório tiver vigência retroativa.\nValidação: Deve ser posterior a dtIniBeneficio.",
-            "validacao": " Deve ser posterior a dtIniBeneficio.",
+            "validacao": "Deve ser posterior a dtIniBeneficio.",
             "valores-validos": {}
         },
         {
@@ -358,7 +358,7 @@
             "tamanho": "4",
             "dec": "-",
             "descricao": "Tipo de benefício.\nValidação: Deve ser um código válido e existente na Tabela 25. Se cadIni = [N], não é permitido utilizar código do grupo [08] dessa tabela.",
-            "validacao": " Deve ser um código válido e existente na Tabela 25. Se cadIni = [N], não é permitido utilizar código do grupo [08] dessa tabela.",
+            "validacao": "Deve ser um código válido e existente na Tabela 25. Se cadIni = [N], não é permitido utilizar código do grupo [08] dessa tabela.",
             "valores-validos": {}
         },
         {
@@ -391,7 +391,7 @@
             "tamanho": "1-255",
             "dec": "-",
             "descricao": "Descrição do instrumento ou situação que originou o pagamento do benefício.\nValidação: Preenchimento obrigatório se tpBeneficio = [0909, 1001, 1009].",
-            "validacao": " Preenchimento obrigatório se tpBeneficio = [0909, 1001, 1009].",
+            "validacao": "Preenchimento obrigatório se tpBeneficio = [0909, 1001, 1009].",
             "valores-validos": {}
         },
         {
@@ -405,7 +405,7 @@
             "tamanho": "1",
             "dec": "-",
             "descricao": "Informar se o benefício foi concedido por determinação judicial.\nValores válidos:\nS - Sim\nN - Não\nValidação: Preenchimento obrigatório se cadIni = [N].",
-            "validacao": " Preenchimento obrigatório se cadIni = [N].",
+            "validacao": "Preenchimento obrigatório se cadIni = [N].",
             "valores-validos": {
                 "S": "S - Sim",
                 "N": "N - Não"
@@ -467,7 +467,7 @@
             "tamanho": "11",
             "dec": "-",
             "descricao": "Preencher com o CPF do instituidor da pensão por morte.\nValidação: Deve ser um CPF válido e diferente do CPF do beneficiário.",
-            "validacao": " Deve ser um CPF válido e diferente do CPF do beneficiário.",
+            "validacao": "Deve ser um CPF válido e diferente do CPF do beneficiário.",
             "valores-validos": {}
         },
         {
@@ -509,7 +509,7 @@
             "tamanho": "14",
             "dec": "-",
             "descricao": "Informar o CNPJ do órgão público anterior.\nValidação: Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
-            "validacao": " Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
+            "validacao": "Deve ser um CNPJ válido e diferente da inscrição do declarante, considerando as particularidades aplicadas à informação de CNPJ de órgão público em S-1000. Além disso, deve possuir 14 (catorze) algarismos e ser diferente do CNPJ base do órgão público declarante (exceto se ideEmpregador/nrInsc tiver 14 (catorze) algarismos) e dos estabelecimentos informados através do evento S-1005.",
             "valores-validos": {}
         },
         {
@@ -537,7 +537,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Preencher com a data da transferência do benefício para o órgão público declarante.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser posterior à data de início do benefício;\nb) Deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial e igual ou anterior à data atual.",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de início do benefício;\\ b) Deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial e igual ou anterior à data atual.",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser posterior à data de início do benefício;\\ b) Deve ser igual ou posterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial e igual ou anterior à data atual.",
             "valores-validos": {}
         },
         {
@@ -649,7 +649,7 @@
             "tamanho": "-",
             "dec": "-",
             "descricao": "Data de cessação do benefício.\nValidação: Devem ser observadas as seguintes regras:\na) Deve ser igual ou posterior à data de início do benefício;\nb) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\nc) Se indSitBenef = [2], deve ser anterior a dtTransf.",
-            "validacao": " Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de início do benefício;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\\ c) Se indSitBenef = [2], deve ser anterior a dtTransf.",
+            "validacao": "Devem ser observadas as seguintes regras:\\ a) Deve ser igual ou posterior à data de início do benefício;\\ b) Se cadIni = [S], deve ser anterior à data de início da obrigatoriedade dos eventos não periódicos para o ente público no eSocial;\\ c) Se indSitBenef = [2], deve ser anterior a dtTransf.",
             "valores-validos": {}
         },
         {
@@ -663,7 +663,7 @@
             "tamanho": "2",
             "dec": "-",
             "descricao": "Motivo da cessação do benefício.\nValidação: Deve ser um código válido e existente na Tabela 26, com exceção dos códigos [09, 10].",
-            "validacao": " Deve ser um código válido e existente na Tabela 26, com exceção dos códigos [09, 10].",
+            "validacao": "Deve ser um código válido e existente na Tabela 26, com exceção dos códigos [09, 10].",
             "valores-validos": {}
         }
     ]
