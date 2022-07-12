@@ -770,8 +770,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo de inscrição do proprietário do CNO.\nValores válidos:\n1 - CNPJ\n2 - CPF",
-            "validacao": "-",
+            "descricao": "Tipo de inscrição do proprietário do CNO.\nValores válidos:\n1 - CNPJ\n2 - CPF\nValidação: Retornar tpInscProp de S-1020. Caso esse campo não tenha sido informado, retornar tpInscContrat.",
+            "validacao": "Retornar tpInscProp de S-1020. Caso esse campo não tenha sido informado, retornar tpInscContrat.",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "2": "2 - CPF"
@@ -787,8 +787,8 @@
             "ocor": "1",
             "tamanho": "11 ou 14",
             "dec": "-",
-            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.",
-            "validacao": "-",
+            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Retornar nrInscProp de S-1020. Caso esse campo não tenha sido informado, retornar nrInscContrat.",
+            "validacao": "Retornar nrInscProp de S-1020. Caso esse campo não tenha sido informado, retornar nrInscContrat.",
             "valores-validos": {}
         },
         {

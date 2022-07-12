@@ -1151,7 +1151,7 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo de admissão do trabalhador.\nValores válidos:\n1 - Admissão\n2 - Transferência de empresa do mesmo grupo econômico ou transferência entre órgãos do mesmo Ente Federativo\n3 - Transferência de empresa consorciada ou de consórcio\n4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão\n5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar\n6 - Mudança de CPF\nValidação: Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\nSe for igual a [6], cadIni deve ser igual a [N].",
+            "descricao": "Tipo de admissão do trabalhador.\nValores válidos:\n1 - Admissão\n2 - Transferência de empresa do mesmo grupo econômico ou transferência entre órgãos do mesmo Ente Federativo\n3 - Transferência de empresa consorciada ou de consórcio\n4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão\n5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar\n6 - Mudança de CPF\n7 - Transferência quando a empresa sucedida é considerada inapta por inexistência de fato\nValidação: Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\nSe for igual a [6], cadIni deve ser igual a [N].",
             "validacao": "Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\\ Se for igual a [6], cadIni deve ser igual a [N].",
             "valores-validos": {
                 "1": "1 - Admissão",
@@ -1159,7 +1159,8 @@
                 "3": "3 - Transferência de empresa consorciada ou de consórcio",
                 "4": "4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão",
                 "5": "5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar",
-                "6": "6 - Mudança de CPF"
+                "6": "6 - Mudança de CPF",
+                "7": "7 - Transferência quando a empresa sucedida é considerada inapta por inexistência de fato"
             }
         },
         {
@@ -1473,18 +1474,19 @@
             "ocor": "1",
             "tamanho": "1-2",
             "dec": "-",
-            "descricao": "Preencher com o tipo de provimento.\nValores válidos:\n1 - Nomeação em cargo efetivo\n2 - Nomeação exclusivamente em cargo em comissão\n3 - Incorporação, matrícula ou nomeação (militar)\n5 - Redistribuição\n6 - Diplomação\n7 - Contratação por tempo determinado\n8 - Remoção (em caso de alteração do órgão declarante)\n9 - Designação\n10 - Mudança de CPF\n99 - Outros não relacionados acima\nValidação: Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\nSe codCateg = [302], deve ser preenchido com [2].",
-            "validacao": "Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\\ Se codCateg = [302], deve ser preenchido com [2].",
+            "descricao": "Preencher com o tipo de provimento.\nValores válidos:\n1 - Nomeação em cargo efetivo\n2 - Nomeação exclusivamente em cargo em comissão\n3 - Incorporação, matrícula ou nomeação (militar)\n5 - Redistribuição ou Reforma Administrativa\n6 - Diplomação\n7 - Contratação por tempo determinado\n8 - Remoção (em caso de alteração do órgão declarante)\n9 - Designação\n10 - Mudança de CPF\n11 - Estabilizados - Art. 19 do ADCT\n99 - Outros não relacionados acima\nValidação: Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\nSe codCateg = [302], deve ser preenchido com [2, 5, 8, 10].",
+            "validacao": "Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\\ Se codCateg = [302], deve ser preenchido com [2, 5, 8, 10].",
             "valores-validos": {
                 "1": "1 - Nomeação em cargo efetivo",
                 "2": "2 - Nomeação exclusivamente em cargo em comissão",
                 "3": "3 - Incorporação, matrícula ou nomeação (militar)",
-                "5": "5 - Redistribuição",
+                "5": "5 - Redistribuição ou Reforma Administrativa",
                 "6": "6 - Diplomação",
                 "7": "7 - Contratação por tempo determinado",
                 "8": "8 - Remoção (em caso de alteração do órgão declarante)",
                 "9": "9 - Designação",
                 "10": "10 - Mudança de CPF",
+                "11": "11 - Estabilizados - Art. 19 do ADCT",
                 "99": "99 - Outros não relacionados acima"
             }
         },

@@ -500,8 +500,8 @@
             "ocor": "0-1",
             "tamanho": "11 ou 14",
             "dec": "-",
-            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
-            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
+            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp.",
             "valores-validos": {}
         },
         {
@@ -874,8 +874,8 @@
             "ocor": "0-1",
             "tamanho": "11 ou 14",
             "dec": "-",
-            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
-            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
+            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp.",
             "valores-validos": {}
         },
         {

@@ -301,8 +301,8 @@
             "ocor": "0-1",
             "tamanho": "4",
             "dec": "-",
-            "descricao": "Hora do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório e exclusivo se tpAcid = [1, 3]. Se informada, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\nSe tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
-            "validacao": "Preenchimento obrigatório e exclusivo se tpAcid = [1, 3]. Se informada, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\\ Se tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
+            "descricao": "Hora do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório se tpAcid = [1] ou se (tpAcid = [3] e dtAcid >= [2022-01-26]). Não informar se tpAcid = [2]. Se preenchida, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\nSe tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
+            "validacao": "Preenchimento obrigatório se tpAcid = [1] ou se (tpAcid = [3] e dtAcid >= [2022-01-26]). Não informar se tpAcid = [2]. Se preenchida, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\\ Se tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
             "valores-validos": {}
         },
         {
@@ -315,8 +315,8 @@
             "ocor": "0-1",
             "tamanho": "4",
             "dec": "-",
-            "descricao": "Horas trabalhadas antes da ocorrência do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
-            "validacao": "Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
+            "descricao": "Horas trabalhadas antes da ocorrência do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório se tpAcid = [1] ou se (tpAcid = [3] e dtAcid >= [2022-07-20]). Não informar se tpAcid = [2]. Se preenchida, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
+            "validacao": "Preenchimento obrigatório se tpAcid = [1] ou se (tpAcid = [3] e dtAcid >= [2022-07-20]). Não informar se tpAcid = [2]. Se preenchida, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
             "valores-validos": {}
         },
         {
@@ -958,7 +958,7 @@
             "ocor": "1",
             "tamanho": "1-14",
             "dec": "-",
-            "descricao": "Número de inscrição no órgão de classe.",
+            "descricao": "Número de inscrição no órgão de classe ou Registro do Ministério da Saúde (RMS).",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -969,11 +969,11 @@
             "grupo-pai": "emitente",
             "elem": "E",
             "tipo": "C",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "2",
             "dec": "-",
-            "descricao": "Sigla da UF do órgão de classe.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO",
-            "validacao": "-",
+            "descricao": "Sigla da UF do órgão de classe.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO\nValidação: Preenchimento obrigatório se ideOC = [1, 2].",
+            "validacao": "Preenchimento obrigatório se ideOC = [1, 2].",
             "valores-validos": {}
         },
         {

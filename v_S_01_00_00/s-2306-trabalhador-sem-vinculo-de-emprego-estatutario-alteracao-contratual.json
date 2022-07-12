@@ -27,7 +27,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Alteração Contratual.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
+            "descricao": "Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Alteração Contratual.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -561,7 +561,7 @@
             "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Informações do estagiário.",
+            "descricao": "Informações relativas ao estagiário ou ao beneficiário do Programa Nacional de Prestação de Serviço Civil Voluntário.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -575,8 +575,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Natureza do estágio.\nValores válidos:\nO - Obrigatório\nN - Não obrigatório",
-            "validacao": "-",
+            "descricao": "Natureza do estágio ou da prestação de serviço civil voluntário.\nValores válidos:\nO - Obrigatório\nN - Não obrigatório\nValidação: Se o código de categoria for igual a [906], deve ser preenchido com [N].",
+            "validacao": "Se o código de categoria for igual a [906], deve ser preenchido com [N].",
             "valores-validos": {
                 "O": "O - Obrigatório",
                 "N": "N - Não obrigatório"
@@ -589,11 +589,11 @@
             "grupo-pai": "infoEstagiario",
             "elem": "E",
             "tipo": "N",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Informar o nível do estágio.\nValores válidos:\n1 - Fundamental\n2 - Médio\n3 - Formação profissional\n4 - Superior\n8 - Especial\n9 - Mãe social (Lei 7.644/1987)",
-            "validacao": "-",
+            "descricao": "Informar o nível do estágio ou da prestação de serviço civil voluntário.\nValores válidos:\n1 - Fundamental\n2 - Médio\n3 - Formação profissional\n4 - Superior\n8 - Especial\n9 - Mãe social (Lei 7.644/1987)\nValidação: Preenchimento obrigatório se o código de categoria for igual a [901]. Se o código de categoria for igual a [906], não pode ser informado [9].",
+            "validacao": "Preenchimento obrigatório se o código de categoria for igual a [901]. Se o código de categoria for igual a [906], não pode ser informado [9].",
             "valores-validos": {
                 "1": "1 - Fundamental",
                 "2": "2 - Médio",
@@ -613,7 +613,7 @@
             "ocor": "0-1",
             "tamanho": "1-100",
             "dec": "-",
-            "descricao": "Área de atuação do estagiário.",
+            "descricao": "Área de atuação do estagiário ou, no caso de prestação de serviço civil voluntário, jornada semanal do desempenho de atividades em formato decimal.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -641,8 +641,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data prevista para o término do estágio.\nValidação: Deve ser uma data posterior à data de início do estágio.",
-            "validacao": "Deve ser uma data posterior à data de início do estágio.",
+            "descricao": "Data prevista para o término do estágio ou da prestação de serviço civil voluntário.\nValidação: Deve ser uma data posterior à data de início do estágio ou da prestação de serviço civil voluntário.",
+            "validacao": "Deve ser uma data posterior à data de início do estágio ou da prestação de serviço civil voluntário.",
             "valores-validos": {}
         },
         {
@@ -655,7 +655,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Instituição de ensino.",
+            "descricao": "Instituição de ensino ou entidade de formação/qualificação.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -669,7 +669,7 @@
             "ocor": "0-1",
             "tamanho": "14",
             "dec": "-",
-            "descricao": "Preencher com o CNPJ da instituição de ensino. Deve ser preenchido apenas se a instituição de ensino for brasileira.\nValidação: Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "descricao": "Preencher com o CNPJ da instituição de ensino, no caso de estágio, ou da entidade de formação/qualificação, no caso de prestação de serviço civil voluntário. Deve ser preenchido apenas se a instituição/entidade for brasileira.\nValidação: Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "validacao": "Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },

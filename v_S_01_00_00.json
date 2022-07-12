@@ -1524,7 +1524,7 @@
             "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Grupo preenchido obrigatória e exclusivamente por empresa construtora e com indDesFolha em S-1000 = [1], relacionando os estabelecimentos inscritos no Cadastro Nacional de Obras - CNO, para indicar a substituição ou não da contribuição patronal incidente sobre a remuneração dos trabalhadores de obra de construção civil.",
+            "descricao": "Grupo preenchido obrigatória e exclusivamente por empresa construtora, relacionando os estabelecimentos inscritos no Cadastro Nacional de Obras - CNO, para indicar a substituição ou não da contribuição patronal incidente sobre a remuneração dos trabalhadores de obra de construção civil.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -1976,7 +1976,7 @@
             "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Grupo preenchido obrigatória e exclusivamente por empresa construtora e com indDesFolha em S-1000 = [1], relacionando os estabelecimentos inscritos no Cadastro Nacional de Obras - CNO, para indicar a substituição ou não da contribuição patronal incidente sobre a remuneração dos trabalhadores de obra de construção civil.",
+            "descricao": "Grupo preenchido obrigatória e exclusivamente por empresa construtora, relacionando os estabelecimentos inscritos no Cadastro Nacional de Obras - CNO, para indicar a substituição ou não da contribuição patronal incidente sobre a remuneração dos trabalhadores de obra de construção civil.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -3867,8 +3867,8 @@
             "ocor": "0-1",
             "tamanho": "11 ou 14",
             "dec": "-",
-            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
-            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
+            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp.",
             "valores-validos": {}
         },
         {
@@ -4241,8 +4241,8 @@
             "ocor": "0-1",
             "tamanho": "11 ou 14",
             "dec": "-",
-            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
-            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp, e constar como responsável no cadastro do CNO.",
+            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp.",
+            "validacao": "Preenchimento obrigatório e exclusivo se tpInscProp for informado. Deve ser um número de CNPJ ou CPF válido, conforme indicado em tpInscProp.",
             "valores-validos": {}
         },
         {
@@ -5322,7 +5322,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Remuneração de Trabalhador vinculado ao Regime Geral de Previdência Social.\nRegras de validação:\nREGRA_BLOQUEIA_USO_CPF_EMPREGADOR\nREGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB\nREGRA_COMPATIB_REGIME_PREV\nREGRA_CONTROLE_DUPLICIDADE\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_REMUN_ANUAL_DEZEMBRO\nREGRA_REMUN_CATEG_COMPATIVEL_TPLOTACAO\nREGRA_REMUN_CATEG_EXISTENTE_RET\nREGRA_REMUN_FGTS_ANTERIOR_ESOCIAL\nREGRA_REMUN_IND_RETIFICACAO\nREGRA_REMUN_JA_EXISTE_DESLIGAMENTO\nREGRA_REMUN_PERMITE_EXCLUSAO\nREGRA_REMUN_TRAB_EXISTENTE_RET\nREGRA_REMUN_VALIDA_INFO_COMPLEMENTAR\nREGRA_RUBRICA_COMPATIVEL_CATEGORIA\nREGRA_RUBRICA_COMPATIVEL_DECTERCEIRO\nREGRA_RUBRICA_COMPATIVEL_RESC\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_PERIODO_APURACAO",
+            "descricao": "Evento Remuneração de Trabalhador vinculado ao Regime Geral de Previdência Social.\nRegras de validação:\nREGRA_BLOQUEIA_USO_CPF_EMPREGADOR\nREGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB\nREGRA_COMPATIB_REGIME_PREV\nREGRA_CONTROLE_DUPLICIDADE\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_REMUN_ANUAL_DEZEMBRO\nREGRA_REMUN_CATEG_COMPATIVEL_TPLOTACAO\nREGRA_REMUN_CATEG_EXISTENTE_RET\nREGRA_REMUN_FGTS_ANTERIOR_ESOCIAL\nREGRA_REMUN_IND_RETIFICACAO\nREGRA_REMUN_JA_EXISTE_DESLIGAMENTO\nREGRA_REMUN_PERMITE_EXCLUSAO\nREGRA_REMUN_TRAB_EXISTENTE_RET\nREGRA_REMUN_VALIDA_INFO_COMPLEMENTAR\nREGRA_RUBRICA_COMPATIVEL_CATEGORIA\nREGRA_RUBRICA_COMPATIVEL_DECTERCEIRO\nREGRA_RUBRICA_COMPATIVEL_RESC\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_PERIODO_APURACAO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -6643,7 +6643,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Remuneração de Servidor vinculado ao Regime Próprio de Previdência Social.\nRegras de validação:\nREGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB\nREGRA_COMPATIB_REGIME_PREV\nREGRA_CONTROLE_DUPLICIDADE\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_REMUN_ANUAL_DEZEMBRO\nREGRA_REMUN_CATEG_EXISTENTE_RET\nREGRA_REMUN_IND_RETIFICACAO\nREGRA_REMUN_JA_EXISTE_DESLIGAMENTO\nREGRA_REMUN_PERMITE_EXCLUSAO\nREGRA_REMUN_TRAB_EXISTENTE_RET\nREGRA_REMUN_VALIDA_INFO_COMPLEMENTAR\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_PERIODO_APURACAO",
+            "descricao": "Evento Remuneração de Servidor vinculado ao Regime Próprio de Previdência Social.\nRegras de validação:\nREGRA_COMPATIBILIDADE_CATEGORIA_CLASSTRIB\nREGRA_COMPATIB_REGIME_PREV\nREGRA_CONTROLE_DUPLICIDADE\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_REMUN_ANUAL_DEZEMBRO\nREGRA_REMUN_CATEG_EXISTENTE_RET\nREGRA_REMUN_IND_RETIFICACAO\nREGRA_REMUN_JA_EXISTE_DESLIGAMENTO\nREGRA_REMUN_PERMITE_EXCLUSAO\nREGRA_REMUN_TRAB_EXISTENTE_RET\nREGRA_REMUN_VALIDA_INFO_COMPLEMENTAR\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_PERIODO_APURACAO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -11850,7 +11850,7 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo de admissão do trabalhador.\nValores válidos:\n1 - Admissão\n2 - Transferência de empresa do mesmo grupo econômico ou transferência entre órgãos do mesmo Ente Federativo\n3 - Transferência de empresa consorciada ou de consórcio\n4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão\n5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar\n6 - Mudança de CPF\nValidação: Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\nSe for igual a [6], cadIni deve ser igual a [N].",
+            "descricao": "Tipo de admissão do trabalhador.\nValores válidos:\n1 - Admissão\n2 - Transferência de empresa do mesmo grupo econômico ou transferência entre órgãos do mesmo Ente Federativo\n3 - Transferência de empresa consorciada ou de consórcio\n4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão\n5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar\n6 - Mudança de CPF\n7 - Transferência quando a empresa sucedida é considerada inapta por inexistência de fato\nValidação: Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\nSe for igual a [6], cadIni deve ser igual a [N].",
             "validacao": "Se for igual a [5], codCateg deve ser igual a [104] e procEmi deve ser igual a [2, 22].\\ Se for igual a [6], cadIni deve ser igual a [N].",
             "valores-validos": {
                 "1": "1 - Admissão",
@@ -11858,7 +11858,8 @@
                 "3": "3 - Transferência de empresa consorciada ou de consórcio",
                 "4": "4 - Transferência por motivo de sucessão, incorporação, cisão ou fusão",
                 "5": "5 - Transferência do empregado doméstico para outro representante da mesma unidade familiar",
-                "6": "6 - Mudança de CPF"
+                "6": "6 - Mudança de CPF",
+                "7": "7 - Transferência quando a empresa sucedida é considerada inapta por inexistência de fato"
             }
         },
         {
@@ -12172,18 +12173,19 @@
             "ocor": "1",
             "tamanho": "1-2",
             "dec": "-",
-            "descricao": "Preencher com o tipo de provimento.\nValores válidos:\n1 - Nomeação em cargo efetivo\n2 - Nomeação exclusivamente em cargo em comissão\n3 - Incorporação, matrícula ou nomeação (militar)\n5 - Redistribuição\n6 - Diplomação\n7 - Contratação por tempo determinado\n8 - Remoção (em caso de alteração do órgão declarante)\n9 - Designação\n10 - Mudança de CPF\n99 - Outros não relacionados acima\nValidação: Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\nSe codCateg = [302], deve ser preenchido com [2].",
-            "validacao": "Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\\ Se codCateg = [302], deve ser preenchido com [2].",
+            "descricao": "Preencher com o tipo de provimento.\nValores válidos:\n1 - Nomeação em cargo efetivo\n2 - Nomeação exclusivamente em cargo em comissão\n3 - Incorporação, matrícula ou nomeação (militar)\n5 - Redistribuição ou Reforma Administrativa\n6 - Diplomação\n7 - Contratação por tempo determinado\n8 - Remoção (em caso de alteração do órgão declarante)\n9 - Designação\n10 - Mudança de CPF\n11 - Estabilizados - Art. 19 do ADCT\n99 - Outros não relacionados acima\nValidação: Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\nSe codCateg = [302], deve ser preenchido com [2, 5, 8, 10].",
+            "validacao": "Os valores [3, 5, 6, 7, 8, 9] só são permitidos se a natureza jurídica do declarante for Administração Pública (grupo [1]).\\ Se codCateg = [302], deve ser preenchido com [2, 5, 8, 10].",
             "valores-validos": {
                 "1": "1 - Nomeação em cargo efetivo",
                 "2": "2 - Nomeação exclusivamente em cargo em comissão",
                 "3": "3 - Incorporação, matrícula ou nomeação (militar)",
-                "5": "5 - Redistribuição",
+                "5": "5 - Redistribuição ou Reforma Administrativa",
                 "6": "6 - Diplomação",
                 "7": "7 - Contratação por tempo determinado",
                 "8": "8 - Remoção (em caso de alteração do órgão declarante)",
                 "9": "9 - Designação",
                 "10": "10 - Mudança de CPF",
+                "11": "11 - Estabilizados - Art. 19 do ADCT",
                 "99": "99 - Outros não relacionados acima"
             }
         },
@@ -13251,7 +13253,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Alteração de Dados Cadastrais do Trabalhador.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXISTE_TRABALHADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
+            "descricao": "Evento Alteração de Dados Cadastrais do Trabalhador.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXISTE_TRABALHADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -14272,7 +14274,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Alteração de Contrato de Trabalho/Relação Estatutária.\nRegras de validação:\nREGRA_ADMISSAO_VALIDA_DURACAO_CONTRATO\nREGRA_ALTERA_CATEG\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
+            "descricao": "Evento Alteração de Contrato de Trabalho/Relação Estatutária.\nRegras de validação:\nREGRA_ADMISSAO_VALIDA_DURACAO_CONTRATO\nREGRA_ALTERA_CATEG\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -15709,8 +15711,8 @@
             "ocor": "0-1",
             "tamanho": "4",
             "dec": "-",
-            "descricao": "Hora do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório e exclusivo se tpAcid = [1, 3]. Se informada, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\nSe tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
-            "validacao": "Preenchimento obrigatório e exclusivo se tpAcid = [1, 3]. Se informada, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\\ Se tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
+            "descricao": "Hora do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório se tpAcid = [1] ou se (tpAcid = [3] e dtAcid >= [2022-01-26]). Não informar se tpAcid = [2]. Se preenchida, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\nSe tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
+            "validacao": "Preenchimento obrigatório se tpAcid = [1] ou se (tpAcid = [3] e dtAcid >= [2022-01-26]). Não informar se tpAcid = [2]. Se preenchida, deve estar no intervalo entre [0000] e [2359], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.\\ Se tpCat = [2, 3], deve ser informado valor igual ao preenchido no evento de CAT anterior, quando informado em nrRecCatOrig.",
             "valores-validos": {}
         },
         {
@@ -15723,8 +15725,8 @@
             "ocor": "0-1",
             "tamanho": "4",
             "dec": "-",
-            "descricao": "Horas trabalhadas antes da ocorrência do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
-            "validacao": "Preenchimento obrigatório e exclusivo se tpAcid = [1]. Se informada, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
+            "descricao": "Horas trabalhadas antes da ocorrência do acidente, no formato HHMM.\nValidação: Preenchimento obrigatório se tpAcid = [1] ou se (tpAcid = [3] e dtAcid >= [2022-07-20]). Não informar se tpAcid = [2]. Se preenchida, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
+            "validacao": "Preenchimento obrigatório se tpAcid = [1] ou se (tpAcid = [3] e dtAcid >= [2022-07-20]). Não informar se tpAcid = [2]. Se preenchida, deve estar no intervalo entre [0000] e [9959], criticando inclusive a segunda parte do número, que indica os minutos, que deve ser menor ou igual a 59.",
             "valores-validos": {}
         },
         {
@@ -16366,7 +16368,7 @@
             "ocor": "1",
             "tamanho": "1-14",
             "dec": "-",
-            "descricao": "Número de inscrição no órgão de classe.",
+            "descricao": "Número de inscrição no órgão de classe ou Registro do Ministério da Saúde (RMS).",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -16377,11 +16379,11 @@
             "grupo-pai": "emitente",
             "elem": "E",
             "tipo": "C",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "2",
             "dec": "-",
-            "descricao": "Sigla da UF do órgão de classe.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO",
-            "validacao": "-",
+            "descricao": "Sigla da UF do órgão de classe.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO\nValidação: Preenchimento obrigatório se ideOC = [1, 2].",
+            "validacao": "Preenchimento obrigatório se ideOC = [1, 2].",
             "valores-validos": {}
         },
         {
@@ -16442,7 +16444,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Monitoramento da Saúde do Trabalhador.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EXISTE_EVENTO_TSV_INICIO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXISTE_VINCULO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO",
+            "descricao": "Evento Monitoramento da Saúde do Trabalhador.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_EVENTO_TSV_INICIO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXISTE_VINCULO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -16764,8 +16766,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data do exame realizado.\nValidação: Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso. Se tpExameOcup for diferente de [0], também deve ser igual ou posterior à data de admissão/exercício ou de início.",
-            "validacao": "Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso. Se tpExameOcup for diferente de [0], também deve ser igual ou posterior à data de admissão/exercício ou de início.",
+            "descricao": "Data do exame realizado.\nValidação: Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso.",
+            "validacao": "Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso.",
             "valores-validos": {}
         },
         {
@@ -16988,7 +16990,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Afastamento Temporário.\nRegras de validação:\nREGRA_AFASTAMENTO\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EXCLUI_EVENTO_AFASTAMENTO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
+            "descricao": "Evento Afastamento Temporário.\nRegras de validação:\nREGRA_AFASTAMENTO\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXCLUI_EVENTO_AFASTAMENTO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -17612,7 +17614,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Cessão/Exercício em Outro Órgão.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EXCLUI_EVENTO_CESSAO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
+            "descricao": "Evento Cessão/Exercício em Outro Órgão.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXCLUI_EVENTO_CESSAO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -17944,7 +17946,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Condições Ambientais do Trabalho - Agentes Nocivos.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
+            "descricao": "Evento Condições Ambientais do Trabalho - Agentes Nocivos.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -18718,11 +18720,11 @@
             "grupo-pai": "respReg",
             "elem": "E",
             "tipo": "N",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Órgão de classe ao qual o responsável pelos registros ambientais está vinculado.\nValores válidos:\n1 - Conselho Regional de Medicina - CRM\n4 - Conselho Regional de Engenharia e Agronomia - CREA\n9 - Outros",
-            "validacao": "-",
+            "descricao": "Órgão de classe ao qual o responsável pelos registros ambientais está vinculado.\nValores válidos:\n1 - Conselho Regional de Medicina - CRM\n4 - Conselho Regional de Engenharia e Agronomia - CREA\n9 - Outros\nValidação: Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
+            "validacao": "Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
             "valores-validos": {
                 "1": "1 - Conselho Regional de Medicina - CRM",
                 "4": "4 - Conselho Regional de Engenharia e Agronomia - CREA",
@@ -18750,11 +18752,11 @@
             "grupo-pai": "respReg",
             "elem": "E",
             "tipo": "C",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1-14",
             "dec": "-",
-            "descricao": "Número de inscrição no órgão de classe.",
-            "validacao": "-",
+            "descricao": "Número de inscrição no órgão de classe.\nValidação: Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
+            "validacao": "Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
             "valores-validos": {}
         },
         {
@@ -18764,11 +18766,11 @@
             "grupo-pai": "respReg",
             "elem": "E",
             "tipo": "C",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "2",
             "dec": "-",
-            "descricao": "Sigla da Unidade da Federação - UF do órgão de classe.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO",
-            "validacao": "-",
+            "descricao": "Sigla da Unidade da Federação - UF do órgão de classe.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO\nValidação: Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
+            "validacao": "Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
             "valores-validos": {}
         },
         {
@@ -18829,7 +18831,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Reintegração/Outros Provimentos.\nRegras de validação:\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EXISTE_EVENTO_DESLIGAMENTO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_MESMO_PROCEMI\nREGRA_REINTEG_EXCLUSAO_EVENTO\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_VALIDA_EMPREGADOR",
+            "descricao": "Evento Reintegração/Outros Provimentos.\nRegras de validação:\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_EVENTO_DESLIGAMENTO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_MESMO_PROCEMI\nREGRA_REINTEG_EXCLUSAO_EVENTO\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_VALIDA_EMPREGADOR",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -19154,7 +19156,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Desligamento.\nRegras de validação:\nREGRA_DESLIG_EXCLUI_DESLIGAMENTO_REINTEG\nREGRA_DESLIG_EXCLUSAO_EVENTO\nREGRA_DESLIG_EXISTE_EVENTO_POSTERIOR\nREGRA_DESLIG_JA_EXISTE_BAIXA\nREGRA_DESLIG_TRABALHADOR_AFASTADO\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_MUDANCA_CPF\nREGRA_REMUN_FGTS_ANTERIOR_ESOCIAL\nREGRA_REMUN_IND_RETIFICACAO\nREGRA_REMUN_PERMITE_EXCLUSAO\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_RUBRICA_COMPATIVEL_CATEGORIA\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_PERIODO_APURACAO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
+            "descricao": "Evento Desligamento.\nRegras de validação:\nREGRA_DESLIG_EXCLUI_DESLIGAMENTO_REINTEG\nREGRA_DESLIG_EXCLUSAO_EVENTO\nREGRA_DESLIG_EXISTE_EVENTO_POSTERIOR\nREGRA_DESLIG_JA_EXISTE_BAIXA\nREGRA_DESLIG_TRABALHADOR_AFASTADO\nREGRA_EMPREGADO_DOMESTICO\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_MUDANCA_CPF\nREGRA_REMUN_FGTS_ANTERIOR_ESOCIAL\nREGRA_REMUN_IND_RETIFICACAO\nREGRA_REMUN_PERMITE_EXCLUSAO\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_RUBRICA_COMPATIVEL_CATEGORIA\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_PERIODO_APURACAO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -22024,8 +22026,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Preencher com a data de admissão (ou de exercício) do trabalhador no empregador/órgão público cedente/de origem.\nValidação: Deve ser uma data anterior a dtInicio e igual ou posterior a 01/01/1890.",
-            "validacao": "Deve ser uma data anterior a dtInicio e igual ou posterior a 01/01/1890.",
+            "descricao": "Preencher com a data de admissão (ou de exercício) do trabalhador no empregador/órgão público cedente/de origem.\nValidação: Deve ser uma data igual ou anterior a dtInicio e igual ou posterior a 01/01/1890.",
+            "validacao": "Deve ser uma data igual ou anterior a dtInicio e igual ou posterior a 01/01/1890.",
             "valores-validos": {}
         },
         {
@@ -22195,7 +22197,7 @@
             "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Informações relativas ao estagiário.",
+            "descricao": "Informações relativas ao estagiário ou ao beneficiário do Programa Nacional de Prestação de Serviço Civil Voluntário.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -22209,8 +22211,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Natureza do estágio.\nValores válidos:\nO - Obrigatório\nN - Não obrigatório",
-            "validacao": "-",
+            "descricao": "Natureza do estágio ou da prestação de serviço civil voluntário.\nValores válidos:\nO - Obrigatório\nN - Não obrigatório\nValidação: Se o código de categoria for igual a [906], deve ser preenchido com [N].",
+            "validacao": "Se o código de categoria for igual a [906], deve ser preenchido com [N].",
             "valores-validos": {
                 "O": "O - Obrigatório",
                 "N": "N - Não obrigatório"
@@ -22223,11 +22225,11 @@
             "grupo-pai": "infoEstagiario",
             "elem": "E",
             "tipo": "N",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Informar o nível do estágio.\nValores válidos:\n1 - Fundamental\n2 - Médio\n3 - Formação profissional\n4 - Superior\n8 - Especial\n9 - Mãe social (Lei 7.644/1987)",
-            "validacao": "-",
+            "descricao": "Informar o nível do estágio ou da prestação de serviço civil voluntário.\nValores válidos:\n1 - Fundamental\n2 - Médio\n3 - Formação profissional\n4 - Superior\n8 - Especial\n9 - Mãe social (Lei 7.644/1987)\nValidação: Preenchimento obrigatório se o código de categoria for igual a [901]. Se o código de categoria for igual a [906], não pode ser informado [9].",
+            "validacao": "Preenchimento obrigatório se o código de categoria for igual a [901]. Se o código de categoria for igual a [906], não pode ser informado [9].",
             "valores-validos": {
                 "1": "1 - Fundamental",
                 "2": "2 - Médio",
@@ -22247,7 +22249,7 @@
             "ocor": "0-1",
             "tamanho": "1-100",
             "dec": "-",
-            "descricao": "Área de atuação do estagiário.",
+            "descricao": "Área de atuação do estagiário ou, no caso de prestação de serviço civil voluntário, jornada semanal do desempenho de atividades em formato decimal.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -22275,8 +22277,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data prevista para o término do estágio.\nValidação: Deve ser uma data posterior à data de início do estágio.",
-            "validacao": "Deve ser uma data posterior à data de início do estágio.",
+            "descricao": "Data prevista para o término do estágio ou da prestação de serviço civil voluntário.\nValidação: Deve ser uma data posterior à data de início do estágio ou da prestação de serviço civil voluntário.",
+            "validacao": "Deve ser uma data posterior à data de início do estágio ou da prestação de serviço civil voluntário.",
             "valores-validos": {}
         },
         {
@@ -22289,7 +22291,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Instituição de ensino.",
+            "descricao": "Instituição de ensino ou entidade de formação/qualificação.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -22303,7 +22305,7 @@
             "ocor": "0-1",
             "tamanho": "14",
             "dec": "-",
-            "descricao": "Preencher com o CNPJ da instituição de ensino. Deve ser preenchido apenas se a instituição de ensino for brasileira.\nValidação: Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "descricao": "Preencher com o CNPJ da instituição de ensino, no caso de estágio, ou da entidade de formação/qualificação, no caso de prestação de serviço civil voluntário. Deve ser preenchido apenas se a instituição/entidade for brasileira.\nValidação: Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "validacao": "Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
@@ -22631,7 +22633,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Alteração Contratual.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
+            "descricao": "Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Alteração Contratual.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -23165,7 +23167,7 @@
             "ocor": "0-1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Informações do estagiário.",
+            "descricao": "Informações relativas ao estagiário ou ao beneficiário do Programa Nacional de Prestação de Serviço Civil Voluntário.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -23179,8 +23181,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Natureza do estágio.\nValores válidos:\nO - Obrigatório\nN - Não obrigatório",
-            "validacao": "-",
+            "descricao": "Natureza do estágio ou da prestação de serviço civil voluntário.\nValores válidos:\nO - Obrigatório\nN - Não obrigatório\nValidação: Se o código de categoria for igual a [906], deve ser preenchido com [N].",
+            "validacao": "Se o código de categoria for igual a [906], deve ser preenchido com [N].",
             "valores-validos": {
                 "O": "O - Obrigatório",
                 "N": "N - Não obrigatório"
@@ -23193,11 +23195,11 @@
             "grupo-pai": "infoEstagiario",
             "elem": "E",
             "tipo": "N",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Informar o nível do estágio.\nValores válidos:\n1 - Fundamental\n2 - Médio\n3 - Formação profissional\n4 - Superior\n8 - Especial\n9 - Mãe social (Lei 7.644/1987)",
-            "validacao": "-",
+            "descricao": "Informar o nível do estágio ou da prestação de serviço civil voluntário.\nValores válidos:\n1 - Fundamental\n2 - Médio\n3 - Formação profissional\n4 - Superior\n8 - Especial\n9 - Mãe social (Lei 7.644/1987)\nValidação: Preenchimento obrigatório se o código de categoria for igual a [901]. Se o código de categoria for igual a [906], não pode ser informado [9].",
+            "validacao": "Preenchimento obrigatório se o código de categoria for igual a [901]. Se o código de categoria for igual a [906], não pode ser informado [9].",
             "valores-validos": {
                 "1": "1 - Fundamental",
                 "2": "2 - Médio",
@@ -23217,7 +23219,7 @@
             "ocor": "0-1",
             "tamanho": "1-100",
             "dec": "-",
-            "descricao": "Área de atuação do estagiário.",
+            "descricao": "Área de atuação do estagiário ou, no caso de prestação de serviço civil voluntário, jornada semanal do desempenho de atividades em formato decimal.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -23245,8 +23247,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data prevista para o término do estágio.\nValidação: Deve ser uma data posterior à data de início do estágio.",
-            "validacao": "Deve ser uma data posterior à data de início do estágio.",
+            "descricao": "Data prevista para o término do estágio ou da prestação de serviço civil voluntário.\nValidação: Deve ser uma data posterior à data de início do estágio ou da prestação de serviço civil voluntário.",
+            "validacao": "Deve ser uma data posterior à data de início do estágio ou da prestação de serviço civil voluntário.",
             "valores-validos": {}
         },
         {
@@ -23259,7 +23261,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Instituição de ensino.",
+            "descricao": "Instituição de ensino ou entidade de formação/qualificação.",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -23273,7 +23275,7 @@
             "ocor": "0-1",
             "tamanho": "14",
             "dec": "-",
-            "descricao": "Preencher com o CNPJ da instituição de ensino. Deve ser preenchido apenas se a instituição de ensino for brasileira.\nValidação: Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
+            "descricao": "Preencher com o CNPJ da instituição de ensino, no caso de estágio, ou da entidade de formação/qualificação, no caso de prestação de serviço civil voluntário. Deve ser preenchido apenas se a instituição/entidade for brasileira.\nValidação: Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "validacao": "Se informado, deve ser um CNPJ válido, com 14 (catorze) algarismos.",
             "valores-validos": {}
         },
@@ -23461,7 +23463,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Término.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_MUDANCA_CPF\nREGRA_REMUN_IND_RETIFICACAO\nREGRA_REMUN_PERMITE_EXCLUSAO\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_RUBRICA_COMPATIVEL_CATEGORIA\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_PERIODO_APURACAO",
+            "descricao": "Evento Trabalhador Sem Vínculo de Emprego/Estatutário - Término.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EVE_FOPAG_SIMPLIFICADO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_MUDANCA_CPF\nREGRA_REMUN_IND_RETIFICACAO\nREGRA_REMUN_PERMITE_EXCLUSAO\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_RUBRICA_COMPATIVEL_CATEGORIA\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VALIDA_EMPREGADOR\nREGRA_VALIDA_PERIODO_APURACAO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -30747,8 +30749,8 @@
             "ocor": "1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Tipo de inscrição do proprietário do CNO.\nValores válidos:\n1 - CNPJ\n2 - CPF",
-            "validacao": "-",
+            "descricao": "Tipo de inscrição do proprietário do CNO.\nValores válidos:\n1 - CNPJ\n2 - CPF\nValidação: Retornar tpInscProp de S-1020. Caso esse campo não tenha sido informado, retornar tpInscContrat.",
+            "validacao": "Retornar tpInscProp de S-1020. Caso esse campo não tenha sido informado, retornar tpInscContrat.",
             "valores-validos": {
                 "1": "1 - CNPJ",
                 "2": "2 - CPF"
@@ -30764,8 +30766,8 @@
             "ocor": "1",
             "tamanho": "11 ou 14",
             "dec": "-",
-            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.",
-            "validacao": "-",
+            "descricao": "Preencher com o número de inscrição (CNPJ/CPF) do proprietário do CNO.\nValidação: Retornar nrInscProp de S-1020. Caso esse campo não tenha sido informado, retornar nrInscContrat.",
+            "validacao": "Retornar nrInscProp de S-1020. Caso esse campo não tenha sido informado, retornar nrInscContrat.",
             "valores-validos": {}
         },
         {
@@ -32540,8 +32542,8 @@
             "ocor": "1",
             "tamanho": "2",
             "dec": "-",
-            "descricao": "Código de motivo do desligamento.\nValidação: Deve ser um código válido e existente na Tabela 19, bem como compatível com o código de categoria do trabalhador, conforme Tabela 19.\nNão podem ser informados motivos que não implicam rescisão do contrato de trabalho (igual a [11, 12, 13, 25, 28, 29, 30, 34, 36]).",
-            "validacao": "Deve ser um código válido e existente na Tabela 19, bem como compatível com o código de categoria do trabalhador, conforme Tabela 19.\\ Não podem ser informados motivos que não implicam rescisão do contrato de trabalho (igual a [11, 12, 13, 25, 28, 29, 30, 34, 36]).",
+            "descricao": "Código de motivo do desligamento.\nValidação: Deve ser um código válido e existente na Tabela 19, bem como compatível com o código de categoria do trabalhador, conforme Tabela 19.\nNão podem ser informados motivos que não implicam rescisão do contrato de trabalho (igual a [11, 12, 13, 25, 28, 29, 30, 34, 36, 43]).",
+            "validacao": "Deve ser um código válido e existente na Tabela 19, bem como compatível com o código de categoria do trabalhador, conforme Tabela 19.\\ Não podem ser informados motivos que não implicam rescisão do contrato de trabalho (igual a [11, 12, 13, 25, 28, 29, 30, 34, 36, 43]).",
             "valores-validos": {}
         },
         {

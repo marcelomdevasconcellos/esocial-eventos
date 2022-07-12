@@ -159,7 +159,7 @@ def read_esocial_eventos(path, url):
 if __name__ == "__main__":
     eventos = [
         ['v_S_01_00_00', 
-         'https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-nt-04-2021-html/index.html'],
+         'https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-nt-05-2022-html/index.html'],
     ]
     for evt in eventos:
         read_esocial_eventos(evt[0], evt[1])

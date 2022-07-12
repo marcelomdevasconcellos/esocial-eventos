@@ -27,7 +27,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Condições Ambientais do Trabalho - Agentes Nocivos.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
+            "descricao": "Evento Condições Ambientais do Trabalho - Agentes Nocivos.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_GERAL_VALIDA_DADOS_TABCONTRIB\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO\nREGRA_TSV_ATIVO_NA_DTEVENTO\nREGRA_VINCULO_ATIVO_NA_DTEVENTO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -801,11 +801,11 @@
             "grupo-pai": "respReg",
             "elem": "E",
             "tipo": "N",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1",
             "dec": "-",
-            "descricao": "Órgão de classe ao qual o responsável pelos registros ambientais está vinculado.\nValores válidos:\n1 - Conselho Regional de Medicina - CRM\n4 - Conselho Regional de Engenharia e Agronomia - CREA\n9 - Outros",
-            "validacao": "-",
+            "descricao": "Órgão de classe ao qual o responsável pelos registros ambientais está vinculado.\nValores válidos:\n1 - Conselho Regional de Medicina - CRM\n4 - Conselho Regional de Engenharia e Agronomia - CREA\n9 - Outros\nValidação: Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
+            "validacao": "Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
             "valores-validos": {
                 "1": "1 - Conselho Regional de Medicina - CRM",
                 "4": "4 - Conselho Regional de Engenharia e Agronomia - CREA",
@@ -833,11 +833,11 @@
             "grupo-pai": "respReg",
             "elem": "E",
             "tipo": "C",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "1-14",
             "dec": "-",
-            "descricao": "Número de inscrição no órgão de classe.",
-            "validacao": "-",
+            "descricao": "Número de inscrição no órgão de classe.\nValidação: Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
+            "validacao": "Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
             "valores-validos": {}
         },
         {
@@ -847,11 +847,11 @@
             "grupo-pai": "respReg",
             "elem": "E",
             "tipo": "C",
-            "ocor": "1",
+            "ocor": "0-1",
             "tamanho": "2",
             "dec": "-",
-            "descricao": "Sigla da Unidade da Federação - UF do órgão de classe.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO",
-            "validacao": "-",
+            "descricao": "Sigla da Unidade da Federação - UF do órgão de classe.\nValores válidos: AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO\nValidação: Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
+            "validacao": "Preenchimento obrigatório se codAgNoc for diferente de [09.01.001].",
             "valores-validos": {}
         },
         {

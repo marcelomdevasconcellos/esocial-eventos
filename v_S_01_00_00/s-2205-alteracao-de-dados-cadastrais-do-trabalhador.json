@@ -27,7 +27,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Alteração de Dados Cadastrais do Trabalhador.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXISTE_TRABALHADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
+            "descricao": "Evento Alteração de Dados Cadastrais do Trabalhador.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXISTE_TRABALHADOR\nREGRA_EXTEMP_DOMESTICO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_VALIDA_TRABALHADOR_BASE_CPF",
             "validacao": "-",
             "valores-validos": {}
         },

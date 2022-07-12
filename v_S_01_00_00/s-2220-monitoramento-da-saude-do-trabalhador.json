@@ -27,7 +27,7 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Evento Monitoramento da Saúde do Trabalhador.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EXISTE_EVENTO_TSV_INICIO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXISTE_VINCULO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO",
+            "descricao": "Evento Monitoramento da Saúde do Trabalhador.\nRegras de validação:\nREGRA_ENVIO_PROC_FECHAMENTO\nREGRA_EVENTOS_EXTEMP\nREGRA_EVENTO_EXT_SEM_IMPACTO_FOPAG\nREGRA_EVENTO_POSTERIOR_CAT_OBITO\nREGRA_EXISTE_EVENTO_TSV_INICIO\nREGRA_EXISTE_INFO_EMPREGADOR\nREGRA_EXISTE_VINCULO\nREGRA_EXTEMP_REINTEGRACAO\nREGRA_MESMO_PROCEMI\nREGRA_RETIFICA_MESMO_VINCULO",
             "validacao": "-",
             "valores-validos": {}
         },
@@ -349,8 +349,8 @@
             "ocor": "1",
             "tamanho": "-",
             "dec": "-",
-            "descricao": "Data do exame realizado.\nValidação: Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso. Se tpExameOcup for diferente de [0], também deve ser igual ou posterior à data de admissão/exercício ou de início.",
-            "validacao": "Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso. Se tpExameOcup for diferente de [0], também deve ser igual ou posterior à data de admissão/exercício ou de início.",
+            "descricao": "Data do exame realizado.\nValidação: Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso.",
+            "validacao": "Deve ser uma data válida, igual ou anterior à data do ASO informada em dtAso.",
             "valores-validos": {}
         },
         {
